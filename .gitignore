@@ -1,0 +1,19 @@
+# Data files (too large for git)
+data/raw/
+data/processed/*.parquet
+data/processed/*.csv
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Environment
+.env
