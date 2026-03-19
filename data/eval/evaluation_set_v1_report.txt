@@ -1,0 +1,25 @@
+============================================================
+KIRA EVALUATION SET v1
+Generated: 2026-03-18 06:59
+============================================================
+
+Total compounds: 194
+  Active:   110
+  Weak:     68
+  Inactive: 16
+
+PURPOSE:
+  This set defines ground truth for evaluating Kira's ranking algorithm.
+  A correct ranking places actives above weak, and weak above inactive.
+
+METHODOLOGY:
+  - Active: IC50 < 1000 nM against S. mansoni targets,
+    plus curated known effective drugs
+  - Weak: 1000 <= IC50 < 10000 nM
+  - Inactive: curated approved drugs for unrelated conditions
+
+LIMITATIONS:
+  - Negative controls are ASSUMED inactive (not experimentally verified)
+  - Some actives have clinical evidence but no target-based IC50
+  - Evaluation set is small; results should be interpreted with caution
+  - Does not include whole-organism assay data (future improvement)

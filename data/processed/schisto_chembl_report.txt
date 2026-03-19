@@ -1,0 +1,28 @@
+============================================================
+KIRA -- ChEMBL Schistosomiasis Target Report
+Generated: 2026-03-18 06:48
+============================================================
+
+Organism: Schistosoma mansoni
+Targets found: 10
+
+PARASITE TARGETS:
+  CHEMBL6110       Thioredoxin glutathione reductase
+  CHEMBL1293279    Thioredoxin peroxidase
+  CHEMBL2363079    Voltage-activated calcium channel beta 1 subunit
+  CHEMBL2363080    Voltage-activated calcium channel beta 2 subunit
+  CHEMBL3797017    Histone deacetylase 8
+  CHEMBL4523517    NAD-dependent protein deacetylase
+  CHEMBL4523950    Dihydroorotate dehydrogenase (quinone), mitochondrial
+  CHEMBL4879549    ATP-diphosphohydrolase 1
+  CHEMBL4888438    Cathepsin B1 isotype 1
+  CHEMBL5169215    Venus kinase receptor 2
+
+FILTERED ACTIVITY MEASUREMENTS: 226
+  Unique compounds: 176
+
+APPROVED DRUGS WITH PARASITE ACTIVITY:
+  ATOVAQUONE
+  PANOBINOSTAT
+  VORINOSTAT
+  IDEBENONE
