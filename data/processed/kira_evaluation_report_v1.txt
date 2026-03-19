@@ -1,0 +1,30 @@
+============================================================
+KIRA RANKING EVALUATION REPORT v1
+Generated: 2026-03-19 08:21
+============================================================
+
+ALGORITHM: Weighted composite of 5 signals
+  Potency weight:     0.4
+  Target weight:      0.25
+  Confidence weight:  0.1
+  Drug stage weight:  0.15
+  Multi-target weight:0.1
+
+AUROC: 0.9855
+
+INTERPRETATION:
+  Strong separation between actives and inactives.
+
+LIMITATIONS:
+  - Only 16 inactive compounds (specificity estimates are noisy)
+  - Target essentiality weights are human estimates, not data-derived
+  - Signal weights are hand-tuned, not optimized
+  - No molecular structure features (future: docking scores, fingerprints)
+  - No whole-organism assay data incorporated
+
+NEXT STEPS:
+  - Expand negative control set for more reliable evaluation
+  - Add molecular docking scores as a new signal
+  - Learn signal weights from data instead of hand-tuning
+  - Incorporate ADMET predictions
+  - Add supply chain availability data
