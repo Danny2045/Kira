@@ -1,0 +1,7 @@
+KIRA V2 EVALUATION REPORT
+Generated: 2026-03-19 08:37
+AUROC: 0.9989
+
+Key improvement: Added structural similarity signal.
+Praziquantel now scored based on molecular structure
+similarity to known active compounds.
