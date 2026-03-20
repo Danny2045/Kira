@@ -1,0 +1,274 @@
+======================================================================
+KIRA v1 — NOVELTY ANALYSIS REPORT
+Generated: 2026-03-19 23:38
+======================================================================
+
+METHODOLOGY:
+  For each top-ranked compound, PubMed was queried for
+  co-occurrence of the compound name with 'schistosomiasis'.
+  Compounds with zero prior publications represent genuinely
+  novel predictions from the Kira pipeline.
+
+CLASSIFICATION:
+  NOVEL:      0 publications (new prediction)
+  EMERGING:   1-3 publications (minimally explored)
+  KNOWN:      4-10 publications (established hypothesis)
+  WELL-KNOWN: 10+ publications (extensively studied)
+
+SUMMARY (top 50 compounds):
+  NOVEL       : 45
+  EMERGING    : 1
+  KNOWN       : 3
+  WELL-KNOWN  : 1
+
+----------------------------------------------------------------------
+NOVEL CANDIDATES — HIGHEST PUBLICATION PRIORITY
+----------------------------------------------------------------------
+  QUISINOSTAT
+    IC50 = 28 nM vs Histone deacetylase 8
+    Score: 0.5448
+    General literature: 106 papers
+
+  CHEMBL3322287
+    IC50 = 10 nM vs Thioredoxin glutathione reductase
+    Score: 0.5350
+    General literature: 0 papers
+
+  CHEMBL3800394
+    IC50 = 75 nM vs Histone deacetylase 8
+    Score: 0.5321
+    General literature: 0 papers
+
+  CHEMBL4847326
+    IC50 = 270 nM vs Histone deacetylase 8
+    Score: 0.5137
+    General literature: 0 papers
+
+  CHEMBL570345
+    IC50 = 40 nM vs Thioredoxin glutathione reductase
+    Score: 0.5049
+    General literature: 0 papers
+
+  CHEMBL1439384
+    IC50 = 60 nM vs Thioredoxin glutathione reductase
+    Score: 0.4961
+    General literature: 0 papers
+
+  CHEMBL4872913
+    IC50 = 180 nM vs Histone deacetylase 8
+    Score: 0.4961
+    General literature: 0 papers
+
+  CHEMBL576265
+    IC50 = 63 nM vs Thioredoxin glutathione reductase
+    Score: 0.4950
+    General literature: 0 papers
+
+  CHEMBL4540838
+    IC50 = 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Score: 0.4911
+    General literature: 0 papers
+
+  CHEMBL4868142
+    IC50 = 440 nM vs Histone deacetylase 8
+    Score: 0.4897
+    General literature: 0 papers
+
+  CHEMBL3322292
+    IC50 = 83 nM vs Thioredoxin glutathione reductase
+    Score: 0.4890
+    General literature: 0 papers
+
+  CHEMBL155771
+    IC50 = 23 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Score: 0.4869
+    General literature: 0 papers
+
+  CHEMBL3797843
+    IC50 = 67 nM vs Histone deacetylase 8
+    Score: 0.4862
+    General literature: 0 papers
+
+  CHEMBL1325877
+    IC50 = 100 nM vs Thioredoxin glutathione reductase
+    Score: 0.4850
+    General literature: 0 papers
+
+  CHEMBL567637
+    IC50 = 110 nM vs Thioredoxin glutathione reductase
+    Score: 0.4829
+    General literature: 0 papers
+
+  CHEMBL2178342
+    IC50 = 82 nM vs Histone deacetylase 8
+    Score: 0.4819
+    General literature: 0 papers
+
+  CHEMBL3799246
+    IC50 = 91 nM vs Histone deacetylase 8
+    Score: 0.4795
+    General literature: 0 papers
+
+  CHEMBL1486739
+    IC50 = 130 nM vs Thioredoxin glutathione reductase
+    Score: 0.4793
+    General literature: 0 papers
+
+  CHEMBL3798183
+    IC50 = 96 nM vs Histone deacetylase 8
+    Score: 0.4785
+    General literature: 0 papers
+
+  CHEMBL4846043
+    IC50 = 140 nM vs Thioredoxin glutathione reductase
+    Score: 0.4777
+    General literature: 0 papers
+
+  CHEMBL3322286
+    IC50 = 148 nM vs Thioredoxin glutathione reductase
+    Score: 0.4765
+    General literature: 0 papers
+
+  CHEMBL3799297
+    IC50 = 106 nM vs Histone deacetylase 8
+    Score: 0.4762
+    General literature: 0 papers
+
+  CHEMBL3797597
+    IC50 = 116 nM vs Histone deacetylase 8
+    Score: 0.4742
+    General literature: 0 papers
+
+  CHEMBL3797442
+    IC50 = 120 nM vs Histone deacetylase 8
+    Score: 0.4735
+    General literature: 0 papers
+
+  CHEMBL3798028
+    IC50 = 129 nM vs Histone deacetylase 8
+    Score: 0.4720
+    General literature: 0 papers
+
+  CHEMBL3799728
+    IC50 = 138 nM vs Histone deacetylase 8
+    Score: 0.4705
+    General literature: 0 papers
+
+  CHEMBL3798503
+    IC50 = 145 nM vs Histone deacetylase 8
+    Score: 0.4695
+    General literature: 0 papers
+
+  CHEMBL3797455
+    IC50 = 147 nM vs Histone deacetylase 8
+    Score: 0.4691
+    General literature: 0 papers
+
+  CHEMBL1428415
+    IC50 = 210 nM vs Thioredoxin glutathione reductase
+    Score: 0.4689
+    General literature: 0 papers
+
+  CHEMBL3800411
+    IC50 = 150 nM vs Histone deacetylase 8
+    Score: 0.4686
+    General literature: 0 papers
+
+  CHEMBL3798925
+    IC50 = 178 nM vs Histone deacetylase 8
+    Score: 0.4650
+    General literature: 0 papers
+
+  CHEMBL3799265
+    IC50 = 182 nM vs Histone deacetylase 8
+    Score: 0.4645
+    General literature: 0 papers
+
+  CHEMBL2170177
+    IC50 = 367 nM vs Histone deacetylase 8
+    Score: 0.4643
+    General literature: 0 papers
+
+  CHEMBL3798870
+    IC50 = 190 nM vs Histone deacetylase 8
+    Score: 0.4636
+    General literature: 0 papers
+
+  CHEMBL3797232
+    IC50 = 191 nM vs Histone deacetylase 8
+    Score: 0.4635
+    General literature: 0 papers
+
+  CHEMBL4160522
+    IC50 = 97 nM vs Histone deacetylase 8
+    Score: 0.4632
+    General literature: 0 papers
+
+  CHEMBL4867041
+    IC50 = 100 nM vs Histone deacetylase 8
+    Score: 0.4625
+    General literature: 0 papers
+
+  CHEMBL4853162
+    IC50 = 100 nM vs Histone deacetylase 8
+    Score: 0.4625
+    General literature: 0 papers
+
+  CHEMBL4855490
+    IC50 = 100 nM vs Histone deacetylase 8
+    Score: 0.4625
+    General literature: 0 papers
+
+  CHEMBL3800057
+    IC50 = 219 nM vs Histone deacetylase 8
+    Score: 0.4605
+    General literature: 0 papers
+
+  CHEMBL4852163
+    IC50 = 110 nM vs Histone deacetylase 8
+    Score: 0.4604
+    General literature: 0 papers
+
+  CHEMBL4849600
+    IC50 = 110 nM vs Histone deacetylase 8
+    Score: 0.4604
+    General literature: 0 papers
+
+  CHEMBL4452960
+    IC50 = 78 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Score: 0.4604
+    General literature: 0 papers
+
+  CHEMBL3322288
+    IC50 = 316 nM vs Thioredoxin glutathione reductase
+    Score: 0.4600
+    General literature: 0 papers
+
+  CHEMBL4852477
+    IC50 = 330 nM vs Thioredoxin glutathione reductase
+    Score: 0.4591
+    General literature: 0 papers
+
+----------------------------------------------------------------------
+EMERGING CANDIDATES — INDEPENDENT CONFIRMATION VALUE
+----------------------------------------------------------------------
+  PANOBINOSTAT  (1 prior papers)
+    IC50 = 450 nM vs Histone deacetylase 8
+
+----------------------------------------------------------------------
+INTERPRETATION
+----------------------------------------------------------------------
+  NOVEL compounds represent Kira's strongest publication case.
+  The pipeline surfaced them through systematic integration of
+  target-based activity, structural similarity, and whole-organism
+  evidence — a methodology that has not been applied to these
+  specific compounds in the schistosomiasis context before.
+
+  EMERGING compounds demonstrate independent computational
+  confirmation of hypotheses with minimal prior evidence.
+
+  KNOWN/WELL-KNOWN compounds validate the pipeline: if it
+  correctly surfaces established candidates, its novel
+  predictions carry more weight.
+
+======================================================================
