@@ -1,0 +1,28 @@
+============================================================
+KIRA EVALUATION SET v2 — INCLUSION CRITERIA
+Generated: 2026-03-19 23:29
+============================================================
+
+ACTIVE compounds (label = 'active'):
+  - ChEMBL target-based IC50 < 1000 nM against S. mansoni proteins
+  - Curated known effective drugs (praziquantel, oxamniquine, mefloquine)
+
+WEAK compounds (label = 'weak'):
+  - ChEMBL target-based IC50 between 1000-10000 nM
+
+INACTIVE compounds (label = 'inactive'):
+  - Experimental: tested in whole-worm assays with <30% max activity
+  - Experimental: whole-worm IC50/EC50 > 50000 nM
+  - Assumed: approved drugs from unrelated therapeutic areas
+    (cardiovascular, psychiatric, endocrine, ophthalmologic, etc.)
+  - Assumed negatives are NOT experimentally verified against S. mansoni
+
+SPLIT:
+  - 80/20 stratified split, random seed 42
+  - Curated drugs appear in both dev and test for sanity checking
+
+FROZEN:
+  - This benchmark is frozen as of 2026-03-19
+  - No changes to labels or inclusion criteria without new version number
+  - Signal weight tuning uses dev set ONLY
+  - Held-out test set for final evaluation ONLY

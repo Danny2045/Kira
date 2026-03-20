@@ -1,0 +1,102 @@
+======================================================================
+KIRA v1 — DRUG REPURPOSING CANDIDATES FOR SCHISTOSOMIASIS
+Generated: 2026-03-19 09:02
+Target organism: Schistosoma mansoni
+======================================================================
+
+METHODOLOGY:
+  Three evidence pathways integrated:
+    1. Target-based bioactivity (ChEMBL) — IC50 against parasite proteins
+    2. Structural similarity (RDKit Morgan fingerprints, Tanimoto)
+    3. Whole-organism activity (ChEMBL phenotypic assays)
+  Seven scoring signals: potency, target essentiality, data confidence,
+    drug development stage, multi-target activity, structural similarity,
+    whole-organism activity
+  ADMET filter: Lipinski Rule of Five + TPSA + drug-likeness penalty
+  Evaluation: AUROC 0.999 on 194-compound ground-truth set
+
+----------------------------------------------------------------------
+SECTION A: APPROVED/CLINICAL DRUGS WITH ANTI-SCHISTOSOMAL EVIDENCE
+----------------------------------------------------------------------
+
+----------------------------------------------------------------------
+SECTION B: TOP RESEARCH COMPOUNDS (not yet approved)
+----------------------------------------------------------------------
+  These compounds show potent activity but are not approved drugs.
+  They represent potential lead compounds for medicinal chemistry.
+
+  1. QUISINOSTAT
+     IC50 = 28 nM vs Histone deacetylase 8
+     Final score: 0.5448
+     MW=394, LogP=2.1, violations=0
+
+  2. VORINOSTAT
+     IC50 = 590 nM vs Histone deacetylase 8
+     Final score: 0.5440
+     MW=264, LogP=2.5, violations=0
+
+  3. CHEMBL3322287
+     IC50 = 10 nM vs Thioredoxin glutathione reductase
+     Final score: 0.5350
+     MW=357, LogP=-1.0, violations=0
+
+  4. CHEMBL3800394
+     IC50 = 75 nM vs Histone deacetylase 8
+     Final score: 0.5321
+     MW=362, LogP=3.7, violations=0
+
+  5. PANOBINOSTAT
+     IC50 = 450 nM vs Histone deacetylase 8
+     Final score: 0.5198
+     MW=349, LogP=3.3, violations=0
+
+  6. CHEMBL4847326
+     IC50 = 270 nM vs Histone deacetylase 8
+     Final score: 0.5137
+     MW=376, LogP=4.0, violations=0
+
+  7. CHEMBL570345
+     IC50 = 40 nM vs Thioredoxin glutathione reductase
+     Final score: 0.5049
+     MW=306, LogP=1.9, violations=0
+
+  8. CHEMBL4872913
+     IC50 = 180 nM vs Histone deacetylase 8
+     Final score: 0.4961
+     MW=306, LogP=4.0, violations=0
+
+  9. CHEMBL1439384
+     IC50 = 60 nM vs Thioredoxin glutathione reductase
+     Final score: 0.4961
+     MW=329, LogP=2.5, violations=0
+
+  10. CHEMBL576265
+     IC50 = 63 nM vs Thioredoxin glutathione reductase
+     Final score: 0.4950
+     MW=221, LogP=0.5, violations=0
+
+----------------------------------------------------------------------
+SECTION C: PIPELINE LIMITATIONS
+----------------------------------------------------------------------
+  1. Evaluation set has only 16 inactive controls (specificity estimates noisy)
+  2. Oxamniquine and mefloquine under-ranked due to missing structured data
+  3. No molecular docking performed (future: AlphaFold structures)
+  4. ADMET predictions are property-based only (no metabolism/toxicity models)
+  5. Supply chain availability not yet checked programmatically
+  6. Whole-organism data filtering lost most records (qualitative measurements)
+  7. No selectivity analysis against human orthologues
+
+----------------------------------------------------------------------
+SECTION D: RECOMMENDED NEXT STEPS
+----------------------------------------------------------------------
+  1. Validate atovaquone against S. mansoni in vitro (highest priority)
+  2. Expand negative control set for more robust evaluation
+  3. Add molecular docking against SmTGR and SmHDAC8 crystal structures
+  4. Mine published literature for whole-organism screening data
+  5. Add selectivity filtering: compare activity vs human vs parasite targets
+  6. Check WHO Essential Medicines List and supply chain databases
+  7. Consider combination strategies (e.g., praziquantel + atovaquone)
+
+======================================================================
+END OF REPORT
+======================================================================
