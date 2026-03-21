@@ -1,0 +1,19 @@
+ChEMBL_ID,Name,Target,Parasite_IC50_nM,Human_IC50_nM,Selectivity_ratio,Class,MW,QED,SMILES
+CHEMBL155771,CHEMBL155771 (C15H16O3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",23.0,709.0,30.8,SELECTIVE,244.3,0.887,CC(C)CCC1=C(O)C(=O)c2ccccc2C1=O
+CHEMBL4474026,CHEMBL4474026 (C20H17ClN2O3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",227.0,4600.0,20.3,SELECTIVE,368.8,0.881,O=C1C(O)=C(N2CCN(c3ccc(Cl)cc3)CC2)C(=O)c2ccccc21
+CHEMBL4855490,CHEMBL4855490 (C21H17ClN2O4),Histone deacetylase 8,100.0,1100.0,11.0,SELECTIVE,396.8,0.441,COc1ccc(C(=O)NO)cc1NC(=O)c1ccc(-c2ccccc2)cc1Cl
+CHEMBL4452960,CHEMBL4452960 (C16H10ClNO3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",78.0,808.0,10.4,SELECTIVE,299.7,0.889,O=C1C(O)=C(Nc2ccccc2Cl)C(=O)c2ccccc21
+CHEMBL2041119,CHEMBL2041119 (C20H18N2O3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",711.0,6800.0,9.6,MODERATE,334.4,0.915,O=C1C(O)=C(N2CCN(c3ccccc3)CC2)C(=O)c2ccccc21
+CHEMBL62718,CHEMBL62718 (C15H14O3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",1200.0,10000.0,8.3,MODERATE,242.3,0.867,CC(C)/C=C/C1=C(O)C(=O)c2ccccc2C1=O
+CHEMBL4849600,CHEMBL4849600 (C20H14Cl2N2O3),Histone deacetylase 8,110.0,780.0,7.1,MODERATE,401.2,0.424,O=C(NO)c1ccc(Cl)c(NC(=O)c2ccc(-c3ccccc3)cc2Cl)c1
+CHEMBL4457147,CHEMBL4457147 (C16H10ClNO3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",129.0,911.0,7.1,MODERATE,299.7,0.889,O=C1C(O)=C(Nc2cccc(Cl)c2)C(=O)c2ccccc21
+CHEMBL4540838,CHEMBL4540838 (C16H9Cl2NO3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",19.0,123.0,6.5,MODERATE,334.2,0.861,O=C1C(O)=C(Nc2cccc(Cl)c2Cl)C(=O)c2ccccc21
+CHEMBL3797232,CHEMBL3797232 (C14H9Cl3N2O3),Histone deacetylase 8,190.55,1184.0,6.2,MODERATE,359.6,0.572,O=C(NO)c1ccc(Cl)c(NC(=O)c2ccc(Cl)cc2Cl)c1
+CHEMBL1450,ATOVAQUONE,"Dihydroorotate dehydrogenase (quinone), mitochondrial",430.0,2600.0,6.0,MODERATE,366.8,0.762,O=C1C(O)=C([C@H]2CC[C@H](c3ccc(Cl)cc3)CC2)C(=O)c2ccccc21
+CHEMBL15193,LAPACHOL,"Dihydroorotate dehydrogenase (quinone), mitochondrial",19.0,100.0,5.3,MODERATE,242.3,0.81,CC(C)=CCC1=C(O)C(=O)c2ccccc2C1=O
+CHEMBL3797442,CHEMBL3797442 (C15H12Cl2N2O4),Histone deacetylase 8,120.23,548.3,4.6,MODERATE,355.2,0.58,COc1ccc(C(=O)NO)cc1NC(=O)c1ccc(Cl)cc1Cl
+CHEMBL4061259,CHEMBL4061259 (C22H24N4O4),Histone deacetylase 8,6530.0,30000.0,4.6,MODERATE,408.5,0.303,O=C(CCCNC(=O)CC[C@@H]1N=C(c2ccccc2)c2ccccc2NC1=O)NO
+CHEMBL4176696,CHEMBL4176696 (C15H10ClFN4O3),Histone deacetylase 8,504.0,2200.0,4.4,MODERATE,348.7,0.559,O=C(NO)c1cn(-c2cc(Cl)ccc2Oc2ccc(F)cc2)nn1
+CHEMBL4586212,CHEMBL4586212 (C20H16Cl2N2O3),"Dihydroorotate dehydrogenase (quinone), mitochondrial",436.0,1800.0,4.1,MODERATE,403.3,0.823,O=C1C(O)=C(N2CCN(c3cccc(Cl)c3Cl)CC2)C(=O)c2ccccc21
+CHEMBL8320,BENZOQUINONE,"Dihydroorotate dehydrogenase (quinone), mitochondrial",8800.0,34000.0,3.9,MODERATE,108.1,0.417,O=C1C=CC(=O)C=C1
+CHEMBL4870946,CHEMBL4870946 (C18H18N2O5),Histone deacetylase 8,160.0,590.0,3.7,MODERATE,342.4,0.425,CCOc1ccc(C(C)=O)cc1NC(=O)c1cccc(C(=O)NO)c1

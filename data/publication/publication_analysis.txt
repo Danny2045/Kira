@@ -1,0 +1,105 @@
+======================================================================
+KIRA — PUBLICATION-READY ANALYSIS
+Generated: 2026-03-21 02:07
+======================================================================
+
+TITLE (working):
+  Systematic cross-species selectivity analysis reveals SmDHODH
+  as the most tractable target for schistosomiasis drug repurposing
+
+ABSTRACT (working):
+  Drug repurposing offers a fast path to new schistosomiasis
+  treatments, but candidate prioritization requires assessment of
+  selectivity against human orthologues — a step frequently omitted
+  in computational repurposing studies. We built an integrated pipeline
+  combining target-based bioactivity (ChEMBL), whole-organism evidence,
+  structural similarity, ADMET properties, and cross-species selectivity
+  to systematically evaluate the schistosomiasis repurposing landscape.
+  Of 73 SmHDAC8 compounds with human orthologue
+  data, 90.4% showed poor or counter-selectivity,
+  including all clinically advanced HDAC inhibitors (vorinostat,
+  panobinostat, quisinostat).
+  In contrast, SmDHODH yielded 3 compounds with
+  >10-fold parasite selectivity, with the best achieving
+  30.83x (IC50 = 23 nM, QED = 0.89).
+  Atovaquone, an approved antimalarial available in sub-Saharan Africa,
+  showed 6-fold SmDHODH selectivity, supporting its prioritization
+  for anti-schistosomal evaluation.
+
+----------------------------------------------------------------------
+KEY RESULTS
+----------------------------------------------------------------------
+
+1. TARGET SELECTIVITY LANDSCAPE
+
+   Dihydroorotate dehydrogenase (quinone), mitochondrial
+   Compounds tested: 21
+   With selectivity data: 18
+   Selective (>=10x): 3, Moderate (3-10x): 8, Poor (1-3x): 3, Counter (<1x): 4
+   Non-selective rate: 38.9%
+   Median ratio: 4.7x, Best: 30.83x (CHEMBL155771 (C15H16O3))
+
+   Histone deacetylase 8
+   Compounds tested: 100
+   With selectivity data: 73
+   Selective (>=10x): 1, Moderate (3-10x): 6, Poor (1-3x): 30, Counter (<1x): 36
+   Non-selective rate: 90.4%
+   Median ratio: 1.0x, Best: 11.0x (CHEMBL4855490 (C21H17ClN2O4))
+
+   NAD-dependent protein deacetylase
+   Compounds tested: 5
+   With selectivity data: 0
+   SELECTIVITY UNKNOWN — experimental gap identified
+
+   Thioredoxin glutathione reductase
+   Compounds tested: 43
+   With selectivity data: 0
+   SELECTIVITY UNKNOWN — experimental gap identified
+
+   Venus kinase receptor 2
+   Compounds tested: 7
+   With selectivity data: 0
+   SELECTIVITY UNKNOWN — experimental gap identified
+
+2. TOP SELECTIVE COMPOUNDS (>=10x)
+   CHEMBL155771 (C15H16O3)
+     vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 23 nM parasite, 709 nM human, 30.8x selective
+   CHEMBL4452960 (C16H10ClNO3)
+     vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 78 nM parasite, 808 nM human, 10.4x selective
+   CHEMBL4855490 (C21H17ClN2O4)
+     vs Histone deacetylase 8: 100 nM parasite, 1100 nM human, 11.0x selective
+   CHEMBL4474026 (C20H17ClN2O3)
+     vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 227 nM parasite, 4600 nM human, 20.3x selective
+
+3. HARD NEGATIVES
+   27 counter-selective compounds with Tanimoto > 0.3
+   to a selective compound. These are structurally similar
+   but non-selective — the hardest discrimination cases.
+
+----------------------------------------------------------------------
+SCOPE AND LIMITATIONS
+----------------------------------------------------------------------
+  1. Selectivity assessed for SmHDAC8 and SmDHODH only; SmTGR
+     (the most biologically compelling target) lacks human orthologue data
+  2. Selectivity ratios computed from ChEMBL data, not matched assay conditions
+     (different labs, assay formats, and conditions may introduce systematic bias)
+  3. Only direct orthologue selectivity assessed; off-target pharmacology
+     against other human proteins not evaluated
+  4. Whole-organism validation data available for 6 compounds only
+  5. No structural modeling or docking performed
+  6. AUROC metrics reflect easy discrimination (known actives vs unrelated drugs)
+  7. Pipeline is a prioritization tool, not a clinical recommendation engine
+
+----------------------------------------------------------------------
+RECOMMENDED EXPERIMENTAL FOLLOW-UP
+----------------------------------------------------------------------
+  Priority 1: Test CHEMBL155771 and CHEMBL4452960 in S. mansoni
+    whole-worm killing assay to confirm phenotypic activity
+  Priority 2: Verify atovaquone activity against adult S. mansoni
+    worms (clinical formulation, relevant concentrations)
+  Priority 3: Test top SmTGR inhibitors against human TrxR1
+    to establish selectivity for this target class
+  Priority 4: Structural analysis of SmHDAC8 selective compound
+    (CHEMBL4855490, 11x) to understand basis of selectivity
+
+======================================================================

@@ -1,0 +1,6 @@
+Target,N_compounds,N_with_selectivity,Selective_ge10x,Moderate_3_10x,Poor_1_3x,Counter_lt1x,Pct_non_selective,Median_ratio,Best_ratio
+"Dihydroorotate dehydrogenase (quinone), mitochondrial",21,18,3,8,3,4,38.9,4.7,30.83
+Histone deacetylase 8,100,73,1,6,30,36,90.4,1.0,11.0
+NAD-dependent protein deacetylase,5,0,0,0,0,0,,,
+Thioredoxin glutathione reductase,43,0,0,0,0,0,,,
+Venus kinase receptor 2,7,0,0,0,0,0,,,
