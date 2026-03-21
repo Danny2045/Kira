@@ -1,0 +1,247 @@
+======================================================================
+KIRA v2 — SELECTIVITY-ADJUSTED CANDIDATE REPORT
+Generated: 2026-03-21 01:45
+Target: Schistosoma mansoni
+======================================================================
+
+METHODOLOGY:
+  Pipeline: PrimeKG knowledge graph -> ChEMBL target-based activity
+    -> ChEMBL whole-organism activity -> Structural similarity (RDKit)
+    -> 7-signal composite ranking -> ADMET filtering
+    -> Human orthologue selectivity -> Literature novelty (PubMed)
+
+  This report includes ONLY compounds that survived all filters:
+    - Measured parasite activity (target-based IC50 or whole-organism)
+    - NOT counter-selective against human orthologue
+    - Lipinski-compliant (<=1 violation)
+    - Ranked by selectivity-adjusted composite score
+
+KEY FINDING:
+  Systematic selectivity analysis revealed that 40/91 compounds with
+  dual-species data preferentially inhibit the human orthologue.
+  SmHDAC8, despite extensive chemical matter (100 compounds), shows
+  poor or counter-selectivity in 58/73 cases (79%).
+  SmDHODH emerges as the most tractable target with 4 compounds
+  showing >=10x parasite selectivity.
+
+----------------------------------------------------------------------
+TIER 1: SELECTIVE OR MODERATELY SELECTIVE APPROVED DRUGS
+----------------------------------------------------------------------
+
+  CHEMBL155771
+    IC50: 23 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 30.8x over human orthologue (SELECTIVE)
+    Schistosomiasis publications: 0
+    Score: 0.5356
+
+  CHEMBL4855490
+    IC50: 100 nM vs Histone deacetylase 8
+    Selectivity: 11.0x over human orthologue (SELECTIVE)
+    Schistosomiasis publications: 0
+    Score: 0.5088
+
+  CHEMBL4452960
+    IC50: 78 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 10.4x over human orthologue (SELECTIVE)
+    Schistosomiasis publications: 0
+    Score: 0.5064
+
+  CHEMBL4474026
+    IC50: 227 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 20.3x over human orthologue (SELECTIVE)
+    Schistosomiasis publications: 0
+    Score: 0.4809
+
+  CHEMBL4540838
+    IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 6.5x over human orthologue (MODERATE)
+    Schistosomiasis publications: 0
+    Score: 0.4174
+
+  LAPACHOL
+    IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 5.3x over human orthologue (MODERATE)
+    Schistosomiasis publications: 4
+    Score: 0.4174
+
+  CHEMBL3797442
+    IC50: 120 nM vs Histone deacetylase 8
+    Selectivity: 4.6x over human orthologue (MODERATE)
+    Schistosomiasis publications: 0
+    Score: 0.4025
+
+  CHEMBL3797232
+    IC50: 191 nM vs Histone deacetylase 8
+    Selectivity: 6.2x over human orthologue (MODERATE)
+    Schistosomiasis publications: 0
+    Score: 0.3940
+
+  CHEMBL4870946
+    IC50: 160 nM vs Histone deacetylase 8
+    Selectivity: 3.7x over human orthologue (MODERATE)
+    Schistosomiasis publications: 0
+    Score: 0.3845
+
+  CHEMBL4457147
+    IC50: 129 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 7.1x over human orthologue (MODERATE)
+    Schistosomiasis publications: 0
+    Score: 0.3821
+
+  ATOVAQUONE
+    IC50: 430 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 6.0x over human orthologue (MODERATE)
+    Schistosomiasis publications: 4
+    Score: 0.3817
+
+----------------------------------------------------------------------
+TIER 2: SELECTIVE RESEARCH COMPOUNDS (LEAD MATTER)
+----------------------------------------------------------------------
+
+  CHEMBL155771
+    IC50: 23 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 30.8x (SELECTIVE)
+    MW=244, LogP=3.31, QED=0.887
+
+  CHEMBL4855490
+    IC50: 100 nM vs Histone deacetylase 8
+    Selectivity: 11.0x (SELECTIVE)
+    MW=397, LogP=4.39, QED=0.441
+
+  CHEMBL4452960
+    IC50: 78 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 10.4x (SELECTIVE)
+    MW=300, LogP=3.6, QED=0.889
+
+  CHEMBL4474026
+    IC50: 227 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 20.3x (SELECTIVE)
+    MW=369, LogP=3.31, QED=0.881
+
+  CHEMBL4540838
+    IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 6.5x (MODERATE)
+    MW=334, LogP=4.25, QED=0.861
+
+  LAPACHOL
+    IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 5.3x (MODERATE)
+    MW=242, LogP=3.23, QED=0.81
+
+  CHEMBL3797442
+    IC50: 120 nM vs Histone deacetylase 8
+    Selectivity: 4.6x (MODERATE)
+    MW=355, LogP=3.37, QED=0.58
+
+  CHEMBL3797232
+    IC50: 191 nM vs Histone deacetylase 8
+    Selectivity: 6.2x (MODERATE)
+    MW=360, LogP=4.02, QED=0.572
+
+  CHEMBL4870946
+    IC50: 160 nM vs Histone deacetylase 8
+    Selectivity: 3.7x (MODERATE)
+    MW=342, LogP=2.66, QED=0.425
+
+  CHEMBL4457147
+    IC50: 129 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 7.1x (MODERATE)
+    MW=300, LogP=3.6, QED=0.889
+
+  ATOVAQUONE
+    IC50: 430 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 6.0x (MODERATE)
+    MW=367, LogP=5.51, QED=0.762
+
+  CHEMBL4176696
+    IC50: 504 nM vs Histone deacetylase 8
+    Selectivity: 4.4x (MODERATE)
+    MW=349, LogP=2.97, QED=0.559
+
+  CHEMBL4586212
+    IC50: 436 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 4.1x (MODERATE)
+    MW=403, LogP=3.96, QED=0.823
+
+  CHEMBL2041119
+    IC50: 711 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: 9.6x (MODERATE)
+    MW=334, LogP=2.66, QED=0.915
+
+  CHEMBL4849600
+    IC50: 110 nM vs Histone deacetylase 8
+    Selectivity: 7.1x (MODERATE)
+    MW=401, LogP=5.03, QED=0.424
+
+----------------------------------------------------------------------
+TIER 3: SmTGR COMPOUNDS — SELECTIVITY UNKNOWN
+----------------------------------------------------------------------
+  SmTGR is a fusion enzyme unique to the parasite (no direct human
+  equivalent). Selectivity is biologically plausible but unverified.
+  These compounds need experimental selectivity testing.
+
+  CHEMBL3322287
+    IC50: 10 nM vs SmTGR
+    Score: 0.4280
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL570345
+    IC50: 40 nM vs SmTGR
+    Score: 0.4039
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL1439384
+    IC50: 60 nM vs SmTGR
+    Score: 0.3969
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL576265
+    IC50: 63 nM vs SmTGR
+    Score: 0.3960
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL1325877
+    IC50: 100 nM vs SmTGR
+    Score: 0.3880
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL567637
+    IC50: 110 nM vs SmTGR
+    Score: 0.3863
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL4846043
+    IC50: 140 nM vs SmTGR
+    Score: 0.3822
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL3322286
+    IC50: 148 nM vs SmTGR
+    Score: 0.3812
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL1428415
+    IC50: 210 nM vs SmTGR
+    Score: 0.3751
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+  CHEMBL3322288
+    IC50: 316 nM vs SmTGR
+    Score: 0.3680
+    Selectivity: NEEDS EXPERIMENTAL VERIFICATION
+
+----------------------------------------------------------------------
+LIMITATIONS
+----------------------------------------------------------------------
+  1. Selectivity data available for HDAC8 and DHODH only; SmTGR untested
+  2. Selectivity ratios are based on ChEMBL data, not matched assay conditions
+  3. No molecular docking or structural modeling performed
+  4. Supply chain and procurement data not checked
+  5. Whole-organism data limited to 6 compounds with dose-response measurements
+  6. AUROC 1.0 on current benchmark likely reflects easy discrimination task
+  7. PubMed novelty screen uses exact string matching only
+  8. No selectivity against off-target human proteins beyond direct orthologue
+
+======================================================================
+END OF REPORT
+======================================================================
