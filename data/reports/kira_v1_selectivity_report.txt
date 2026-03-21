@@ -1,0 +1,468 @@
+======================================================================
+KIRA v1 — SELECTIVITY ANALYSIS REPORT
+Generated: 2026-03-20 03:39
+======================================================================
+
+QUESTION: Do our top compounds hit the parasite target
+selectively, or do they also hit the human orthologue?
+
+  SELECTIVE           : 4 compounds
+  MODERATE            : 14 compounds
+  POOR                : 33 compounds
+  COUNTER-SELECTIVE   : 40 compounds
+
+DETAIL:
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 23 nM
+    vs human orthologue: 709 nM
+    Selectivity: 30.8x (SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 227 nM
+    vs human orthologue: 4600 nM
+    Selectivity: 20.3x (SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 100 nM
+    vs human orthologue: 1100 nM
+    Selectivity: 11.0x (SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 78 nM
+    vs human orthologue: 808 nM
+    Selectivity: 10.4x (SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 711 nM
+    vs human orthologue: 6800 nM
+    Selectivity: 9.6x (MODERATE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 1200 nM
+    vs human orthologue: 10000 nM
+    Selectivity: 8.3x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 110 nM
+    vs human orthologue: 780 nM
+    Selectivity: 7.1x (MODERATE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 129 nM
+    vs human orthologue: 911 nM
+    Selectivity: 7.1x (MODERATE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 19 nM
+    vs human orthologue: 123 nM
+    Selectivity: 6.5x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 191 nM
+    vs human orthologue: 1184 nM
+    Selectivity: 6.2x (MODERATE)
+
+  ATOVAQUONE
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 430 nM
+    vs human orthologue: 2600 nM
+    Selectivity: 6.0x (MODERATE)
+
+  LAPACHOL
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 19 nM
+    vs human orthologue: 100 nM
+    Selectivity: 5.3x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 6530 nM
+    vs human orthologue: 30000 nM
+    Selectivity: 4.6x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 120 nM
+    vs human orthologue: 548 nM
+    Selectivity: 4.6x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 504 nM
+    vs human orthologue: 2200 nM
+    Selectivity: 4.4x (MODERATE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 436 nM
+    vs human orthologue: 1800 nM
+    Selectivity: 4.1x (MODERATE)
+
+  BENZOQUINONE
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 8800 nM
+    vs human orthologue: 34000 nM
+    Selectivity: 3.9x (MODERATE)
+
+  nan
+    vs Histone deacetylase 8: 160 nM
+    vs human orthologue: 590 nM
+    Selectivity: 3.7x (MODERATE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 185 nM
+    vs human orthologue: 541 nM
+    Selectivity: 2.9x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 182 nM
+    vs human orthologue: 512 nM
+    Selectivity: 2.8x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 138 nM
+    vs human orthologue: 342 nM
+    Selectivity: 2.5x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 100 nM
+    vs human orthologue: 230 nM
+    Selectivity: 2.3x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 100 nM
+    vs human orthologue: 220 nM
+    Selectivity: 2.2x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 450 nM
+    vs human orthologue: 860 nM
+    Selectivity: 1.9x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 67 nM
+    vs human orthologue: 120 nM
+    Selectivity: 1.8x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 178 nM
+    vs human orthologue: 318 nM
+    Selectivity: 1.8x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 116 nM
+    vs human orthologue: 204 nM
+    Selectivity: 1.8x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 750 nM
+    vs human orthologue: 1310 nM
+    Selectivity: 1.7x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 145 nM
+    vs human orthologue: 240 nM
+    Selectivity: 1.7x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 170 nM
+    vs human orthologue: 280 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 91 nM
+    vs human orthologue: 149 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 147 nM
+    vs human orthologue: 236 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 97 nM
+    vs human orthologue: 155 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 400 nM
+    vs human orthologue: 630 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 140 nM
+    vs human orthologue: 220 nM
+    Selectivity: 1.6x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 302 nM
+    vs human orthologue: 438 nM
+    Selectivity: 1.5x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 200 nM
+    vs human orthologue: 290 nM
+    Selectivity: 1.4x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 5500 nM
+    vs human orthologue: 7690 nM
+    Selectivity: 1.4x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 129 nM
+    vs human orthologue: 172 nM
+    Selectivity: 1.3x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 110 nM
+    vs human orthologue: 140 nM
+    Selectivity: 1.3x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 150 nM
+    vs human orthologue: 191 nM
+    Selectivity: 1.3x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 234 nM
+    vs human orthologue: 292 nM
+    Selectivity: 1.2x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 468 nM
+    vs human orthologue: 582 nM
+    Selectivity: 1.2x (POOR)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 2100 nM
+    vs human orthologue: 2600 nM
+    Selectivity: 1.2x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 270 nM
+    vs human orthologue: 320 nM
+    Selectivity: 1.2x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 396 nM
+    vs human orthologue: 449 nM
+    Selectivity: 1.1x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 400 nM
+    vs human orthologue: 450 nM
+    Selectivity: 1.1x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 977 nM
+    vs human orthologue: 1080 nM
+    Selectivity: 1.1x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 440 nM
+    vs human orthologue: 470 nM
+    Selectivity: 1.1x (POOR)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 9900 nM
+    vs human orthologue: 10000 nM
+    Selectivity: 1.0x (POOR)
+
+  nan
+    vs Histone deacetylase 8: 180 nM
+    vs human orthologue: 180 nM
+    Selectivity: 1.0x (POOR)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 111 nM
+    vs human orthologue: 108 nM
+    Selectivity: 1.0x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 106 nM
+    vs human orthologue: 77 nM
+    Selectivity: 0.7x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 4300 nM
+    vs human orthologue: 3100 nM
+    Selectivity: 0.7x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 1480 nM
+    vs human orthologue: 970 nM
+    Selectivity: 0.7x (COUNTER-SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 5500 nM
+    vs human orthologue: 3600 nM
+    Selectivity: 0.7x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 430 nM
+    vs human orthologue: 270 nM
+    Selectivity: 0.6x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 378 nM
+    vs human orthologue: 214 nM
+    Selectivity: 0.6x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 330 nM
+    vs human orthologue: 180 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 82 nM
+    vs human orthologue: 44 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 330 nM
+    vs human orthologue: 175 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 1220 nM
+    vs human orthologue: 620 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 2100 nM
+    vs human orthologue: 1050 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 180 nM
+    vs human orthologue: 90 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 320 nM
+    vs human orthologue: 150 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 190 nM
+    vs human orthologue: 88 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 220 nM
+    vs human orthologue: 100 nM
+    Selectivity: 0.5x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 75 nM
+    vs human orthologue: 26 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 210 nM
+    vs human orthologue: 70 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 330 nM
+    vs human orthologue: 110 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Dihydroorotate dehydrogenase (quinone), mitochondrial: 1000 nM
+    vs human orthologue: 330 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 96 nM
+    vs human orthologue: 30 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 290 nM
+    vs human orthologue: 90 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 692 nM
+    vs human orthologue: 211 nM
+    Selectivity: 0.3x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 9290 nM
+    vs human orthologue: 2190 nM
+    Selectivity: 0.2x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 3630 nM
+    vs human orthologue: 830 nM
+    Selectivity: 0.2x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 600 nM
+    vs human orthologue: 104 nM
+    Selectivity: 0.2x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 1072 nM
+    vs human orthologue: 143 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 219 nM
+    vs human orthologue: 29 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 310 nM
+    vs human orthologue: 38 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 268 nM
+    vs human orthologue: 24 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 8128 nM
+    vs human orthologue: 582 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  TUBASTATIN A
+    vs Histone deacetylase 8: 1479 nM
+    vs human orthologue: 96 nM
+    Selectivity: 0.1x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 1576 nM
+    vs human orthologue: 70 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 485 nM
+    vs human orthologue: 20 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  QUISINOSTAT
+    vs Histone deacetylase 8: 28 nM
+    vs human orthologue: 0 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  PANOBINOSTAT
+    vs Histone deacetylase 8: 450 nM
+    vs human orthologue: 5 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  SCRIPTAID
+    vs Histone deacetylase 8: 1770 nM
+    vs human orthologue: 15 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  nan
+    vs Histone deacetylase 8: 367 nM
+    vs human orthologue: 3 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  VORINOSTAT
+    vs Histone deacetylase 8: 590 nM
+    vs human orthologue: 1 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
+
+  TRICHOSTATIN
+    vs Histone deacetylase 8: 3620 nM
+    vs human orthologue: 1 nM
+    Selectivity: 0.0x (COUNTER-SELECTIVE)
