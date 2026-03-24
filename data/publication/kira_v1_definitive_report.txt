@@ -1,0 +1,98 @@
+======================================================================
+KIRA v1 — DEFINITIVE CANDIDATE REPORT
+Generated: 2026-03-21 02:23
+Target: Schistosoma mansoni drug repurposing
+======================================================================
+
+PIPELINE SUMMARY:
+  12 analytical scripts, 3 evidence pathways, 7 scoring signals,
+  ADMET filtering, cross-species selectivity analysis,
+  literature novelty screening, WHO EML and supply chain assessment.
+
+CORE FINDING:
+  90.4% of SmHDAC8 chemical matter is non-selective against
+  the human orthologue. SmDHODH emerges as the most tractable
+  target with 3 compounds showing >10x parasite selectivity.
+  Atovaquone (WHO EML, available in SSA, 6x SmDHODH selectivity)
+  is the highest-priority translational candidate.
+
+----------------------------------------------------------------------
+TRANSLATIONAL CANDIDATES (3 approved/clinical drugs)
+----------------------------------------------------------------------
+
+  PRAZIQUANTEL
+    Status: APPROVED
+    WHO Essential Medicines: YES (6.1 Antihelminthics)
+    Africa availability: widely_available
+    Notes: Donated by Merck through WHO. Available across SSA.
+    Deployment score: 0.4586
+
+  ATOVAQUONE
+    Status: APPROVED
+    Potency: IC50 = 430 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+    Selectivity: MODERATE 6.0x
+    WHO Essential Medicines: YES (6.5.3 Antimalarials (treatment))
+    Africa availability: available_limited
+    Notes: Available as Malarone in many African countries. Higher cost than artemisinin combinations. Used for malaria prophylaxis and treatment.
+    Deployment score: 0.4434
+
+  IDEBENONE
+    Status: APPROVED
+    Potency: IC50 = 1900 nM vs NAD-dependent protein deacetylase
+    Africa availability: not_available
+    Notes: Approved for Leber hereditary optic neuropathy in EU. Specialty drug, not in African formularies.
+    Deployment score: 0.2101
+
+----------------------------------------------------------------------
+TOP DISCOVERY CANDIDATES (10 shown)
+----------------------------------------------------------------------
+
+  1. CHEMBL155771
+     IC50: 23 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+     Selectivity: SELECTIVE (30.8x)
+
+  2. CHEMBL4855490
+     IC50: 100 nM vs Histone deacetylase 8
+     Selectivity: SELECTIVE (11.0x)
+
+  3. CHEMBL4452960
+     IC50: 78 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+     Selectivity: SELECTIVE (10.4x)
+
+  4. CHEMBL4474026
+     IC50: 227 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+     Selectivity: SELECTIVE (20.3x)
+
+  5. CHEMBL3322287
+     IC50: 10 nM vs Thioredoxin glutathione reductase
+     Selectivity: UNKNOWN — needs experimental verification
+
+  6. LAPACHOL
+     IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+     Selectivity: MODERATE (5.3x)
+
+  7. CHEMBL4540838
+     IC50: 19 nM vs Dihydroorotate dehydrogenase (quinone), mitochondrial
+     Selectivity: MODERATE (6.5x)
+
+  8. CHEMBL570345
+     IC50: 40 nM vs Thioredoxin glutathione reductase
+     Selectivity: UNKNOWN — needs experimental verification
+
+  9. CHEMBL3797442
+     IC50: 120 nM vs Histone deacetylase 8
+     Selectivity: MODERATE (4.6x)
+
+  10. CHEMBL1439384
+     IC50: 60 nM vs Thioredoxin glutathione reductase
+     Selectivity: UNKNOWN — needs experimental verification
+
+----------------------------------------------------------------------
+EXPERIMENTAL PRIORITIES
+----------------------------------------------------------------------
+  1. Whole-worm assay: CHEMBL155771, CHEMBL4452960 (selective SmDHODH)
+  2. Atovaquone vs adult S. mansoni (clinical formulation)
+  3. SmTGR inhibitor selectivity vs human TrxR1
+  4. Structural basis of CHEMBL4855490 SmHDAC8 selectivity
+
+======================================================================
