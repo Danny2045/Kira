@@ -33,7 +33,7 @@ WHO EML + Supply Chain           → African availability, cost tier, route of a
 |--------|:---:|:---:|:---:|:---:|
 | SmHDAC8 | 100 | 73 | 90.4% | 11.0x (1 compound) |
 | SmDHODH | 21 | 18 | 38.9% | 30.8x (3 compounds >10x) |
-| SmTGR | 43 | 0 | Unknown | Experimental gap |
+| SmTGR | 43 | 43 (docking) | 88% (docking) | ~1.3x (marginal) |
 | Sirtuin | 5 | 0 | Unknown | — |
 | SmVKR2 | 7 | 0 | Unknown | — |
 
@@ -52,7 +52,7 @@ WHO EML + Supply Chain           → African availability, cost tier, route of a
 
 ## How It Was Built
 
-13 scripts, each building on the last. The git history shows the complete progression from empty folder to selectivity finding.
+14 scripts, each building on the last. The git history shows the complete progression from empty folder to selectivity finding.
 
 | Script | What It Does |
 |--------|-------------|
@@ -69,6 +69,7 @@ WHO EML + Supply Chain           → African availability, cost tier, route of a
 | `11_selectivity_rerank.py` | Selectivity-adjusted re-ranking + definitive shortlist |
 | `12_publication_analysis.py` | Publication tables, per-target statistics, hard negatives |
 | `13_supply_chain_and_final.py` | WHO EML, African availability, deployment-adjusted scoring |
+| `14_docking_smtgr.py` | **Phase 2:** Molecular docking of SmTGR compounds against parasite and human structures |
 
 ## Project Structure
 
@@ -142,7 +143,7 @@ This is a prioritization tool, not a clinical recommendation engine.
 2. Selectivity ratios computed from ChEMBL data across different labs and assay conditions
 3. Only direct orthologue selectivity assessed; broader off-target pharmacology not evaluated
 4. Whole-organism dose-response data available for 6 compounds only
-5. No molecular docking or structural modeling performed
+5. Molecular docking performed for SmTGR only (rigid docking, non-equivalent binding sites); no docking for other data-desert targets
 6. AUROC 1.0 reflects easy discrimination task (known actives vs unrelated drugs)
 7. PubMed novelty screen uses exact string matching
 8. Supply chain data is manually curated (WHO EML 2023 edition)
@@ -152,12 +153,12 @@ This is a prioritization tool, not a clinical recommendation engine.
 1. **Experimental validation:** Test CHEMBL155771 and CHEMBL4452960 in *S. mansoni* whole-worm killing assay
 2. **Atovaquone validation:** Test against adult *S. mansoni* at clinically relevant concentrations
 3. **SmTGR selectivity:** Test top SmTGR inhibitors against human thioredoxin reductase 1
-4. **Structural modeling:** AlphaFold 3 docking against data-desert targets
+4. **SmTGR fusion interface:** Target the unique TrxR-GR domain interface (not examined in current docking)
 5. **Benchmark hardening:** Add structurally similar experimentally confirmed inactive compounds
 
 ## Context
 
-Built by Daniel Ngabonziza in Kigali, Rwanda. The pipeline addresses diseases that pharmaceutical markets systematically underserve. The supply chain layer encodes deployment constraints specific to East African clinical settings — knowledge that cannot be replicated from public databases alone.
+Built by Daniel Ngabonziza in Nashville, TN. The pipeline addresses diseases that pharmaceutical markets systematically underserve. The supply chain layer encodes deployment constraints specific to East African clinical settings — knowledge that cannot be replicated from public databases alone.
 
 ## License
 
