@@ -1,0 +1,10 @@
+disease,target,n_compounds,n_with_sel,pct_nonsel,median_ratio,n_selective,method
+Schistosomiasis,Dihydroorotate dehydrogenase (,21,18,38.9,4.7,3.0,Experimental
+Schistosomiasis,Histone deacetylase 8,100,73,90.4,1.0,1.0,Experimental
+Schistosomiasis,SmTGR (docking),43,43,88.4,,0.0,Docking
+Trypanosomiasis,Cathepsin B-like cysteine prot,60,36,94.4,0.8,0.0,Experimental
+Trypanosomiasis,Class 1 phosphodiesterase PDEB,157,68,61.8,1.6,7.0,Experimental
+Leishmaniasis,Bifunctional dihydrofolate red,120,69,43.5,3.6,29.0,Experimental
+Leishmaniasis,Pteridine reductase 1,133,45,24.4,68.2,34.0,Experimental
+Leishmaniasis,Class I phosphodiesterase PDEB,2,2,100.0,0.0,0.0,Experimental
+Leishmaniasis,Trypanothione reductase,91,0,,,,Unique enzyme

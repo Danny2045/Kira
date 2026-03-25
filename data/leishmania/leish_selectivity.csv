@@ -1,0 +1,117 @@
+molecule_chembl_id,parasite_ic50,human_ic50,selectivity_ratio,parasite_target,human_target,disease,selectivity_class
+CHEMBL1232399,620.0,10000.0,16.129032258064516,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL1232702,260.0,800.0,3.076923076923077,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL1650287,139000.0,300000.0,2.158273381294964,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL20466,39.81,134.9,3.3885958301934185,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL20587,20.89,218.78,10.472953566299665,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL20975,223.87,42.66,0.1905570196989324,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL21254,72.44,302.0,4.168967421314191,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL2178599,1110.0,15430.0,13.9009009009009,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL2178600,1360.0,60000.0,44.11764705882353,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL2178602,1210.0,4330.0,3.5785123966942147,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL2178604,600.0,590.0,0.9833333333333333,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL22,120.0,0.006,5e-05,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL26006,1510.0,4400.0,2.9139072847682117,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL281618,3090.3,776.25,0.25118920493156005,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL34259,0.1288,0.00034,0.002639751552795031,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL36,5623.0,8.0,0.0014227280810955006,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL426,30.0,30.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL432942,1790000.0,1040000.0,0.5810055865921788,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL4456834,7.59,490.0,64.55862977602108,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4464707,36.3,1096.0,30.19283746556474,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4544467,7.41,214.0,28.879892037786774,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4553229,501.0,12500.0,24.9500998003992,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4743204,380.0,840.0,2.210526315789474,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL4745475,100.0,1630.0,16.3,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4748139,210.0,10.0,0.047619047619047616,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL4748158,190.0,530.0,2.789473684210526,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL4752301,130.0,10980.0,84.46153846153847,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4759800,810.0,40.0,0.04938271604938271,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL4761589,180.0,1830.0,10.166666666666666,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4763597,40000.0,56000.0,1.4,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL4776197,17000.0,54000.0,3.176470588235294,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL4779765,140.0,12260.0,87.57142857142857,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL4783402,75000.0,24000.0,0.32,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL4783671,530.0,90.0,0.16981132075471697,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL4791810,250.0,810.0,3.24,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL5170968,32100.0,59000.0,1.838006230529595,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5171609,760.0,15000.0,19.736842105263158,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5173732,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5175012,3260.0,6020.0,1.8466257668711656,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5175397,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5180552,460.0,4300.0,9.347826086956522,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL5180685,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5182125,9360.0,89000.0,9.508547008547009,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL5182291,1210.0,10200.0,8.429752066115702,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL5183748,850.0,35000.0,41.1764705882353,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5184646,68000.0,100000.0,1.4705882352941178,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5184936,910.0,73000.0,80.21978021978022,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5188304,1140.0,35700.0,31.31578947368421,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5193564,710.0,78000.0,109.85915492957747,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5193762,23400.0,100000.0,4.273504273504273,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,MODERATE
+CHEMBL5197107,2050.0,29900.0,14.585365853658537,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5198855,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5199171,180.0,13000.0,72.22222222222223,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5200612,890.0,100000.0,112.35955056179775,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5201183,230.0,3400.0,14.782608695652174,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5201599,82300.0,100000.0,1.2150668286755772,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5204239,720.0,40300.0,55.97222222222222,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5205037,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5205559,150.0,9000.0,60.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5206994,130.0,12000.0,92.3076923076923,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5208403,100000.0,100000.0,1.0,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,POOR
+CHEMBL5759188,28.8,955.0,33.15972222222222,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5776717,42.7,1148.0,26.885245901639344,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5786336,7.94,6166.0,776.5743073047859,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL5820611,52.5,1585.0,30.19047619047619,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL6054471,3.72,129.0,34.677419354838705,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,SELECTIVE
+CHEMBL6742,12589.25,1659.59,0.13182596262684432,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL6948,2187.76,130.0,0.05942150875781621,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL7130,1202.26,93.33,0.07762879909503768,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL1232399,100.0,10000.0,100.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL1232702,37.0,800.0,21.62162162162162,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL1650287,2000.0,300000.0,150.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2178599,390.0,15430.0,39.56410256410256,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2178600,210.0,60000.0,285.7142857142857,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2178602,30.0,4330.0,144.33333333333334,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2178603,60.0,4680.0,78.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2178604,4170.0,590.0,0.14148681055155876,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL26006,10.0,4400.0,440.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL34259,39.0,0.00034,8.717948717948719e-06,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL36,13600.0,8.0,0.000588235294117647,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL426,2950.0,30.0,0.010169491525423728,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL432942,16000.0,1040000.0,65.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5170968,1690.0,59000.0,34.9112426035503,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5171609,220.0,15000.0,68.18181818181819,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5173732,1570.0,100000.0,63.69426751592356,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5175012,30.0,6020.0,200.66666666666666,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5175397,330.0,100000.0,303.030303030303,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5180552,13300.0,4300.0,0.3233082706766917,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5180685,170.0,100000.0,588.2352941176471,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5182125,60.0,89000.0,1483.3333333333333,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5183748,1140.0,35000.0,30.70175438596491,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5184646,450.0,100000.0,222.22222222222223,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5184936,20.0,73000.0,3650.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5188304,170.0,35700.0,210.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5193564,320.0,78000.0,243.75,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5193762,150.0,100000.0,666.6666666666666,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5197107,140.0,29900.0,213.57142857142858,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5198855,5500.0,100000.0,18.181818181818183,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5199171,100.0,13000.0,130.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5200612,170.0,100000.0,588.2352941176471,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5201183,50.0,3400.0,68.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5201599,980.0,100000.0,102.04081632653062,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5204239,30.0,40300.0,1343.3333333333333,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5205037,260.0,100000.0,384.61538461538464,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5205559,410.0,9000.0,21.951219512195124,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5206994,450.0,12000.0,26.666666666666668,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5208403,1480.0,100000.0,67.56756756756756,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL5393901,109647819.61,398107.17,0.0036307805427960574,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5418602,9772372.21,758577.58,0.07762471216801922,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5424202,16982436.52,398107.17,0.023442288126980734,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5424267,3890451.45,549540.87,0.14125375346863664,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5430345,91201083.94,9549925.86,0.10471285479767731,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL5434898,165958690.74,6606934.48,0.03981071705579304,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL744,4000.0,312000.0,78.0,Pteridine reductase 1,DHFR (closest functional equivalent),Leishmaniasis,SELECTIVE
+CHEMBL2171452,130.0,4.6,0.03538461538461538,Class I phosphodiesterase PDEB1,PDE4B,Leishmaniasis,COUNTER-SELECTIVE
+CHEMBL275084,580000.0,14310.0,0.024672413793103448,Class I phosphodiesterase PDEB1,PDE4B,Leishmaniasis,COUNTER-SELECTIVE
