@@ -1,0 +1,7 @@
+disease,parasite_target,human_target,parasite_uniprot,human_uniprot,parasite_length,human_length,length_ratio,kmer3_jaccard,esm2_cosine_similarity,esm2_euclidean_distance,esm2_l1_distance,embedding_diff_norm
+Schistosomiasis,Histone deacetylase 8,HDAC8,C1LV40,Q9BY41,184,377,0.4880636604774536,0.0321,0.6518,5.09,117.41,5.092
+Schistosomiasis,"Dihydroorotate dehydrogenase (quinone), mitochondrial",DHODH,C1L5Z2,Q02127,412,395,1.0430379746835443,0.0326,0.7868,6.09,104.96,6.0875
+Trypanosomiasis,Cathepsin B-like cysteine protease,Cathepsin B,Q8WQ44,P07858,98,339,0.2890855457227139,0.0027,0.8325,5.08,128.67,5.0759
+Trypanosomiasis,Class 1 phosphodiesterase PDEB1,PDE4B,Q57UX2,Q07343,412,736,0.5597826086956522,0.0481,0.9609,2.44,62.38,2.4395
+Leishmaniasis,Pteridine reductase 1,DHFR,Q01782,P00374,288,187,1.5401069518716577,0.0113,0.7966,4.17,99.25,4.1742
+Leishmaniasis,Bifunctional dihydrofolate reductase-thymidylate synthase,DHFR,P07382,P00374,520,187,2.7807486631016043,0.0326,0.807,4.75,90.62,4.7514

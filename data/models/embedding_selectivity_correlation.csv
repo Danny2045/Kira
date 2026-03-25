@@ -1,0 +1,7 @@
+target,disease,n_compounds,pct_selective,median_ratio,kmer3_jaccard,esm2_cosine,esm2_distance
+Histone deacetylase 8,Schistosomiasis,73,1.4,1.0,0.0321,0.6518,5.09
+Dihydroorotate dehydrogenase (quino,Schistosomiasis,18,16.7,4.69579913085466,0.0326,0.7868,6.09
+Cathepsin B-like cysteine protease,Trypanosomiasis,36,0.0,0.7866864742501415,0.0027,0.8325,5.08
+Class 1 phosphodiesterase PDEB1,Trypanosomiasis,68,10.3,1.5848956710070738,0.0481,0.9609,2.44
+Pteridine reductase 1,Leishmaniasis,45,75.6,68.18181818181819,0.0113,0.7966,4.17
+Bifunctional dihydrofolate reductas,Leishmaniasis,69,42.0,3.5785123966942147,0.0326,0.807,4.75
