@@ -1,0 +1,9 @@
+disease,target,n_compounds,n_with_selectivity,pct_non_selective,median_ratio,best_ratio,n_selective,method,unique_enzyme
+Schistosomiasis,Dihydroorotate dehydrogenase (quino,21,18,38.9,4.7,30.8,3.0,Experimental,False
+Schistosomiasis,Histone deacetylase 8,100,73,90.4,1.0,11.0,1.0,Experimental,False
+Schistosomiasis,SmTGR (docking),43,43,88.4,,,0.0,Docking,True
+Trypanosomiasis,Cathepsin B-like cysteine protease,60,36,94.4,0.8,4.1,0.0,Experimental,False
+Trypanosomiasis,Class 1 phosphodiesterase PDEB1,157,68,61.8,1.6,20.0,7.0,Experimental,False
+Trypanosomiasis,Trypanothione reductase,116,0,,,,,Unique enzyme,True
+Trypanosomiasis,"Alternative oxidase, mitochondrial",43,0,,,,,Unique enzyme,True
+Trypanosomiasis,"RNA-editing ligase 1, mitochondrial",38,0,,,,,Unique enzyme,True
