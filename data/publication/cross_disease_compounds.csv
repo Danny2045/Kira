@@ -1,0 +1,2 @@
+molecule_chembl_id,smiles,MW,QED,schisto_best_ic50,schisto_targets,schisto_sel_class,schisto_sel_ratio,tryp_best_ic50,tryp_targets,tryp_sel_class,tryp_sel_ratio,dual_active,dual_disease_class
+CHEMBL15193,CC(C)=CCC1=C(O)C(=O)c2ccccc2C1=O,242.3,0.81,19.0,"Dihydroorotate dehydrogenase (quinone), mitochondrial",MODERATE,5.2631578947368425,58000.0,Rhodesain,,,True,PARTIAL (potent in one disease only)

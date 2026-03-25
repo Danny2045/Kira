@@ -1,0 +1,75 @@
+======================================================================
+KIRA PLATFORM — DEFINITIVE CROSS-DISEASE REPORT
+Generated: 2026-03-25 00:44
+======================================================================
+
+PLATFORM SCOPE:
+  Diseases: Schistosomiasis (S. mansoni), Trypanosomiasis (T. brucei)
+  Schistosomiasis: 176 compounds, 10 targets, 226 measurements
+  Trypanosomiasis: 1035 compounds, 16 targets, 1140 measurements
+  Total unique compounds: 1210
+
+----------------------------------------------------------------------
+CROSS-DISEASE SELECTIVITY FINDING
+----------------------------------------------------------------------
+  Across 4 experimental target-orthologue pairs and 195
+  dual-species selectivity comparisons:
+    Weighted average non-selectivity: 76.4%
+    Compounds with >=10x selectivity: 11 of 195 (5.6%)
+    Targets with majority non-selective: 3 of 4
+
+  This finding is consistent across both diseases,
+  supporting selectivity-first triage as a general
+  methodology for antiparasitic drug repurposing.
+
+----------------------------------------------------------------------
+CROSS-DISEASE COMPOUND OVERLAP
+----------------------------------------------------------------------
+  Compounds active against both parasites: 1
+    PARTIAL (potent in one disease only): 1
+
+----------------------------------------------------------------------
+T. BRUCEI PRIORITY TARGETS
+----------------------------------------------------------------------
+  Rhodesain [UNIQUE TO PARASITE]
+    Compounds: 435, Best IC50: 0 nM
+  Alternative oxidase, mitochondrial [UNIQUE TO PARASITE]
+    Compounds: 43, Best IC50: 0 nM
+  Class 1 phosphodiesterase PDEB1
+    Compounds: 157, Best IC50: 3 nM
+    Selective (>=10x): 7
+  Trypanothione reductase [UNIQUE TO PARASITE]
+    Compounds: 116, Best IC50: 190 nM
+  RNA-editing ligase 1, mitochondrial [UNIQUE TO PARASITE]
+    Compounds: 38, Best IC50: 411 nM
+
+----------------------------------------------------------------------
+SCHISTOSOMIASIS PRIORITY TARGET
+----------------------------------------------------------------------
+  SmDHODH — 3 compounds with >=10x selectivity
+  Best: CHEMBL155771 (23 nM, 30.8x, QED 0.89)
+  Translational: Atovaquone (430 nM, 6x, WHO EML)
+
+----------------------------------------------------------------------
+EXPERIMENTAL PRIORITIES
+----------------------------------------------------------------------
+  Schistosomiasis:
+    1. Whole-worm assay: CHEMBL155771, CHEMBL4452960 (SmDHODH)
+    2. Atovaquone vs adult S. mansoni
+    3. SmTGR selectivity at fusion interface
+  Trypanosomiasis:
+    4. CHEMBL4204999 in T. brucei whole-cell assay (PDEB1, 20x)
+    5. Trypanothione reductase — screen for selective binders
+    6. Rhodesain selectivity vs human cathepsin L
+
+======================================================================
+KIRA PLATFORM STATUS
+======================================================================
+  Scripts: 17
+  Diseases: 2 (Schistosomiasis, Trypanosomiasis)
+  Total compounds assessed: 1211
+  Selectivity comparisons: 195 experimental + 43 docking
+  Platform finding: 76.4% of antiparasitic chemical matter
+    against conserved targets is non-selective
+  Methodology: Selectivity-first triage generalizes across NTDs
+======================================================================

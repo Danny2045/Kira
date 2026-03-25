@@ -1,0 +1,17 @@
+target,n_compounds,n_measurements,best_ic50_nM,median_ic50_nM,unique_to_parasite,n_with_selectivity,n_selective_10x,pct_non_selective,target_score
+Rhodesain,435,488,0.0006,400.0,True,0,0,,1.417
+"Alternative oxidase, mitochondrial",43,45,0.13,720.0,True,0,0,,1.177
+Class 1 phosphodiesterase PDEB1,157,167,3.162,500.0,False,68,7,61.8,1.02
+Trypanothione reductase,116,128,190.0,2950.0,True,0,0,,0.976
+"RNA-editing ligase 1, mitochondrial",38,38,410.76,22312.5,True,0,0,,0.91
+Metacaspase-2,10,10,600.0,2050.0,True,0,0,,0.85
+ATP-dependent 6-phosphofructokinase,49,52,15.0,5800.0,False,0,0,,0.727
+Inosine-adenosine-guanosine-nucleoside hydrolase,4,4,3.0,3600.0,False,0,0,,0.689
+Adenosine transporter 1,34,34,135.0,8350.0,False,0,0,,0.642
+Vacuolar-type proton translocating pyrophosphatase 1,81,81,2100.0,42700.0,False,0,0,,0.584
+UDP-galactose 4-epimerase,14,14,900.0,3700.0,False,0,0,,0.549
+"Fructose-bisphosphate aldolase, glycosomal",10,10,2000.0,27015.0,False,0,0,,0.51
+Glucose-6-phosphate 1-dehydrogenase,2,4,460.0,795.0,False,0,0,,0.5
+Hypoxanthine-guanine phosphoribosyltransferase,4,4,23200.0,88300.0,False,0,0,,0.398
+6-phosphogluconolactonase,1,1,10000.0,10000.0,False,0,0,,0.375
+Cathepsin B-like cysteine protease,60,60,270.0,11500.0,False,36,0,94.4,0.34
