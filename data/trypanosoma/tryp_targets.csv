@@ -1,0 +1,24 @@
+organism,pref_name,target_chembl_id,target_type
+Trypanosoma brucei,Adenosine transporter 1,CHEMBL2601,SINGLE PROTEIN
+Trypanosoma brucei,Vacuolar-type proton translocating pyrophosphatase 1,CHEMBL4386,SINGLE PROTEIN
+Trypanosoma brucei,ATP-dependent 6-phosphofructokinase,CHEMBL5686,SINGLE PROTEIN
+Trypanosoma brucei,Glucose-6-phosphate 1-dehydrogenase,CHEMBL5672,SINGLE PROTEIN
+Trypanosoma brucei,Cathepsin B-like cysteine protease,CHEMBL5832,SINGLE PROTEIN
+Trypanosoma brucei,Metacaspase-3,CHEMBL1075156,SINGLE PROTEIN
+Trypanosoma brucei,Metacaspase-2,CHEMBL1075193,SINGLE PROTEIN
+Trypanosoma brucei,UDP-galactose 4-epimerase,CHEMBL1169595,SINGLE PROTEIN
+Trypanosoma brucei,Class 1 phosphodiesterase PDEB1,CHEMBL2010636,SINGLE PROTEIN
+Trypanosoma brucei,6-phosphogluconolactonase,CHEMBL3337328,SINGLE PROTEIN
+Trypanosoma brucei,Tryparedoxin peroxidase,CHEMBL3758065,SINGLE PROTEIN
+Trypanosoma brucei brucei,Trypanothione reductase,CHEMBL1837,SINGLE PROTEIN
+Trypanosoma brucei brucei,Hypoxanthine-guanine phosphoribosyltransferase,CHEMBL5069,SINGLE PROTEIN
+Trypanosoma brucei brucei,Nucleoside transporter 2,CHEMBL3697,SINGLE PROTEIN
+Trypanosoma brucei brucei,"Fructose-bisphosphate aldolase, glycosomal",CHEMBL4916,SINGLE PROTEIN
+Trypanosoma brucei brucei,"Phosphoglycerate kinase, glycosomal",CHEMBL1741167,SINGLE PROTEIN
+Trypanosoma brucei brucei,Dolichol-phosphate-mannose synthase,CHEMBL2189141,SINGLE PROTEIN
+Trypanosoma brucei brucei,Trypanothione synthetase,CHEMBL3286069,SINGLE PROTEIN
+Trypanosoma brucei brucei,Inosine-adenosine-guanosine-nucleoside hydrolase,CHEMBL3826861,SINGLE PROTEIN
+Trypanosoma brucei brucei,"RNA-editing ligase 1, mitochondrial",CHEMBL4105928,SINGLE PROTEIN
+Trypanosoma brucei brucei,S-adenosylmethionine decarboxylase proenzyme,CHEMBL4105987,SINGLE PROTEIN
+Trypanosoma brucei brucei,"Alternative oxidase, mitochondrial",CHEMBL4295594,SINGLE PROTEIN
+Trypanosoma brucei rhodesiense,Rhodesain,CHEMBL4188,SINGLE PROTEIN

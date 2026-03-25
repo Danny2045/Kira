@@ -1,0 +1,1141 @@
+assay_type,canonical_smiles,molecule_chembl_id,standard_type,standard_units,standard_value,target_chembl_id,type,units,value,target_name,target_organism
+B,CC(=O)NC(C(=O)Nc1ccc(N)nc1)C(C)(C)SN=O,CHEMBL27352,Ki,nM,404000.0,CHEMBL2601,Ki,uM,404.0,Adenosine transporter 1,Trypanosoma brucei
+B,CC(=O)NC(C(=O)NC[C@H]1OC(n2cnc3c(N)ncnc32)[C@H](O)[C@@H]1O)C(C)(C)SN=O,CHEMBL605462,Ki,nM,3470.0,CHEMBL2601,Ki,uM,3.47,Adenosine transporter 1,Trypanosoma brucei
+B,CC(=O)NC(C(=O)NCCn1cnc2c(N)ncnc21)C(C)(C)SN=O,CHEMBL287449,Ki,nM,620.0,CHEMBL2601,Ki,uM,0.62,Adenosine transporter 1,Trypanosoma brucei
+B,Nc1nc(N)c2c(no[n+]2[O-])n1,CHEMBL26029,Ki,nM,117000.0,CHEMBL2601,Ki,uM,117.0,Adenosine transporter 1,Trypanosoma brucei
+B,Nc1ncnc2c1ncn2[C@@H]1O[C@H](CO[N+](=O)[O-])[C@@H](O)[C@H]1O,CHEMBL2205239,Ki,nM,12300.0,CHEMBL2601,Ki,uM,12.3,Adenosine transporter 1,Trypanosoma brucei
+B,NCCS[As](SCCN)c1ccc(Nc2nc(N)nc(N)n2)cc1,CHEMBL1650564,Ki,nM,22900.0,CHEMBL2601,Ki,uM,22.9,Adenosine transporter 1,Trypanosoma brucei
+B,Nc1nc(N)nc(Nc2ccc(CCO[N+](=O)[O-])cc2)n1,CHEMBL29507,Ki,nM,200.0,CHEMBL2601,Ki,uM,0.2,Adenosine transporter 1,Trypanosoma brucei
+B,CC(=O)NC(C(=O)Nc1ccc(Nc2nc(N)nc(N)n2)cc1)C(C)(C)SN=O,CHEMBL27357,Ki,nM,580.0,CHEMBL2601,Ki,uM,0.58,Adenosine transporter 1,Trypanosoma brucei
+B,Nc1ncnc2c1ncn2CCO[N+](=O)[O-],CHEMBL26220,Ki,nM,1900.0,CHEMBL2601,Ki,uM,1.9,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(NCCCNCCCCCCCCCCCCNCCCNc2nc(N)nc(N)n2)n1,CHEMBL553117,Ki,nM,500.0,CHEMBL2601,Ki,uM,0.5,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(NCCCNCCCCCCCCCCCCNCCCNc2nc(N(C)C)nc(N(C)C)n2)nc(N(C)C)n1.Cl,CHEMBL544335,Ki,nM,2500.0,CHEMBL2601,Ki,uM,2.5,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(N)nc(NCCCNCCCCCCCCCNCCCNc2nc(N)nc(NC)n2)n1.Cl,CHEMBL542204,Ki,nM,750.0,CHEMBL2601,Ki,uM,0.75,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(NCCCNCCCCCCCCCNCCCNc2nc(N(C)C)nc(N(C)C)n2)nc(N(C)C)n1.Cl,CHEMBL544116,Ki,nM,29000.0,CHEMBL2601,Ki,uM,29.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(NCCCNC2CCCCC2NCCCNc2nc(N)nc(N)n2)n1,CHEMBL552613,Ki,nM,55000.0,CHEMBL2601,Ki,uM,55.0,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(N)nc(NCCCNCCCCCCCCCCCCNCCCN)n1.Cl,CHEMBL542932,Ki,nM,410.0,CHEMBL2601,Ki,uM,0.41,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(NC)nc(NCCCNCCCCCCCCCCCCNCCCNc2nc(NC)nc(NC)n2)n1.Cl,CHEMBL542698,Ki,nM,3200.0,CHEMBL2601,Ki,uM,3.2,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(CN(CCCNCCCCCCCCCCCCNCCCN(Cc2nc(NC)nc(NC)n2)Cc2nc(NC)nc(NC)n2)Cc2nc(NC)nc(NC)n2)nc(NC)n1.Cl,CHEMBL544580,Ki,nM,2400.0,CHEMBL2601,Ki,uM,2.4,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(N)nc(NCCCNCCCCCCCCCCCCNCCCN)n1.Cl,CHEMBL541322,Ki,nM,1000.0,CHEMBL2601,Ki,uM,1.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(NCCCNCCCCNCCCNc2nc(N)nc(N)n2)n1,CHEMBL543639,Ki,nM,72000.0,CHEMBL2601,Ki,uM,72.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(NCCCNCCCCCCCCCNCCCNc2nc(N)nc(N)n2)n1,CHEMBL543641,Ki,nM,19000.0,CHEMBL2601,Ki,uM,19.0,Adenosine transporter 1,Trypanosoma brucei
+B,CC(CNCCCNc1nc(N)nc(N)n1)NCCCNc1nc(N)nc(N)n1.Cl,CHEMBL554860,Ki,nM,163000.0,CHEMBL2601,Ki,uM,163.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(CN(CCCNCCCCCCCCCNCCCN(Cc2nc(N)nc(N)n2)Cc2nc(N)nc(N)n2)Cc2nc(N)nc(N)n2)n1,CHEMBL543884,Ki,nM,82000.0,CHEMBL2601,Ki,uM,82.0,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(NC)nc(NCCCNCCCCCCCCCNCCCN)n1.Cl,CHEMBL554895,Ki,nM,17000.0,CHEMBL2601,Ki,uM,17.0,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(N)nc(NCCCNCCCCCCCCCCCCNCCCNc2nc(N)nc(NC)n2)n1.Cl,CHEMBL542936,Ki,nM,135.0,CHEMBL2601,Ki,uM,0.135,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(NCCCNCCCCCCCCCCCCNCCCN)nc(N(C)C)n1.Cl,CHEMBL545281,Ki,nM,600.0,CHEMBL2601,Ki,uM,0.6,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(NC)nc(NCCCNCCCCCCCCCCCCNCCCN)n1.Cl,CHEMBL538778,Ki,nM,25000.0,CHEMBL2601,Ki,uM,25.0,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(N)nc(CN(CCCNCCCCCCCCCNCCCN(Cc2nc(N)nc(N(C)C)n2)Cc2nc(N)nc(N(C)C)n2)Cc2nc(N)nc(N(C)C)n2)n1.Cl,CHEMBL536324,Ki,nM,17000.0,CHEMBL2601,Ki,uM,17.0,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(CN(CCCNCCCCCCCCCNCCCN(Cc2nc(NC)nc(NC)n2)Cc2nc(NC)nc(NC)n2)Cc2nc(NC)nc(NC)n2)nc(NC)n1.Cl,CHEMBL553511,Ki,nM,30000.0,CHEMBL2601,Ki,uM,30.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(CN(CCCNCCCCCCCCCCCCNCCCN(Cc2nc(N)nc(N)n2)Cc2nc(N)nc(N)n2)Cc2nc(N)nc(N)n2)n1,CHEMBL555240,Ki,nM,6700.0,CHEMBL2601,Ki,uM,6.7,Adenosine transporter 1,Trypanosoma brucei
+B,CNc1nc(NC)nc(NCCCNCCCCCCCCCNCCCNc2nc(NC)nc(NC)n2)n1.Cl,CHEMBL542208,Ki,nM,14000.0,CHEMBL2601,Ki,uM,14.0,Adenosine transporter 1,Trypanosoma brucei
+B,Cl.Nc1nc(N)nc(NCCCNC2CCC(NCCCNc3nc(N)nc(N)n3)CC2)n1,CHEMBL538771,Ki,nM,125000.0,CHEMBL2601,Ki,uM,125.0,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(N)nc(NCCCNCCCCCCCCCNCCCNc2nc(N)nc(N(C)C)n2)n1.Cl,CHEMBL539797,Ki,nM,10000.0,CHEMBL2601,Ki,uM,10.0,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(N)nc(NCCCNCCCCCCCCCCCCNCCCNc2nc(N)nc(N(C)C)n2)n1.Cl,CHEMBL544581,Ki,nM,240.0,CHEMBL2601,Ki,uM,0.24,Adenosine transporter 1,Trypanosoma brucei
+B,CN(C)c1nc(N)nc(CN(CCCNCCCCCCCCCCCCNCCCN(Cc2nc(N)nc(N(C)C)n2)Cc2nc(N)nc(N(C)C)n2)Cc2nc(N)nc(N(C)C)n2)n1.Cl,CHEMBL541581,Ki,nM,4600.0,CHEMBL2601,Ki,uM,4.6,Adenosine transporter 1,Trypanosoma brucei
+B,Nc1ccccc1CC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL414849,IC50,nM,2100.0,CHEMBL4386,IC50,uM,2.1,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCc1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL54925,IC50,nM,2400.0,CHEMBL4386,IC50,uM,2.4,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(Br)c1)P(=O)(O)O,CHEMBL370662,IC50,nM,3800.0,CHEMBL4386,IC50,uM,3.8,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1ccc(Cl)cc1Cl)P(=O)(O)O,CHEMBL191613,IC50,nM,4300.0,CHEMBL4386,IC50,uM,4.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL55371,IC50,nM,4300.0,CHEMBL4386,IC50,uM,4.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(I)c1)P(=O)(O)O,CHEMBL102478,IC50,nM,5500.0,CHEMBL4386,IC50,uM,5.5,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(-c2cc(F)cc(F)c2)c1)P(=O)(O)O,CHEMBL196254,IC50,nM,6200.0,CHEMBL4386,IC50,uM,6.2,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=[N+]([O-])c1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL450938,IC50,nM,6500.0,CHEMBL4386,IC50,uM,6.5,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(Cl)c1)P(=O)(O)O,CHEMBL195034,IC50,nM,7500.0,CHEMBL4386,IC50,uM,7.5,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(CC12CC3CC(CC(C3)C1)C2)P(=O)(O)O,CHEMBL199206,IC50,nM,8000.0,CHEMBL4386,IC50,uM,8.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(Br)c1)P(=O)(O)O,CHEMBL371456,IC50,nM,9000.0,CHEMBL4386,IC50,uM,9.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,COCc1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL198409,IC50,nM,9700.0,CHEMBL4386,IC50,uM,9.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CC(C)c1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL364728,IC50,nM,9700.0,CHEMBL4386,IC50,uM,9.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1ccc2c(c1)CCC2)P(=O)(O)O,CHEMBL55889,IC50,nM,9700.0,CHEMBL4386,IC50,uM,9.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CN(C)c1ccccc1NC(P(=O)(O)O)P(=O)(O)O,CHEMBL198826,IC50,nM,10000.0,CHEMBL4386,IC50,uM,10.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(CO)c1)P(=O)(O)O,CHEMBL443750,IC50,nM,10200.0,CHEMBL4386,IC50,uM,10.2,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL299988,IC50,nM,10300.0,CHEMBL4386,IC50,uM,10.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc2ccccc12)P(=O)(O)O,CHEMBL192881,IC50,nM,11300.0,CHEMBL4386,IC50,uM,11.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(F)c1)P(=O)(O)O,CHEMBL198126,IC50,nM,11300.0,CHEMBL4386,IC50,uM,11.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCc1ccc(NC(P(=O)(O)O)P(=O)(O)O)cc1,CHEMBL197836,IC50,nM,12300.0,CHEMBL4386,IC50,uM,12.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL299491,IC50,nM,12700.0,CHEMBL4386,IC50,uM,12.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CC(C)(C)c1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL333503,IC50,nM,13300.0,CHEMBL4386,IC50,uM,13.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(c1ccc(-c2ccccc2)cc1)P(=O)(O)O,CHEMBL198380,IC50,nM,14700.0,CHEMBL4386,IC50,uM,14.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CC(C)(C)c1cc(NC(P(=O)(O)O)P(=O)(O)O)cc(C(C)(C)C)c1,CHEMBL300755,IC50,nM,16300.0,CHEMBL4386,IC50,uM,16.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=[N+]([O-])c1cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL125188,IC50,nM,16700.0,CHEMBL4386,IC50,uM,16.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(C(F)(F)F)c1)P(=O)(O)O,CHEMBL196631,IC50,nM,17300.0,CHEMBL4386,IC50,uM,17.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,COc1cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL196554,IC50,nM,18700.0,CHEMBL4386,IC50,uM,18.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Cc1ccc(NC(P(=O)(O)O)P(=O)(O)O)cc1-c1ccccc1,CHEMBL370330,IC50,nM,19000.0,CHEMBL4386,IC50,uM,19.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL52761,IC50,nM,21500.0,CHEMBL4386,IC50,uM,21.5,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(-c2ccc(F)c(F)c2)c1)P(=O)(O)O,CHEMBL194800,IC50,nM,24300.0,CHEMBL4386,IC50,uM,24.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2ccc(F)cc2)c1)P(=O)(O)O,CHEMBL194801,IC50,nM,25000.0,CHEMBL4386,IC50,uM,25.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Cc1cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL127588,IC50,nM,25300.0,CHEMBL4386,IC50,uM,25.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CC(C)c1cccc(C(C)C)c1NC(P(=O)(O)O)P(=O)(O)O,CHEMBL199012,IC50,nM,25300.0,CHEMBL4386,IC50,uM,25.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1ccc(Cc2ccccc2)cc1)P(=O)(O)O,CHEMBL198013,IC50,nM,28300.0,CHEMBL4386,IC50,uM,28.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(-c2ccc(F)cc2F)c1)P(=O)(O)O,CHEMBL198439,IC50,nM,28700.0,CHEMBL4386,IC50,uM,28.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(CNc1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL381465,IC50,nM,29700.0,CHEMBL4386,IC50,uM,29.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(c1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL196676,IC50,nM,31000.0,CHEMBL4386,IC50,uM,31.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(C[n+]1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL196726,IC50,nM,35300.0,CHEMBL4386,IC50,uM,35.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCn1c2ccccc2c2ccc(NC(P(=O)(O)O)P(=O)(O)O)cc21,CHEMBL431139,IC50,nM,38000.0,CHEMBL4386,IC50,uM,38.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCOc1ccc(NC(P(=O)(O)O)P(=O)(O)O)cc1,CHEMBL434978,IC50,nM,39700.0,CHEMBL4386,IC50,uM,39.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,C[C@@H](NC(P(=O)(O)O)P(=O)(O)O)c1cccc2ccccc12,CHEMBL382754,IC50,nM,42700.0,CHEMBL4386,IC50,uM,42.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCNC(P(=O)(O)O)P(=O)(O)O,CHEMBL55608,IC50,nM,43300.0,CHEMBL4386,IC50,uM,43.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(NC1CCCCCC1)P(=O)(O)O,CHEMBL53950,IC50,nM,44300.0,CHEMBL4386,IC50,uM,44.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CN(C)Cc1cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL199254,IC50,nM,44700.0,CHEMBL4386,IC50,uM,44.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1cccc(Cc2ccccc2)c1)P(=O)(O)O,CHEMBL192793,IC50,nM,46700.0,CHEMBL4386,IC50,uM,46.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCNC(P(=O)(O)O)P(=O)(O)O,CHEMBL299717,IC50,nM,47700.0,CHEMBL4386,IC50,uM,47.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCCCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL110971,IC50,nM,47700.0,CHEMBL4386,IC50,uM,47.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(CNC12CC3CC(CC(C3)C1)C2)P(=O)(O)O,CHEMBL371673,IC50,nM,48000.0,CHEMBL4386,IC50,uM,48.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,C[C@H](NC(P(=O)(O)O)P(=O)(O)O)c1cccc2ccccc12,CHEMBL197935,IC50,nM,49700.0,CHEMBL4386,IC50,uM,49.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Cc1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL371264,IC50,nM,52300.0,CHEMBL4386,IC50,uM,52.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2ccc(F)c(F)c2)c1)P(=O)(O)O,CHEMBL197173,IC50,nM,53300.0,CHEMBL4386,IC50,uM,53.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Nc1ccc(CC(O)(P(=O)(O)O)P(=O)(O)O)cc1,CHEMBL417932,IC50,nM,55000.0,CHEMBL4386,IC50,uM,55.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCc1cccc(NC(P(=O)(O)O)P(=O)(O)O)n1,CHEMBL197944,IC50,nM,55000.0,CHEMBL4386,IC50,uM,55.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCCCCCCNC(P(=O)(O)O)P(=O)(O)O,CHEMBL417549,IC50,nM,56700.0,CHEMBL4386,IC50,uM,56.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2ccccc2)c1)P(=O)(O)O,CHEMBL370664,IC50,nM,65700.0,CHEMBL4386,IC50,uM,65.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(C[n+]1cccc(Cc2ccccc2)c1)P(=O)(O)O,CHEMBL383778,IC50,nM,70000.0,CHEMBL4386,IC50,uM,70.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Cc1cccc(Cc2ccc[n+](CC(O)(P(=O)(O)O)P(=O)(O)O)c2)c1,CHEMBL197132,IC50,nM,78000.0,CHEMBL4386,IC50,uM,78.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2cc(F)cc(F)c2)c1)P(=O)(O)O,CHEMBL371885,IC50,nM,82700.0,CHEMBL4386,IC50,uM,82.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(NC12CC3CC(CC(C3)C1)C2)P(=O)(O)O,CHEMBL194215,IC50,nM,98300.0,CHEMBL4386,IC50,uM,98.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CN(C)c1ccccc1CC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL426281,IC50,nM,108300.0,CHEMBL4386,IC50,uM,108.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Cc1cccc(C[n+]2cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c2)c1,CHEMBL196049,IC50,nM,130000.0,CHEMBL4386,IC50,uM,130.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Nc1cccc(NC(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL371912,IC50,nM,133300.0,CHEMBL4386,IC50,uM,133.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2ccc(F)cc2F)c1)P(=O)(O)O,CHEMBL196749,IC50,nM,138300.0,CHEMBL4386,IC50,uM,138.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1ccc(-c2ccc(F)cc2)cc1)P(=O)(O)O,CHEMBL194302,IC50,nM,191700.0,CHEMBL4386,IC50,uM,191.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1ccc(-c2ccccc2)cc1)P(=O)(O)O,CHEMBL371263,IC50,nM,211700.0,CHEMBL4386,IC50,uM,211.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,Nc1cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c1,CHEMBL425925,IC50,nM,215000.0,CHEMBL4386,IC50,uM,215.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O.O=P(O)(O)C(O)(Cn1ccnc1)P(=O)(O)O,CHEMBL4303669,IC50,nM,226700.0,CHEMBL4386,IC50,uM,226.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,COc1ccc(-c2cccc(CC(O)(P(=O)(O)O)P(=O)(O)O)c2)cc1,CHEMBL195956,IC50,nM,300000.0,CHEMBL4386,IC50,uM,300.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CN(CCOc1ccccc1)CCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL53982,IC50,nM,325000.0,CHEMBL4386,IC50,uM,325.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCCCCCCCCCCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL55837,IC50,nM,340000.0,CHEMBL4386,IC50,uM,340.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Nc1ccc(-c2ccccc2)cc1)P(=O)(O)O,CHEMBL293479,IC50,nM,355000.0,CHEMBL4386,IC50,uM,355.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,CCCCCCCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL54004,IC50,nM,356700.0,CHEMBL4386,IC50,uM,356.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2ccc(Cl)cc2)c1)P(=O)(O)O,CHEMBL194213,IC50,nM,366700.0,CHEMBL4386,IC50,uM,366.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(CNc1ccccn1)P(=O)(O)O,CHEMBL294192,IC50,nM,383300.0,CHEMBL4386,IC50,uM,383.3,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(CNc1ccc(-c2ccccc2)cc1)P(=O)(O)O,CHEMBL382291,IC50,nM,420000.0,CHEMBL4386,IC50,uM,420.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(-c2cc(F)ccc2F)c1)P(=O)(O)O,CHEMBL198014,IC50,nM,430000.0,CHEMBL4386,IC50,uM,430.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,COc1ccc(-c2ccc(CC(O)(P(=O)(O)O)P(=O)(O)O)cc2)cc1,CHEMBL198066,IC50,nM,435000.0,CHEMBL4386,IC50,uM,435.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1ccc(-c2ccc(Cl)cc2)cc1)P(=O)(O)O,CHEMBL436758,IC50,nM,446700.0,CHEMBL4386,IC50,uM,446.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccc(Oc2ccccc2)c1)P(=O)(O)O,CHEMBL425748,IC50,nM,540000.0,CHEMBL4386,IC50,uM,540.0,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(O)(Cc1cccnc1)P(=O)(O)O,CHEMBL923,IC50,nM,656700.0,CHEMBL4386,IC50,uM,656.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,O=P(O)(O)C(Cc1cccc(-c2ccccc2)c1)S(=O)(=O)O,CHEMBL199653,IC50,nM,841700.0,CHEMBL4386,IC50,uM,841.7,Vacuolar-type proton translocating pyrophosphatase 1,Trypanosoma brucei
+B,OC[C@H]1O[C@H](CNCc2ccc(Cl)c(Cl)c2)[C@@H](O)[C@@H]1O,CHEMBL518269,IC50,nM,410000.0,CHEMBL5686,IC50,mM,0.41,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(NCc1ccc(Cl)c(Cl)c1)[C@H]1O[C@H](CNC2CCCCCC2)[C@@H](O)[C@@H]1O,CHEMBL518599,IC50,nM,49000.0,CHEMBL5686,IC50,uM,49.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(NC1CCCCCC1)[C@H]1O[C@H](CNCc2ccc(Cl)c(Cl)c2)[C@@H](O)[C@@H]1O,CHEMBL479202,IC50,nM,80000.0,CHEMBL5686,IC50,uM,80.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(NCc1ccc(Cl)c(Cl)c1)[C@H]1O[C@H](CNCc2ccc(Cl)c(Cl)c2)[C@@H](O)[C@@H]1O,CHEMBL479201,IC50,nM,23000.0,CHEMBL5686,IC50,uM,23.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,C=CCNC(=O)[C@H]1O[C@H](CNCc2ccc(Cl)c(Cl)c2)[C@@H](O)[C@@H]1O,CHEMBL477106,IC50,nM,50000.0,CHEMBL5686,IC50,uM,50.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CC1(C)C(=O)CC[C@]2(C)C3Cc4cc5ccccc5n4[C@]3(C)CC[C@@H]12,CHEMBL1082691,Ki,nM,10000.0,CHEMBL5686,Ki,uM,10.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CC1(C)C(=O)CC[C@]2(C)C3Cc4cc5ccccc5n4[C@]3(C)CC[C@@H]12,CHEMBL1082691,IC50,nM,20000.0,CHEMBL5686,IC50,uM,20.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CC(=O)O[C@H]1CC[C@]2(C)[C@H]3Cc4cc5ccccc5n4[C@]3(C)CC[C@H]2C1(C)C,CHEMBL1083629,IC50,nM,170000.0,CHEMBL5686,IC50,uM,170.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CC1(C)[C@H](O)CC[C@]2(C)[C@@H]3C[C@@H]4Nc5ccccc5[C@@H]4[C@]3(C)CC[C@@H]12,CHEMBL1086376,IC50,nM,30000.0,CHEMBL5686,IC50,uM,30.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CC1(C)C(=O)CC[C@@]2(C)[C@H]1CC[C@]1(C)[C@H]2Cc2cc3ccccc3n21,CHEMBL1083627,Ki,nM,9000.0,CHEMBL5686,Ki,uM,9.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(F)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1,CHEMBL3108870,Ki,nM,240.0,CHEMBL5686,Ki,nM,240.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(F)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1,CHEMBL3108870,Ki,nM,52.0,CHEMBL5686,Ki,nM,52.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1ccc(C(=O)Nc2ccc(S(=O)(=O)O)c3cc(S(=O)(=O)O)cc(S(=O)(=O)O)c23)cc1NC(=O)c1cccc(NC(=O)Nc2cccc(C(=O)Nc3cc(C(=O)Nc4ccc(S(=O)(=O)O)c5cc(S(=O)(=O)O)cc(S(=O)(=O)O)c45)ccc3C)c2)c1,CHEMBL265502,IC50,nM,3000.0,CHEMBL5686,IC50,uM,3.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(F)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1,CHEMBL3108870,IC50,nM,15.0,CHEMBL5686,IC50,uM,0.015,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nncs2)cc1,CHEMBL3108869,IC50,nM,112.0,CHEMBL5686,IC50,uM,0.112,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(F)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nccs2)cc1,CHEMBL3108868,IC50,nM,24.0,CHEMBL5686,IC50,uM,0.024,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2nccs2)cc1,CHEMBL3108867,IC50,nM,79.0,CHEMBL5686,IC50,uM,0.079,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,CN(C)c1cccc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)cc2)c1,CHEMBL3108866,IC50,nM,5800.0,CHEMBL5686,IC50,uM,5.8,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2cccc(O)c2)cc1,CHEMBL3108865,IC50,nM,1460.0,CHEMBL5686,IC50,uM,1.46,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2cncnc2)cc1,CHEMBL3108864,IC50,nM,820.0,CHEMBL5686,IC50,uM,0.82,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2ccc(C(=O)O)cc2)cc1,CHEMBL3108863,IC50,nM,160.0,CHEMBL5686,IC50,uM,0.16,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2cccc(C(=O)O)c2)cc1,CHEMBL3108861,IC50,nM,260.0,CHEMBL5686,IC50,uM,0.26,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)cc2)n(C)n1,CHEMBL3108860,IC50,nM,2310.0,CHEMBL5686,IC50,uM,2.31,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2cc[nH]n2)cc1,CHEMBL3108859,IC50,nM,520.0,CHEMBL5686,IC50,uM,0.52,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2ccon2)cc1,CHEMBL3108858,IC50,nM,370.0,CHEMBL5686,IC50,uM,0.37,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)Nc2ccccc2)cc1,CHEMBL3108857,IC50,nM,16300.0,CHEMBL5686,IC50,uM,16.3,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,O=C(Cc1ccc(Cl)c(Cl)c1)Nc1ccc(S(=O)(=O)O)cc1,CHEMBL3108856,IC50,nM,650.0,CHEMBL5686,IC50,uM,0.65,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)C(C)(C)c3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108855,IC50,nM,36600.0,CHEMBL5686,IC50,uM,36.6,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)CCc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108854,IC50,nM,5170.0,CHEMBL5686,IC50,uM,5.17,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)c3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108853,IC50,nM,14600.0,CHEMBL5686,IC50,uM,14.6,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc4ccccc4c3)cc2)no1,CHEMBL3108852,IC50,nM,6510.0,CHEMBL5686,IC50,uM,6.51,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(C)c(C)c3)cc2)no1,CHEMBL3108850,IC50,nM,18300.0,CHEMBL5686,IC50,uM,18.3,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(C)c(F)c3)cc2)no1,CHEMBL3108849,IC50,nM,5800.0,CHEMBL5686,IC50,uM,5.8,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(F)c(Cl)c3)cc2)no1,CHEMBL3108848,IC50,nM,730.0,CHEMBL5686,IC50,uM,0.73,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(F)c3)cc2)no1,CHEMBL3108847,IC50,nM,700.0,CHEMBL5686,IC50,uM,0.7,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(C(F)(F)F)c3)cc2)no1,CHEMBL3108846,IC50,nM,680.0,CHEMBL5686,IC50,uM,0.68,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)cc3Cl)cc2)no1,CHEMBL3108845,IC50,nM,4610.0,CHEMBL5686,IC50,uM,4.61,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)cc3)cc2)no1,CHEMBL3108844,IC50,nM,1830.0,CHEMBL5686,IC50,uM,1.83,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3cccc(Cl)c3)cc2)no1,CHEMBL3108843,IC50,nM,7300.0,CHEMBL5686,IC50,uM,7.3,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccccc3)cc2)no1,CHEMBL3108842,IC50,nM,36600.0,CHEMBL5686,IC50,uM,36.6,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)Cc2ccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108841,IC50,nM,2590.0,CHEMBL5686,IC50,uM,2.59,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(N(C)S(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108839,IC50,nM,2910.0,CHEMBL5686,IC50,uM,2.91,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NS(=O)(=O)Cc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108838,IC50,nM,37000.0,CHEMBL5686,IC50,uM,37.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(C(=O)NCc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108837,IC50,nM,5160.0,CHEMBL5686,IC50,uM,5.16,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NCCc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108836,IC50,nM,6000.0,CHEMBL5686,IC50,uM,6.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(N(C)C(=O)Cc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL3108835,IC50,nM,6510.0,CHEMBL5686,IC50,uM,6.51,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)CCNC(=O)Cc2ccc(Cl)c(Cl)c2)no1,CHEMBL3108833,IC50,nM,32600.0,CHEMBL5686,IC50,uM,32.6,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)C2CCN(C(=O)Cc3ccc(Cl)c(Cl)c3)CC2)no1,CHEMBL3108832,IC50,nM,33000.0,CHEMBL5686,IC50,uM,33.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2cccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)c2)no1,CHEMBL3108831,IC50,nM,16300.0,CHEMBL5686,IC50,uM,16.3,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,Cc1cc(NS(=O)(=O)c2ccc(NC(=O)Cc3ccc(Cl)c(Cl)c3)cc2)no1,CHEMBL1394402,IC50,nM,410.0,CHEMBL5686,IC50,uM,0.41,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,OC[C@H]1O[C@H](CNc2ccc3ccccc3c2)[C@@H](O)[C@@H]1O,CHEMBL3220030,IC50,nM,900000.0,CHEMBL5686,IC50,uM,900.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,OC[C@H]1O[C@H](CNc2ccc(Cl)c(Cl)c2)[C@@H](O)[C@@H]1O,CHEMBL3220031,IC50,nM,410000.0,CHEMBL5686,IC50,uM,410.0,ATP-dependent 6-phosphofructokinase,Trypanosoma brucei
+B,C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12,CHEMBL90593,Ki,nM,1700.0,CHEMBL5672,Ki,uM,1.7,Glucose-6-phosphate 1-dehydrogenase,Trypanosoma brucei
+B,C[C@]12CC[C@H](O)CC1=CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12,CHEMBL90593,Ki,nM,1100.0,CHEMBL5672,Ki,uM,1.1,Glucose-6-phosphate 1-dehydrogenase,Trypanosoma brucei
+B,C[C@]12CC[C@H](O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12,CHEMBL272195,Ki,nM,490.0,CHEMBL5672,Ki,uM,0.49,Glucose-6-phosphate 1-dehydrogenase,Trypanosoma brucei
+B,C[C@]12CC[C@H](O)C[C@@H]1CC[C@@H]1[C@@H]2CC[C@]2(C)C(=O)CC[C@@H]12,CHEMBL272195,Ki,nM,460.0,CHEMBL5672,Ki,uM,0.46,Glucose-6-phosphate 1-dehydrogenase,Trypanosoma brucei
+B,CCC(C)CNc1nc(C#N)nc2c1ncn2C1CCCC1,CHEMBL254227,IC50,nM,14000.0,CHEMBL5832,IC50,uM,14.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COC(CCn1cnc2c(NCc3ccc(Cl)c(Cl)c3)nc(C#N)nc21)OC,CHEMBL254619,IC50,nM,3400.0,CHEMBL5832,IC50,uM,3.4,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COCCCn1cnc2c(NCc3ccc(Cl)c(Cl)c3)nc(C#N)nc21,CHEMBL254618,IC50,nM,2500.0,CHEMBL5832,IC50,uM,2.5,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COCOCCn1cnc2c(NCc3ccc(Cl)c(Cl)c3)nc(C#N)nc21,CHEMBL400543,IC50,nM,800.0,CHEMBL5832,IC50,uM,0.8,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)c(Cl)c2)c2ncn(CCCCCO)c2n1,CHEMBL400542,IC50,nM,930.0,CHEMBL5832,IC50,uM,0.93,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)c(Cl)c2)c2ncn(CC(O)CO)c2n1,CHEMBL254617,IC50,nM,1200.0,CHEMBL5832,IC50,uM,1.2,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)c(Cl)c2)c2ncn(CCCO)c2n1,CHEMBL254412,IC50,nM,270.0,CHEMBL5832,IC50,uM,0.27,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)c(Cl)c2)c2ncn(Cc3ccccc3)c2n1,CHEMBL400664,IC50,nM,15000.0,CHEMBL5832,IC50,uM,15.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccc(Cl)c(Cl)c3)nc(C#N)nc21,CHEMBL255038,IC50,nM,4100.0,CHEMBL5832,IC50,uM,4.1,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)c(Cl)c2)c2ncn(CCO)c2n1,CHEMBL400663,IC50,nM,1400.0,CHEMBL5832,IC50,uM,1.4,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccc(Br)cc3)nc(C#N)nc21,CHEMBL254827,IC50,nM,8400.0,CHEMBL5832,IC50,uM,8.4,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COc1ccc(Cn2cnc3c(NCc4ccc(Cl)cc4)nc(C#N)nc32)cc1,CHEMBL252121,IC50,nM,23000.0,CHEMBL5832,IC50,uM,23.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)cc2)c2ncn(CCCCO)c2n1,CHEMBL398505,IC50,nM,4800.0,CHEMBL5832,IC50,uM,4.8,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)cc2)c2ncn(CCCO)c2n1,CHEMBL252934,IC50,nM,570.0,CHEMBL5832,IC50,uM,0.57,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(F)cc2)c2ncn(Cc3ccccc3)c2n1,CHEMBL251923,IC50,nM,3300.0,CHEMBL5832,IC50,uM,3.3,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccc(F)cc3)nc(C#N)nc21,CHEMBL399027,IC50,nM,7100.0,CHEMBL5832,IC50,uM,7.1,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(F)cc2)c2ncn(CCCCO)c2n1,CHEMBL252729,IC50,nM,18000.0,CHEMBL5832,IC50,uM,18.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccccc2)c2ncn(Cc3cccc(C(F)(F)F)c3)c2n1,CHEMBL252933,IC50,nM,2800.0,CHEMBL5832,IC50,uM,2.8,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COc1ccc(Cn2cnc3c(NCc4ccccc4)nc(C#N)nc32)cc1,CHEMBL399026,IC50,nM,11000.0,CHEMBL5832,IC50,uM,11.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccccc2)c2ncn(CC3CCCCO3)c2n1,CHEMBL429121,IC50,nM,11000.0,CHEMBL5832,IC50,uM,11.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccccc2)c2ncn(CCCO)c2n1,CHEMBL400097,IC50,nM,12000.0,CHEMBL5832,IC50,uM,12.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,Cc1ccc(CNc2nc(C#N)nc3c2ncn3CCCO)cc1,CHEMBL255087,IC50,nM,4200.0,CHEMBL5832,IC50,uM,4.2,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COc1ccc(CNc2nc(C#N)nc3c2ncn3Cc2ccccc2)cc1,CHEMBL255086,IC50,nM,4500.0,CHEMBL5832,IC50,uM,4.5,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccc(OC)cc3)nc(C#N)nc21,CHEMBL400095,IC50,nM,6000.0,CHEMBL5832,IC50,uM,6.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCCc3ccccc3)nc(C#N)nc21,CHEMBL398708,IC50,nM,16000.0,CHEMBL5832,IC50,uM,16.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCCc2ccccc2)c2ncn(Cc3cccnc3)c2n1,CHEMBL253830,IC50,nM,10000.0,CHEMBL5832,IC50,uM,10.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccc(Cl)cc2)c2ncn(C3CCCC3)c2n1,CHEMBL253611,IC50,nM,19000.0,CHEMBL5832,IC50,uM,19.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccc(Cl)cc3)nc(C#N)nc21,CHEMBL255080,IC50,nM,10000.0,CHEMBL5832,IC50,uM,10.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NCc2ccccc2)c2ncn(Cc3ccccc3)c2n1,CHEMBL400454,IC50,nM,6000.0,CHEMBL5832,IC50,uM,6.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3ccccc3)nc(C#N)nc21,CHEMBL255079,IC50,nM,14000.0,CHEMBL5832,IC50,uM,14.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,Cc1cccc(CNc2nc(C#N)nc3c2ncn3Cc2ccccc2)c1,CHEMBL400248,IC50,nM,3300.0,CHEMBL5832,IC50,uM,3.3,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCCn1cnc2c(NCc3cccc(C)c3)nc(C#N)nc21,CHEMBL252363,IC50,nM,11000.0,CHEMBL5832,IC50,uM,11.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,COc1ccc(CNc2nc(C#N)nc3c2ncn3C2CCCC2)cc1,CHEMBL252362,IC50,nM,7000.0,CHEMBL5832,IC50,uM,7.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NC2CCCCC2)c2ncn(Cc3ccccc3)c2n1,CHEMBL399094,IC50,nM,2300.0,CHEMBL5832,IC50,uM,2.3,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#Cc1nc(NC2CCCCC2)c2ncn(C3CCCCC3)c2n1,CHEMBL252360,IC50,nM,8300.0,CHEMBL5832,IC50,uM,8.3,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCCn1cnc2c(NC3CCCCC3)nc(C#N)nc21,CHEMBL402052,IC50,nM,8300.0,CHEMBL5832,IC50,uM,8.3,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCC(C)CNc1nc(C#N)nc2c1ncn2Cc1ccccc1,CHEMBL252359,IC50,nM,5000.0,CHEMBL5832,IC50,uM,5.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,IC50,nM,4000.0,CHEMBL5832,IC50,uM,4.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccccc2)no1,CHEMBL1078855,IC50,nM,40000.0,CHEMBL5832,IC50,uM,40.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)[C@@H]1CCCC[C@H]1C(=O)c1ccc(Cl)cc1,CHEMBL1079162,IC50,nM,16000.0,CHEMBL5832,IC50,uM,16.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2cc(Cl)ccc2c(NC2CCNCC2)c2[nH]c3cc(Cl)ccc3c21.[Cl-],CHEMBL1289050,IC50,nM,43000.0,CHEMBL5832,IC50,uM,43.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2cc(Cl)ccc2c(NC2CCNCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1289049,IC50,nM,59000.0,CHEMBL5832,IC50,uM,59.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCN(CC)CCCNc1c2ccc(Cl)cc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL1290718,IC50,nM,64000.0,CHEMBL5832,IC50,uM,64.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(Nc2cccnc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290717,IC50,nM,59000.0,CHEMBL5832,IC50,uM,59.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCN(CC)Cc1ccc(Nc2c3ccccc3[n+](C)c3c2[nH]c2ccccc23)cc1O.[Cl-],CHEMBL1290599,IC50,nM,59000.0,CHEMBL5832,IC50,uM,59.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(Nc2ccc(N3CCCCC3)cc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1289828,IC50,nM,76000.0,CHEMBL5832,IC50,uM,76.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(Nc2ccccc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290598,IC50,nM,99000.0,CHEMBL5832,IC50,uM,99.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(NC2CCN(Cc3ccccc3O)CC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290489,IC50,nM,26000.0,CHEMBL5832,IC50,uM,26.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(NC2CCN(Cc3ccccc3)CC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290488,IC50,nM,32000.0,CHEMBL5832,IC50,uM,32.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CC(C)CN1CCC(Nc2c3ccccc3[n+](C)c3c2[nH]c2ccccc23)CC1.[Cl-],CHEMBL1290380,IC50,nM,26000.0,CHEMBL5832,IC50,uM,26.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(NC2CCNCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL404321,IC50,nM,43000.0,CHEMBL5832,IC50,uM,43.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCN(CC)CCCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL1289827,IC50,nM,55000.0,CHEMBL5832,IC50,uM,55.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2c(NCCCN2CCCCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL404523,IC50,nM,60000.0,CHEMBL5832,IC50,uM,60.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CC(C)NCCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253716,IC50,nM,62000.0,CHEMBL5832,IC50,uM,62.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CN(C)CC(C)(C)CNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL404522,IC50,nM,62000.0,CHEMBL5832,IC50,uM,62.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCN(CC)CCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253715,IC50,nM,97000.0,CHEMBL5832,IC50,uM,97.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CN(C)CCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253508,IC50,nM,31000.0,CHEMBL5832,IC50,uM,31.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CCN(CC)CCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL252504,IC50,nM,95000.0,CHEMBL5832,IC50,uM,95.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,CN(C)CCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL439424,IC50,nM,91000.0,CHEMBL5832,IC50,uM,91.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,C[n+]1c2ccccc2cc2[n-]c3ccccc3c21.Cl,CHEMBL92129,IC50,nM,64000.0,CHEMBL5832,IC50,uM,64.0,Cathepsin B-like cysteine protease,Trypanosoma brucei
+B,N#C[C@H](CCCNC(=N)N)NC(=O)OCc1ccccc1,CHEMBL1089374,IC50,nM,1900.0,CHEMBL1075193,IC50,uM,1.9,Metacaspase-2,Trypanosoma brucei
+B,N=C(N)NCCC[C@H](NC(=O)OCc1ccccc1)C(=O)c1nc2ccccc2s1,CHEMBL1077318,IC50,nM,600.0,CHEMBL1075193,IC50,uM,0.6,Metacaspase-2,Trypanosoma brucei
+B,N=C(N)NCCC[C@H](NC(=O)OCc1ccccc1)C(=O)c1ccccn1,CHEMBL1080400,IC50,nM,62000.0,CHEMBL1075193,IC50,uM,62.0,Metacaspase-2,Trypanosoma brucei
+B,N=C(N)NCCC[C@H](NC(=O)OCc1ccccc1)C(=O)c1nccs1,CHEMBL1080401,IC50,nM,2200.0,CHEMBL1075193,IC50,uM,2.2,Metacaspase-2,Trypanosoma brucei
+B,Cn1c(C(=O)[C@H](CCCNC(=N)N)NC(=O)OCc2ccccc2)nc2ccccc21,CHEMBL1079694,IC50,nM,38400.0,CHEMBL1075193,IC50,uM,38.4,Metacaspase-2,Trypanosoma brucei
+B,N=C(N)NCCC[C@@H](/C=C/S(=O)(=O)c1ccccc1)NC(=O)OCc1ccccc1,CHEMBL1081863,IC50,nM,3900.0,CHEMBL1075193,IC50,uM,3.9,Metacaspase-2,Trypanosoma brucei
+B,NCCCC[C@H](NC(=O)OCc1ccccc1)C(=O)c1nc2ccccc2s1,CHEMBL1081864,IC50,nM,1600.0,CHEMBL1075193,IC50,uM,1.6,Metacaspase-2,Trypanosoma brucei
+B,N=C(N)NCCCC[C@H](NC(=O)OCc1ccccc1)C(=O)c1nc2ccccc2s1,CHEMBL1081865,IC50,nM,4000.0,CHEMBL1075193,IC50,uM,4.0,Metacaspase-2,Trypanosoma brucei
+B,CC(C)CC(NC(=O)OCc1ccccc1)C(=O)N[C@@H](CCCNC(=N)N)C(=O)c1nc2ccccc2s1,CHEMBL1082042,IC50,nM,1400.0,CHEMBL1075193,IC50,uM,1.4,Metacaspase-2,Trypanosoma brucei
+B,CC(C)C(NC(=O)OCc1ccccc1)C(=O)N[C@@H](CCCNC(=N)N)C(=O)c1nc2ccccc2s1,CHEMBL1082043,IC50,nM,1100.0,CHEMBL1075193,IC50,uM,1.1,Metacaspase-2,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)C(=O)c1ccccc1-2,CHEMBL1172978,IC50,nM,2800.0,CHEMBL1169595,IC50,uM,2.8,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)Cc1ccccc1-2,CHEMBL1172977,IC50,nM,4600.0,CHEMBL1169595,IC50,uM,4.6,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,COC1C(OC(=O)c2ccc(C)[nH]2)C(O)C(Oc2ccc3c(O)c(NC(=O)c4ccc(O)c(CC=C(C)C)c4)c(=O)oc3c2Cl)OC1(C)C,CHEMBL1172192,IC50,nM,5000.0,CHEMBL1169595,IC50,uM,5.0,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,CCn1c2ccccc2c2cc(NC(=O)c3ccccc3-c3ccccc3C(=O)O)ccc21,CHEMBL1172912,IC50,nM,5600.0,CHEMBL1169595,IC50,uM,5.6,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)nc(O)c1ccccc12,CHEMBL1172911,IC50,nM,3600.0,CHEMBL1169595,IC50,uM,3.6,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)C(O)c1ccccc1-2,CHEMBL1172616,IC50,nM,6800.0,CHEMBL1169595,IC50,uM,6.8,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)Cc1cc(NC(=O)c3ccccc3-c3ccccc3C(=O)O)ccc1-2,CHEMBL1172557,IC50,nM,900.0,CHEMBL1169595,IC50,uM,0.9,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)-c1ccccc1C2,CHEMBL1173451,IC50,nM,4200.0,CHEMBL1169595,IC50,uM,4.2,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1cccc2c1-c1ccccc1C2,CHEMBL1173452,IC50,nM,8000.0,CHEMBL1169595,IC50,uM,8.0,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)Cc1cc(F)ccc1-2,CHEMBL1173453,IC50,nM,3800.0,CHEMBL1169595,IC50,uM,3.8,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1ccc2c(c1)oc(=O)c1ccccc12,CHEMBL1173036,IC50,nM,3200.0,CHEMBL1169595,IC50,uM,3.2,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1ccccc1-c1ccccc1C(=O)Nc1cc2c3ccccc3ccc2c2ccccc12,CHEMBL1173811,IC50,nM,2600.0,CHEMBL1169595,IC50,uM,2.6,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1cc(Cl)ccc1-c1ccc(Cl)cc1C(=O)Nc1ccc2c(c1)Cc1ccccc1-2,CHEMBL1173812,IC50,nM,3300.0,CHEMBL1169595,IC50,uM,3.3,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,O=C(O)c1cc(Cl)ccc1-c1ccc(Cl)cc1C(=O)NC1=CC2=C(CC1)c1c(Cl)cc(Cl)cc1C2,CHEMBL1172759,IC50,nM,1800.0,CHEMBL1169595,IC50,uM,1.8,UDP-galactose 4-epimerase,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL2171452,IC50,nM,55.0,CHEMBL2010636,IC50,uM,0.055,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL2171452,IC50,nM,49.0,CHEMBL2010636,IC50,uM,0.049,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCCCCOc1ccc(C#N)cc1,CHEMBL2171451,IC50,nM,160.0,CHEMBL2010636,IC50,uM,0.16,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCc1cc(C)on1,CHEMBL2171462,IC50,nM,630.0,CHEMBL2010636,IC50,uM,0.63,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCc1ccccn1,CHEMBL2171461,IC50,nM,500.0,CHEMBL2010636,IC50,uM,0.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCc1cccc2ccccc12,CHEMBL2171460,IC50,nM,250.0,CHEMBL2010636,IC50,uM,0.25,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(CCOc2cc(C3=NN(C4CCCCCC4)C(=O)C3(C)C)ccc2OC)cc1,CHEMBL2171459,IC50,nM,630.0,CHEMBL2010636,IC50,uM,0.63,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(COc2cc(C3=NN(C4CCCCCC4)C(=O)C3(C)C)ccc2OC)cc1,CHEMBL2171458,IC50,nM,790.0,CHEMBL2010636,IC50,uM,0.79,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCc1ccc(C#N)cc1,CHEMBL2171457,IC50,nM,1000.0,CHEMBL2010636,IC50,uM,1.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL2171456,IC50,nM,400.0,CHEMBL2010636,IC50,uM,0.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCCCCOc1ccc(C#N)cc1,CHEMBL2171455,IC50,nM,5000.0,CHEMBL2010636,IC50,uM,5.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCc1cc(C)on1,CHEMBL2171454,IC50,nM,5000.0,CHEMBL2010636,IC50,uM,5.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCc1ccccn1,CHEMBL2171453,IC50,nM,2500.0,CHEMBL2010636,IC50,uM,2.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCc1cccc2ccccc12,CHEMBL2171658,IC50,nM,790.0,CHEMBL2010636,IC50,uM,0.79,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(CCOc2cc(C3=NN(C(C)C)C(=O)C3(C)C)ccc2OC)cc1,CHEMBL2171657,IC50,nM,830.0,CHEMBL2010636,IC50,uM,0.83,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(COc2cc(C3=NN(C(C)C)C(=O)C3(C)C)ccc2OC)cc1,CHEMBL2171656,IC50,nM,2000.0,CHEMBL2010636,IC50,uM,2.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCc1ccc(C#N)cc1,CHEMBL2171655,IC50,nM,2000.0,CHEMBL2010636,IC50,uM,2.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1Br,CHEMBL2171654,IC50,nM,2500.0,CHEMBL2010636,IC50,uM,2.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1Cl,CHEMBL2171651,IC50,nM,2000.0,CHEMBL2010636,IC50,uM,2.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OCc1ccccc1,CHEMBL2171664,IC50,nM,500.0,CHEMBL2010636,IC50,uM,0.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)C2(C)C)cc1OCc1ccccc1,CHEMBL2171663,IC50,nM,1000.0,CHEMBL2010636,IC50,uM,1.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C)C(=O)C2(C)C)cc1OCc1ccccc1,CHEMBL2171662,IC50,nM,10000.0,CHEMBL2010636,IC50,uM,10.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NNC(=O)C2(C)C)cc1OCc1ccccc1,CHEMBL2171661,IC50,nM,6300.0,CHEMBL2010636,IC50,uM,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C2(C)C)cc1OC1CCCC1,CHEMBL2171660,IC50,nM,410.0,CHEMBL2010636,IC50,uM,0.41,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NNC(=O)C2(C)C)cc1OC1CCCC1,CHEMBL2171659,IC50,nM,12000.0,CHEMBL2010636,IC50,uM,12.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)C3CC=CCC23)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL85005,IC50,nM,4.0,CHEMBL2010636,IC50,uM,0.004,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(NCc1ccc(Cn2cncn2)cc1)c1ccc2[nH]c3c(c2c1)CCCC3,CHEMBL2326946,IC50,nM,75000.0,CHEMBL2010636,IC50,uM,75.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(CCc1nc2ccccc2n(CCc2ccccc2)c1=O)N1CCCCC1,CHEMBL2326945,IC50,nM,54000.0,CHEMBL2010636,IC50,uM,54.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C1c2cccc3cccc(c23)C(=O)N1CCCC(=O)N(Cc1ccco1)C1CC1,CHEMBL2326944,IC50,nM,41000.0,CHEMBL2010636,IC50,uM,41.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,Cc1cc(SCC(=O)c2ccc(O)c(O)c2)n2nc(C)c(-c3ccccc3)c2n1,CHEMBL1382213,IC50,nM,13000.0,CHEMBL2010636,IC50,uM,13.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(CCCSc1ncnc2sc(-c3ccccc3)cc12)N1CCOCC1,CHEMBL2326943,IC50,nM,12000.0,CHEMBL2010636,IC50,uM,12.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CCCn1c(=O)n(C)c(=O)c2c(SCC(=O)c3ccc(Cl)cc3)nc(CC(C)C)nc21,CHEMBL2326942,IC50,nM,10000.0,CHEMBL2010636,IC50,uM,10.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn[nH]2)cc1,CHEMBL2326941,IC50,nM,4.0,CHEMBL2010636,IC50,uM,0.004,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCC3)C[C@H]3CC=CC[C@@H]23)cc1OC1CCCC1,CHEMBL2436772,IC50,nM,278.0,CHEMBL2010636,IC50,nM,278.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@H]3CC=CC[C@@H]23)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL2436771,IC50,nM,3.98,CHEMBL2010636,IC50,nM,3.98,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OC1CCCC1,CHEMBL511115,IC50,nM,16000.0,CHEMBL2010636,IC50,uM,16.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCc1ccccc1,CHEMBL3323123,IC50,nM,12000.0,CHEMBL2010636,IC50,uM,12.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCOc1ccc(-c2nn[nH]n2)cc1,CHEMBL3323127,IC50,nM,7900.0,CHEMBL2010636,IC50,uM,7.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCOc1ccccc1,CHEMBL3323128,IC50,nM,950.0,CHEMBL2010636,IC50,uM,0.95,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCOc1ccccc1,CHEMBL3323129,IC50,nM,11000.0,CHEMBL2010636,IC50,uM,11.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCOc1ccc(F)cc1,CHEMBL3323133,IC50,nM,9200.0,CHEMBL2010636,IC50,uM,9.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCOc1ccc(C)cc1,CHEMBL3323132,IC50,nM,4900.0,CHEMBL2010636,IC50,uM,4.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(OCCCCOc2cc([C@]3(C#N)CC[C@@H](C(=O)O)CC3)ccc2OC)cc1,CHEMBL3323131,IC50,nM,3500.0,CHEMBL2010636,IC50,uM,3.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCOc1ccc(C#N)cc1,CHEMBL3323130,IC50,nM,3600.0,CHEMBL2010636,IC50,uM,3.6,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc([C@]2(C#N)CC[C@@H](C(=O)O)CC2)cc1OCCCCCOc1ccccc1,CHEMBL3321771,IC50,nM,9800.0,CHEMBL2010636,IC50,uM,9.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn[nH]2)cc1,CHEMBL2326941,IC50,nM,4.0,CHEMBL2010636,IC50,uM,0.004,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NNC(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL440878,IC50,nM,12589.25,CHEMBL2010636,pIC50,,4.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL3763456,IC50,nM,316.23,CHEMBL2010636,pIC50,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1,CHEMBL3764366,IC50,nM,3981.07,CHEMBL2010636,pIC50,,5.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1cccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)c1,CHEMBL3764675,IC50,nM,100000.0,CHEMBL2010636,pIC50,,4.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)CC2)cc1OC,CHEMBL3763265,IC50,nM,10000.0,CHEMBL2010636,pIC50,,5.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CCCC[C@H]23)cc1OC,CHEMBL3763547,IC50,nM,1584.89,CHEMBL2010636,pIC50,,5.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CCCC[C@H]23)cc1OC,CHEMBL3764415,IC50,nM,1995.26,CHEMBL2010636,pIC50,,5.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn[nH]2)cc1,CHEMBL2326941,IC50,nM,3.981,CHEMBL2010636,pIC50,,8.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn(C)n2)cc1,CHEMBL3765188,IC50,nM,3.162,CHEMBL2010636,pIC50,,8.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnnn2C)cc1,CHEMBL3763233,IC50,nM,10.0,CHEMBL2010636,pIC50,,8.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-n2ccnc2)cc1,CHEMBL3765037,IC50,nM,12.59,CHEMBL2010636,pIC50,,7.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCn1cnc2ncncc21,CHEMBL3764370,IC50,nM,15.85,CHEMBL2010636,pIC50,,7.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCCc1ccccc1,CHEMBL3765010,IC50,nM,63.1,CHEMBL2010636,pIC50,,7.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(C(=O)O)cc1,CHEMBL3763271,IC50,nM,316.23,CHEMBL2010636,pIC50,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCO,CHEMBL3765581,IC50,nM,100.0,CHEMBL2010636,pIC50,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COCCOc1cc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL3763352,IC50,nM,79.43,CHEMBL2010636,pIC50,,7.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCc1cccc(OC)c1OC,CHEMBL3765222,IC50,nM,79.43,CHEMBL2010636,pIC50,,7.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1cc(COc2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)cc(OC)c1,CHEMBL3765225,IC50,nM,125.89,CHEMBL2010636,pIC50,,6.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCc1ccccn1,CHEMBL3764909,IC50,nM,100.0,CHEMBL2010636,pIC50,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCc1ccncc1,CHEMBL3765733,IC50,nM,158.49,CHEMBL2010636,pIC50,,6.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCc1ccc(N(C)C)cc1,CHEMBL3765606,IC50,nM,63.1,CHEMBL2010636,pIC50,,7.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(CCOc2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)cc1,CHEMBL3765786,IC50,nM,63.1,CHEMBL2010636,pIC50,,7.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(Nc1c(Cl)cncc1Cl)c1ccc(OC(F)F)c(OCC2CC2)c1,CHEMBL193240,Ki,nM,3162.28,CHEMBL2010636,pKi,,5.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CCC[C@@H]2C(N)=O)cc1,CHEMBL4216582,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CCC[C@@H]2C(N)=O)cc1,CHEMBL4213296,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CC[C@@H](O)C2)cc1,CHEMBL4208363,Ki,nM,199.53,CHEMBL2010636,pKi,,6.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CC[C@@H](O)C2)cc1,CHEMBL4218658,Ki,nM,251.19,CHEMBL2010636,pKi,,6.6,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CCC(=O)C2)cc1,CHEMBL4213729,Ki,nM,1000.0,CHEMBL2010636,pKi,,6.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CC(=O)N(C)C2)cc1,CHEMBL4206395,Ki,nM,1584.89,CHEMBL2010636,pKi,,5.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N2CNC(=O)C2)cc1,CHEMBL4218119,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COCCNC(=O)CNC(=O)c1ccc(-c2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)cc1,CHEMBL4209841,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(=O)NCCO)cc1,CHEMBL4204966,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCCNC(C)=O)cc1,CHEMBL4214240,Ki,nM,794.33,CHEMBL2010636,pKi,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCCC(N)=O)cc1,CHEMBL4209331,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(=O)NC(C)C)cc1,CHEMBL4213432,Ki,nM,1995.26,CHEMBL2010636,pKi,,5.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(=O)N(C)C)cc1,CHEMBL4218358,Ki,nM,794.33,CHEMBL2010636,pKi,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CNC(=O)CNC(=O)c1ccc(-c2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)cc1,CHEMBL4217833,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)N(C)CC(N)=O)cc1,CHEMBL4206114,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4204999,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4210475,Ki,nM,39.81,CHEMBL2010636,pKi,,7.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@H]3CC=CC[C@@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4209972,Ki,nM,3981.07,CHEMBL2010636,pKi,,5.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4210475,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COCCNC(=O)c1ccc(-c2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)cc1,CHEMBL4214364,Ki,nM,316.23,CHEMBL2010636,pKi,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C#N)cc1,CHEMBL4202704,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(N)=O)cc1,CHEMBL4202975,Ki,nM,158.49,CHEMBL2010636,pKi,,6.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)O)cc1,CHEMBL4205916,Ki,nM,1584.89,CHEMBL2010636,pKi,,5.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1cccc(C(=O)O)c1,CHEMBL4203531,Ki,nM,7943.28,CHEMBL2010636,pKi,,5.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OCCCCOc1ccc(-c2nnn[nH]2)cc1,CHEMBL2326941,Ki,nM,3.981,CHEMBL2010636,pKi,,8.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1F,CHEMBL4573706,Ki,nM,1995.26,CHEMBL2010636,pKi,,5.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1cc(C(=O)NCC(N)=O)ccc1-c1cc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL4573906,Ki,nM,7943.28,CHEMBL2010636,pKi,,5.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)c(F)c1,CHEMBL4556148,Ki,nM,794.33,CHEMBL2010636,pKi,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)c(C)c1,CHEMBL4587960,Ki,nM,1995.26,CHEMBL2010636,pKi,,5.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1cc(-c2cc(C3=NN(C4CCCCCC4)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)ccc1C(=O)NCC(N)=O,CHEMBL4544409,Ki,nM,6309.57,CHEMBL2010636,pKi,,5.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc2c(c1)CNC2=O,CHEMBL4543722,Ki,nM,1584.89,CHEMBL2010636,pKi,,5.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COCCN1Cc2cc(-c3cc(C4=NN(C5CCCCCC5)C(=O)[C@@H]5CC=CC[C@H]45)ccc3OC)ccc2C1=O,CHEMBL4441002,Ki,nM,1258.93,CHEMBL2010636,pKi,,5.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc2c(c1)CN(CC(N)=O)C2=O,CHEMBL4551476,Ki,nM,1258.93,CHEMBL2010636,pKi,,5.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(N)=O)s1,CHEMBL4476056,Ki,nM,10000.0,CHEMBL2010636,pKi,,5.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,C#Cc1cc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL4449673,Ki,nM,3981.07,CHEMBL2010636,pKi,,5.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(N)=O,CHEMBL4465919,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CCCCNC(=O)C#Cc1cc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL4519708,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COCCNC(=O)C#Cc1cc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL4520514,Ki,nM,794.33,CHEMBL2010636,pKi,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)N1CCOCC1,CHEMBL4467085,Ki,nM,1000.0,CHEMBL2010636,pKi,,6.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccco1,CHEMBL4464777,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCC(N)=O,CHEMBL4473824,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4204999,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1-c1ccc(C(=O)NCC(N)=O)cc1,CHEMBL4210475,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCC1CCC1,CHEMBL4473629,Ki,nM,316.23,CHEMBL2010636,pKi,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCC1CC1,CHEMBL4565967,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CCCCNC(=O)C#Cc1cc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)ccc1OC,CHEMBL4522881,Ki,nM,316.23,CHEMBL2010636,pKi,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(N)=O,CHEMBL4463356,Ki,nM,501.19,CHEMBL2010636,pKi,,6.3,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCCC#N,CHEMBL4562476,Ki,nM,1000.0,CHEMBL2010636,pKi,,6.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)N1CC(C#N)C1,CHEMBL4453613,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCC1CCCO1,CHEMBL4583339,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)N1CCOCC1,CHEMBL4472788,Ki,nM,1000.0,CHEMBL2010636,pKi,,6.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)Nc1cnn(C)n1,CHEMBL4471782,Ki,nM,2511.89,CHEMBL2010636,pKi,,5.6,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)Nc1ccn(CCCC#N)n1,CHEMBL4520014,Ki,nM,794.33,CHEMBL2010636,pKi,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccco1,CHEMBL4444414,Ki,nM,125.89,CHEMBL2010636,pKi,,6.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccc(C)o1,CHEMBL4439032,Ki,nM,199.53,CHEMBL2010636,pKi,,6.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1cccs1,CHEMBL4521383,Ki,nM,125.89,CHEMBL2010636,pKi,,6.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCCc1cccs1,CHEMBL4439798,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1csc(C)n1,CHEMBL4566533,Ki,nM,316.23,CHEMBL2010636,pKi,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCCc1nccs1,CHEMBL4516631,Ki,nM,251.19,CHEMBL2010636,pKi,,6.6,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1sc(C)nc1C,CHEMBL4445489,Ki,nM,199.53,CHEMBL2010636,pKi,,6.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1cnn(C)c1,CHEMBL4439778,Ki,nM,125.89,CHEMBL2010636,pKi,,6.9,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCCCn1ccnc1,CHEMBL4435831,Ki,nM,398.11,CHEMBL2010636,pKi,,6.4,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccccc1,CHEMBL4436770,Ki,nM,158.49,CHEMBL2010636,pKi,,6.8,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1cccnc1,CHEMBL4445930,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccncc1,CHEMBL4454951,Ki,nM,100.0,CHEMBL2010636,pKi,,7.0,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1cccc(NC(=O)C#Cc2cc(C3=NN(C(C)C)C(=O)[C@@H]4CC=CC[C@H]34)ccc2OC)c1,CHEMBL4453045,Ki,nM,199.53,CHEMBL2010636,pKi,,6.7,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCCc1ccccc1F,CHEMBL4443772,Ki,nM,316.23,CHEMBL2010636,pKi,,6.5,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(N)=O,CHEMBL4463356,Kd,nM,794.33,CHEMBL2010636,pKd,,6.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C(C)C)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(=O)NCc1ccccc1,CHEMBL4436770,Kd,nM,79.43,CHEMBL2010636,pKd,,7.1,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCCCCC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1C#CC(N)=O,CHEMBL4465919,Ki,nM,630.96,CHEMBL2010636,pKi,,6.2,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)nc5ccccc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4524402,Ki,nM,24.55,CHEMBL2010636,pKi,,7.61,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CC(C)(C)CC4=O)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4441748,Ki,nM,43.65,CHEMBL2010636,pKi,,7.36,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4ncnc5ccsc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4592553,Ki,nM,66.07,CHEMBL2010636,pKi,,7.18,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)nc5[nH]cnc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4452707,Ki,nM,104.71,CHEMBL2010636,pKi,,6.98,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)c5ccccc5n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4575003,Ki,nM,645.65,CHEMBL2010636,pKi,,6.19,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)c5sccc5n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4472307,Ki,nM,338.84,CHEMBL2010636,pKi,,6.47,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4ncc5ccccc5n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4472329,Ki,nM,645.65,CHEMBL2010636,pKi,,6.19,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4ncnc5ccccc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4589927,Ki,nM,38.9,CHEMBL2010636,pKi,,7.41,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4ccnc(N)n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4522249,Ki,nM,257.04,CHEMBL2010636,pKi,,6.59,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nccc(N)n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4444578,Ki,nM,109.65,CHEMBL2010636,pKi,,6.96,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4ncc5sccc5n4)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4466905,Ki,nM,691.83,CHEMBL2010636,pKi,,6.16,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)nc5sccc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4460623,Ki,nM,42.66,CHEMBL2010636,pKi,,7.37,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CCC4=O)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4566742,Ki,nM,20.89,CHEMBL2010636,pKi,,7.68,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CC(C)C4=O)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4461456,Ki,nM,75.86,CHEMBL2010636,pKi,,7.12,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CC(Cc5ccccc5)C4=O)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4473426,Ki,nM,97.72,CHEMBL2010636,pKi,,7.01,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CC5(CCCCC5)CC4=O)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4453005,Ki,nM,30.9,CHEMBL2010636,pKi,,7.51,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)nc5sccc45)CC3)C(=O)[C@@H]3CC=CC[C@H]23)cc1Cl,CHEMBL4462322,Ki,nM,831.76,CHEMBL2010636,pKi,,6.08,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CC1(C)CC(=O)N(CC(=O)N2CCC(N3N=C(c4ccc(F)cc4)[C@H]4CC=CC[C@H]4C3=O)CC2)C(=O)C1,CHEMBL4435111,Ki,nM,77.62,CHEMBL2010636,pKi,,7.11,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,CC1(C)CC(=O)N(CC(=O)N2CCC(N3N=C(c4ccc(OC(F)F)c(OC(F)F)c4)[C@H]4CC=CC[C@H]4C3=O)CC2)C(=O)C1,CHEMBL4530777,Ki,nM,407.38,CHEMBL2010636,pKi,,6.39,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(CN1C(=O)CC2(CCCCC2)CC1=O)N1CCC(N2N=C(c3ccc(OC(F)F)c(OC(F)F)c3)[C@H]3CC=CC[C@H]3C2=O)CC1,CHEMBL4533993,Ki,nM,776.25,CHEMBL2010636,pKi,,6.11,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C1[C@@H]2CC=CC[C@@H]2C(c2ccc(O)c(O)c2)=NN1C1CCN(c2ncnc3ccsc23)CC1,CHEMBL4451207,Ki,nM,891.25,CHEMBL2010636,pKi,,6.05,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(c4nc(N)nc5sccc45)CC3)C(=O)[C@@H]3CCCC[C@H]23)cc1OC,CHEMBL4466777,Ki,nM,93.33,CHEMBL2010636,pKi,,7.03,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CCN(C(=O)CN4C(=O)CC(C)(C)CC4=O)CC3)C(=O)[C@@H]3CCCC[C@H]23)cc1OC,CHEMBL4441871,Ki,nM,85.11,CHEMBL2010636,pKi,,7.07,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CN(c4nc(N)nc5sccc45)C3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4461658,Ki,nM,275.42,CHEMBL2010636,pKi,,6.56,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CN(c4ncnc5ccsc45)C3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4454600,Ki,nM,288.4,CHEMBL2010636,pKi,,6.54,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CN(C(=O)CN4C(=O)CC(C)(C)CC4=O)C3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4591859,Ki,nM,102.33,CHEMBL2010636,pKi,,6.99,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CN(C(=O)CN4C(=O)CC5(CCCCC5)CC4=O)C3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4465097,Ki,nM,91.2,CHEMBL2010636,pKi,,7.04,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,COc1ccc(C2=NN(C3CN(C(=O)CN4C(=O)CC5(CCCC5)CC4=O)C3)C(=O)[C@@H]3CC=CC[C@H]23)cc1OC,CHEMBL4461705,Ki,nM,169.82,CHEMBL2010636,pKi,,6.77,Class 1 phosphodiesterase PDEB1,Trypanosoma brucei
+B,O=C(O)[C@H](O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL1230513,Kd,nM,10000.0,CHEMBL3337328,Kd,M,0.00001,6-phosphogluconolactonase,Trypanosoma brucei
+B,CN(C)CCC(=O)c1ccc(S(C)(=O)=O)cc1.Cl,CHEMBL535173,IC50,nM,2900.0,CHEMBL1837,IC50,uM,2.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,CCc1ccc(NCCC(=O)c2ccc(Cl)c(Cl)c2)cc1,CHEMBL231735,IC50,nM,107000.0,CHEMBL1837,IC50,uM,107.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCN1CCOCC1)c1ccc(Cl)cc1,CHEMBL234180,IC50,nM,148000.0,CHEMBL1837,IC50,uM,148.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CN(C)CCC(=O)c1ccc(Cl)c(Cl)c1.Cl,CHEMBL536752,IC50,nM,3300.0,CHEMBL1837,IC50,uM,3.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC(C)(C)c1cc(CN2CCCCCC2)cc(C(C)(C)C)c1O,CHEMBL395223,IC50,nM,38800.0,CHEMBL1837,IC50,uM,38.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC(C)c1cc(CN(C)C)cc(C(C)C)c1O,CHEMBL55756,IC50,nM,11800.0,CHEMBL1837,IC50,uM,11.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC(C)(C)c1cc(CNCCO)cc(C(C)(C)C)c1O.Cl,CHEMBL538585,IC50,nM,2000.0,CHEMBL1837,IC50,uM,2.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCNc1cccc(F)c1)c1cccc([N+](=O)[O-])c1,CHEMBL233549,IC50,nM,3300.0,CHEMBL1837,IC50,uM,3.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,Cc1cccc(NCCC(=O)c2cccc([N+](=O)[O-])c2)c1C,CHEMBL233348,IC50,nM,1500.0,CHEMBL1837,IC50,uM,1.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCNc1ccccc1)c1cccc([N+](=O)[O-])c1,CHEMBL233347,IC50,nM,1700.0,CHEMBL1837,IC50,uM,1.7,Trypanothione reductase,Trypanosoma brucei brucei
+B,CCCCOC(=O)c1ccc(NCCC(=O)c2cccc([N+](=O)[O-])c2)cc1,CHEMBL233339,IC50,nM,2400.0,CHEMBL1837,IC50,uM,2.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,CN(C)CCC(=O)c1cccc([N+](=O)[O-])c1.Cl,CHEMBL537483,IC50,nM,340.0,CHEMBL1837,IC50,uM,0.34,Trypanothione reductase,Trypanosoma brucei brucei
+B,CS(=O)(=O)c1ccc(C(=O)CCN2CCCCC2)cc1,CHEMBL392238,IC50,nM,7800.0,CHEMBL1837,IC50,uM,7.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C)CC1,CHEMBL1836378,Ki,nM,320.0,CHEMBL1837,Ki,uM,0.32,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C)cc2)N1CCCN(C)C,CHEMBL1836603,Ki,nM,190.0,CHEMBL1837,Ki,uM,0.19,Trypanothione reductase,Trypanosoma brucei brucei
+B,COC(=O)CN1C(C)=Nc2ccc(Br)cc2C1c1ccccc1,CHEMBL1836554,IC50,nM,6800.0,CHEMBL1837,IC50,uM,6.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,COC(=O)CN1C(C)=Nc2ccc(C)cc2C1c1ccccc1,CHEMBL1727832,IC50,nM,67000.0,CHEMBL1837,IC50,uM,67.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,COC(=O)CN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836555,IC50,nM,9400.0,CHEMBL1837,IC50,uM,9.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,CCOC(=O)CN1C(C)=Nc2ccc(Br)cc2C1c1ccccc1,CHEMBL1836557,IC50,nM,12000.0,CHEMBL1837,IC50,uM,12.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Br)cc2C(c2ccccc2)N1CC(=O)O,CHEMBL1336863,IC50,nM,37000.0,CHEMBL1837,IC50,uM,37.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Br)cc2C(c2ccccc2)N1CC(=O)NN,CHEMBL1566389,IC50,nM,15000.0,CHEMBL1837,IC50,uM,15.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CCC1=Nc2ccc(Br)cc2C(c2ccccc2)N1CC(=O)OC,CHEMBL1300782,IC50,nM,23000.0,CHEMBL1837,IC50,uM,23.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,COC(=O)CN1C(CN2CCOCC2)=Nc2ccc(Br)cc2C1c1ccccc1,CHEMBL1724038,IC50,nM,89000.0,CHEMBL1837,IC50,uM,89.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,COC(=O)CN1C(CCN2CCOCC2)=Nc2ccc(Br)cc2C1c1ccccc1,CHEMBL1836362,IC50,nM,93000.0,CHEMBL1837,IC50,uM,93.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C1CN2C(=Nc3ccc(Br)cc3C2c2ccccc2)CN1,CHEMBL1836552,IC50,nM,37000.0,CHEMBL1837,IC50,uM,37.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C1CN2C(=Nc3ccc(Br)cc3C2c2ccccc2)CCN1,CHEMBL1836553,IC50,nM,39000.0,CHEMBL1837,IC50,uM,39.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1ccccc1,CHEMBL1836365,IC50,nM,930.0,CHEMBL1837,IC50,uM,0.93,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCc1ccccc1,CHEMBL1836366,IC50,nM,2000.0,CHEMBL1837,IC50,uM,2.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1ccccc1CN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836367,IC50,nM,1100.0,CHEMBL1837,IC50,uM,1.1,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1ccccc1F,CHEMBL1836368,IC50,nM,940.0,CHEMBL1837,IC50,uM,0.94,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1cccc(Cl)c1,CHEMBL1836369,IC50,nM,3500.0,CHEMBL1837,IC50,uM,3.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1cccc(C(F)(F)F)c1,CHEMBL1836370,IC50,nM,1500.0,CHEMBL1837,IC50,uM,1.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1cccc(N(C)C)c1,CHEMBL1836371,IC50,nM,810.0,CHEMBL1837,IC50,uM,0.81,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1ccc(C)cc1,CHEMBL1836372,IC50,nM,1300.0,CHEMBL1837,IC50,uM,1.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1ccc(Cl)cc1,CHEMBL1836373,IC50,nM,2200.0,CHEMBL1837,IC50,uM,2.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1Cc1ccc(C(F)(F)F)cc1,CHEMBL1836374,IC50,nM,2200.0,CHEMBL1837,IC50,uM,2.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,CCN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836375,IC50,nM,1200.0,CHEMBL1837,IC50,uM,1.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836376,IC50,nM,1800.0,CHEMBL1837,IC50,uM,1.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCOCC1,CHEMBL1836377,IC50,nM,2800.0,CHEMBL1837,IC50,uM,2.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C)CC1,CHEMBL1836378,IC50,nM,930.0,CHEMBL1837,IC50,uM,0.93,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN(C)C,CHEMBL1836379,IC50,nM,3500.0,CHEMBL1837,IC50,uM,3.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCCN(C)C,CHEMBL1836380,IC50,nM,1000.0,CHEMBL1837,IC50,uM,1.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CNCCN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836381,IC50,nM,2000.0,CHEMBL1837,IC50,uM,2.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCO,CHEMBL1836382,IC50,nM,1700.0,CHEMBL1837,IC50,uM,1.7,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)OC(C)(C)C,CHEMBL1836383,IC50,nM,2600.0,CHEMBL1837,IC50,uM,2.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC(=O)NCCN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836384,IC50,nM,2100.0,CHEMBL1837,IC50,uM,2.1,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)C1CC1,CHEMBL1836385,IC50,nM,2300.0,CHEMBL1837,IC50,uM,2.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)c1ccccc1,CHEMBL1836558,IC50,nM,1700.0,CHEMBL1837,IC50,uM,1.7,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)c1ccco1,CHEMBL1836559,IC50,nM,860.0,CHEMBL1837,IC50,uM,0.86,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)Cc1ccccc1,CHEMBL1836560,IC50,nM,1800.0,CHEMBL1837,IC50,uM,1.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,COCC(=O)NCCN1C(C)=Nc2ccc(Cl)cc2C1c1ccccc1,CHEMBL1836561,IC50,nM,1300.0,CHEMBL1837,IC50,uM,1.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)CN(C)C,CHEMBL1836562,IC50,nM,810.0,CHEMBL1837,IC50,uM,0.81,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)OC(C)(C)C)CC1,CHEMBL1836563,IC50,nM,1500.0,CHEMBL1837,IC50,uM,1.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC(=O)N1CCN(CCN2C(C)=Nc3ccc(Cl)cc3C2c2ccccc2)CC1,CHEMBL1836564,IC50,nM,1700.0,CHEMBL1837,IC50,uM,1.7,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)C2CC2)CC1,CHEMBL1836565,IC50,nM,1500.0,CHEMBL1837,IC50,uM,1.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)c2ccccc2)CC1,CHEMBL1836566,IC50,nM,1600.0,CHEMBL1837,IC50,uM,1.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)c2ccco2)CC1,CHEMBL1836567,IC50,nM,420.0,CHEMBL1837,IC50,uM,0.42,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)Cc2ccccc2)CC1,CHEMBL1836568,IC50,nM,2000.0,CHEMBL1837,IC50,uM,2.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,COCC(=O)N1CCN(CCN2C(C)=Nc3ccc(Cl)cc3C2c2ccccc2)CC1,CHEMBL1836569,IC50,nM,1600.0,CHEMBL1837,IC50,uM,1.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)CN(C)C)CC1,CHEMBL1836570,IC50,nM,370.0,CHEMBL1837,IC50,uM,0.37,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccccc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836571,IC50,nM,780.0,CHEMBL1837,IC50,uM,0.78,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Br)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836572,IC50,nM,790.0,CHEMBL1837,IC50,uM,0.79,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(I)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836574,IC50,nM,350.0,CHEMBL1837,IC50,uM,0.35,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3ccccc3)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836575,IC50,nM,7300.0,CHEMBL1837,IC50,uM,7.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3ccncc3)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836576,IC50,nM,4400.0,CHEMBL1837,IC50,uM,4.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3ccco3)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836573,IC50,nM,1300.0,CHEMBL1837,IC50,uM,1.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3ccsc3)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836577,IC50,nM,790.0,CHEMBL1837,IC50,uM,0.79,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3cccc4ccccc34)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836578,IC50,nM,8000.0,CHEMBL1837,IC50,uM,8.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(-c3cc4ccccc4o3)cc2C(c2ccccc2)N1CCN1CCCCC1,CHEMBL1836579,IC50,nM,8500.0,CHEMBL1837,IC50,uM,8.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2c(Br)cc(Cl)cc2C(c2ccccc2)N1CCCN(C)C,CHEMBL1836601,IC50,nM,53000.0,CHEMBL1837,IC50,uM,53.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2c(-c3ccccc3)cc(Cl)cc2C(c2ccccc2)N1CCCN(C)C,CHEMBL1836602,IC50,nM,24000.0,CHEMBL1837,IC50,uM,24.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C)cc2)N1CCCN(C)C,CHEMBL1836603,IC50,nM,230.0,CHEMBL1837,IC50,uM,0.23,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C(C)(C)C)cc2)N1CCN1CCCCC1,CHEMBL1836605,IC50,nM,7900.0,CHEMBL1837,IC50,uM,7.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2cccc(F)c2)N1CCN1CCCCC1,CHEMBL1836606,IC50,nM,900.0,CHEMBL1837,IC50,uM,0.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1cccc(C2c3cc(Cl)ccc3N=C(C)N2CCN2CCCCC2)c1,CHEMBL1836607,IC50,nM,28000.0,CHEMBL1837,IC50,uM,28.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(Cl)c(Cl)c2)N1CCN1CCCCC1,CHEMBL1836604,IC50,nM,1300.0,CHEMBL1837,IC50,uM,1.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(C2CCCCC2)N1CCN1CCCCC1,CHEMBL1836608,IC50,nM,27000.0,CHEMBL1837,IC50,uM,27.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(O)(c2ccc(F)cc2)N1CCN1CCCCC1,CHEMBL1836609,IC50,nM,8300.0,CHEMBL1837,IC50,uM,8.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1ccc(C2(O)c3cc(Cl)ccc3N=C(C)N2CCN2CCCCC2)cc1,CHEMBL1836610,IC50,nM,4900.0,CHEMBL1837,IC50,uM,4.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(O)(c2ccc(C)cc2)N1CCN1CCCCC1,CHEMBL1836611,IC50,nM,710.0,CHEMBL1837,IC50,uM,0.71,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(Cl)cc2)N1CCN1CCCCC1,CHEMBL1836612,IC50,nM,730.0,CHEMBL1837,IC50,uM,0.73,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(F)cc2)N1CCN1CCCCC1,CHEMBL1836613,IC50,nM,4900.0,CHEMBL1837,IC50,uM,4.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1ccc(C2c3cc(Cl)ccc3N=C(C)N2CCN2CCCCC2)cc1,CHEMBL1836614,IC50,nM,1500.0,CHEMBL1837,IC50,uM,1.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C)cc2)N1CCN1CCCCC1,CHEMBL1836615,IC50,nM,590.0,CHEMBL1837,IC50,uM,0.59,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2cccc(Cl)c2)N1CCN1CCCCC1,CHEMBL1836616,IC50,nM,1200.0,CHEMBL1837,IC50,uM,1.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2cccc(C)c2)N1CCN1CCCCC1,CHEMBL1836617,IC50,nM,4600.0,CHEMBL1837,IC50,uM,4.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C)c(C)c2)N1CCN1CCCCC1,CHEMBL1836618,IC50,nM,6800.0,CHEMBL1837,IC50,uM,6.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(Cc2ccccc2)N1CCN1CCCCC1,CHEMBL1836619,IC50,nM,50000.0,CHEMBL1837,IC50,uM,50.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(O)cc2)N1CCN1CCCCC1,CHEMBL1836620,IC50,nM,20000.0,CHEMBL1837,IC50,uM,20.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2cccc(O)c2)N1CCN1CCCCC1,CHEMBL1836621,IC50,nM,1600.0,CHEMBL1837,IC50,uM,1.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)c1ccco1,CHEMBL1836559,Ki,nM,2270.0,CHEMBL1837,Ki,uM,2.27,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)CN(C)C)CC1,CHEMBL1836570,Ki,nM,1780.0,CHEMBL1837,Ki,uM,1.78,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccc(C)cc2)N1CCCN(C)C,CHEMBL1836603,Ki,nM,1460.0,CHEMBL1837,Ki,uM,1.46,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCNC(=O)c1ccco1,CHEMBL1836559,Ki,nM,440.0,CHEMBL1837,Ki,uM,0.44,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=Nc2ccc(Cl)cc2C(c2ccccc2)N1CCN1CCN(C(=O)CN(C)C)CC1,CHEMBL1836570,Ki,nM,270.0,CHEMBL1837,Ki,uM,0.27,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCCNCc1ccc(OC2=CC(=O)c3ccccc3C2=O)cc1.O=C(O)C(F)(F)F,CHEMBL2178999,Ki,nM,4600.0,CHEMBL1837,Ki,uM,4.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCCNCc1ccc(OC2=CC(=O)c3cc4ccccc4cc3C2=O)cc1.O=C(O)C(F)(F)F,CHEMBL2179000,Ki,nM,3900.0,CHEMBL1837,Ki,uM,3.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCCNCc1ccc(OC2=CC(=O)c3ccccc3C2=O)cc1.O=C(O)C(F)(F)F,CHEMBL2178999,Ki,nM,2800.0,CHEMBL1837,Ki,uM,2.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCCNCc1ccc(OC2=CC(=O)c3cc4ccccc4cc3C2=O)cc1.O=C(O)C(F)(F)F,CHEMBL2179000,Ki,nM,3400.0,CHEMBL1837,Ki,uM,3.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCCNCc1ccc(OC2=CC(=O)c3cc4ccccc4cc3C2=O)cc1.O=C(O)C(F)(F)F,CHEMBL2179000,Ki,nM,3400.0,CHEMBL1837,Ki,uM,3.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,CN(C)CCCN1c2ccccc2CCc2ccc(Cl)cc21,CHEMBL415,IC50,nM,3400.0,CHEMBL1837,IC50,uM,3.4,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=CC2Cc3nc4cc(Cl)ccc4c(NCCCCCCCCNc4c5c(nc6ccccc46)CCCC5)c3C(C1)C2,CHEMBL255056,IC50,nM,870.0,CHEMBL1837,IC50,uM,0.87,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1cc2c(cc1OC)CC(CC1CCN(CCCNc3c4c(nc5cc(Cl)ccc35)CC3C=C(C)CC4C3)CC1)C2,CHEMBL3600464,IC50,nM,4880.0,CHEMBL1837,IC50,uM,4.88,Trypanothione reductase,Trypanosoma brucei brucei
+B,COc1cc2c(cc1OC)C(=O)C(CC1CCC(NCCCNc3c4c(nc5cc(Cl)ccc35)CCCC4)CC1)C2,CHEMBL3600468,IC50,nM,7390.0,CHEMBL1837,IC50,uM,7.39,Trypanothione reductase,Trypanosoma brucei brucei
+B,CC1=CC2Cc3nc4cc(Cl)ccc4c(N)c3C(C1)C2,CHEMBL140476,IC50,nM,5000.0,CHEMBL1837,IC50,uM,5.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,Clc1ccc2c(c1)Nc1ccccc1O2,CHEMBL1801896,IC50,nM,69200.0,CHEMBL1837,IC50,uM,69.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCl)N1c2ccccc2Sc2ccccc21,CHEMBL1651446,IC50,nM,9300.0,CHEMBL1837,IC50,uM,9.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCl)N1c2ccccc2Oc2ccc(Cl)cc21,CHEMBL3758242,IC50,nM,7600.0,CHEMBL1837,IC50,uM,7.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,O=C(CCl)N1c2ccccc2COc2ccc(Cl)cc21,CHEMBL3758404,IC50,nM,7200.0,CHEMBL1837,IC50,uM,7.2,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCNCCCN(Cc1ccccc1)Cc1ccccc1,CHEMBL4244566,Ki,nM,7500.0,CHEMBL1837,Ki,uM,7.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCNCCCN(Cc1ccccc1)Cc1ccccc1,CHEMBL4244566,IC50,nM,8800.0,CHEMBL1837,IC50,uM,8.8,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCNCCCN(Cc1ccccc1)Cc1ccccc1,CHEMBL4244566,Ki,nM,20000.0,CHEMBL1837,Ki,uM,20.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(CCc4ccccc4)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4879323,IC50,nM,13300.0,CHEMBL1837,IC50,uM,13.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(CCc4ccc5ccccc5c4)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4854942,IC50,nM,9700.0,CHEMBL1837,IC50,uM,9.7,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(CCc4ccc(-c5ccccc5)cc4)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4848544,IC50,nM,10000.0,CHEMBL1837,IC50,uM,10.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(-c4ccccc4)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4868156,IC50,nM,12500.0,CHEMBL1837,IC50,uM,12.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(-c4ccc5c(c4)OCC5)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4859330,IC50,nM,15000.0,CHEMBL1837,IC50,uM,15.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(-c4ccccc4)c(-c4ccccc4)s3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F,CHEMBL4855840,IC50,nM,7300.0,CHEMBL1837,IC50,uM,7.3,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCCc1cn(-c2ccc(-c3nc(-c4cccc(-c5csc(-c6ccc(-n7cc(CCCCN)nn7)cc6OCCN6CCNC6=O)n5)c4)cs3)c(OCCN3CCNC3=O)c2)nn1.O=C(O)C(F)(F)F.O=C(O)C(F)(F)F,CHEMBL4859269,IC50,nM,1000.0,CHEMBL1837,IC50,uM,1.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,C[n+]1nn(-c2ccc(-c3nc(CCc4ccccc4)cs3)c(OCCN3CCNC3=O)c2)cc1CCCCN.O=C(O)C(F)(F)F.O=S(=O)([O-])C(F)(F)F,CHEMBL5284653,IC50,nM,26900.0,CHEMBL1837,IC50,uM,26.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,C[n+]1nn(-c2ccc(-c3nc(CCc4ccc5ccccc5c4)cs3)c(OCCN3CCNC3=O)c2)cc1CCCCN.O=C(O)C(F)(F)F.O=S(=O)([O-])C(F)(F)F,CHEMBL5265836,IC50,nM,5100.0,CHEMBL1837,IC50,uM,5.1,Trypanothione reductase,Trypanosoma brucei brucei
+B,C[n+]1nn(-c2ccc(-c3nc(CCc4ccc(-c5ccccc5)cc4)cs3)c(OCCN3CCNC3=O)c2)cc1CCCCN.O=C(O)C(F)(F)F.O=S(=O)([O-])C(F)(F)F,CHEMBL5269349,IC50,nM,4900.0,CHEMBL1837,IC50,uM,4.9,Trypanothione reductase,Trypanosoma brucei brucei
+B,c1ccc(CCCNCCCN(CCCCN(CCCNCCCc2ccccc2)CCCc2ccccc2)CCCc2ccccc2)cc1,CHEMBL86281,Ki,nM,600.0,CHEMBL1837,Ki,uM,0.6,Trypanothione reductase,Trypanosoma brucei brucei
+B,c1ccc(CNCCCNCCCCNCCCNCc2ccccc2)cc1,CHEMBL81614,Ki,nM,19000.0,CHEMBL1837,Ki,uM,19.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCN(CCCCN(CCCN)CCCc1ccccc1)CCCc1ccccc1,CHEMBL62048,Ki,nM,3000.0,CHEMBL1837,Ki,uM,3.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,c1ccc(CCCNCCCNCCCCNCCCNCCCc2ccccc2)cc1,CHEMBL86096,Ki,nM,12000.0,CHEMBL1837,Ki,uM,12.0,Trypanothione reductase,Trypanosoma brucei brucei
+B,CN1CCN(CCCN2c3ccccc3Sc3ccc(Cl)cc32)CC1,CHEMBL728,IC50,nM,7500.0,CHEMBL1837,IC50,uM,7.5,Trypanothione reductase,Trypanosoma brucei brucei
+B,Clc1ccc2c(c1)N(CCCN1CCN(CCCc3ccccc3)CC1)c1ccccc1S2,CHEMBL5081809,IC50,nM,750.0,CHEMBL1837,IC50,uM,0.75,Trypanothione reductase,Trypanosoma brucei brucei
+B,NCCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL870,Ki,nM,188600.0,CHEMBL5069,Ki,uM,188.6,Hypoxanthine-guanine phosphoribosyltransferase,Trypanosoma brucei brucei
+B,CN(C)CCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL55812,Ki,nM,126000.0,CHEMBL5069,Ki,uM,126.0,Hypoxanthine-guanine phosphoribosyltransferase,Trypanosoma brucei brucei
+B,NCCC(O)(P(=O)(O)O)P(=O)(O)O,CHEMBL834,Ki,nM,50600.0,CHEMBL5069,Ki,uM,50.6,Hypoxanthine-guanine phosphoribosyltransferase,Trypanosoma brucei brucei
+B,O=P(O)(O)C(O)(CC1=CC=CNC1)P(=O)(O)O,CHEMBL1161675,Ki,nM,23200.0,CHEMBL5069,Ki,uM,23.2,Hypoxanthine-guanine phosphoribosyltransferase,Trypanosoma brucei brucei
+B,O=Cc1c(O)ccc2cc(OP(=O)(O)O)ccc12,CHEMBL382634,Ki,nM,23030.0,CHEMBL4916,Ki,uM,23.03,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,O=C(COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL1235112,IC50,nM,10000.0,CHEMBL4916,IC50,uM,10.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,O=P(O)(O)OC[C@@H](O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL258208,IC50,nM,9400.0,CHEMBL4916,IC50,uM,9.4,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,CO[C@H](COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL2017785,IC50,nM,2000.0,CHEMBL4916,IC50,uM,2.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,CCO[C@H](COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL2017786,IC50,nM,51000.0,CHEMBL4916,IC50,uM,51.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,CCCCCO[C@H](COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL2017787,IC50,nM,117000.0,CHEMBL4916,IC50,uM,117.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,O=P(O)(O)OC[C@@H](O)[C@@H](O)[C@H](O)[C@@H](COP(=O)(O)O)OCCCc1ccccc1,CHEMBL2017788,IC50,nM,31000.0,CHEMBL4916,IC50,uM,31.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,CC[C@@](O)(COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL2017789,IC50,nM,130000.0,CHEMBL4916,IC50,uM,130.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,CCCCC[C@@](O)(COP(=O)(O)O)[C@@H](O)[C@H](O)[C@H](O)COP(=O)(O)O,CHEMBL2017790,IC50,nM,15000.0,CHEMBL4916,IC50,uM,15.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,O=P(O)(O)OC[C@@H](O)[C@@H](O)[C@H](O)[C@@](O)(CCCc1ccccc1)COP(=O)(O)O,CHEMBL2017791,IC50,nM,56000.0,CHEMBL4916,IC50,uM,56.0,"Fructose-bisphosphate aldolase, glycosomal",Trypanosoma brucei brucei
+B,Nc1ncnc2c1ncn2C[C@@H]1N[C@H](CO)[C@@H](O)[C@H]1O,CHEMBL3828258,Ki,nM,3600.0,CHEMBL3826861,Ki,uM,3.6,Inosine-adenosine-guanosine-nucleoside hydrolase,Trypanosoma brucei brucei
+B,OC[C@H]1N[C@@H](Cn2cnc3c(O)ncnc32)[C@H](O)[C@@H]1O,CHEMBL3827853,Ki,nM,3600.0,CHEMBL3826861,Ki,uM,3.6,Inosine-adenosine-guanosine-nucleoside hydrolase,Trypanosoma brucei brucei
+B,Nc1nc(O)c2ncn(C[C@@H]3N[C@H](CO)[C@@H](O)[C@H]3O)c2n1,CHEMBL3828042,Ki,nM,3600.0,CHEMBL3826861,Ki,uM,3.6,Inosine-adenosine-guanosine-nucleoside hydrolase,Trypanosoma brucei brucei
+B,Nc1ncnc2c1N=CC2[C@@H]1N[C@H](CO)[C@@H](O)[C@H]1O,CHEMBL3827395,Ki,nM,3.0,CHEMBL3826861,Ki,nM,3.0,Inosine-adenosine-guanosine-nucleoside hydrolase,Trypanosoma brucei brucei
+F,CCCCNC(=O)c1c(N)n(CCCOC)c2nc3ccccc3nc12,CHEMBL1504738,IC50,nM,17933.0,CHEMBL4105928,IC50,uM,17.933,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,COc1ccc(CN2C(=O)c3cccnc3C2Nc2cc(Cl)ccc2OC)cc1,CHEMBL1403664,IC50,nM,16084.0,CHEMBL4105928,IC50,uM,16.084,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,COCCCNC(=O)C1CCN(S(=O)(=O)c2ccc3[nH]c(=O)oc3c2)CC1,CHEMBL3561222,IC50,nM,42395.0,CHEMBL4105928,IC50,uM,42.395,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cn1c(N=Nc2ccc(N3CCOCC3)cc2)[n+](C)c2ccccc21.O=S(=O)([O-])c1ccccc1,CHEMBL1479759,IC50,nM,34043.0,CHEMBL4105928,IC50,uM,34.043,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Nc1ccc2nc3c(O)nc(S)nc3nc2c1,CHEMBL1429070,IC50,nM,2759.0,CHEMBL4105928,IC50,uM,2.759,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1n[nH]c(S/C(=C/c2ccc(-c3ccc(C(=O)O)cc3)o2)C(=O)O)n1,CHEMBL1500850,IC50,nM,77911.0,CHEMBL4105928,IC50,uM,77.911,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,COc1cc2c(cc1OC)C(c1ccc(-c3ccc(Cl)c(Cl)c3)o1)=NCC2,CHEMBL1369478,IC50,nM,35840.0,CHEMBL4105928,IC50,uM,35.84,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1n[nH]c(S/C(=C\c2ccc(-c3ccc(C(=O)O)c(Cl)c3)o2)C(=O)O)n1,CHEMBL1560833,IC50,nM,22931.0,CHEMBL4105928,IC50,uM,22.931,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCCSc1nnc(NC(=O)CSc2sc3c(O)cc(O)nc3c2C#N)s1,CHEMBL1480043,IC50,nM,50685.0,CHEMBL4105928,IC50,uM,50.685,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,COc1cc2c(cc1OC)-c1cc(NCc3ccccn3)nc(=O)n1CC2,CHEMBL1365833,IC50,nM,14741.0,CHEMBL4105928,IC50,uM,14.741,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,NC(=O)[C@H]1CC2(CC(c3cccc(NC(=O)[C@H]4CCC(=O)N4)c3)=NO2)CN1C(=O)c1ccccc1,CHEMBL1531443,IC50,nM,19678.0,CHEMBL4105928,IC50,uM,19.678,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,NS(=O)(=O)c1ccc(NC(=O)c2cccc(N3C(=O)c4ccccc4C3=O)c2)cc1,CHEMBL1602055,IC50,nM,30828.0,CHEMBL4105928,IC50,uM,30.828,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1nnc(N=c2ssnc2Cl)o1,CHEMBL1404277,IC50,nM,79000.0,CHEMBL4105928,IC50,uM,79.0,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C(N/N=C/c1ccc(OC(=O)c2ccccc2Cl)cc1)c1cc(O)cc(O)c1,CHEMBL1978925,IC50,nM,41003.0,CHEMBL4105928,IC50,uM,41.003,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1nc2c(=O)n(C)c(=O)nc-2n(C)n1,CHEMBL601757,IC50,nM,410.76,CHEMBL4105928,IC50,uM,0.41076,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,N/C(=N\N=C/c1ccc(-c2ccc(O)c(C(=O)O)c2)o1)N[N+](=O)[O-],CHEMBL1981657,IC50,nM,21232.0,CHEMBL4105928,IC50,uM,21.232,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Nc1c(C(=O)NC2CCCC2)c2nc3ccccc3nc2n1CC1CCCO1,CHEMBL1368302,IC50,nM,21149.0,CHEMBL4105928,IC50,uM,21.149,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C(NC1(O)C(=O)c2ccccc2C1=O)c1ccccc1,CHEMBL1501990,IC50,nM,13678.0,CHEMBL4105928,IC50,uM,13.678,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCCCn1c(NC(=O)c2ccco2)c(C(=O)OCC)c2nc3ccccc3nc21,CHEMBL1463829,IC50,nM,21763.0,CHEMBL4105928,IC50,uM,21.763,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCC(C)NC(=O)C1CCN(S(=O)(=O)c2ccc3[nH]c(=O)oc3c2)CC1,CHEMBL3560570,IC50,nM,19721.0,CHEMBL4105928,IC50,uM,19.721,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=c1cc(CN2CCc3ccccc32)nc2sccn12,CHEMBL1426865,IC50,nM,22862.0,CHEMBL4105928,IC50,uM,22.862,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCCc1nc2c(=O)n(C)c(=O)nc-2n(C)n1,CHEMBL1325945,IC50,nM,494.22,CHEMBL4105928,IC50,uM,0.49422,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1oc2c(c1C(=O)c1ccccc1)C(=O)C(=O)c1ccccc1-2,CHEMBL1470135,IC50,nM,10338.0,CHEMBL4105928,IC50,uM,10.338,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C1C(=O)c2cccnc2-c2ncccc21,CHEMBL235504,IC50,nM,3510.0,CHEMBL4105928,IC50,uM,3.51,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1n[nH]c(=S)n(NC(=O)/C=C/C(=O)Nn2c(=S)[nH]nc(C)c2=O)c1=O,CHEMBL1381017,IC50,nM,63585.0,CHEMBL4105928,IC50,uM,63.585,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,N#Cc1c(SCC(=O)Nc2nccs2)sc2c(O)cc(O)nc12,CHEMBL1493010,IC50,nM,35544.0,CHEMBL4105928,IC50,uM,35.544,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,COC1=CC(=O)c2nc(Cl)ccc2C1=O,CHEMBL71466,IC50,nM,28287.0,CHEMBL4105928,IC50,uM,28.287,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Cc1cc(O)c2c(c1)C(=O)[C@@]13C(=C(O)[C@H]4C(O)[C@@H]1[C@H]1C(O)[C@@H]3C(O)=C3C(=O)c5c(O)cc(C)cc5C(=O)[C@@]314)C2=O,CHEMBL3561922,IC50,nM,4099.0,CHEMBL4105928,IC50,uM,4.099,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,[S-]c1nnc(-c2ccc(Br)cc2)n1-c1ccccc1.[Zn+2],CHEMBL1568356,IC50,nM,20238.0,CHEMBL4105928,IC50,uM,20.238,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Nc1ccc(-c2nc3cc(N)ccc3[nH]2)cc1,CHEMBL1489074,IC50,nM,46070.0,CHEMBL4105928,IC50,uM,46.07,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C(NCCCO)c1ccc2nc(-c3ccco3)c(-c3ccco3)nc2c1,CHEMBL1409603,IC50,nM,28395.0,CHEMBL4105928,IC50,uM,28.395,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCC(C)NC(=O)c1c(N)n(CCCOC)c2nc3ccccc3nc12,CHEMBL1417815,IC50,nM,15094.0,CHEMBL4105928,IC50,uM,15.094,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,C[C@@H]1O[C@@H](Oc2c(-c3cc(O)c(O)c(O)c3)oc3cc(O)cc(O)c3c2=O)[C@H](O)[C@H](O)[C@H]1O,CHEMBL522983,IC50,nM,51381.0,CHEMBL4105928,IC50,uM,51.381,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CC(C)c1c(Cl)c(O)c(-c2ccccc2)c(=O)n1-c1ccc(F)cc1,CHEMBL1581216,IC50,nM,61636.0,CHEMBL4105928,IC50,uM,61.636,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C1NC(=O)C(=Cc2ccc(-c3ccc(F)cc3O)o2)C(=O)N1,CHEMBL1361023,IC50,nM,63776.0,CHEMBL4105928,IC50,uM,63.776,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,CCC(C)NC(=O)c1c(N)n(CC2CCCO2)c2nc3ccccc3nc12,CHEMBL1313554,IC50,nM,27719.0,CHEMBL4105928,IC50,uM,27.719,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,Nc1cc(S(=O)(=O)O)cc([N+](=O)[O-])c1O,CHEMBL1464200,IC50,nM,4989.0,CHEMBL4105928,IC50,uM,4.989,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+F,O=C(O)c1cc(N2C(=O)C=CC2=O)cc(N2C(=O)C=CC2=O)c1,CHEMBL1736648,IC50,nM,12331.0,CHEMBL4105928,IC50,uM,12.331,"RNA-editing ligase 1, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1ccc(OCCCCCCCCCCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1O.[Br-],CHEMBL4215836,IC50,nM,15.0,CHEMBL4295594,IC50,uM,0.015,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1ccc(OCCCCCCCCCCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1F.[Br-],CHEMBL4209637,IC50,nM,740.0,CHEMBL4295594,IC50,uM,0.74,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1cc(OCCCCCCCCCCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)ccc1O.[Br-],CHEMBL4205799,IC50,nM,12.0,CHEMBL4295594,IC50,uM,0.012,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1c(C)cc(OCCCCCCCCCCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1O.[Br-],CHEMBL4218963,IC50,nM,250.0,CHEMBL4295594,IC50,uM,0.25,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc(OCCCCCCCCCCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc(O)c1C(=O)O.[Br-],CHEMBL4213740,IC50,nM,4.2,CHEMBL4295594,IC50,uM,0.0042,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,O=Cc1ccc(OCCCCCCCCCCCCC[n+]2cccc3ccccc32)cc1O,CHEMBL4216658,IC50,nM,1230.0,CHEMBL4295594,IC50,uM,1.23,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\Cc1c(O)c(Cl)c(C)c(C=O)c1O)CC/C=C(\C)[C@@H]1CC(=O)C(C)(C)O1,CHEMBL133046,IC50,nM,2.0,CHEMBL4295594,IC50,uM,0.002,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,O=C(NO)c1ccccc1O,CHEMBL309339,IC50,nM,5930.0,CHEMBL4295594,IC50,uM,5.93,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,O=Cc1ccc(OCCCCCCCCCCCCCBr)cc1O,CHEMBL4204231,IC50,nM,73.0,CHEMBL4295594,IC50,uM,0.073,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COc1cc(OCCCCCCCCCCCCCBr)cc(O)c1C=O,CHEMBL4209094,IC50,nM,2300.0,CHEMBL4295594,IC50,uM,2.3,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\CO)CC/C=C(\C)CC/C=C(\C)COc1cc(C)c(C(=O)O)c(O)c1,CHEMBL4216944,IC50,nM,3.1,CHEMBL4295594,IC50,uM,0.0031,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\CO)CC/C=C(\C)COc1ccc(C(=O)O)c(O)c1,CHEMBL4215825,IC50,nM,2100.0,CHEMBL4295594,IC50,uM,2.1,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\CO)CC/C=C(\C)COc1ccc(C(=O)O)c(F)c1,CHEMBL4210869,IC50,nM,1100.0,CHEMBL4295594,IC50,uM,1.1,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\CO)CC/C=C(\C)COc1ccc(C(=O)O)c(C)c1,CHEMBL4203618,IC50,nM,920.0,CHEMBL4295594,IC50,uM,0.92,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\CO)CC/C=C(\C)COc1ccc(C(=O)O)cc1,CHEMBL4215285,IC50,nM,2400.0,CHEMBL4295594,IC50,uM,2.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1ccc(OC/C(C)=C/CC/C(C)=C/CO)cc1C,CHEMBL4218759,IC50,nM,1690.0,CHEMBL4295594,IC50,uM,1.69,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)OC/C=C(\C)CC/C=C(\C)COC(=O)c1ccc(O)cc1O,CHEMBL4203629,IC50,nM,9.1,CHEMBL4295594,IC50,nM,9.1,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCOc1ccc(C(=O)O)c(O)c1,CHEMBL4206503,Ki,nM,5000.0,CHEMBL4295594,Ki,uM,5.0,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/COc1cc(O)c(Cl)c(C)c1C=O,CHEMBL4292398,IC50,nM,251.19,CHEMBL4295594,pIC50,,6.6,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/COc1cc(O)c(C=O)c(C)c1Cl,CHEMBL4292788,IC50,nM,1000.0,CHEMBL4295594,pIC50,,6.0,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COc1c(Cl)c(C)c(C=O)c(OC)c1C/C=C(\C)CCC=C(C)C,CHEMBL4282186,IC50,nM,125.89,CHEMBL4295594,pIC50,,6.9,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)cc(/C=N/O)c1O,CHEMBL4277669,IC50,nM,794.33,CHEMBL4295594,pIC50,,6.1,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)cc(C#N)c1O,CHEMBL4292960,IC50,nM,25.12,CHEMBL4295594,pIC50,,7.6,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)Oc1c(Cl)c(C)c(C)c(O)c1C/C=C(\C)CCC=C(C)C,CHEMBL4283459,IC50,nM,1995.26,CHEMBL4295594,pIC50,,5.7,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)c(C)c(C#N)c1O,CHEMBL4291644,IC50,nM,3.981,CHEMBL4295594,pIC50,,8.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)cc(O)c(C=O)c1O,CHEMBL4278723,IC50,nM,3162.28,CHEMBL4295594,pIC50,,5.5,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1cc(Cl)cc(C=O)c1O,CHEMBL4289387,IC50,nM,3981.07,CHEMBL4295594,pIC50,,5.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)Oc1ccc(C=O)c(O)c1C/C=C(\C)CCC=C(C)C,CHEMBL4293869,IC50,nM,3162.28,CHEMBL4295594,pIC50,,5.5,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)ccc(C=O)c1O,CHEMBL4285973,IC50,nM,3981.07,CHEMBL4295594,pIC50,,5.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)Oc1cc(C)c(C=O)c(O)c1C/C=C(\C)CCC=C(C)C,CHEMBL4285614,IC50,nM,3981.07,CHEMBL4295594,pIC50,,5.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)cc(C)c(C=O)c1O,CHEMBL4277675,IC50,nM,3162.28,CHEMBL4295594,pIC50,,5.5,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)Oc1c(Cl)cc(C=O)c(O)c1C/C=C(\C)CCC=C(C)C,CHEMBL4282192,IC50,nM,501.19,CHEMBL4295594,pIC50,,6.3,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)cc(C=O)c1O,CHEMBL4280758,IC50,nM,100.0,CHEMBL4295594,pIC50,,7.0,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(=O)Oc1c(Cl)c(C)c(C=O)c(O)c1C/C=C(\C)CCC=C(C)C,CHEMBL4283939,IC50,nM,316.23,CHEMBL4295594,pIC50,,6.5,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)c(C)c(C=O)c1O,CHEMBL4294528,IC50,nM,3.981,CHEMBL4295594,pIC50,,8.4,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CC(C)=CCC/C(C)=C/Cc1c(O)c(Cl)c(C)c(C=O)c1O,CHEMBL4294528,IC50,nM,2.0,CHEMBL4295594,IC50,nM,2.0,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,C/C(=C\Cc1c(O)c(Cl)c(C)c(C=O)c1O)CC/C=C(\C)[C@@H]1CC(=O)C(C)(C)O1,CHEMBL133046,Ki,nM,0.13,CHEMBL4295594,Ki,nM,0.13,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc(O)cc(O)c1C(=O)OCCCCCCCCCCCCCC[n+]1ccc(/C=C/c2cc3c4c(c2O)CCCN4CCC3)cc1.[Br-],CHEMBL4846979,IC50,nM,360.0,CHEMBL4295594,IC50,uM,0.36,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,CCOC(=O)c1cc(C)c(C(=O)OCCCCCCCCCCCCCC[n+]2ccc(/C=C/c3cc4c5c(c3O)CCCN5CCC4)cc2)c(O)c1.[Br-],CHEMBL4879019,IC50,nM,1.6,CHEMBL4295594,IC50,uM,0.0016,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc(O)cc(OCCCCCCCCCCCCCC[n+]2ccc(/C=C/c3cc4c5c(c3O)CCCN5CCC4)cc2)c1.[Br-],CHEMBL4857072,IC50,nM,145.0,CHEMBL4295594,IC50,uM,0.145,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,COC(=O)c1c(C)cc(OCCCCCCCCCCCCCC[n+]2ccc(/C=C/c3cc4c5c(c3O)CCCN5CCC4)cc2)cc1O.[Br-],CHEMBL4872515,IC50,nM,42.0,CHEMBL4295594,IC50,uM,0.042,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1c(Cl)c(O)cc(O)c1C(=O)OCCCCCCCCCCCCCCBr,CHEMBL4857860,IC50,nM,750.0,CHEMBL4295594,IC50,uM,0.75,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc[n+](CCCCCCCCCCCCCCOC(=O)c2c(C)c(Cl)c(O)c(Cl)c2O)cc1.[Br-],CHEMBL4846471,IC50,nM,910.0,CHEMBL4295594,IC50,uM,0.91,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc[n+](CCCCCCCCCCCCCCOC(=O)c2c(O)cc(O)c(Cl)c2C)cc1.[Br-],CHEMBL4878802,IC50,nM,720.0,CHEMBL4295594,IC50,uM,0.72,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,Cc1cc[n+](CCCCCCCCCCCCCCOc2cc(C)c(C(=O)O)c(O)c2)cc1.[Br-],CHEMBL4846671,IC50,nM,1800.0,CHEMBL4295594,IC50,uM,1.8,"Alternative oxidase, mitochondrial",Trypanosoma brucei brucei
+B,O=C1C(=O)N(C(=O)OCc2ccccc2)c2ccccc21,CHEMBL119515,IC50,nM,30000.0,CHEMBL4188,IC50,uM,30.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C(=O)N(S(=O)(=O)c2ccccc2)c2ccccc21,CHEMBL119828,IC50,nM,15000.0,CHEMBL4188,IC50,uM,15.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc2[nH]c(O)c(/N=N/C(=N)S)c2c1,CHEMBL119345,IC50,nM,15000.0,CHEMBL4188,IC50,uM,15.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccc([N+](=O)[O-])cc12,CHEMBL120254,IC50,nM,17000.0,CHEMBL4188,IC50,uM,17.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cc(C)c2[nH]c(O)c(/N=N/C(=N)S)c2c1,CHEMBL118210,IC50,nM,15000.0,CHEMBL4188,IC50,uM,15.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccc(Cl)cc12,CHEMBL119213,IC50,nM,6000.0,CHEMBL4188,IC50,uM,6.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cc(Cl)cc2c(/N=N/C(=N)S)c(O)[nH]c12,CHEMBL118355,IC50,nM,3000.0,CHEMBL4188,IC50,uM,3.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccc(Br)cc12,CHEMBL418861,IC50,nM,7000.0,CHEMBL4188,IC50,uM,7.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C(=O)N(C(=O)c2ccccc2)c2ccccc21,CHEMBL118830,IC50,nM,100000.0,CHEMBL4188,IC50,uM,100.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccccc12,CHEMBL333137,IC50,nM,3500.0,CHEMBL4188,IC50,uM,3.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccc(I)cc12,CHEMBL119370,IC50,nM,1000.0,CHEMBL4188,IC50,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NC(=S)/N=N/c1c(O)[nH]c2ccc(F)cc12,CHEMBL119756,IC50,nM,15000.0,CHEMBL4188,IC50,uM,15.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(/S)N1CCN(C)CC1)c1cccc(Br)c1,CHEMBL326220,IC50,nM,4000.0,CHEMBL4188,IC50,uM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1cccc(-c2ccccc2)c1,CHEMBL108035,IC50,nM,1100.0,CHEMBL4188,IC50,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1cccc(Oc2ccccc2)c1,CHEMBL108865,IC50,nM,550.0,CHEMBL4188,IC50,uM,0.55,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1ccc(Oc2ccccc2)cc1,CHEMBL109893,IC50,nM,8000.0,CHEMBL4188,IC50,uM,8.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(/S)N1CCCCC1)c1cccc(Br)c1,CHEMBL108700,IC50,nM,4000.0,CHEMBL4188,IC50,uM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1ccc(Nc2ccccc2)cc1,CHEMBL107612,IC50,nM,18000.0,CHEMBL4188,IC50,uM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1ccc(-c2ccccc2)cc1,CHEMBL323975,IC50,nM,90.0,CHEMBL4188,IC50,uM,0.09,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1cccc(Br)c1,CHEMBL88734,IC50,nM,50.0,CHEMBL4188,IC50,uM,0.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N/N=C(/N)S)c1cccc(/C(C)=N/N=C(/N)S)c1,CHEMBL108101,IC50,nM,330.0,CHEMBL4188,IC50,uM,0.33,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)/C(S)=N/N=C(\C)c1cccc(Br)c1,CHEMBL109619,IC50,nM,1800.0,CHEMBL4188,IC50,uM,1.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=N\N=C(\N)S)c1cccc(Nc2ccccc2)c1,CHEMBL111632,IC50,nM,800.0,CHEMBL4188,IC50,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC/C(=N\N=C(\N)S)c1ccc(Cl)c(Cl)c1,CHEMBL92099,IC50,nM,110.0,CHEMBL4188,IC50,nM,110.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCC/C(=N\NC(N)=S)c1ccc(Cl)c(Cl)c1,CHEMBL181504,IC50,nM,60.0,CHEMBL4188,IC50,nM,60.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)/C(=N\N=C(\N)S)c1ccc(Cl)c(Cl)c1,CHEMBL367811,IC50,nM,3330.0,CHEMBL4188,IC50,nM,3330.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(/c1ccc(Cl)c(Cl)c1)C1CCCCC1,CHEMBL181902,IC50,nM,1100.0,CHEMBL4188,IC50,nM,1100.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\C=C\c1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL181752,IC50,nM,38.0,CHEMBL4188,IC50,nM,38.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\Cc1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL183767,IC50,nM,80.0,CHEMBL4188,IC50,nM,80.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(/C(=N\N=C(\N)S)c2ccc(Cl)c(Cl)c2)cc1,CHEMBL182795,IC50,nM,38.0,CHEMBL4188,IC50,nM,38.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(/c1ccc(Cl)c(Cl)c1)C1CC1c1ccccc1,CHEMBL183396,IC50,nM,60.0,CHEMBL4188,IC50,nM,60.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\COc1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL182790,IC50,nM,70.0,CHEMBL4188,IC50,nM,70.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\CCc1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL183005,IC50,nM,90.0,CHEMBL4188,IC50,nM,90.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC/C(=N\N=C(\N)S)c1cccc(Br)c1,CHEMBL313679,IC50,nM,230.0,CHEMBL4188,IC50,nM,230.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@@H]1CCCN1C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL207797,Ki,nM,3100.0,CHEMBL4188,Ki,uM,3.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)CCCCCNC(=O)CCCC[C@@H]1SC[C@@H]2NC(=O)N[C@@H]21,CHEMBL206415,Ki,nM,600.0,CHEMBL4188,Ki,uM,0.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)O)[C@H]1C(=O)O,CHEMBL382431,Ki,nM,900.0,CHEMBL4188,Ki,uM,0.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@@H](NC(=O)[C@@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)O)[C@H]1C(=O)O,CHEMBL377234,Ki,nM,5000.0,CHEMBL4188,Ki,uM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@H](NC(=O)[C@@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)O)[C@H]1C(=O)O,CHEMBL205707,Ki,nM,100.0,CHEMBL4188,Ki,uM,0.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)O)[C@H]1C(=O)O,CHEMBL206922,Ki,nM,800.0,CHEMBL4188,Ki,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)O)[C@H]1C(=O)O,CHEMBL379649,Ki,nM,500.0,CHEMBL4188,Ki,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL379509,Ki,nM,1200.0,CHEMBL4188,Ki,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL377947,Ki,nM,1900.0,CHEMBL4188,Ki,uM,1.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@@H]1CN1C(=O)[C@@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL382910,Ki,nM,1600.0,CHEMBL4188,Ki,uM,1.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@@H]1CN1C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL208156,Ki,nM,300.0,CHEMBL4188,Ki,uM,0.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCC[C@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL208263,Ki,nM,1100.0,CHEMBL4188,Ki,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCC[C@@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL184629,Ki,nM,1100.0,CHEMBL4188,Ki,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL208297,Ki,nM,700.0,CHEMBL4188,Ki,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL379571,Ki,nM,700.0,CHEMBL4188,Ki,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL379355,Ki,nM,600.0,CHEMBL4188,Ki,uM,0.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H](C(=O)N2[C@H](C(=O)OCc3ccccc3)[C@H]2C(=O)OCc2ccccc2)C1,CHEMBL379406,Ki,nM,600.0,CHEMBL4188,Ki,uM,0.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL377676,Ki,nM,700.0,CHEMBL4188,Ki,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL380337,Ki,nM,1600.0,CHEMBL4188,Ki,uM,1.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)NCC(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL379944,Ki,nM,3100.0,CHEMBL4188,Ki,uM,3.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL378902,Ki,nM,2800.0,CHEMBL4188,Ki,uM,2.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL382388,Ki,nM,1100.0,CHEMBL4188,Ki,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@@H](C(=O)OCc2ccccc2)[C@@H]1C(=O)OCc1ccccc1,CHEMBL383647,Ki,nM,500.0,CHEMBL4188,Ki,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL380076,Ki,nM,1200.0,CHEMBL4188,Ki,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL378288,Ki,nM,2300.0,CHEMBL4188,Ki,uM,2.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL208129,Ki,nM,800.0,CHEMBL4188,Ki,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL439510,Ki,nM,800.0,CHEMBL4188,Ki,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)[C@@H]1CCN1C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL207838,Ki,nM,3100.0,CHEMBL4188,Ki,uM,3.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)[C@H]1CCN1C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL377682,Ki,nM,3100.0,CHEMBL4188,Ki,uM,3.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)C1CCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)CC1,CHEMBL441354,Ki,nM,3300.0,CHEMBL4188,Ki,uM,3.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)C1CCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)CC1,CHEMBL377650,Ki,nM,1400.0,CHEMBL4188,Ki,uM,1.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)[C@H]1CCCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)C1,CHEMBL208418,Ki,nM,1900.0,CHEMBL4188,Ki,uM,1.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1[C@H](C(=O)OCC)N1C(=O)[C@@H]1CCCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)C1,CHEMBL207092,Ki,nM,1900.0,CHEMBL4188,Ki,uM,1.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@H]1CCCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)C1,CHEMBL207070,Ki,nM,1000.0,CHEMBL4188,Ki,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@@H]1CCCN(C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C)C1,CHEMBL207526,Ki,nM,1000.0,CHEMBL4188,Ki,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@@H](NC(=O)[C@@H](Cc1ccccc1)NC(=O)OC(C)(C)C)C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL380077,Ki,nM,3900.0,CHEMBL4188,Ki,uM,3.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1[C@@H](C(=O)OCC)N1C(=O)[C@@H]1CN1C(=O)[C@H](CC(C)C)NC(=O)OC(C)(C)C,CHEMBL208156,Ki,nM,360.0,CHEMBL4188,Ki,uM,0.36,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@H]1O[C@H]1C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL249814,IC50,nM,3.5,CHEMBL4188,IC50,nM,3.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,IC50,nM,5.0,CHEMBL4188,IC50,nM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)[C@@H]1O[C@@H]1C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL249815,IC50,nM,30.0,CHEMBL4188,IC50,nM,30.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H]1N[C@@H](C(=O)Nc2ccccc2)CCCCC[C@@H](/C=C/S(=O)(=O)c2ccccc2)NC1=O,CHEMBL454688,IC50,nM,6000.0,CHEMBL4188,IC50,uM,6.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,IC50,nM,100.0,CHEMBL4188,IC50,uM,0.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H]1N[C@@H](C(=O)Nc2ccccc2)CCCC[C@@H](/C=C/S(=O)(=O)c2ccccc2)NC1=O,CHEMBL452863,IC50,nM,10000.0,CHEMBL4188,IC50,uM,10.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccoc3)c2)c2ncn(CCCO)c2n1,CHEMBL497435,IC50,nM,30.0,CHEMBL4188,IC50,uM,0.03,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccsc3)c2)c2ncn(CCCO)c2n1,CHEMBL497237,IC50,nM,240.0,CHEMBL4188,IC50,uM,0.24,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cccnc3)c2)c2ncn(CCCO)c2n1,CHEMBL524810,IC50,nM,260.0,CHEMBL4188,IC50,uM,0.26,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccc4cc[nH]c4c3)c2)c2ncn(CCCO)c2n1,CHEMBL584314,IC50,nM,260.0,CHEMBL4188,IC50,uM,0.26,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccco3)c2)c2ncn(CCCO)c2n1,CHEMBL497235,IC50,nM,310.0,CHEMBL4188,IC50,uM,0.31,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)Nc1cccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)c1,CHEMBL570364,IC50,nM,400.0,CHEMBL4188,IC50,uM,0.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)c1cccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)c1,CHEMBL496404,IC50,nM,500.0,CHEMBL4188,IC50,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccc4[nH]ccc4c3)c2)c2ncn(CCCO)c2n1,CHEMBL569190,IC50,nM,500.0,CHEMBL4188,IC50,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccccc3)c2)c2ncn(CCCO)c2n1,CHEMBL524619,IC50,nM,700.0,CHEMBL4188,IC50,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccc4ccccc4c3)c2)c2ncn(CCCO)c2n1,CHEMBL497234,IC50,nM,700.0,CHEMBL4188,IC50,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)cc1,CHEMBL524075,IC50,nM,800.0,CHEMBL4188,IC50,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cccs3)c2)c2ncn(CCCO)c2n1,CHEMBL525165,IC50,nM,800.0,CHEMBL4188,IC50,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN(C)c1cccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)c1,CHEMBL495803,IC50,nM,900.0,CHEMBL4188,IC50,uM,0.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccc(Cl)c(Cl)c3)c2)c2ncn(CCCO)c2n1,CHEMBL495017,IC50,nM,900.0,CHEMBL4188,IC50,uM,0.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cc(Cl)cc(Cl)c3)c2)c2ncn(CCCO)c2n1,CHEMBL495016,IC50,nM,1100.0,CHEMBL4188,IC50,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cccc(Cl)c3)c2)c2ncn(CCCO)c2n1,CHEMBL566094,IC50,nM,1200.0,CHEMBL4188,IC50,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)c1ccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)cc1,CHEMBL571938,IC50,nM,1200.0,CHEMBL4188,IC50,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccc(Cl)cc3)c2)c2ncn(CCCO)c2n1,CHEMBL523733,IC50,nM,1400.0,CHEMBL4188,IC50,uM,1.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=Cc1cccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)c1,CHEMBL497018,IC50,nM,1500.0,CHEMBL4188,IC50,uM,1.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)Oc1c(Br)cccc1-c1cccc(CNc2nc(C#N)nc3c2ncn3CCCO)c1,CHEMBL497620,IC50,nM,1500.0,CHEMBL4188,IC50,uM,1.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=Cc1ccc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)cc1,CHEMBL497019,IC50,nM,1800.0,CHEMBL4188,IC50,uM,1.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cn(S(=O)(=O)c4ccccc4)c4ccccc34)c2)c2ncn(CCCO)c2n1,CHEMBL582971,IC50,nM,2000.0,CHEMBL4188,IC50,uM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ncc(-c2cccc(CNc3nc(C#N)nc4c3ncn4CCCO)c2)c(OC)n1,CHEMBL571269,IC50,nM,4000.0,CHEMBL4188,IC50,uM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3c(F)c(F)c(F)c(F)c3F)c2)c2ncn(CCCO)c2n1,CHEMBL569173,IC50,nM,5200.0,CHEMBL4188,IC50,uM,5.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccccc3C(F)(F)F)c2)c2ncn(CCCO)c2n1,CHEMBL571711,IC50,nM,8000.0,CHEMBL4188,IC50,uM,8.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3cc4ccccc4n3S(=O)(=O)c3ccccc3)c2)c2ncn(CCCO)c2n1,CHEMBL574590,IC50,nM,9000.0,CHEMBL4188,IC50,uM,9.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(NCc2cccc(-c3ccccc3Cl)c2)c2ncn(CCCO)c2n1,CHEMBL565244,IC50,nM,20000.0,CHEMBL4188,IC50,uM,20.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cc2cc3c(cc2c(-c2ccc(N)cc2)n1)OCO3,CHEMBL609013,Ki,nM,19400.0,CHEMBL4188,Ki,uM,19.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)Oc1cc2cc3c(cc2c(-c2ccc(N)cc2)n1)OCO3,CHEMBL594178,Ki,nM,38300.0,CHEMBL4188,Ki,uM,38.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2c3cc4c(cc3cc(=O)n2NC(=O)OC(C)(C)C)OCO4)cc1,CHEMBL594179,Ki,nM,19400.0,CHEMBL4188,Ki,uM,19.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2c3cc4c(cc3cc(=O)n2N)OCO4)cc1,CHEMBL596442,Ki,nM,6300.0,CHEMBL4188,Ki,uM,6.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)Nn1c(-c2ccc(OC)cc2)c2cc3c(cc2cc1=O)OCO3,CHEMBL594622,Ki,nM,9400.0,CHEMBL4188,Ki,uM,9.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2c3cc4c(cc3cc(=O)n2NC(=O)Nc2ccc(C(C)=O)cc2)OCO4)cc1,CHEMBL594623,Ki,nM,14000.0,CHEMBL4188,Ki,uM,14.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2c3cc4c(cc3cc(=O)n2NC(=O)Nc2ccc(SC)cc2)OCO4)cc1,CHEMBL596265,Ki,nM,18700.0,CHEMBL4188,Ki,uM,18.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(-c2c3cc(OCc4ccccc4)c(OCc4ccccc4)cc3cc(=O)n2N)cc1,CHEMBL603639,Ki,nM,4000.0,CHEMBL4188,Ki,uM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,IC50,nM,7.0,CHEMBL4188,IC50,uM,0.007,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1nc(-c2cccnc2)sc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL1078778,IC50,nM,30.0,CHEMBL4188,IC50,uM,0.03,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1nc(-c2cnccn2)sc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL1078779,IC50,nM,10.0,CHEMBL4188,IC50,uM,0.01,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccccc2)no1,CHEMBL1078855,IC50,nM,10.0,CHEMBL4188,IC50,uM,0.01,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccncc2)no1,CHEMBL1078981,IC50,nM,50.0,CHEMBL4188,IC50,uM,0.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2cccnc2)no1,CHEMBL1079067,IC50,nM,10.0,CHEMBL4188,IC50,uM,0.01,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccccn2)no1,CHEMBL1079068,IC50,nM,50.0,CHEMBL4188,IC50,uM,0.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)[C@@H]1CCCC[C@H]1C(=O)c1ccc(Cl)cc1,CHEMBL1079162,IC50,nM,100.0,CHEMBL4188,IC50,uM,0.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)[C@H]1CCCC[C@@H]1C(=O)c1ccc(Cl)cc1,CHEMBL1079105,IC50,nM,56000.0,CHEMBL4188,IC50,uM,56.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,Ki,nM,780.0,CHEMBL4188,Ki(app),uM,0.78,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1nc(-c2ccccc2)sc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL1078675,Ki,nM,320.0,CHEMBL4188,Ki(app),uM,0.32,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1nc(-c2cnccn2)sc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL1078779,Ki,nM,4770.0,CHEMBL4188,Ki(app),uM,4.77,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccccc2)no1,CHEMBL1078855,Ki,nM,13000.0,CHEMBL4188,Ki(app),uM,13.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccncc2)no1,CHEMBL1078981,Ki,nM,16200.0,CHEMBL4188,Ki(app),uM,16.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(-c2ccccn2)no1,CHEMBL1079068,Ki,nM,7400.0,CHEMBL4188,Ki(app),uM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)[C@@H]1CCCC[C@H]1C(=O)c1ccc(Cl)cc1,CHEMBL1079162,Ki,nM,800.0,CHEMBL4188,Ki(app),uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)[C@H]1CCCC[C@@H]1C(=O)c1ccc(Cl)cc1,CHEMBL1079105,Ki,nM,4900.0,CHEMBL4188,Ki(app),uM,4.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CS[C@]1(CO)C(=O)N2c3c(O)cccc3C[C@@]2(SC)C(=O)N1C,CHEMBL1088849,IC50,nM,19500.0,CHEMBL4188,IC50,uM,19.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CS[C@]1(CO)C(=O)N2[C@H]3C(=CC=C[C@@H]3OC(C)=O)C[C@@]2(SC)C(=O)N1C,CHEMBL1089088,IC50,nM,12800.0,CHEMBL4188,IC50,uM,12.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc2c3c4n(c2c1)[C@H](C=C(C)C)OOC(C)(C)C[C@@H]4N1C(=O)[C@@H]2CCCN2C(=O)[C@]1(O)[C@H]3O,CHEMBL463268,IC50,nM,45000.0,CHEMBL4188,IC50,uM,45.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc2c3c(n(CC=C(C)C)c2c1)[C@H](C=C(C)C)N1C[C@@H]2CCCN2C[C@@]1(O)[C@H]3O,CHEMBL1089482,IC50,nM,8500.0,CHEMBL4188,IC50,uM,8.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc2c3c([nH]c2c1)[C@@H](C=C(C)C)N1C[C@@H]2CCCN2C[C@@]1(O)[C@H]3O,CHEMBL2367464,IC50,nM,10900.0,CHEMBL4188,IC50,uM,10.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(/C(=N\NC(N)=S)c2cc(C(F)(F)F)cc(C(F)(F)F)c2)cc1,CHEMBL261657,IC50,nM,44.0,CHEMBL4188,IC50,uM,0.044,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)N[C@@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)C(=O)OC,CHEMBL1092456,Ki,nM,1400.0,CHEMBL4188,Ki,uM,1.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)N[C@@H](Cc1ccccc1)C(=O)OCc1ccccc1,CHEMBL1092752,Ki,nM,7600.0,CHEMBL4188,Ki,uM,7.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(/C=C/C(=O)N[C@@H](Cc1ccccc1)C(=O)OCc1ccccc1)N[C@@H](Cc1ccccc1)C(=O)OCc1ccccc1,CHEMBL1089963,Ki,nM,340.0,CHEMBL4188,Ki,uM,0.34,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)OC(C)(C)C,CHEMBL1090700,Ki,nM,4300.0,CHEMBL4188,Ki,uM,4.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090281,Ki,nM,470.0,CHEMBL4188,Ki,uM,0.47,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090282,Ki,nM,140.0,CHEMBL4188,Ki,uM,0.14,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/CN[C@@H](CCC(N)=O)C(=O)N[C@H](C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)OCc1ccccc1)C(C)C)C1CCCCC1,CHEMBL1090646,Ki,nM,5800.0,CHEMBL4188,Ki,uM,5.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(/C=C\C(=O)N[C@@H](Cc1ccccc1)C(=O)OCc1ccccc1)N[C@@H](Cc1ccccc1)C(=O)O,CHEMBL1090038,Ki,nM,150.0,CHEMBL4188,Ki,uM,0.15,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)/C=C\C(=O)N[C@@H](Cc1ccccc1)C(=O)OCc1ccccc1)C(=O)O,CHEMBL1090971,Ki,nM,1400.0,CHEMBL4188,Ki,uM,1.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)OC(C)(C)C,CHEMBL1090700,Ki,nM,3600.0,CHEMBL4188,Ki,uM,3.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090281,Ki,nM,300.0,CHEMBL4188,Ki,uM,0.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090281,Ki,nM,640.0,CHEMBL4188,Ki,uM,0.64,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090281,Ki,nM,400.0,CHEMBL4188,Ki,uM,0.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](CCC(=O)NC(c1ccccc1)(c1ccccc1)c1ccccc1)NC(=O)[C@@H](NC(=O)OC(C)(C)C)c1ccccc1,CHEMBL1090281,Ki,nM,640.0,CHEMBL4188,Ki,uM,0.64,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H](CC(N)=O)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C(N)=O)C(C)C,CHEMBL1086193,Ki,nM,2700.0,CHEMBL4188,Ki,uM,2.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C(N)=O)C(C)C,CHEMBL1086429,Ki,nM,200.0,CHEMBL4188,Ki,uM,0.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)[C@H](NC(=O)[C@H](C)NC(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C1CCCCC1)C(N)=O,CHEMBL1086431,Ki,nM,400.0,CHEMBL4188,Ki,uM,0.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CC(N)=O)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C1CCCCC1)C(C)C)C(N)=O,CHEMBL1086432,Ki,nM,80.0,CHEMBL4188,Ki,uM,0.08,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)[C@H](NC(=O)[C@@H](NC(=O)[C@@H](NC(=O)[C@H](CCC(N)=O)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C1CCCCC1)C(C)C)C(N)=O,CHEMBL1086433,Ki,nM,80.0,CHEMBL4188,Ki,uM,0.08,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)NC[C@H](NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@H](C(=O)N[C@@H](C)C(=O)N[C@H](C(N)=O)C(C)C)C1CCCCC1,CHEMBL1086434,Ki,nM,300.0,CHEMBL4188,Ki,uM,0.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H](C)NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C(N)=O)C(C)C,CHEMBL1086435,Ki,nM,1000.0,CHEMBL4188,Ki,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H](C)NC(=O)/C=C/C(=O)N[C@@H](C)C(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C(N)=O)C(C)C,CHEMBL1086436,Ki,nM,1300.0,CHEMBL4188,Ki,uM,1.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)NC[C@H](NC(=O)/C=C/C(=O)NCC(=O)NCC(=O)N[C@@H](Cc1ccccc1)C(=O)O)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CC(C)C)C(=O)N[C@H](C(N)=O)C(C)C,CHEMBL1086437,Ki,nM,1800.0,CHEMBL4188,Ki,uM,1.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)S[C@H]1OC(=O)C[C@@H]1NC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2ccccc21,CHEMBL1171866,Ki,nM,700.0,CHEMBL4188,Ki,uM,0.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2ccccc21)N[C@H]1CC(=O)O[C@@H]1OCc1ccccc1,CHEMBL1171868,Ki,nM,800.0,CHEMBL4188,Ki,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/[C@H](CC(C)C)NC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2ccccc21,CHEMBL1171803,Ki,nM,870.0,CHEMBL4188,Ki,uM,0.87,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2cc(Cl)ccc21,CHEMBL1171804,Ki,nM,87.0,CHEMBL4188,Ki,uM,0.087,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccc(Br)cc2)c2ccccc21,CHEMBL1171633,Ki,nM,470.0,CHEMBL4188,Ki,uM,0.47,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(OC)cc2)N=C(c2ccccc2)c2ccccc21,CHEMBL1171635,Ki,nM,4300.0,CHEMBL4188,Ki,uM,4.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2cccc3ccccc23)N=C(c2ccccc2)c2ccccc21,CHEMBL1171636,Ki,nM,930.0,CHEMBL4188,Ki,uM,0.93,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)NC23CC4CC(CC(C4)C2)C3)N=C(c2ccccc2)c2ccccc21,CHEMBL1171802,Ki,nM,2.6,CHEMBL4188,Ki,uM,0.0026,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)Nc2ccc(Cl)cc2C(F)(F)F)N=C(c2ccccc2)c2ccccc21,CHEMBL501901,Ki,nM,810.0,CHEMBL4188,Ki,uM,0.81,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCS[S+]([O-])CC=C,CHEMBL359965,Ki,nM,5310.0,CHEMBL4188,Ki,uM,5.31,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCS[S+]([O-])CCC,CHEMBL1224166,Ki,nM,4440.0,CHEMBL4188,Ki,uM,4.44,Rhodesain,Trypanosoma brucei rhodesiense
+B,[O-][S+](Cc1ccccc1)SCc1ccccc1,CHEMBL1224167,Ki,nM,2310.0,CHEMBL4188,Ki,uM,2.31,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)CCS[S+]([O-])CCC(C)C,CHEMBL1224170,Ki,nM,360.0,CHEMBL4188,Ki,uM,0.36,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCCCCS[S+]([O-])CCCCCC,CHEMBL1224171,Ki,nM,1000.0,CHEMBL4188,Ki,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(NC2CCNCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL404321,IC50,nM,2000.0,CHEMBL4188,IC50,uM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)CCCC(C)Nc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253717,IC50,nM,17000.0,CHEMBL4188,IC50,uM,17.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)CCCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL1289827,IC50,nM,6000.0,CHEMBL4188,IC50,uM,6.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(NCCCN2CCCCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL404523,IC50,nM,5000.0,CHEMBL4188,IC50,uM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)NCCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253716,IC50,nM,26000.0,CHEMBL4188,IC50,uM,26.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN(C)CC(C)(C)CNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL404522,IC50,nM,19000.0,CHEMBL4188,IC50,uM,19.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)CCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253715,IC50,nM,13000.0,CHEMBL4188,IC50,uM,13.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN(C)CCCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL253508,IC50,nM,6000.0,CHEMBL4188,IC50,uM,6.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(CN(C)C)Nc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL267856,IC50,nM,5000.0,CHEMBL4188,IC50,uM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)CCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL252504,IC50,nM,11000.0,CHEMBL4188,IC50,uM,11.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN(C)CCNc1c2ccccc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL439424,IC50,nM,7000.0,CHEMBL4188,IC50,uM,7.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2cc2[n-]c3ccccc3c21.Cl,CHEMBL92129,IC50,nM,23000.0,CHEMBL4188,IC50,uM,23.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2cc(Cl)ccc2c(NC2CCNCC2)c2[nH]c3cc(Cl)ccc3c21.[Cl-],CHEMBL1289050,IC50,nM,500.0,CHEMBL4188,IC50,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2cc(Cl)ccc2c(NC2CCNCC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1289049,IC50,nM,500.0,CHEMBL4188,IC50,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)CCCNc1c2ccc(Cl)cc2[n+](C)c2c1[nH]c1ccccc12.[Cl-],CHEMBL1290718,IC50,nM,500.0,CHEMBL4188,IC50,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(Nc2cccnc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290717,IC50,nM,2000.0,CHEMBL4188,IC50,uM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(CC)Cc1ccc(Nc2c3ccccc3[n+](C)c3c2[nH]c2ccccc23)cc1O.[Cl-],CHEMBL1290599,IC50,nM,5000.0,CHEMBL4188,IC50,uM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(Nc2ccc(N3CCCCC3)cc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1289828,IC50,nM,1000.0,CHEMBL4188,IC50,uM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(Nc2ccccc2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290598,IC50,nM,7000.0,CHEMBL4188,IC50,uM,7.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(NC2CCN(Cc3ccccc3O)CC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290489,IC50,nM,900.0,CHEMBL4188,IC50,uM,0.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[n+]1c2ccccc2c(NC2CCN(Cc3ccccc3)CC2)c2[nH]c3ccccc3c21.[Cl-],CHEMBL1290488,IC50,nM,4000.0,CHEMBL4188,IC50,uM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)CN1CCC(Nc2c3ccccc3[n+](C)c3c2[nH]c2ccccc23)CC1.[Cl-],CHEMBL1290380,IC50,nM,2000.0,CHEMBL4188,IC50,uM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCN(c1nc(C#N)nc(N2CCOCC2)n1)C1CCCCC1,CHEMBL2402096,Ki,nM,100.0,CHEMBL4188,Ki,nM,100.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(N2CCOCC2)nc(N(c2ccccc2)c2ccccc2)n1,CHEMBL2402095,Ki,nM,36.0,CHEMBL4188,Ki,nM,36.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(N2CCOCC2)nc(N(c2ccccc2F)C2CCCCC2)n1,CHEMBL2402094,Ki,nM,11.0,CHEMBL4188,Ki,nM,11.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(N2CCOCC2)nc(N(Cc2ccc3c(c2)OCO3)C2CCCCC2)n1,CHEMBL2402091,Ki,nM,8.0,CHEMBL4188,Ki,nM,8.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)/C(=N\N=C(\N)S)c1ccc(Cl)c(Cl)c1,CHEMBL367811,IC50,nM,3330.0,CHEMBL4188,IC50,uM,3.33,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCC1CCC(N(Cc2ccc3c(c2)OCO3)c2nc(C#N)nc(N3CCOCC3)n2)CC1,CHEMBL2402090,Ki,nM,2.0,CHEMBL4188,Ki,nM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(/c1ccc(Cl)c(Cl)c1)C1CCCCC1,CHEMBL181902,IC50,nM,1100.0,CHEMBL4188,IC50,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC/C(=N\N=C(\N)S)c1ccc(Cl)c(Cl)c1,CHEMBL92099,IC50,nM,110.0,CHEMBL4188,IC50,uM,0.11,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\Cc1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL183767,IC50,nM,80.0,CHEMBL4188,IC50,uM,0.08,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCC/C(=N\NC(N)=S)c1ccc(Cl)c(Cl)c1,CHEMBL181504,IC50,nM,60.0,CHEMBL4188,IC50,uM,0.06,Rhodesain,Trypanosoma brucei rhodesiense
+B,N/C(S)=N/N=C(\C=C\c1ccccc1)c1ccc(Cl)c(Cl)c1,CHEMBL181752,IC50,nM,38.0,CHEMBL4188,IC50,uM,0.038,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](CCc1ccccc1)C(=O)N1C[C@@H]2C(Br)=NO[C@@H]2C1)OCc1ccc([N+](=O)[O-])cc1,CHEMBL3629346,Ki,nM,6810.0,CHEMBL4188,Ki,uM,6.81,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CC2ON=C(Br)C2C1,CHEMBL3629344,Ki,nM,13600.0,CHEMBL4188,Ki,uM,13.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CC(C)C)C(=O)N1C[C@@H]2C(Br)=NO[C@@H]2C1,CHEMBL3629341,Ki,nM,8520.0,CHEMBL4188,Ki,uM,8.52,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CC(C)C)C(=O)N1C[C@@H]2ON=C(Br)[C@@H]2C1,CHEMBL3629340,Ki,nM,9050.0,CHEMBL4188,Ki,uM,9.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CC(C)C)C(=O)N1CC2ON=C(Br)C2C1,CHEMBL3629339,Ki,nM,8360.0,CHEMBL4188,Ki,uM,8.36,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CCc1ccccc1)C(=O)N1C[C@@H]2C(Br)=NO[C@@H]2C1,CHEMBL3629186,Ki,nM,2730.0,CHEMBL4188,Ki,uM,2.73,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CCc1ccccc1)C(=O)N1C[C@@H]2ON=C(Br)[C@@H]2C1,CHEMBL3629185,Ki,nM,3350.0,CHEMBL4188,Ki,uM,3.35,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](CCc1ccccc1)C(=O)N1CC2ON=C(Br)C2C1,CHEMBL3629184,Ki,nM,2620.0,CHEMBL4188,Ki,uM,2.62,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)OC(=O)N[C@@H](Cc1ccccc1)C(=O)N1CC2ON=C(Br)C2C1,CHEMBL3629183,Ki,nM,17730.0,CHEMBL4188,Ki,uM,17.73,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N1CC2ON=C(Br)C2C1)OCc1ccccc1,CHEMBL3629181,Ki,nM,8410.0,CHEMBL4188,Ki,uM,8.41,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](Cc1ccccc1)C(=O)N1C[C@@H]2C(Br)=NO[C@@H]2C1,CHEMBL3629180,Ki,nM,15140.0,CHEMBL4188,Ki,uM,15.14,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](Cc1ccccc1)C(=O)N1C[C@@H]2ON=C(Br)[C@@H]2C1,CHEMBL3629179,Ki,nM,16580.0,CHEMBL4188,Ki,uM,16.58,Rhodesain,Trypanosoma brucei rhodesiense
+B,C=CCOC(=O)N[C@@H](Cc1ccccc1)C(=O)N1CC2ON=C(Br)C2C1,CHEMBL3629178,Ki,nM,16780.0,CHEMBL4188,Ki,uM,16.78,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/CNC(=O)CN1C(=O)[C@@H](COC(=O)NC23CC4CC(CC(C4)C2)C3)N=C(c2ccccc2)c2ccccc21,CHEMBL1171802,Ki,nM,2.6,CHEMBL4188,Ki,nM,2.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,C[C@@H](/C=C/[N+](=O)[O-])NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL3907022,Ki,nM,0.49,CHEMBL4188,Ki,nM,0.49,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](/C=C/[N+](=O)[O-])NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL3934979,Ki,nM,6.5,CHEMBL4188,Ki,nM,6.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C/[N+](=O)[O-])Cc1ccccc1)OCc1ccccc1,CHEMBL3903171,Ki,nM,29.0,CHEMBL4188,Ki,nM,29.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C/[N+](=O)[O-])CCc1ccccc1)OCc1ccccc1,CHEMBL3974129,Ki,nM,4.2,CHEMBL4188,Ki,nM,4.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=C\[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1)[N+](=O)[O-],CHEMBL3912190,Ki,nM,50.0,CHEMBL4188,Ki,nM,50.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccccc1)C(=O)N[C@@H](C)/C=C/[N+](=O)[O-],CHEMBL3982135,Ki,nM,30.0,CHEMBL4188,Ki,nM,30.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](/C=C/[N+](=O)[O-])NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL3921142,Ki,nM,18.4,CHEMBL4188,Ki,nM,18.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccccc1)C(=O)N[C@H](/C=C/[N+](=O)[O-])Cc1ccccc1,CHEMBL3893138,Ki,nM,18.0,CHEMBL4188,Ki,nM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccccc1)C(=O)N[C@H](/C=C/[N+](=O)[O-])CCc1ccccc1,CHEMBL3930083,Ki,nM,14.0,CHEMBL4188,Ki,nM,14.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,C/C(=C\[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1)[N+](=O)[O-],CHEMBL3902105,Ki,nM,544.0,CHEMBL4188,Ki,nM,544.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,Ki,nM,20.0,CHEMBL4188,Ki,nM,20.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL4101714,Ki,nM,7.5,CHEMBL4188,Ki,nM,7.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4100751,Ki,nM,17.0,CHEMBL4188,Ki,nM,17.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4082758,Ki,nM,2.0,CHEMBL4188,Ki,nM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4093034,Ki,nM,3.6,CHEMBL4188,Ki,nM,3.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL4072275,Ki,nM,0.5,CHEMBL4188,Ki,nM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4096388,Ki,nM,0.9,CHEMBL4188,Ki,nM,0.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4078345,Ki,nM,0.038,CHEMBL4188,Ki,nM,0.038,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4062015,Ki,nM,0.074,CHEMBL4188,Ki,nM,0.074,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccccc1)C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL4083754,Ki,nM,9.1,CHEMBL4188,Ki,nM,9.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccc([N+](=O)[O-])cc1)C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL4070637,Ki,nM,14.0,CHEMBL4188,Ki,nM,14.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)OCc1ccccc1,CHEMBL2402204,Ki,nM,5.0,CHEMBL4188,Ki,nM,5.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4081250,Ki,nM,7.2,CHEMBL4188,Ki,nM,7.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OCc1ccccc1)C(=O)N[C@H](/C=C/C#N)CCc1ccccc1,CHEMBL4099269,Ki,nM,53.0,CHEMBL4188,Ki,nM,53.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4060936,Ki,nM,46.0,CHEMBL4188,Ki,nM,46.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccc([N+](=O)[O-])cc1,CHEMBL4074432,Ki,nM,1743.0,CHEMBL4188,Ki,nM,1743.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H]1O[C@@H]1C(=O)O)C(=O)NCCCCN=C(N)N,CHEMBL374508,Ki,nM,35.0,CHEMBL4188,Ki,nM,35.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OCC#CCOc3c(F)cc(F)cc3C(=O)N2)CC1,CHEMBL4080708,Ki,nM,4.8,CHEMBL4188,Ki,nM,4.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OCC#CCOc3c(F)cc(F)cc3C(=O)N2)CC1,CHEMBL4080708,Ki,nM,80.6,CHEMBL4188,Ki,nM,80.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CS(=O)(=O)c1ccc2c(c1)C(=O)N[C@H](C(=O)NC1(C#N)CC1)Cc1ccc(c(Cl)c1)OC[C@H]1O[C@@H]1CO2,CHEMBL4065847,Ki,nM,135.1,CHEMBL4188,Ki,nM,135.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/Cn3c(=O)c(cc4cc(Cl)ccc43)C(=O)N2)CC1,CHEMBL4094394,Ki,nM,299.0,CHEMBL4188,Ki,nM,299.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/CCn3nc(cc3-c3ccccc3)C(=O)N2)CC1,CHEMBL4072767,Ki,nM,5.2,CHEMBL4188,Ki,nM,5.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)c1cc2nn1CC/C=C/COc1ccc(cc1Cl)C[C@@H](C(=O)NC1(C#N)CC1)NC2=O,CHEMBL4099651,Ki,nM,18.0,CHEMBL4188,Ki,nM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/CCn3nc(cc3C3CC3)C(=O)N2)CC1,CHEMBL4064172,Ki,nM,17.2,CHEMBL4188,Ki,nM,17.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cc2nn1CC/C=C/COc1ccc(cc1Cl)C[C@@H](C(=O)NC1(C#N)CC1)NC2=O,CHEMBL4091918,Ki,nM,52.4,CHEMBL4188,Ki,nM,52.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(-c4cc[nH]n4)c3)OCCCCOc3ccccc3C(=O)N2)CC1,CHEMBL4059516,Ki,nM,1085.9,CHEMBL4188,Ki,nM,1085.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cn1cc(-c2cc3ccc2OCCCCOc2cc(C(F)(F)F)ccc2C(=O)N[C@H](C(=O)NC2(C#N)CC2)C3)cn1,CHEMBL4060555,Ki,nM,870.0,CHEMBL4188,Ki,nM,870.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(-c4cccnc4)c3)OCCCCOc3cc(C(F)(F)F)ccc3C(=O)N2)CC1,CHEMBL4069236,Ki,nM,751.0,CHEMBL4188,Ki,nM,751.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(-c4cccnc4)c3)OCCCCOc3ccccc3C(=O)N2)CC1,CHEMBL4090284,Ki,nM,837.0,CHEMBL4188,Ki,nM,837.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(I)c3)OCCCCOc3cc(C(F)(F)F)ccc3C(=O)N2)CC1,CHEMBL4091192,Ki,nM,57.4,CHEMBL4188,Ki,nM,57.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(I)c3)OC/C=C/COc3cc(C(F)(F)F)ccc3C(=O)N2)CC1,CHEMBL4098931,Ki,nM,8.7,CHEMBL4188,Ki,nM,8.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(I)c3)OC/C=C/COc3ccccc3C(=O)N2)CC1,CHEMBL4071951,Ki,nM,2.5,CHEMBL4188,Ki,nM,2.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CS(=O)(=O)c1ccc2c(c1)C(=O)N[C@H](C(=O)NC1(C#N)CC1)Cc1ccc(c(Cl)c1)OC/C=C/CO2,CHEMBL4087751,Ki,nM,6.1,CHEMBL4188,Ki,nM,6.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3cc4ccccc4cc3C(=O)N2)CC1,CHEMBL4066422,Ki,nM,1.0,CHEMBL4188,Ki,nM,1.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3cc(-c4cnn(C(F)F)c4)ccc3C(=O)N2)CC1,CHEMBL4084294,Ki,nM,5.4,CHEMBL4188,Ki,nM,5.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3cc(-c4ccc(Cl)nc4)ccc3C(=O)N2)CC1,CHEMBL4062591,Ki,nM,3.0,CHEMBL4188,Ki,nM,3.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3ccc(-c4ccc(F)cc4)cc3C(=O)N2)CC1,CHEMBL4092050,Ki,nM,2.0,CHEMBL4188,Ki,nM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3cc(C(F)(F)F)ccc3C(=O)N2)CC1,CHEMBL4071237,Ki,nM,20.2,CHEMBL4188,Ki,nM,20.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OC/C=C/COc3ccccc3C(C(F)(F)F)N2)CC1,CHEMBL4065352,Ki,nM,258.0,CHEMBL4188,Ki,nM,258.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OCCCCOc3cc4c(cc3C(=O)N2)CCCC4)CC1,CHEMBL3987059,Ki,nM,26.0,CHEMBL4188,Ki,nM,26.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@@H]2Cc3ccc(c(Cl)c3)OCCCCOc3cc(C(F)(F)F)ccc3C(=O)N2)CC1,CHEMBL3917415,Ki,nM,11.0,CHEMBL4188,Ki,nM,11.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)cc2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4099905,Ki,nM,3.0,CHEMBL4188,Ki,nM,3.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OCc3ccccc3)cc2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4081905,Ki,nM,17.0,CHEMBL4188,Ki,nM,17.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)c(Cl)c2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4073014,Ki,nM,2.0,CHEMBL4188,Ki,nM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1ccc(C[C@H](NC(=O)c2cnn(-c3ccc(F)cc3)n2)C(=O)NC2(C#N)CC2)cc1Cl,CHEMBL4093712,Ki,nM,7.0,CHEMBL4188,Ki,nM,7.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OCC3CCC3)c(Cl)c2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4083441,Ki,nM,16.0,CHEMBL4188,Ki,nM,16.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)c(Cl)c2)NC(=O)c2cnn(C3CCC3)n2)CC1,CHEMBL4101430,Ki,nM,71.0,CHEMBL4188,Ki,nM,71.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)c(Cl)c2)NC(=O)c2cnn(C3COC3)n2)CC1,CHEMBL4102351,Ki,nM,33.0,CHEMBL4188,Ki,nM,33.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)c(Cl)c2)NC(=O)c2cnn(C3CC(F)(F)C3)n2)CC1,CHEMBL4078079,Ki,nM,18.0,CHEMBL4188,Ki,nM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(Cl)c(Cl)c2)NC(=O)c2cnn(C3CCOCC3)n2)CC1,CHEMBL4064430,Ki,nM,4.0,CHEMBL4188,Ki,nM,4.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccccc2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4082483,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccccc2Cl)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4086533,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1ccccc1C[C@H](NC(=O)c1cnn(-c2ccc(F)cc2)n1)C(=O)NC1(C#N)CC1,CHEMBL4065096,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccccc2C(F)(F)F)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4078688,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2cccc(Cl)c2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4102966,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1cnn(-c2ccc(F)cc2)n1)C(=O)NC1(C#N)CC1,CHEMBL4102031,Ki,nM,23.0,CHEMBL4188,Ki,nM,23.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OCC3CC3)c(Cl)c2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4084048,Ki,nM,9.0,CHEMBL4188,Ki,nM,9.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COCCOc1ccc(C[C@H](NC(=O)c2cnn(-c3ccc(F)cc3)n2)C(=O)NC2(C#N)CC2)cc1Cl,CHEMBL4094298,Ki,nM,9.0,CHEMBL4188,Ki,nM,9.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3CCNC3)n2)CC1,CHEMBL4085387,Ki,nM,93.0,CHEMBL4188,Ki,nM,93.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3CCOCC3)n2)CC1,CHEMBL4075154,Ki,nM,18.0,CHEMBL4188,Ki,nM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3CCCCC3)n2)CC1,CHEMBL4095566,Ki,nM,12.0,CHEMBL4188,Ki,nM,12.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3CC(F)(F)C3)n2)CC1,CHEMBL4100863,Ki,nM,41.0,CHEMBL4188,Ki,nM,41.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3COC3)n2)CC1,CHEMBL4074099,Ki,nM,31.0,CHEMBL4188,Ki,nM,31.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(C3CCC3)n2)CC1,CHEMBL4093144,Ki,nM,11.0,CHEMBL4188,Ki,nM,11.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)(C)n1ncc(C(=O)N[C@@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)C(=O)NC2(C#N)CC2)n1,CHEMBL4065483,Ki,nM,31.0,CHEMBL4188,Ki,nM,31.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)n1ncc(C(=O)N[C@@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)C(=O)NC2(C#N)CC2)n1,CHEMBL4065829,Ki,nM,18.0,CHEMBL4188,Ki,nM,18.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cn1ncc(C(=O)N[C@@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)C(=O)NC2(C#N)CC2)n1,CHEMBL4093444,Ki,nM,23.0,CHEMBL4188,Ki,nM,23.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccncc3)n2)CC1,CHEMBL4099235,Ki,nM,16.0,CHEMBL4188,Ki,nM,16.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3cccnc3)n2)CC1,CHEMBL4081213,Ki,nM,36.0,CHEMBL4188,Ki,nM,36.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccc(F)nc3)n2)CC1,CHEMBL4060895,Ki,nM,14.0,CHEMBL4188,Ki,nM,14.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CSc1ccc(-n2ncc(C(=O)N[C@@H](Cc3ccc(OC(F)(F)F)c(Cl)c3)C(=O)NC3(C#N)CC3)n2)cc1,CHEMBL4089084,Ki,nM,19.0,CHEMBL4188,Ki,nM,19.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccc(Br)cc3)n2)CC1,CHEMBL4069564,Ki,nM,25.0,CHEMBL4188,Ki,nM,25.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccc(Cl)cc3)n2)CC1,CHEMBL4096787,Ki,nM,10.0,CHEMBL4188,Ki,nM,10.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccccc3)n2)CC1,CHEMBL4080286,Ki,nM,2.9,CHEMBL4188,Ki,nM,2.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#CC1(NC(=O)[C@H](Cc2ccc(OC(F)(F)F)c(Cl)c2)NC(=O)c2cnn(-c3ccc(F)cc3)n2)CC1,CHEMBL4104507,Ki,nM,7.4,CHEMBL4188,Ki,nM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,c1ccc2c(NCCCCCCCCNc3c4c(nc5ccccc35)CCCC4)c3c(nc2c1)CCCC3,CHEMBL75274,IC50,nM,16900.0,CHEMBL4188,IC50,uM,16.9,Rhodesain,Trypanosoma brucei rhodesiense
+B,c1ccc2c(NCCCCCCCCCNc3c4c(nc5ccccc35)CCCC4)c3c(nc2c1)CCCC3,CHEMBL424707,IC50,nM,19400.0,CHEMBL4188,IC50,uM,19.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,Clc1ccc2c(NCCCCCCNc3c4c(nc5cc(Cl)ccc35)CCCC4)c3c(nc2c1)CCCC3,CHEMBL73160,IC50,nM,7400.0,CHEMBL4188,IC50,uM,7.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC1(C)CCc2c(nc3cc(Cl)ccc3c2NCCCCCCNc2c3c(nc4cc(Cl)ccc24)CC(C)(C)CC3)C1,CHEMBL3813885,IC50,nM,26600.0,CHEMBL4188,IC50,uM,26.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC1CCc2c(nc3ccc([N+](=O)[O-])cc3c2NCCCCCCNc2c3c(nc4ccc([N+](=O)[O-])cc24)CC(C)CC3)C1,CHEMBL3814557,IC50,nM,5800.0,CHEMBL4188,IC50,uM,5.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC1CCc2nc3ccccc3c(NCCCCCCCCCNc3c4c(nc5ccccc35)CCC(C)C4)c2C1,CHEMBL4103108,IC50,nM,26600.0,CHEMBL4188,IC50,uM,26.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC1CCc2nc3cc(Cl)ccc3c(NCCCCCCCCCNc3c4c(nc5cc(Cl)ccc35)CCC(OCC)C4)c2C1,CHEMBL3814548,IC50,nM,13300.0,CHEMBL4188,IC50,uM,13.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc2nc3c(c(NCCCCCCCCCNc4c5c(nc6ccc(OC)cc46)CCCC5)c2c1)CCCC3,CHEMBL3815015,IC50,nM,18100.0,CHEMBL4188,IC50,uM,18.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cccc2cccnc12,CHEMBL4226632,IC50,nM,800.0,CHEMBL4188,IC50,nM,800.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCOCC1,CHEMBL4244085,IC50,nM,560.0,CHEMBL4188,IC50,uM,0.56,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)N1CCOCC1,CHEMBL4249696,IC50,nM,140.0,CHEMBL4188,IC50,uM,0.14,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CC(C)C)NC(=O)[C@H](CC(C)C)NC(=O)N1CCOCC1,CHEMBL4237990,IC50,nM,110.0,CHEMBL4188,IC50,uM,0.11,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCOCC1,CHEMBL4242138,IC50,nM,150.0,CHEMBL4188,IC50,uM,0.15,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCOCC1,CHEMBL4247707,IC50,nM,150.0,CHEMBL4188,IC50,uM,0.15,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4238441,IC50,nM,30.0,CHEMBL4188,IC50,uM,0.03,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4244656,IC50,nM,20.0,CHEMBL4188,IC50,uM,0.02,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](C)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL4248915,IC50,nM,800.0,CHEMBL4188,IC50,uM,0.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4240920,IC50,nM,590.0,CHEMBL4188,IC50,uM,0.59,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL4245127,IC50,nM,145.0,CHEMBL4188,IC50,uM,0.145,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4251480,IC50,nM,30.0,CHEMBL4188,IC50,uM,0.03,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@@H](O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCOCC1,CHEMBL4250264,IC50,nM,1130.0,CHEMBL4188,IC50,uM,1.13,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@@H](O)[C@H](C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4246909,IC50,nM,15100.0,CHEMBL4188,IC50,uM,15.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@@H](O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4242650,IC50,nM,9500.0,CHEMBL4188,IC50,uM,9.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL380076,Ki,nM,1200.0,CHEMBL4188,Ki,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL382388,Ki,nM,1100.0,CHEMBL4188,Ki,uM,1.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL378288,Ki,nM,2300.0,CHEMBL4188,Ki,uM,2.3,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1[C@H](C(=O)OCc2ccccc2)[C@H]1C(=O)OCc1ccccc1,CHEMBL378902,Ki,nM,2800.0,CHEMBL4188,Ki,uM,2.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1[C@@H](C(=O)OCc2ccccc2)[C@@H]1C(=O)OCc1ccccc1,CHEMBL4279254,Ki,nM,1700.0,CHEMBL4188,Ki,uM,1.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@@H](C(=O)OCc2ccccc2)[C@@H]1C(=O)OCc1ccccc1,CHEMBL4289948,Ki,nM,15200.0,CHEMBL4188,Ki,uM,15.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@H]1C(=O)N1[C@@H](C(=O)OCc2ccccc2)[C@@H]1C(=O)OCc1ccccc1,CHEMBL383647,Ki,nM,500.0,CHEMBL4188,Ki,uM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1C(C(=O)OCc2ccccc2)C1C(=O)OCc1ccccc1,CHEMBL4288606,Ki,nM,1500.0,CHEMBL4188,Ki,uM,1.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1C(C(=O)O)C1C(=O)OCC1CCCCC1,CHEMBL4294334,Ki,nM,120.0,CHEMBL4188,Ki,uM,0.12,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)OC(C)(C)C)C(=O)N1CCC[C@@H]1C(=O)N1C(C(=O)O)C1C(=O)OCCc1ccccc1,CHEMBL4279824,Ki,nM,160.0,CHEMBL4188,Ki,uM,0.16,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#Cc1nc(N2CCOCC2)nc(N(Cc2ccc3c(c2)OCO3)C2CCCCC2)n1,CHEMBL2402091,Ki,nM,8.0,CHEMBL4188,Ki,nM,8.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCC[C@H]1CC[C@H](N(Cc2ccc3c(c2)OCO3)c2nc(C#N)nc(N3CCOCC3)n2)CC1,CHEMBL4556848,Ki,nM,2.0,CHEMBL4188,Ki,nM,2.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,Ki,nM,270.0,CHEMBL4188,Ki,nM,270.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCN(C)CC1,CHEMBL4456727,Ki,nM,1.8,CHEMBL4188,Ki,nM,1.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)N1CCOCC1,CHEMBL4464737,Ki,nM,3.1,CHEMBL4188,Ki,nM,3.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc2c(c1)OCCO2,CHEMBL4456010,Ki,nM,0.74,CHEMBL4188,Ki,nM,0.74,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc2c(c1)OCO2,CHEMBL4437914,Ki,nM,0.034,CHEMBL4188,Ki,nM,0.034,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Cc1ccc2c(c1)OCO2,CHEMBL4454883,Ki,nM,2.1,CHEMBL4188,Ki,nM,2.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccccc1F,CHEMBL4515298,Ki,nM,0.003,CHEMBL4188,Ki,nM,0.003,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1cccc(F)c1,CHEMBL4453415,Ki,nM,0.023,CHEMBL4188,Ki,nM,0.023,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(F)cc1,CHEMBL4475066,Ki,nM,0.0011,CHEMBL4188,Ki,nM,0.0011,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(Cl)cc1,CHEMBL4584291,Ki,nM,0.029,CHEMBL4188,Ki,nM,0.029,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(C(F)(F)F)cc1,CHEMBL4587965,Ki,nM,0.0044,CHEMBL4188,Ki,nM,0.0044,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(F)cc1F,CHEMBL4566436,Ki,nM,0.0006,CHEMBL4188,Ki,nM,0.0006,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1c(F)cccc1F,CHEMBL4441635,Ki,nM,0.0076,CHEMBL4188,Ki,nM,0.0076,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1cc(F)cc(F)c1,CHEMBL4436812,Ki,nM,0.015,CHEMBL4188,Ki,nM,0.015,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CCc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4438444,Ki,nM,5.54,CHEMBL4188,Ki,nM,5.54,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4459413,Ki,nM,0.5,CHEMBL4188,Ki,nM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C(Cc2ccc(O)cc2)=C(Cc2ccc(O)cc2)C(=O)C1(c1ccc(O)cc1)C1(c2ccc(O)cc2)C(=O)C(Cc2ccc(O)cc2)=C(Cc2ccc(O)cc2)C1=O,CHEMBL4636682,IC50,nM,15000.0,CHEMBL4188,IC50,uM,15.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=c1oc(-c2ccc(O)cc2)cc(Cc2ccc(O)cc2)c1Cc1ccc(O)cc1O,CHEMBL4639270,IC50,nM,63000.0,CHEMBL4188,IC50,uM,63.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C(Cc2ccc(O)cc2)=C(Cc2ccc(O)cc2)C(=O)C1(c1ccc(O)cc1)c1cc(Cc2c(Cc3ccc(O)cc3)cc(-c3ccc(O)cc3)oc2=O)c(O)cc1O,CHEMBL4632423,IC50,nM,33000.0,CHEMBL4188,IC50,uM,33.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1cc(/C=C/C(=O)CC(=O)/C=C/c2ccc(O)c(OC)c2)ccc1O,CHEMBL140,IC50,nM,7750.0,CHEMBL4188,IC50,uM,7.75,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4078345,IC50,nM,3050.0,CHEMBL4188,IC50,uM,3.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,c1ccc(CNc2nc(Nc3ccccc3)nc3ccccc23)cc1,CHEMBL597248,IC50,nM,30000.0,CHEMBL4188,IC50,uM,30.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cl.Cl.Clc1cc(Br)ccc1-c1ccc(CNCC2CCNCC2)o1,CHEMBL4793916,IC50,nM,53000.0,CHEMBL4188,IC50,uM,53.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cn1c(=O)n(C)c2cc(CNCCNc3ccnc4cc(Cl)ccc34)ccc21,CHEMBL531738,IC50,nM,38000.0,CHEMBL4188,IC50,uM,38.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COCCNC(=O)c1ccc(OC2CCN(Cc3ccc(F)c(F)c3)CC2)c(Cl)c1,CHEMBL533921,IC50,nM,9000.0,CHEMBL4188,IC50,uM,9.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cn1c(=O)n(C)c2cc(CNCCNc3ccnc4cc(Cl)ccc34)ccc21,CHEMBL531738,Ki,nM,10000.0,CHEMBL4188,Ki,uM,10.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1cc(C/C=N/NC(N)=S)ccc1O[C@@H]1O[C@H](COC(C)=O)[C@H](OC(C)=O)[C@H](OC(C)=O)[C@H]1OC(C)=O,CHEMBL4799587,IC50,nM,1200.0,CHEMBL4188,IC50,uM,1.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C=C(O)C(=O)c2ccccc21,CHEMBL240963,IC50,nM,33000.0,CHEMBL4188,IC50,uM,33.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)=CCC1=C(O)C(=O)c2ccccc2C1=O,CHEMBL15193,IC50,nM,58000.0,CHEMBL4188,IC50,uM,58.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)=CCC1=C(O)c2ccccc2/C(=N/NC(N)=S)C1=O,CHEMBL4859457,IC50,nM,28000.0,CHEMBL4188,IC50,uM,28.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)=CCC1=C(O)c2ccccc2/C(=N/NC(=O)c2ccncc2)C1=O,CHEMBL4845877,IC50,nM,20000.0,CHEMBL4188,IC50,uM,20.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C=C(Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)C(=O)c2ccccc21,CHEMBL4877896,IC50,nM,1800.0,CHEMBL4188,IC50,uM,1.8,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H]1O[C@@H]1C(=O)O)C(=O)NCCCCN=C(N)N,CHEMBL374508,IC50,nM,3.1,CHEMBL4188,IC50,uM,0.0031,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@H](Cc1ccccc1)NC1=C(C#N)C(=O)c2ccccc2C1=O)C(=O)O,CHEMBL4865195,Ki,nM,0.5,CHEMBL4188,Ki,nM,0.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)=CCC1=C(O)c2ccccc2/C(=N/NC(N)=S)C1=O,CHEMBL4859457,IC50,nM,66000.0,CHEMBL4188,IC50,uM,66.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)=CCC1=C(O)c2ccccc2/C(=N/NC(=O)c2ccncc2)C1=O,CHEMBL4845877,IC50,nM,29000.0,CHEMBL4188,IC50,uM,29.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C1C=C(Nc2ccc(S(=O)(=O)Nc3ccccn3)cc2)C(=O)c2ccccc21,CHEMBL4877896,IC50,nM,30000.0,CHEMBL4188,IC50,uM,30.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL4857486,Ki,nM,98.0,CHEMBL4188,Ki,uM,0.098,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(/F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL4851485,Ki,nM,525.0,CHEMBL4188,Ki,uM,0.525,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL4855613,Ki,nM,45.0,CHEMBL4188,Ki,uM,0.045,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4861941,Ki,nM,24.0,CHEMBL4188,Ki,uM,0.024,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4860770,Ki,nM,98.0,CHEMBL4188,Ki,uM,0.098,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4863808,Ki,nM,34.0,CHEMBL4188,Ki,uM,0.034,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4864383,Ki,nM,94.0,CHEMBL4188,Ki,uM,0.094,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4874291,Ki,nM,59.0,CHEMBL4188,Ki,uM,0.059000000000000004,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4877627,Ki,nM,152.0,CHEMBL4188,Ki,uM,0.152,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)OCc1ccccc1,CHEMBL4854425,Ki,nM,158.0,CHEMBL4188,Ki,uM,0.158,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)CC1,CHEMBL4858582,Ki,nM,108.0,CHEMBL4188,Ki,uM,0.10800000000000001,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL4850543,Ki,nM,53.0,CHEMBL4188,Ki,uM,0.053,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL4871967,Ki,nM,46.0,CHEMBL4188,Ki,uM,0.046,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL4858122,Ki,nM,124.0,CHEMBL4188,Ki,uM,0.124,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)cc1,CHEMBL4866378,Ki,nM,15.0,CHEMBL4188,Ki,uM,0.015,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)cc1,CHEMBL4878537,Ki,nM,14.0,CHEMBL4188,Ki,uM,0.013999999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)cc1,CHEMBL4867613,Ki,nM,29.0,CHEMBL4188,Ki,uM,0.028999999999999998,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)c1,CHEMBL4847302,Ki,nM,61.0,CHEMBL4188,Ki,uM,0.061,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)c1,CHEMBL4868480,Ki,nM,92.0,CHEMBL4188,Ki,uM,0.092,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)c1,CHEMBL4878675,Ki,nM,380.0,CHEMBL4188,Ki,uM,0.38,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)[C@H](Cc1ccccc1)NC(=O)N1CCNCC1,CHEMBL4863200,Ki,nM,192.0,CHEMBL4188,Ki,nM,192.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C/S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4871105,Ki,nM,0.45,CHEMBL4188,Ki,nM,0.45,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2cc[n+]([O-])cc2)C(=O)N[C@H](/C=C/S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4855902,Ki,nM,1.5,CHEMBL4188,Ki,nM,1.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL4867663,Ki,nM,350.0,CHEMBL4188,Ki,uM,0.35,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c2ccccc2)CCc2ccccc2)cc1,CHEMBL4867683,Ki,nM,100.0,CHEMBL4188,Ki,uM,0.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c2ccccc2)CCc2ccccc2)c1,CHEMBL4851440,Ki,nM,25.0,CHEMBL4188,Ki,uM,0.025,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c2ccccc2)CCc2ccccc2)c1,CHEMBL4854682,Ki,nM,35.0,CHEMBL4188,Ki,uM,0.035,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c2ccccc2)CCc2ccccc2)c1,CHEMBL4857753,Ki,nM,329.0,CHEMBL4188,Ki,uM,0.32899999999999996,Rhodesain,Trypanosoma brucei rhodesiense
+B,CSCC[C@@H](/C=C(\F)S(=O)(=O)c1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccncc1,CHEMBL4873498,Ki,nM,56.0,CHEMBL4188,Ki,uM,0.055999999999999994,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL4857486,Ki,nM,15.0,CHEMBL4188,Ki,uM,0.015,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL4855613,Ki,nM,9.0,CHEMBL4188,Ki,uM,0.009000000000000001,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4861941,Ki,nM,3.0,CHEMBL4188,Ki,uM,0.003,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4860770,Ki,nM,7.0,CHEMBL4188,Ki,uM,0.006999999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)cc1,CHEMBL4863808,Ki,nM,5.0,CHEMBL4188,Ki,uM,0.005,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4864383,Ki,nM,7.0,CHEMBL4188,Ki,uM,0.006999999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2ccc3c(c2)OCCO3)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4874291,Ki,nM,10.0,CHEMBL4188,Ki,uM,0.01,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1cccc(C[C@H](NC(=O)c2cc(F)cc(F)c2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc2ccccc2)CCc2ccccc2)c1,CHEMBL4877627,Ki,nM,21.0,CHEMBL4188,Ki,uM,0.021,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1ccc(C[C@H](NC(=O)c2ccncc2)C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc2ccccc2)CCc2ccccc2)cc1,CHEMBL4866378,Ki,nM,25.0,CHEMBL4188,Ki,nM,25.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(N[C@@H](Cc1ccccc1)C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL4852497,Ki,nM,47.0,CHEMBL4188,Ki,nM,47.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,c1ccc(CNc2nc(Nc3ccccc3)nc3ccccc23)cc1,CHEMBL597248,IC50,nM,17500.0,CHEMBL4188,IC50,uM,17.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,Oc1ccc(Nc2nc(NCc3ccccc3)c3ccccc3n2)cc1,CHEMBL530354,IC50,nM,23000.0,CHEMBL4188,IC50,uM,23.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Oc1cccc(Nc2nc(NCc3ccccc3)c3ccccc3n2)c1,CHEMBL536813,IC50,nM,26000.0,CHEMBL4188,IC50,uM,26.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,c1ccc(CNc2nc(Nc3nccs3)nc3ccccc23)cc1,CHEMBL4863654,IC50,nM,12500.0,CHEMBL4188,IC50,uM,12.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,Clc1ccc(Nc2nc(NCc3ccccc3)c3ccccc3n2)cc1,CHEMBL4849695,IC50,nM,33000.0,CHEMBL4188,IC50,uM,33.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(c1ccc(Nc2nc(NCc3ccccc3)c3ccccc3n2)cc1)N1CCOCC1,CHEMBL4851626,IC50,nM,22000.0,CHEMBL4188,IC50,uM,22.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)[C@@H]1O[C@H]1C(=O)O)C(=O)NCCCCN=C(N)N,CHEMBL1458713,IC50,nM,3.7,CHEMBL4188,IC50,uM,0.0037,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5199504,Ki,nM,107.0,CHEMBL4188,Ki,uM,0.107,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5195932,Ki,nM,504.0,CHEMBL4188,Ki,uM,0.504,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5187649,Ki,nM,109.0,CHEMBL4188,Ki,uM,0.109,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccccc1,CHEMBL5179910,Ki,nM,100.0,CHEMBL4188,Ki,uM,0.1,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cccc(O)c1,CHEMBL5194222,Ki,nM,651.0,CHEMBL4188,Ki,uM,0.6509999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(O)c1ccc(C(=O)NCc2ccccc2C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)cc1,CHEMBL5202609,Ki,nM,4030.0,CHEMBL4188,Ki,uM,4.03,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(O)c1cccc(C(=O)NCc2ccccc2C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)c1,CHEMBL5173499,Ki,nM,7430.0,CHEMBL4188,Ki,uM,7.43,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL5209185,Ki,nM,4680.0,CHEMBL4188,Ki,uM,4.68,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)N(Cc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)C(C)=O,CHEMBL5195971,Ki,nM,940.0,CHEMBL4188,Ki,uM,0.94,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5172863,Ki,nM,9.0,CHEMBL4188,Ki,uM,0.009000000000000001,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5208143,Ki,nM,10.0,CHEMBL4188,Ki,uM,0.01,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5182340,Ki,nM,15.0,CHEMBL4188,Ki,uM,0.015,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5191034,Ki,nM,436.0,CHEMBL4188,Ki,uM,0.436,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5198991,Ki,nM,59.0,CHEMBL4188,Ki,uM,0.059000000000000004,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5208783,Ki,nM,356.0,CHEMBL4188,Ki,uM,0.35600000000000004,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccccc1,CHEMBL5174815,Ki,nM,389.0,CHEMBL4188,Ki,uM,0.389,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)NCc2ccccc2C(=O)N[C@H](/C=C/S(=O)(=O)Cc2ccccc2)CCc2ccccc2)CC1,CHEMBL5207701,Ki,nM,318.0,CHEMBL4188,Ki,uM,0.318,Rhodesain,Trypanosoma brucei rhodesiense
+B,CNC(=O)Cc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL5175189,Ki,nM,470.0,CHEMBL4188,Ki,uM,0.47,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(Cc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)Nc1ccc(C(=O)O)cc1,CHEMBL5200736,Ki,nM,290.0,CHEMBL4188,Ki,uM,0.29,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(Cc1ccccc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1)Nc1cccc(C(=O)O)c1,CHEMBL5178896,Ki,nM,17600.0,CHEMBL4188,Ki,uM,17.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5175959,Ki,nM,430.0,CHEMBL4188,Ki,uM,0.43,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5187167,Ki,nM,339.0,CHEMBL4188,Ki,uM,0.33899999999999997,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5176742,Ki,nM,601.0,CHEMBL4188,Ki,uM,0.601,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)c1ccccc1)CCc1ccccc1)c1ccccc1,CHEMBL5176257,Ki,nM,568.0,CHEMBL4188,Ki,uM,0.568,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5199175,Ki,nM,916.0,CHEMBL4188,Ki,uM,0.9159999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5200893,Ki,nM,379.0,CHEMBL4188,Ki,uM,0.379,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Oc1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5183801,Ki,nM,638.0,CHEMBL4188,Ki,uM,0.638,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccncc1,CHEMBL5199992,Ki,nM,840.0,CHEMBL4188,Ki,uM,0.84,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1ccc2c(c1)OCCO2,CHEMBL5175876,Ki,nM,491.0,CHEMBL4188,Ki,uM,0.491,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(NCc1ccccc1C(=O)N[C@H](/C=C(\F)S(=O)(=O)Cc1ccccc1)CCc1ccccc1)c1cc(F)cc(F)c1,CHEMBL5170565,Ki,nM,608.0,CHEMBL4188,Ki,uM,0.608,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccccc1,CHEMBL5173102,Ki,nM,0.15,CHEMBL4188,Ki,nM,0.15,Rhodesain,Trypanosoma brucei rhodesiense
+B,COc1ccc(NC(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/C(C)=O)CCc2ccccc2)cc1,CHEMBL5175052,Ki,nM,1.05,CHEMBL4188,Ki,nM,1.05,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccc(C)cc1,CHEMBL5209133,Ki,nM,0.51,CHEMBL4188,Ki,nM,0.51,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccc(F)cc1,CHEMBL5186393,Ki,nM,0.85,CHEMBL4188,Ki,nM,0.85,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1c(F)cccc1F,CHEMBL5176432,Ki,nM,1.13,CHEMBL4188,Ki,nM,1.13,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccc(Cl)cc1,CHEMBL5207517,Ki,nM,0.78,CHEMBL4188,Ki,nM,0.78,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccc(Cl)cc1C,CHEMBL5170687,Ki,nM,0.51,CHEMBL4188,Ki,nM,0.51,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1ccc(Cl)cc1C(F)(F)F,CHEMBL5205818,Ki,nM,1.04,CHEMBL4188,Ki,nM,1.04,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)Nc1cccc2ccccc12,CHEMBL5198708,Ki,nM,2.51,CHEMBL4188,Ki,nM,2.51,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)Nc1ccc(C)cc1,CHEMBL5200091,Ki,nM,0.42,CHEMBL4188,Ki,nM,0.42,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(=O)/C=C/[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)Nc1ccc(Cl)cc1C,CHEMBL5190766,Ki,nM,0.93,CHEMBL4188,Ki,nM,0.93,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1ccccc1F)C(=O)N[C@H](C#N)CCc1ccccc1,CHEMBL5169792,Ki,nM,32.0,CHEMBL4188,Ki,uM,0.032,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1cccc(F)c1)C(=O)N[C@H](C#N)CCc1ccccc1,CHEMBL5206724,Ki,nM,16.0,CHEMBL4188,Ki,uM,0.016,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1ccc(F)cc1)C(=O)N[C@H](C#N)CCc1ccccc1,CHEMBL5172098,Ki,nM,52.0,CHEMBL4188,Ki,uM,0.052000000000000005,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1ccc(F)cc1F)C(=O)N[C@H](C#N)CCc1ccccc1,CHEMBL5169651,Ki,nM,66.0,CHEMBL4188,Ki,uM,0.066,Rhodesain,Trypanosoma brucei rhodesiense
+B,CC(C)C[C@H](NC(=O)c1c(F)cccc1F)C(=O)N[C@H](C#N)CCc1ccccc1,CHEMBL5200962,Ki,nM,52.0,CHEMBL4188,Ki,uM,0.052000000000000005,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccccc1F,CHEMBL5207440,Ki,nM,112.0,CHEMBL4188,Ki,uM,0.11199999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1cccc(F)c1,CHEMBL5204127,Ki,nM,72.0,CHEMBL4188,Ki,uM,0.07200000000000001,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccc(F)cc1,CHEMBL5182014,Ki,nM,70.0,CHEMBL4188,Ki,uM,0.07,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1ccccc1,CHEMBL5209848,Ki,nM,97.0,CHEMBL4188,Ki,uM,0.09699999999999999,Rhodesain,Trypanosoma brucei rhodesiense
+B,N#C[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)c1c(F)cccc1F,CHEMBL5175604,Ki,nM,122.0,CHEMBL4188,Ki,uM,0.122,Rhodesain,Trypanosoma brucei rhodesiense
+B,CN1CCN(C(=O)N[C@@H](Cc2ccccc2)C(=O)N[C@H](/C=C/S(=O)(=O)c2ccccc2)CCc2ccccc2)CC1,CHEMBL91704,Ki,nM,7.0,CHEMBL4188,Ki,nM,7.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Cc1nc(-c2ccccc2)sc1C(=O)N[C@H](/C=C/S(=O)(=O)c1ccccc1)CCc1ccccc1,CHEMBL1078675,Ki,nM,6.0,CHEMBL4188,Ki,nM,6.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4247075,IC50,nM,10000.0,CHEMBL4188,IC50,uM,10.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@@H](O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4242650,IC50,nM,20000.0,CHEMBL4188,IC50,uM,20.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4251480,IC50,nM,30.7,CHEMBL4188,IC50,nM,30.7,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/C(=O)[C@H](CCc1ccccc1)NC(=O)[C@H](CC(C)C)NC(=O)OCc1ccccc1,CHEMBL4245127,IC50,nM,144.6,CHEMBL4188,IC50,nM,144.6,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C\C(=O)[C@H](CC(C)C)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL5275445,IC50,nM,16.4,CHEMBL4188,IC50,nM,16.4,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCOC(=O)/C=C/[C@H](O)[C@H](CCc1ccccc1)NC(=O)[C@H](Cc1ccccc1)NC(=O)OCc1ccccc1,CHEMBL4247075,IC50,nM,26.0,CHEMBL4188,IC50,nM,26.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Clc1ccc2c(NCc3ccccc3)ccnc2c1,CHEMBL528696,IC50,nM,34000.0,CHEMBL4188,IC50,uM,34.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,OCCCNc1ccnc2cc(Cl)ccc12,CHEMBL460418,IC50,nM,72000.0,CHEMBL4188,IC50,uM,72.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,Clc1ccc2c(NCCN3CCOCC3)ccnc2c1,CHEMBL148139,IC50,nM,61000.0,CHEMBL4188,IC50,uM,61.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,OCCNc1ccnc2cc(Cl)ccc12,CHEMBL31000,IC50,nM,58000.0,CHEMBL4188,IC50,uM,58.0,Rhodesain,Trypanosoma brucei rhodesiense
+B,NCCNc1ccnc2cc(Cl)ccc12,CHEMBL99254,IC50,nM,125500.0,CHEMBL4188,IC50,uM,125.5,Rhodesain,Trypanosoma brucei rhodesiense
+B,CCCNc1ccnc2cc(Cl)ccc12,CHEMBL454439,IC50,nM,34200.0,CHEMBL4188,IC50,uM,34.2,Rhodesain,Trypanosoma brucei rhodesiense
+B,O=C(CNc1ccnc2cc(Cl)ccc12)N1CCOCC1,CHEMBL4082855,IC50,nM,48000.0,CHEMBL4188,IC50,uM,48.0,Rhodesain,Trypanosoma brucei rhodesiense

@@ -1,0 +1,6 @@
+disease,target,n_total_compounds,n_with_selectivity,pct_non_selective,median_ratio,best_ratio,selectivity_method,unique_enzyme
+Schistosomiasis,"Dihydroorotate dehydrogenase (quinone), mitochondrial",21,18,38.9,4.7,30.8,Experimental (ChEMBL),False
+Schistosomiasis,Histone deacetylase 8,100,73,90.4,1.0,11.0,Experimental (ChEMBL),False
+Schistosomiasis,SmTGR (docking),43,43,88.4,,,Docking (Vina),True
+Trypanosomiasis,Cathepsin B-like cysteine protease,60,36,94.4,0.8,4.1,Experimental (ChEMBL),False
+Trypanosomiasis,Trypanothione reductase,116,0,,,,N/A (unique enzyme),True
