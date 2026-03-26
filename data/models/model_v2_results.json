@@ -1,0 +1,10 @@
+{
+  "gb_cv_auroc": 0.8327993897787949,
+  "mlp_cv_auroc": 0.8452803203661328,
+  "baseline": 0.6148867313915858,
+  "lodo_Leishmaniasis_auroc": 0.4888072168392916,
+  "lodo_Schistosomiasis_auroc": 0.256468797564688,
+  "lodo_Trypanosomiasis_auroc": 0.45817669172932335,
+  "compound_importance": 1.0,
+  "protein_importance": 0.0
+}
