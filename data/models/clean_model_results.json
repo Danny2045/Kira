@@ -1,0 +1,8 @@
+{
+  "cv_compound_only": 0.8396273396702458,
+  "cv_compound_pair": 0.8946749887539361,
+  "cv_mlp": 0.8452578282383774,
+  "baseline": 0.617363344051447,
+  "compound_importance": 0.9141183900899411,
+  "protein_importance": 0.0858816099100588
+}
