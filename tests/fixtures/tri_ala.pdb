@@ -1,0 +1,19 @@
+HEADER    TEST STRUCTURE - TRI-ALANINE
+REMARK   Generated as test fixture for Physics Auditor
+REMARK   Three alanine residues with ideal geometry
+ATOM      1  N   ALA A   1       1.458   0.000   0.000  1.00  0.00           N
+ATOM      2  CA  ALA A   1       2.009   1.420   0.000  1.00  0.00           C
+ATOM      3  C   ALA A   1       1.528   2.142   1.245  1.00  0.00           C
+ATOM      4  O   ALA A   1       0.354   2.050   1.600  1.00  0.00           O
+ATOM      5  CB  ALA A   1       1.525   2.146  -1.245  1.00  0.00           C
+ATOM      6  N   ALA A   2       2.420   2.867   1.896  1.00  0.00           N
+ATOM      7  CA  ALA A   2       2.095   3.620   3.109  1.00  0.00           C
+ATOM      8  C   ALA A   2       2.624   2.883   4.341  1.00  0.00           C
+ATOM      9  O   ALA A   2       3.834   2.687   4.456  1.00  0.00           O
+ATOM     10  CB  ALA A   2       2.716   5.014   3.035  1.00  0.00           C
+ATOM     11  N   ALA A   3       1.756   2.430   5.259  1.00  0.00           N
+ATOM     12  CA  ALA A   3       2.145   1.709   6.472  1.00  0.00           C
+ATOM     13  C   ALA A   3       1.669   2.440   7.724  1.00  0.00           C
+ATOM     14  O   ALA A   3       0.481   2.365   8.050  1.00  0.00           O
+ATOM     15  CB  ALA A   3       1.520   0.315   6.404  1.00  0.00           C
+END

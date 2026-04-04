@@ -3,9 +3,9 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "kira"
-version = "0.1.0"
-description = "Computational drug repurposing pipeline for neglected tropical diseases"
+name = "kira-engine"
+version = "0.2.0"
+description = "Open Causal Discovery for Humanitarian Biology — unified drug repurposing, physics validation, and selectivity analysis engine for neglected tropical diseases"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
@@ -21,6 +21,11 @@ dependencies = [
     "networkx>=3.0",
     "scikit-learn>=1.2",
     "chembl-webresource-client>=0.10",
+    "jax>=0.4",
+    "jaxlib>=0.4",
+    "typer>=0.9",
+    "rich>=13.0",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
@@ -36,8 +41,11 @@ dev = [
     "ruff>=0.4",
 ]
 all = [
-    "kira[structural,ml,dev]",
+    "kira-engine[structural,ml,dev]",
 ]
+
+[project.scripts]
+kira = "kira.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
