@@ -37,6 +37,12 @@ from rdkit import RDLogger
 # Suppress RDKit warnings (noisy but not dangerous)
 RDLogger.logger().setLevel(RDLogger.ERROR)
 
+# Import shared modules (canonical source for scoring data and drug SMILES)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from kira.scoring import WEIGHTS_V2, DRUG_STAGE_SCORES  # noqa: E402
+from kira.targets import TARGET_ESSENTIALITY, DEFAULT_ESSENTIALITY  # noqa: E402
+from kira.drugs import CURATED_SMILES  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # CONFIGURATION
 # ---------------------------------------------------------------------------
@@ -44,62 +50,16 @@ RDLogger.logger().setLevel(RDLogger.ERROR)
 PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 EVAL_DIR = os.path.join(os.path.dirname(__file__), "data", "eval")
 
-# --- SMILES for curated drugs (not in ChEMBL activity data) ---
-# These are the standard SMILES representations from ChEMBL/PubChem.
-CURATED_SMILES = {
-    "PRAZIQUANTEL": "O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1",
-    "OXAMNIQUINE": "CC(CO)Nc1ccc2c(c1)[C@@H](C)C[C@H](C)N2O",
-    "MEFLOQUINE": "OC(c1cc(C(F)(F)F)nc2c(C(F)(F)F)cccc12)C1CCCCN1",
-    "METFORMIN": "CN(C)C(=N)NC(=N)N",
-    "LISINOPRIL": "NCCCC[C@@H](N[C@@H](CCc1ccccc1)C(=O)O)C(=O)N1CCCC1C(=O)O",
-    "SERTRALINE": "CN[C@H]1CC[C@@H](c2ccc(Cl)c(Cl)c2)c2ccccc21",
-    "OMEPRAZOLE": "COc1ccc2[nH]c(S(=O)Cc3ncc(C)c(OC)c3C)nc2c1",
-    "ATORVASTATIN": "CC(C)c1n(CC[C@@H](O)C[C@@H](O)CC(=O)O)c(-c2ccccc2)c(-c2ccc(F)cc2)c1C(=O)Nc1ccccc1",
-    "AMLODIPINE": "CCOC(=O)C1=C(COCCN)NC(C)=C(C(=O)OC)C1c1ccccc1Cl",
-    "LEVOTHYROXINE": "N[C@@H](Cc1cc(I)c(Oc2cc(I)c(O)c(I)c2)c(I)c1)C(=O)O",
-    "MONTELUKAST": "CC(C)(O)c1ccccc1CC[C@@H](SCC1(CC(=O)O)CC1)c1cccc(-c2cccc3ccc(Cl)cc23)c1",
-    "CLOPIDOGREL": "COC(=O)[C@H](c1ccccc1Cl)N1CCc2sccc2C1",
-    "TAMSULOSIN": "CCOc1ccc(CC(C)NCC[C@@H](O)c2ccc(OC)c(S(N)(=O)=O)c2)cc1",
-    "ESCITALOPRAM": "N#Cc1ccc2c(c1)C(CCCCN1CCC1)(OC2)c1ccc(F)cc1",
-    "GABAPENTIN": "NCC1(CC(=O)O)CCCCC1",
-    "PANTOPRAZOLE": "COc1ccnc(CS(=O)c2nc3cc(OC(F)F)ccc3[nH]2)c1OC",
-    "ROSUVASTATIN": "CC(C)c1nc(N(C)S(C)(=O)=O)nc(-c2ccc(F)cc2)c1/C=C/[C@@H](O)C[C@@H](O)CC(=O)O",
-    "TRAMADOL": "COc1cccc(C2(O)CCCCC2CN(C)C)c1",
-}
-
 # Potency threshold for "reference active" set
 ACTIVE_IC50_THRESHOLD = 1000  # nM
 
-# Signal weights for v2 composite score
-WEIGHT_POTENCY = 0.30        # Reduced from 0.40 (was dominating)
-WEIGHT_TARGET = 0.20         # Reduced from 0.25
-WEIGHT_CONFIDENCE = 0.05     # Reduced from 0.10
-WEIGHT_DRUG_STAGE = 0.15     # Same
-WEIGHT_MULTITARGET = 0.05    # Reduced from 0.10
-WEIGHT_SIMILARITY = 0.25     # NEW: structural similarity to known actives
-
-# Target essentiality (same as Script 04)
-TARGET_ESSENTIALITY = {
-    "Thioredoxin glutathione reductase": 1.0,
-    "Histone deacetylase 8": 0.85,
-    "Dihydroorotate dehydrogenase (quinone), mitochondrial": 0.80,
-    "Cathepsin B1 isotype 1": 0.70,
-    "Venus kinase receptor 2": 0.60,
-    "NAD-dependent protein deacetylase": 0.50,
-    "ATP-diphosphohydrolase 1": 0.55,
-    "Thioredoxin peroxidase": 0.65,
-    "Voltage-activated calcium channel beta 1 subunit": 0.75,
-    "Voltage-activated calcium channel beta 2 subunit": 0.75,
-    "Calcium channels (mechanism unclear)": 0.75,
-    "Sulfotransferase (prodrug activation)": 0.60,
-    "Unknown (whole-worm activity)": 0.50,
-    "None (negative control)": 0.0,
-}
-DEFAULT_ESSENTIALITY = 0.3
-
-DRUG_STAGE_SCORES = {
-    4.0: 1.0, 3.0: 0.7, 2.0: 0.5, 1.0: 0.3, 0.0: 0.1,
-}
+# Signal weights for v2 composite score (from shared module)
+WEIGHT_POTENCY = WEIGHTS_V2["potency"]
+WEIGHT_TARGET = WEIGHTS_V2["target"]
+WEIGHT_CONFIDENCE = WEIGHTS_V2["confidence"]
+WEIGHT_DRUG_STAGE = WEIGHTS_V2["drug_stage"]
+WEIGHT_MULTITARGET = WEIGHTS_V2["multitarget"]
+WEIGHT_SIMILARITY = WEIGHTS_V2["similarity"]
 
 
 # ---------------------------------------------------------------------------

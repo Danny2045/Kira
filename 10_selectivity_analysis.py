@@ -30,41 +30,13 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
+# Import shared modules
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from kira.scoring import classify_selectivity  # noqa: E402
+from kira.targets import ORTHOLOGUE_MAP  # noqa: E402
+
 PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "data", "reports")
-
-# ---------------------------------------------------------------------------
-# Human orthologues of S. mansoni drug targets in ChEMBL
-# ---------------------------------------------------------------------------
-# These were looked up manually from ChEMBL.
-# Each parasite target has a human equivalent (orthologue).
-
-ORTHOLOGUE_MAP = {
-    "Histone deacetylase 8": {
-        "parasite_id": "CHEMBL3797017",
-        "human_name": "Histone deacetylase 8 (human)",
-        "human_id": "CHEMBL3192",  # Human HDAC8
-        "notes": "SmHDAC8 has structural differences in the active site "
-                 "loop region compared to human HDAC8. Selective inhibition "
-                 "is possible but requires careful compound design.",
-    },
-    "Thioredoxin glutathione reductase": {
-        "parasite_id": "CHEMBL6110",
-        "human_name": "Thioredoxin reductase 1 (human)",
-        "human_id": "CHEMBL3952",  # Human TrxR1 (closest orthologue)
-        "notes": "SmTGR is a fusion enzyme (TrxR + GR) unique to the parasite. "
-                 "Humans have separate TrxR and GR enzymes. Selectivity is "
-                 "theoretically favorable because the fusion creates a unique "
-                 "active site architecture.",
-    },
-    "Dihydroorotate dehydrogenase (quinone), mitochondrial": {
-        "parasite_id": "CHEMBL4523950",
-        "human_name": "Dihydroorotate dehydrogenase (human)",
-        "human_id": "CHEMBL1966",  # Human DHODH
-        "notes": "Both parasite and human DHODH are mitochondrial. "
-                 "Atovaquone shows some selectivity but this must be verified.",
-    },
-}
 
 
 # ---------------------------------------------------------------------------
@@ -210,17 +182,7 @@ def compute_selectivity(activities_df, human_df):
     # Compute selectivity ratio
     merged["selectivity_ratio"] = merged["human_best_ic50"] / merged["parasite_best_ic50"]
 
-    # Classify
-    def classify_selectivity(ratio):
-        if ratio >= 10:
-            return "SELECTIVE"
-        elif ratio >= 3:
-            return "MODERATE"
-        elif ratio >= 1:
-            return "POOR"
-        else:
-            return "COUNTER-SELECTIVE"
-
+    # Classify (using shared module function)
     merged["selectivity_class"] = merged["selectivity_ratio"].apply(classify_selectivity)
 
     # Sort by selectivity
