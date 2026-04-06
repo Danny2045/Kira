@@ -1,0 +1,56 @@
+[
+  {
+    "pair": "SmHDAC8/HsHDAC8",
+    "disease": "Schistosomiasis",
+    "n_train": 236,
+    "n_test": 73,
+    "pos_rate": 0.0958904109589041,
+    "baseline": 0.904109589041096,
+    "auroc": 0.6212121212121212
+  },
+  {
+    "pair": "SmDHODH/HsDHODH",
+    "disease": "Schistosomiasis",
+    "n_train": 291,
+    "n_test": 18,
+    "pos_rate": 0.6111111111111112,
+    "baseline": 0.6111111111111112,
+    "auroc": 0.37662337662337664
+  },
+  {
+    "pair": "TbCatB/HsCatB",
+    "disease": "Trypanosomiasis",
+    "n_train": 273,
+    "n_test": 36,
+    "pos_rate": 0.05555555555555555,
+    "baseline": 0.9444444444444444,
+    "auroc": 0.5147058823529412
+  },
+  {
+    "pair": "TbPDEB1/HsPDE4B",
+    "disease": "Trypanosomiasis",
+    "n_train": 241,
+    "n_test": 68,
+    "pos_rate": 0.38235294117647056,
+    "baseline": 0.6176470588235294,
+    "auroc": 0.3974358974358974
+  },
+  {
+    "pair": "LmPTR1/HsDHFR",
+    "disease": "Leishmaniasis",
+    "n_train": 264,
+    "n_test": 45,
+    "pos_rate": 0.7555555555555555,
+    "baseline": 0.7555555555555555,
+    "auroc": 0.622994652406417
+  },
+  {
+    "pair": "LmDHFR/HsDHFR",
+    "disease": "Leishmaniasis",
+    "n_train": 240,
+    "n_test": 69,
+    "pos_rate": 0.5652173913043478,
+    "baseline": 0.5652173913043478,
+    "auroc": 0.5538461538461539
+  }
+]

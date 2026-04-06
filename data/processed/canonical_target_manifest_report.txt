@@ -1,0 +1,28 @@
+Kira canonical target-manifest report
+========================================
+
+Pipeline step logs:
+  - load_target_datasets: input=3 parasite target catalogs | output=68 unique parasite targets | duration_seconds=0.000
+  - build_canonical_manifest: input=68 unique parasite targets | output=68 manifest rows | duration_seconds=0.000
+  - build_validation_table: input=68 manifest rows + 3 selectivity datasets | output=6 validation records | duration_seconds=0.001
+
+Manifest summary:
+  - Total parasite targets: 68
+  - Resolved mappings: 11
+  - Proposed mappings: 10
+  - Parasite-unique targets: 4
+  - Unresolved targets: 43
+
+Per-disease coverage:
+  - Leishmaniasis: resolved=4, proposed=10, unique=3, unresolved=18
+  - Schistosomiasis: resolved=4, proposed=0, unique=0, unresolved=6
+  - Trypanosomiasis: resolved=3, proposed=0, unique=1, unresolved=19
+
+Validation summary:
+  - error: 0
+  - warning: 2
+  - ok: 4
+
+Findings:
+  - WARNING [schisto_selectivity] Dihydroorotate dehydrogenase (quinone), mitochondrial: Dataset omits human target metadata even though the canonical manifest resolves a comparator.
+  - WARNING [schisto_selectivity] Histone deacetylase 8: Dataset omits human target metadata even though the canonical manifest resolves a comparator.
