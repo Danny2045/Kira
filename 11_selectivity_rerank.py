@@ -40,18 +40,15 @@ from rdkit.Chem import Descriptors, Lipinski, AllChem, DataStructs, QED
 from rdkit import RDLogger
 RDLogger.logger().setLevel(RDLogger.ERROR)
 
+# Import shared modules
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from kira.drugs import CURATED_SMILES  # noqa: E402
+
 PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 EVAL_DIR = os.path.join(os.path.dirname(__file__), "data", "eval")
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "data", "reports")
 
 PUBMED_SEARCH_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
-
-CURATED_SMILES = {
-    "PRAZIQUANTEL": "O=C(C1CCCCC1)N1CC(=O)N2CCc3ccccc3C2C1",
-    "OXAMNIQUINE": "CC(CO)Nc1ccc2c(c1)[C@@H](C)C[C@H](C)N2O",
-    "MEFLOQUINE": "OC(c1cc(C(F)(F)F)nc2c(C(F)(F)F)cccc12)C1CCCCN1",
-    "ATOVAQUONE": "O=C1C(=O)c2ccccc2C(=O)C1C1CCC(c2ccc(Cl)cc2)CC1",
-}
 
 
 # ---------------------------------------------------------------------------

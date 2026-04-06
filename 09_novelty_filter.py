@@ -33,6 +33,10 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
+# Import shared modules
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from kira.scoring import classify_novelty  # noqa: E402
+
 PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 EVAL_DIR = os.path.join(os.path.dirname(__file__), "data", "eval")
 REPORT_DIR = os.path.join(os.path.dirname(__file__), "data", "reports")
@@ -72,18 +76,7 @@ def search_pubmed(compound_name, disease="schistosomiasis"):
         return -1  # Error indicator
 
 
-def classify_novelty(pub_count):
-    """Classify a compound based on its publication count."""
-    if pub_count < 0:
-        return "ERROR"
-    elif pub_count == 0:
-        return "NOVEL"
-    elif pub_count <= 3:
-        return "EMERGING"
-    elif pub_count <= 10:
-        return "KNOWN"
-    else:
-        return "WELL-KNOWN"
+# classify_novelty is now imported from kira.scoring (shared module).
 
 
 # ---------------------------------------------------------------------------

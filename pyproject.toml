@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kira-engine"
+version = "0.2.0"
+description = "Open Causal Discovery for Humanitarian Biology — unified drug repurposing, physics validation, and selectivity analysis engine for neglected tropical diseases"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Daniel Ngabonziza"},
+]
+
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "requests>=2.28",
+    "tqdm>=4.64",
+    "networkx>=3.0",
+    "scikit-learn>=1.2",
+    "chembl-webresource-client>=0.10",
+    "jax>=0.4",
+    "jaxlib>=0.4",
+    "typer>=0.9",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+structural = [
+    "rdkit>=2023.03",
+]
+ml = [
+    "torch>=2.0",
+    "fair-esm>=2.0",
+]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4",
+]
+all = [
+    "kira-engine[structural,ml,dev]",
+]
+
+[project.scripts]
+kira = "kira.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

@@ -33,6 +33,19 @@ import numpy as np
 import pandas as pd
 from datetime import datetime
 
+# Import shared modules (canonical source for scoring functions and data)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "src"))
+from kira.scoring import (  # noqa: E402
+    WEIGHTS_V1,
+    DRUG_STAGE_SCORES,
+    DEFAULT_DRUG_STAGE,
+    compute_potency_score,
+    compute_target_score,
+    compute_confidence_score,
+    compute_drug_stage_score,
+)
+from kira.targets import TARGET_ESSENTIALITY, DEFAULT_ESSENTIALITY  # noqa: E402
+
 # ---------------------------------------------------------------------------
 # CONFIGURATION
 # ---------------------------------------------------------------------------
@@ -41,152 +54,21 @@ PROCESSED_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 EVAL_DIR = os.path.join(os.path.dirname(__file__), "data", "eval")
 OUTPUT_DIR = os.path.join(os.path.dirname(__file__), "data", "processed")
 
-# --- Signal weights (these control how much each factor matters) ---
-# These are our starting weights. We will examine whether they work
-# by testing against the evaluation set. If they don't separate actives
-# from inactives, we adjust them.
-
-WEIGHT_POTENCY = 0.40       # 40% of score from binding potency
-WEIGHT_TARGET = 0.25        # 25% from target essentiality
-WEIGHT_CONFIDENCE = 0.10    # 10% from data confidence
-WEIGHT_DRUG_STAGE = 0.15    # 15% from development stage
-WEIGHT_MULTITARGET = 0.10   # 10% from multi-target activity
-
-# --- Target essentiality scores (0 to 1) ---
-# These encode domain knowledge about how important each target is.
-# This is human judgment, not model output. This is moat.
-
-TARGET_ESSENTIALITY = {
-    "Thioredoxin glutathione reductase": 1.0,
-    # Single point of failure. No backup system in the worm.
-    # Knockout is lethal. Best-validated target.
-
-    "Histone deacetylase 8": 0.85,
-    # Essential for gene regulation across life stages.
-    # Well-validated. Selectivity window exists vs human HDAC8.
-
-    "Dihydroorotate dehydrogenase (quinone), mitochondrial": 0.80,
-    # Essential for pyrimidine synthesis (DNA/RNA building blocks).
-    # Clear mechanism. Atovaquone already validates this target.
-
-    "Cathepsin B1 isotype 1": 0.70,
-    # Gut protease for hemoglobin digestion. Worm starves without it.
-    # Less data available but strong biological rationale.
-
-    "Venus kinase receptor 2": 0.60,
-    # No human equivalent (ideal selectivity). But only affects
-    # reproduction, not survival. Worm lives but can't make eggs.
-
-    "NAD-dependent protein deacetylase": 0.50,
-    # Sirtuin. Stress response. Less validated. Weak data.
-
-    "ATP-diphosphohydrolase 1": 0.55,
-    # Immune evasion enzyme. Interesting biology but minimal data.
-
-    "Thioredoxin peroxidase": 0.65,
-    # Downstream of SmTGR. Real target but no screening data.
-
-    "Voltage-activated calcium channel beta 1 subunit": 0.75,
-    # Praziquantel's likely target family. Important but poorly characterized.
-
-    "Voltage-activated calcium channel beta 2 subunit": 0.75,
-    # Same as above.
-}
-
-# Default for targets not in our list
-DEFAULT_ESSENTIALITY = 0.3
-
-# --- Drug stage scores (0 to 1) ---
-DRUG_STAGE_SCORES = {
-    4.0: 1.0,    # Approved drug - immediately actionable
-    3.0: 0.7,    # Phase III - likely to be approved
-    2.0: 0.5,    # Phase II - promising but uncertain
-    1.0: 0.3,    # Phase I - early clinical
-    0.0: 0.1,    # Preclinical / research only
-}
-DEFAULT_DRUG_STAGE = 0.1
+# --- Signal weights (from shared module) ---
+WEIGHT_POTENCY = WEIGHTS_V1["potency"]
+WEIGHT_TARGET = WEIGHTS_V1["target"]
+WEIGHT_CONFIDENCE = WEIGHTS_V1["confidence"]
+WEIGHT_DRUG_STAGE = WEIGHTS_V1["drug_stage"]
+WEIGHT_MULTITARGET = WEIGHTS_V1["multitarget"]
 
 
 # ---------------------------------------------------------------------------
 # SIGNAL 1: Potency Score
 # ---------------------------------------------------------------------------
 
-def compute_potency_score(ic50_nm):
-    """
-    Convert IC50 in nanomolar to a 0-1 potency score.
-
-    Uses pIC50 (negative log of IC50 in molar), then scales to 0-1.
-
-    pIC50 scale:
-        IC50 = 1 nM       -> pIC50 = 9.0  -> score ~ 1.0
-        IC50 = 10 nM      -> pIC50 = 8.0  -> score ~ 0.88
-        IC50 = 100 nM     -> pIC50 = 7.0  -> score ~ 0.75
-        IC50 = 1000 nM    -> pIC50 = 6.0  -> score ~ 0.50
-        IC50 = 10000 nM   -> pIC50 = 5.0  -> score ~ 0.25
-        IC50 = 100000 nM  -> pIC50 = 4.0  -> score ~ 0.0
-
-    The mapping uses min-max scaling between pIC50 of 4 and 9.
-    """
-    if pd.isna(ic50_nm) or ic50_nm <= 0:
-        return 0.0
-
-    # Convert nM to M, then take negative log10
-    ic50_molar = ic50_nm * 1e-9
-    pic50 = -np.log10(ic50_molar)
-
-    # Scale to 0-1 range (pIC50 of 4 = 0, pIC50 of 9 = 1)
-    score = (pic50 - 4.0) / (9.0 - 4.0)
-    score = max(0.0, min(1.0, score))  # Clamp between 0 and 1
-
-    return score
-
-
-# ---------------------------------------------------------------------------
-# SIGNAL 2: Target Essentiality Score
-# ---------------------------------------------------------------------------
-
-def compute_target_score(target_name):
-    """
-    Look up the essentiality score for this target.
-    Returns a value between 0 and 1 based on domain knowledge.
-    """
-    return TARGET_ESSENTIALITY.get(target_name, DEFAULT_ESSENTIALITY)
-
-
-# ---------------------------------------------------------------------------
-# SIGNAL 3: Data Confidence Score
-# ---------------------------------------------------------------------------
-
-def compute_confidence_score(n_measurements):
-    """
-    More independent measurements = more confidence.
-
-    1 measurement  -> 0.2 (low confidence)
-    2-3            -> 0.5
-    4-9            -> 0.75
-    10+            -> 1.0
-
-    Uses a simple log-based curve that saturates.
-    """
-    if n_measurements <= 0:
-        return 0.1  # Curated entries with no direct measurement
-
-    score = min(1.0, 0.2 + 0.3 * np.log2(n_measurements))
-    return max(0.1, score)
-
-
-# ---------------------------------------------------------------------------
-# SIGNAL 4: Drug Stage Score
-# ---------------------------------------------------------------------------
-
-def compute_drug_stage_score(max_phase):
-    """
-    Approved drugs score highest. Research compounds score lowest.
-    """
-    if pd.isna(max_phase):
-        return DEFAULT_DRUG_STAGE
-
-    return DRUG_STAGE_SCORES.get(float(max_phase), DEFAULT_DRUG_STAGE)
+# Note: compute_potency_score, compute_target_score,
+# compute_confidence_score, compute_drug_stage_score are now
+# imported from kira.scoring (shared module).
 
 
 # ---------------------------------------------------------------------------
