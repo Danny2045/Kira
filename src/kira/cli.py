@@ -1,11 +1,15 @@
 """Kira Engine CLI — unified entry point for causal drug discovery.
 
 Commands:
-    kira query     — Look up target information and known compounds
-    kira evaluate  — Score predictions against a ground-truth evaluation set
+    kira query       — Look up target information and known compounds
+    kira evaluate    — Score predictions against a ground-truth evaluation set
     kira selectivity — Analyze selectivity between parasite target and human orthologue
-    kira validate  — Physics validation of protein structures (from physics-auditor)
-    kira info      — Print structural information about a PDB file
+    kira validate    — Physics validation of protein structures (from physics-auditor)
+    kira info        — Print structural information about a PDB file
+    kira delivery    — Predict LNP biodistribution and delivery probability
+    kira expression  — Look up cell-type expression context for drug targets
+    kira perturbation — Predict cellular response to target perturbation
+    kira protocol    — Generate experiment protocol for selectivity assays
 """
 
 from __future__ import annotations
@@ -478,6 +482,344 @@ def info(
         table.add_row(label, f"{len(chain.residues)} res | {seq}")
 
     console.print(table)
+
+
+# ---------------------------------------------------------------------------
+# delivery: LNP biodistribution and delivery probability
+# ---------------------------------------------------------------------------
+
+@app.command()
+def delivery(
+    target_tissue: str = typer.Option("liver", "--target-tissue", "-t", help="Target tissue for delivery"),
+    lipid: str = typer.Option("SM-102", "--lipid", "-l", help="Ionizable lipid (SM-102, ALC-0315, DLin-MC3-DMA)"),
+    route: str = typer.Option("intravenous", "--route", "-r", help="Administration route (intravenous, intramuscular, intranasal, etc.)"),
+    payload: str = typer.Option("mRNA", "--payload", help="Payload type (mRNA, siRNA, CRISPR-Cas9 RNP, etc.)"),
+    payload_size: int = typer.Option(1000, "--payload-size", help="Payload size in nucleotides"),
+    format: str = typer.Option("table", "--format", "-f", help="Output format: table, json"),
+) -> None:
+    """Predict LNP biodistribution and delivery probability chain.
+
+    Models tissue-level distribution based on lipid composition,
+    administration route, and payload. Estimates the probability
+    chain from circulation to intracellular action.
+    """
+    from kira.delivery.biodistribution import estimate_delivery_chain, predict_biodistribution
+    from kira.delivery.formulation import (
+        AdministrationRoute,
+        IonizableLipidClass,
+        LNPFormulation,
+    )
+
+    # Map string inputs to enums
+    lipid_map = {
+        "SM-102": IonizableLipidClass.SM102,
+        "ALC-0315": IonizableLipidClass.ALC0315,
+        "DLin-MC3-DMA": IonizableLipidClass.DLIN_MC3,
+        "C12-200": IonizableLipidClass.C12_200,
+        "Lipid 5": IonizableLipidClass.LIPID5,
+    }
+    route_map = {
+        "intravenous": AdministrationRoute.IV,
+        "iv": AdministrationRoute.IV,
+        "intramuscular": AdministrationRoute.IM,
+        "im": AdministrationRoute.IM,
+        "subcutaneous": AdministrationRoute.SC,
+        "sc": AdministrationRoute.SC,
+        "intranasal": AdministrationRoute.IN,
+        "in": AdministrationRoute.IN,
+        "intrathecal": AdministrationRoute.IT,
+        "it": AdministrationRoute.IT,
+        "nebulized": AdministrationRoute.NEBULIZED,
+    }
+
+    il = lipid_map.get(lipid, IonizableLipidClass.SM102)
+    rt = route_map.get(route.lower(), AdministrationRoute.IV)
+
+    formulation = LNPFormulation(
+        name=f"{lipid}_{route}_{payload}",
+        ionizable_lipid=il,
+        route=rt,
+        payload_type=payload,
+        payload_size_nt=payload_size,
+    )
+
+    biodist = predict_biodistribution(formulation, target_tissue)
+    chain = estimate_delivery_chain(formulation, target_tissue)
+
+    if format == "json":
+        result = {
+            "formulation": formulation.to_dict(),
+            "biodistribution": biodist.to_dict(),
+            "delivery_chain": chain.to_dict(),
+        }
+        print(json.dumps(result, indent=2))
+        return
+
+    # Biodistribution table
+    console.print()
+    console.print(Panel(
+        f"[bold]{formulation.name}[/bold]  |  "
+        f"Target: [bold]{target_tissue}[/bold]  |  "
+        f"Route: [bold]{rt.value}[/bold]",
+        title="LNP Delivery Analysis",
+        border_style="blue",
+    ))
+
+    table = Table(title="Tissue Distribution")
+    table.add_column("Tissue", style="cyan")
+    table.add_column("Fraction", style="white")
+    table.add_column("Level", style="white")
+
+    sorted_tissues = sorted(
+        biodist.tissue_fractions.items(), key=lambda x: x[1], reverse=True,
+    )
+    for tissue, frac in sorted_tissues:
+        bar = "#" * int(frac * 40)
+        style = "green" if tissue == target_tissue else "white"
+        table.add_row(f"[{style}]{tissue}[/{style}]", f"{frac:.1%}", bar)
+
+    console.print(table)
+
+    # Delivery chain
+    chain_table = Table(title="Delivery Probability Chain")
+    chain_table.add_column("Step", style="cyan")
+    chain_table.add_column("Probability", style="white")
+
+    chain_table.add_row("Circulation", f"{chain.p_circulation:.4f}")
+    chain_table.add_row("Tissue Access", f"{chain.p_tissue_access:.4f}")
+    chain_table.add_row("Cell Binding", f"{chain.p_cell_binding:.4f}")
+    chain_table.add_row("Internalization", f"{chain.p_internalization:.4f}")
+    chain_table.add_row("Endosomal Escape", f"{chain.p_endosomal_escape:.4f}")
+    chain_table.add_row("Intracellular Action", f"{chain.p_intracellular_action:.4f}")
+    chain_table.add_row("[bold]Overall P(effective)[/bold]", f"[bold]{chain.p_effective:.6f}[/bold]")
+
+    bottleneck_name, bottleneck_val = chain.bottleneck
+    chain_table.add_row(f"[red]Bottleneck: {bottleneck_name}[/red]", f"[red]{bottleneck_val:.4f}[/red]")
+
+    console.print(chain_table)
+
+    if biodist.warnings:
+        console.print()
+        for w in biodist.warnings:
+            console.print(f"  [yellow]Warning: {w}[/yellow]")
+    console.print()
+
+
+# ---------------------------------------------------------------------------
+# expression: cell-type expression context
+# ---------------------------------------------------------------------------
+
+@app.command()
+def expression(
+    gene: str = typer.Option(..., "--gene", "-g", help="Gene symbol (e.g., DHODH, HDAC8, TXNRD1)"),
+    format: str = typer.Option("table", "--format", "-f", help="Output format: table, json"),
+) -> None:
+    """Look up cell-type expression context for drug targets.
+
+    Shows tissue-level expression profile for human orthologues,
+    including tissue specificity and primary expression sites.
+    """
+    from kira.cell.expression import get_expression_profile
+
+    profile = get_expression_profile(gene)
+    if profile is None:
+        console.print(f"[yellow]No expression profile found for '{gene}'[/yellow]")
+        console.print("[dim]Available: DHODH, HDAC8, TXNRD1[/dim]")
+        raise typer.Exit(1)
+
+    if format == "json":
+        print(json.dumps(profile.to_dict(), indent=2))
+        return
+
+    console.print()
+    console.print(Panel(
+        f"[bold]{profile.gene_name}[/bold] ({profile.organism})  |  "
+        f"Specificity: [bold]{profile.tissue_specificity:.2f}[/bold]  |  "
+        f"{'Ubiquitous' if profile.ubiquitous else 'Tissue-specific'}",
+        title="Gene Expression Profile",
+        border_style="blue",
+    ))
+
+    table = Table(title=f"Tissue Expression: {profile.gene_name}")
+    table.add_column("Tissue", style="cyan")
+    table.add_column("TPM", style="white")
+    table.add_column("Level", style="white")
+    table.add_column("Source", style="dim")
+
+    sorted_tissues = sorted(
+        profile.tissue_expression, key=lambda t: t.tpm, reverse=True,
+    )
+    for te in sorted_tissues:
+        level_color = {
+            "high": "red",
+            "medium": "yellow",
+            "low": "green",
+            "not_detected": "dim",
+        }.get(te.level.value, "white")
+        table.add_row(
+            te.tissue,
+            f"{te.tpm:.1f}",
+            f"[{level_color}]{te.level.value}[/{level_color}]",
+            te.source,
+        )
+
+    console.print(table)
+    console.print(f"\n  [dim]{profile.summary()}[/dim]\n")
+
+
+# ---------------------------------------------------------------------------
+# perturbation: predict cellular response
+# ---------------------------------------------------------------------------
+
+@app.command()
+def perturbation(
+    target_gene: str = typer.Option(..., "--target", "-t", help="Target gene (e.g., SmDHODH)"),
+    concentration: float = typer.Option(1000.0, "--conc", "-c", help="Concentration in nM"),
+    selectivity_ratio: float = typer.Option(1.0, "--selectivity", "-s", help="Selectivity ratio (human IC50 / parasite IC50)"),
+    organism: str = typer.Option("Schistosoma mansoni", "--organism", "-o", help="Organism"),
+    cell_type: str = typer.Option("generic", "--cell-type", help="Cell type"),
+    format: str = typer.Option("table", "--format", "-f", help="Output format: table, json"),
+) -> None:
+    """Predict cellular response to target perturbation.
+
+    Models pathway effects, viability, and cell state transitions
+    for chemical inhibition of a target.
+    """
+    from kira.cell.perturbation import Perturbation, PerturbationType, predict_perturbation_response
+
+    pert = Perturbation(
+        name=f"{target_gene}_inhibition",
+        perturbation_type=PerturbationType.CHEMICAL,
+        target_gene=target_gene,
+        concentration_nm=concentration,
+        selectivity_ratio=selectivity_ratio,
+    )
+
+    response = predict_perturbation_response(pert, cell_type, organism)
+
+    if format == "json":
+        print(json.dumps(response.to_dict(), indent=2))
+        return
+
+    console.print()
+    console.print(Panel(
+        f"[bold]{target_gene}[/bold] @ {concentration:.0f} nM in {cell_type} ({organism})\n"
+        f"State: [bold]{response.predicted_state_change.value}[/bold] "
+        f"(p={response.state_change_probability:.2f})  |  "
+        f"Viability: [bold]{response.viability:.2f}[/bold]",
+        title="Perturbation Response",
+        border_style="blue",
+    ))
+
+    if response.pathway_effects:
+        table = Table(title="Pathway Effects")
+        table.add_column("Pathway", style="cyan")
+        table.add_column("Direction", style="white")
+        table.add_column("Magnitude", style="white")
+        table.add_column("Confidence", style="dim")
+
+        for pe in response.pathway_effects:
+            dir_color = "red" if pe.direction == "down" else "green" if pe.direction == "up" else "yellow"
+            table.add_row(
+                pe.pathway_name,
+                f"[{dir_color}]{pe.direction}[/{dir_color}]",
+                f"{pe.magnitude:.3f}",
+                f"{pe.confidence:.2f}",
+            )
+
+        console.print(table)
+
+    console.print(f"\n  [dim]{response.summary}[/dim]\n")
+
+
+# ---------------------------------------------------------------------------
+# protocol: generate experiment protocols
+# ---------------------------------------------------------------------------
+
+@app.command()
+def protocol(
+    parasite_target: str = typer.Option(..., "--parasite-target", "-p", help="Parasite target (e.g., SmDHODH)"),
+    human_target: str = typer.Option(..., "--human-target", help="Human orthologue (e.g., HsDHODH)"),
+    n_compounds: int = typer.Option(10, "--n-compounds", "-n", help="Number of compounds to screen"),
+    top_conc: float = typer.Option(100.0, "--top-conc", help="Top concentration (uM)"),
+    format: str = typer.Option("table", "--format", "-f", help="Output format: table, json, summary"),
+) -> None:
+    """Generate experiment protocol for selectivity assays.
+
+    Designs a complete selectivity assay protocol with dose-response
+    curves, controls, and quality criteria.
+    """
+    from kira.lab.protocol import (
+        CompoundSpec,
+        TargetSpec,
+        design_selectivity_assay,
+    )
+
+    # Generate placeholder compounds
+    compounds = [
+        CompoundSpec(
+            compound_id=f"KIRA-{i+1:04d}",
+            name=f"Compound {i+1}",
+        )
+        for i in range(n_compounds)
+    ]
+
+    pt = TargetSpec(
+        target_name=parasite_target,
+        organism="Schistosoma mansoni",
+    )
+    ht = TargetSpec(
+        target_name=human_target,
+        organism="Homo sapiens",
+    )
+
+    proto = design_selectivity_assay(
+        compounds=compounds,
+        parasite_target=pt,
+        human_target=ht,
+        top_concentration_um=top_conc,
+    )
+
+    if format == "json":
+        print(json.dumps(proto.to_dict(), indent=2))
+        return
+
+    if format == "summary":
+        console.print(proto.summary())
+        return
+
+    console.print()
+    console.print(Panel(
+        f"[bold]{proto.name}[/bold]\n"
+        f"ID: {proto.protocol_id}  |  Type: {proto.assay_type.value}",
+        title="Experiment Protocol",
+        border_style="blue",
+    ))
+
+    table = Table(title="Protocol Summary")
+    table.add_column("Parameter", style="cyan")
+    table.add_column("Value", style="white")
+
+    table.add_row("Compounds", str(proto.n_compounds))
+    table.add_row("Targets", f"{parasite_target}, {human_target}")
+    table.add_row("Dose Points", str(proto.concentration_series.n_points))
+    table.add_row("Replicates", str(proto.concentration_series.n_replicates))
+    table.add_row("Top Concentration", f"{proto.concentration_series.top_concentration_um} uM")
+    table.add_row("Plate Format", f"{proto.plate_format.value}-well")
+    table.add_row("Plates Needed", str(proto.n_plates))
+    table.add_row("Total Wells", str(proto.total_wells))
+    table.add_row("Estimated Cost", f"${proto.estimated_cost_usd:,.0f}")
+    table.add_row("Readout", proto.readout_type.value)
+    table.add_row("Incubation", f"{proto.incubation_hours}h @ {proto.temperature_c}°C")
+
+    console.print(table)
+
+    # Show concentrations
+    conc_str = ", ".join(
+        f"{c:.2f}" for c in proto.concentration_series.concentrations_um
+    )
+    console.print(f"\n  [dim]Concentrations (uM): {conc_str}[/dim]")
+    console.print(f"  [dim]{proto.objective}[/dim]\n")
 
 
 # ---------------------------------------------------------------------------
