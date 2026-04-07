@@ -46,9 +46,15 @@ def query(
 
     results: list[dict] = []
 
-    for tgt, info in TARGET_ESSENTIALITY.items():
-        # Filter by disease
-        if disease.lower() not in tgt.lower() and disease.lower() not in info.get("disease", "").lower():
+    # TARGET_ESSENTIALITY maps target_name -> float score.
+    # All targets in the current dataset are S. mansoni (schistosomiasis).
+    # We match disease name loosely against "schistosomiasis" / "mansoni".
+    disease_aliases = {"schistosomiasis", "mansoni", "schistosoma"}
+    disease_matches = any(alias in disease.lower() for alias in disease_aliases)
+
+    for tgt, essentiality_score in TARGET_ESSENTIALITY.items():
+        # If disease doesn't match any alias, skip all targets
+        if not disease_matches:
             continue
         # Filter by target name if provided
         if target and target.lower() not in tgt.lower():
@@ -57,10 +63,9 @@ def query(
         ortho = ORTHOLOGUE_MAP.get(tgt, {})
         results.append({
             "target": tgt,
-            "disease": info.get("disease", "unknown"),
-            "essentiality": info.get("essentiality", "unknown"),
-            "human_orthologue": ortho.get("human", "none"),
-            "identity_pct": ortho.get("identity", "N/A"),
+            "essentiality": essentiality_score,
+            "human_orthologue": ortho.get("human_name", "none"),
+            "notes": ortho.get("notes", ""),
         })
 
     if format == "json":
@@ -73,15 +78,13 @@ def query(
 
     table = Table(title=f"Targets: {disease}")
     table.add_column("Target", style="cyan")
-    table.add_column("Disease", style="white")
     table.add_column("Essentiality", style="green")
     table.add_column("Human Orthologue", style="yellow")
-    table.add_column("Identity %", style="white")
 
     for r in results:
         table.add_row(
-            r["target"], r["disease"], str(r["essentiality"]),
-            r["human_orthologue"], str(r["identity_pct"]),
+            r["target"], str(r["essentiality"]),
+            r["human_orthologue"],
         )
 
     console.print(table)
