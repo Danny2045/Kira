@@ -257,18 +257,22 @@ def evaluate_cv(X: np.ndarray, y: np.ndarray, n_splits: int = 5) -> float:
         print("  WARNING: Only one class present — cannot compute AUROC")
         return 0.5
 
-    clf = GradientBoostingClassifier(
-        n_estimators=100,
-        max_depth=3,
-        random_state=42,
-        min_samples_leaf=5,
-    )
+    # CRITICAL: Scaler must be inside the CV loop to prevent feature leakage.
+    # Using sklearn Pipeline ensures fit_transform happens only on training folds.
+    from sklearn.pipeline import Pipeline
 
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
+    pipe = Pipeline([
+        ("scaler", StandardScaler()),
+        ("clf", GradientBoostingClassifier(
+            n_estimators=100,
+            max_depth=3,
+            random_state=42,
+            min_samples_leaf=5,
+        )),
+    ])
 
     cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
-    scores = cross_val_score(clf, X_scaled, y, cv=cv, scoring="roc_auc")
+    scores = cross_val_score(pipe, X, y, cv=cv, scoring="roc_auc")
 
     return float(np.mean(scores))
 

@@ -1,174 +1,142 @@
-# Kira — Computational Drug Repurposing for Schistosomiasis
+# Kira Engine — Open Causal Discovery for Neglected Tropical Diseases
 
-A multi-pathway drug repurposing pipeline that integrates target-based bioactivity, structural similarity, whole-organism evidence, ADMET filtering, cross-species selectivity analysis, and supply chain assessment to identify candidates for schistosomiasis treatment.
+A unified computational engine for drug selectivity analysis, physics validation, and mechanistic explanation across neglected tropical diseases.
+
+[![CI](https://github.com/Danny2045/Kira/actions/workflows/ci.yml/badge.svg)](https://github.com/Danny2045/Kira/actions/workflows/ci.yml)
 
 ## Core Finding
 
-**Systematic selectivity analysis of 91 anti-schistosomal compounds reveals that 90.4% of SmHDAC8 chemical matter is non-selective against the human orthologue, while SmDHODH harbors compounds with >10-fold parasite selectivity.**
+**Binding-site divergence predicts cross-disease drug selectivity where protein language models fail.**
 
-Four compounds exceed 10x selectivity for the parasite enzyme over the human version. The top candidate — CHEMBL155771 — achieves 23 nM potency against *S. mansoni* DHODH with 30.8x selectivity and near-perfect drug-likeness (QED = 0.89). Atovaquone, an approved antimalarial on the WHO Essential Medicines List and available in sub-Saharan Africa, shows 6-fold SmDHODH selectivity, supporting its prioritization for anti-schistosomal evaluation.
+ESM-2 global embeddings achieve 0.99 cosine similarity between parasite and human orthologs but fail at cross-disease selectivity prediction (LODO AUROC 0.38–0.55). Per-residue pocket divergence features — physicochemical property differences at binding-site positions — improve cross-disease transfer by 21% (mean LODO 0.519 vs 0.429).
 
-## Why This Matters
+| Metric | ESM-2 (Script 19) | Pocket Features | Delta |
+|--------|:-:|:-:|:-:|
+| 5-fold CV AUROC | 0.895 | 0.824 | -0.071 |
+| **LODO Schistosomiasis** | 0.382 | **0.606** | **+0.224** |
+| **LODO Leishmaniasis** | 0.547 | **0.637** | **+0.090** |
+| LODO Trypanosomiasis | 0.359 | 0.314 | -0.045 |
+| **Mean LODO** | **0.429** | **0.519** | **+0.090** |
 
-Schistosomiasis infects ~200 million people, overwhelmingly in sub-Saharan Africa. Global treatment depends almost entirely on a single drug (praziquantel). Drug repurposing — finding new uses for existing approved drugs — offers the fastest path to alternatives. But most computational repurposing studies rank compounds by target potency alone, without checking whether the compound also hits the equivalent human protein. This pipeline adds that check systematically and shows it changes the landscape dramatically.
+## What This Does
 
-## Pipeline Architecture
+Kira Engine is three things in one package:
 
+**1. Drug selectivity platform** — Systematic selectivity analysis across three neglected tropical diseases (schistosomiasis, trypanosomiasis, leishmaniasis). 237 compounds, 6 target pairs, 311 selectivity comparisons. Identifies which compounds prefer the parasite target over the human ortholog.
+
+**2. Physics validation engine** — Validates AI-generated protein structures (from Boltz-2, AlphaFold 3, Chai-1, etc.) with 8 physics checks: steric clashes, bond geometry, Ramachandran, peptide planarity, chirality, rotamers, Lennard-Jones energy, disulfide geometry. Produces a Trust Report with accept/relax/discard recommendation.
+
+**3. Mechanistic explanation layer** — Explains WHY selectivity exists at the residue level. Extracts binding pockets, computes per-position physicochemical divergence (hydrophobicity, charge, volume), and attributes selectivity to specific pocket differences.
+
+## Quick Start
+
+```bash
+# Install
+conda activate bio-builder  # or any Python 3.11+ environment
+pip install -e ".[dev]"
+
+# Validate a protein structure
+kira validate structure.pdb
+
+# Run the selectivity experiment
+python -m kira.experiments.run_selectivity_v3
+
+# Run tests
+pytest tests/ -v
 ```
-PrimeKG Knowledge Graph          → Disease context (human biology, known drugs)
-ChEMBL Target-Based Activity     → Parasite protein IC50 data (226 measurements, 10 targets)
-ChEMBL Whole-Organism Activity   → Phenotypic worm-killing data (494 records)
-RDKit Structural Similarity      → Morgan fingerprints, Tanimoto to known actives
-Composite Ranking (7 signals)    → Potency, target essentiality, confidence, drug stage,
-                                    multi-target, similarity, whole-organism
-ADMET Filtering                  → Lipinski Rule of Five, TPSA, QED drug-likeness
-Human Orthologue Selectivity     → Cross-species IC50 ratios (91 compounds, 2 targets)
-Literature Novelty (PubMed)      → Publication count per compound
-WHO EML + Supply Chain           → African availability, cost tier, route of administration
+
+## Key Selectivity Results (Three-Disease Platform)
+
+### Selectivity landscape: 311 comparisons across 3 diseases
+
+| Target | Disease | Compounds | Non-Selective | Median Ratio | Best Ratio |
+|--------|---------|:-:|:-:|:-:|:-:|
+| PTR1 | Leishmaniasis | 45 | 24.4% | 68.2x | >100x |
+| SmDHODH | Schistosomiasis | 18 | 38.9% | 4.7x | 30.8x |
+| DHFR-TS | Leishmaniasis | 69 | 58.0% | 3.6x | 16.1x |
+| PDEB1 | Trypanosomiasis | 68 | 89.7% | 1.6x | 7.0x |
+| SmHDAC8 | Schistosomiasis | 73 | 90.4% | 1.0x | 11.0x |
+| Cathepsin B | Trypanosomiasis | 36 | 94.4% | 0.8x | 4.1x |
+| SmTGR | Schistosomiasis | 43 | 88.0% | ~1x | ~1.3x |
+
+### Top selective compounds
+
+| Compound | Target | Parasite IC50 (nM) | Selectivity | QED |
+|----------|--------|:-:|:-:|:-:|
+| CHEMBL155771 | SmDHODH | 23 | 30.8x | 0.89 |
+| Atovaquone | SmDHODH | ~140 | 6.0x | — |
+| CHEMBL4474026 | SmDHODH | 227 | 20.3x | 0.88 |
+| CHEMBL4855490 | SmHDAC8 | 100 | 11.0x | 0.44 |
+
+### The ESM-2 blind spot
+
+SmDHODH and HsDHODH have ESM-2 cosine similarity of **0.9897** — nearly identical by global representation. Yet compounds achieve **30.8x selectivity** between them. Global protein embeddings miss binding-site-level divergence. The few residues that differ at the ubiquinone binding site (Ser53→Leu59 hydrophobicity flip, Val358→Pro364 flexibility change) drive the selectivity window that ESM-2 cannot see.
+
+## Feature Importance: What Drives Selectivity
+
+| Feature | Importance | Interpretation |
+|---------|:-:|---|
+| pocket_divergence | 28% | How different the binding pocket is |
+| std_physicochemical_distance | 20% | Whether divergence is concentrated at specific positions |
+| n_volume_changes | 12% | Positions with large sidechain size changes |
+| mean_physicochemical_distance | 9% | Average property difference across pocket |
+
+## CLI Commands
+
+```bash
+kira validate structure.pdb      # Physics validation with Trust Report
+kira info structure.pdb          # Structure summary
+kira query --target SmTGR        # Target essentiality lookup
+kira evaluate --predictions r.csv --ground-truth g.csv  # Benchmark scoring
+kira selectivity --parasite SmDHODH --human HsDHODH     # Selectivity analysis
 ```
-
-## Key Results
-
-| Target | Compounds Tested | With Selectivity Data | Non-Selective (%) | Best Selectivity |
-|--------|:---:|:---:|:---:|:---:|
-| SmHDAC8 | 100 | 73 | 90.4% | 11.0x (1 compound) |
-| SmDHODH | 21 | 18 | 38.9% | 30.8x (3 compounds >10x) |
-| SmTGR | 43 | 43 (docking) | 88% (docking) | ~1.3x (marginal) |
-| Sirtuin | 5 | 0 | Unknown | — |
-| SmVKR2 | 7 | 0 | Unknown | — |
-
-### Top Selective Compounds (≥10x parasite selectivity)
-
-| Compound | Target | Parasite IC50 (nM) | Human IC50 (nM) | Selectivity | QED |
-|----------|--------|:---:|:---:|:---:|:---:|
-| CHEMBL155771 | SmDHODH | 23 | 709 | 30.8x | 0.89 |
-| CHEMBL4474026 | SmDHODH | 227 | 4,600 | 20.3x | 0.88 |
-| CHEMBL4855490 | SmHDAC8 | 100 | 1,100 | 11.0x | 0.44 |
-| CHEMBL4452960 | SmDHODH | 78 | 808 | 10.4x | 0.89 |
-
-### Top Translational Candidate
-
-**Atovaquone** — Approved antimalarial. IC50 = 430 nM vs SmDHODH. 6.0x selective over human DHODH. WHO Essential Medicines List. Available in sub-Saharan Africa as Malarone (oral). Known safety profile in target population.
-
-## How It Was Built
-
-14 scripts, each building on the last. The git history shows the complete progression from empty folder to selectivity finding.
-
-| Script | What It Does |
-|--------|-------------|
-| `01_explore_primekg.py` | Download and query PrimeKG knowledge graph for schistosomiasis |
-| `02_query_chembl.py` | Find *S. mansoni* protein targets and bioactivity data in ChEMBL |
-| `03_build_eval_set.py` | Build ground-truth evaluation set (228 compounds, 3 classes) |
-| `04_rank_and_evaluate.py` | First composite ranking algorithm (5 signals) + AUROC evaluation |
-| `05_structural_similarity.py` | Add structural similarity pathway (RDKit Morgan fingerprints) |
-| `06_whole_organism.py` | Add whole-organism activity pathway from ChEMBL phenotypic data |
-| `07_admet_and_report.py` | ADMET filtering (Lipinski, TPSA, QED) + first candidate report |
-| `08_harden_benchmark.py` | Expand negatives (16→50), train/test split, bootstrap CIs |
-| `09_novelty_filter.py` | PubMed literature search for each top compound |
-| `10_selectivity_analysis.py` | **Cross-species selectivity** against human orthologues |
-| `11_selectivity_rerank.py` | Selectivity-adjusted re-ranking + definitive shortlist |
-| `12_publication_analysis.py` | Publication tables, per-target statistics, hard negatives |
-| `13_supply_chain_and_final.py` | WHO EML, African availability, deployment-adjusted scoring |
-| `14_docking_smtgr.py` | **Phase 2:** Molecular docking of SmTGR compounds against parasite and human structures |
 
 ## Project Structure
 
 ```
-kira/
-├── data/
-│   ├── raw/                          # PrimeKG (~250 MB, not in git)
-│   ├── processed/                    # Pipeline outputs (CSVs)
-│   ├── eval/                         # Evaluation sets (v1, v2, dev/test split)
-│   ├── publication/                  # Publication-ready tables
-│   └── reports/                      # Human-readable reports
-├── src/kira/                         # Package structure (future)
-├── tests/                            # Tests (future)
-├── docs/                             # Documentation
-│   └── kira-ground-to-god.md         # Complete scientific breakdown
-├── mission.md                        # Why Kira exists
-├── plan.md                           # Phase 1 milestones
-├── agents.md                         # Coding rules
-├── architecture.md                   # Design decisions
-└── 01-13 scripts                     # The pipeline
+src/kira/
+├── physics/              # Physics validation engine (JAX-accelerated)
+│   ├── core/             # PDB parser, topology, geometry, LJ energy kernels
+│   ├── checks/           # 8 physics checks + composite scorer
+│   └── config.py         # All thresholds (YAML-overridable)
+├── causality/            # Mechanistic explanation layer
+│   ├── binding_site.py   # Pocket extraction + comparison
+│   ├── divergence.py     # Local vs global divergence profiling
+│   ├── energy_decomp.py  # Per-residue energy decomposition
+│   └── selectivity_map.py # Selectivity attribution
+├── experiments/          # Scientific experiments
+│   ├── run_selectivity_v3.py     # Main selectivity experiment
+│   ├── selectivity_features.py   # Pocket divergence feature extraction
+│   └── validate_physics.py       # Real PDB validation
+├── scoring.py            # Compound ranking functions
+├── targets.py            # Target essentiality + ortholog map
+├── chemistry.py          # ADMET calculations
+├── drugs.py              # Drug identifiers
+└── cli.py                # Unified CLI (5 commands)
+
+tests/                    # 194 tests
+data/                     # Selectivity CSVs, docking structures, models
 ```
-
-## Requirements
-
-- Python 3.11 (conda environment recommended)
-- RDKit (cheminformatics)
-- pandas, NumPy, NetworkX
-- chembl_webresource_client (ChEMBL API)
-- scikit-learn (evaluation metrics)
-- requests (PubMed API)
-- Internet connection (for ChEMBL and PubMed queries; cached after first run)
-
-### Setup
-
-```bash
-conda create -n bio-builder python=3.11
-conda activate bio-builder
-conda install -c conda-forge rdkit numpy pandas matplotlib jupyterlab biopython networkx
-pip install chembl_webresource_client scikit-learn pyarrow tqdm requests pytest
-```
-
-### Running the Pipeline
-
-```bash
-conda activate bio-builder
-cd ~/kira
-
-# Run scripts in order (each builds on the previous)
-python 01_explore_primekg.py      # ~5 min (downloads PrimeKG)
-python 02_query_chembl.py         # ~10 min (queries ChEMBL)
-python 03_build_eval_set.py       # <1 min
-python 04_rank_and_evaluate.py    # <1 min
-python 05_structural_similarity.py # <1 min
-python 06_whole_organism.py       # ~5 min (queries ChEMBL)
-python 07_admet_and_report.py     # <1 min
-python 08_harden_benchmark.py     # <1 min
-python 09_novelty_filter.py       # ~1 min (queries PubMed)
-python 10_selectivity_analysis.py # ~10 min (queries ChEMBL)
-python 11_selectivity_rerank.py   # ~1 min
-python 12_publication_analysis.py # <1 min
-python 13_supply_chain_and_final.py # ~3 min (queries ChEMBL)
-```
-
-Total pipeline runtime: ~35 minutes (mostly network queries, cached after first run).
 
 ## Limitations
 
-This is a prioritization tool, not a clinical recommendation engine.
-
-1. Selectivity assessed for SmHDAC8 and SmDHODH only; SmTGR (the most biologically compelling target) lacks human orthologue data
-2. Selectivity ratios computed from ChEMBL data across different labs and assay conditions
-3. Only direct orthologue selectivity assessed; broader off-target pharmacology not evaluated
-4. Whole-organism dose-response data available for 6 compounds only
-5. Molecular docking performed for SmTGR only (rigid docking, non-equivalent binding sites); no docking for other data-desert targets
-6. AUROC 1.0 reflects easy discrimination task (known actives vs unrelated drugs)
-7. PubMed novelty screen uses exact string matching
-8. Supply chain data is manually curated (WHO EML 2023 edition)
-
-## Next Steps
-
-1. **Experimental validation:** Test CHEMBL155771 and CHEMBL4452960 in *S. mansoni* whole-worm killing assay
-2. **Atovaquone validation:** Test against adult *S. mansoni* at clinically relevant concentrations
-3. **SmTGR selectivity:** Test top SmTGR inhibitors against human thioredoxin reductase 1
-4. **SmTGR fusion interface:** Target the unique TrxR-GR domain interface (not examined in current docking)
-5. **Benchmark hardening:** Add structurally similar experimentally confirmed inactive compounds
-
-## Context
-
-Built by Daniel Ngabonziza in Nashville, TN. The pipeline addresses diseases that pharmaceutical markets systematically underserve. The supply chain layer encodes deployment constraints specific to East African clinical settings — knowledge that cannot be replicated from public databases alone.
+1. **Selectivity ratios are from cross-lab IC50 comparisons.** Different labs, assay conditions, and years. Systematic error is not quantified.
+2. **Physics engine uses element-level LJ parameters**, not full atom-type assignment. This is a ~30% approximation for some atom pairs.
+3. **Pocket sequences are from literature analysis**, not automated structural alignment. Some target pairs have approximate pocket definitions.
+4. **237 compounds across 6 target pairs.** The dataset is small by ML standards. Results should be interpreted as proof-of-concept, not production models.
+5. **No experimental validation.** All results are computational. The selectivity claims need biochemical confirmation.
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
 
 ## Citation
 
-If you use this pipeline or its findings, please cite:
-
-```
-Ngabonziza, D. (2026). Systematic cross-species selectivity analysis reveals SmDHODH
-as the most tractable target for schistosomiasis drug repurposing. bioRxiv [preprint].
+```bibtex
+@software{ngabonziza2026kira,
+  author = {Ngabonziza, Daniel},
+  title = {Kira Engine: Open Causal Discovery for Neglected Tropical Diseases},
+  year = {2026},
+  url = {https://github.com/Danny2045/Kira}
+}
 ```
