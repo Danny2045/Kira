@@ -119,6 +119,28 @@ def load_selectivity_data(data_dir: Path) -> pd.DataFrame:
         frames.append(df)
         print(f"  Loaded {len(df)} Trypanosomiasis compounds from {tryp_path.name}")
 
+    # Schistosomiasis (from discovery_candidates.csv)
+    schisto_path = data_dir / "publication" / "discovery_candidates.csv"
+    if schisto_path.exists():
+        dc = pd.read_csv(schisto_path)
+        # Filter to targets with known orthologues
+        schisto_targets = {
+            "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+            "Histone deacetylase 8",
+        }
+        dc = dc[dc.best_target.isin(schisto_targets)].copy()
+        dc = dc[dc.best_selectivity_ratio.notna()].copy()
+        if len(dc) > 0:
+            # Reshape to match other CSVs
+            schisto_df = pd.DataFrame({
+                "molecule_chembl_id": dc.molecule_chembl_id,
+                "selectivity_ratio": dc.best_selectivity_ratio,
+                "parasite_target": dc.best_target,
+                "disease": "Schistosomiasis",
+            })
+            frames.append(schisto_df)
+            print(f"  Loaded {len(schisto_df)} Schistosomiasis compounds from {schisto_path.name}")
+
     if not frames:
         raise FileNotFoundError(f"No selectivity CSVs found in {data_dir}")
 
@@ -450,6 +472,52 @@ def main():
     # Print comparison
     n_selective = int(y.sum())
     print_results(cv_auroc, lodo_results, len(y), n_selective)
+
+    # 5. Feature importance analysis
+    print("\n" + "=" * 70)
+    print("FEATURE IMPORTANCE (what drives selectivity prediction)")
+    print("=" * 70)
+
+    clf_full = GradientBoostingClassifier(
+        n_estimators=100, max_depth=3, random_state=42, min_samples_leaf=5,
+    )
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+    clf_full.fit(X_scaled, y)
+
+    importances = clf_full.feature_importances_
+    names = PocketFeatures.feature_names()
+    ranked = sorted(zip(names, importances), key=lambda x: x[1], reverse=True)
+
+    print(f"\n  {'Feature':<40} {'Importance':<12} {'Interpretation'}")
+    print(f"  {'-'*80}")
+
+    interpretations = {
+        "pocket_identity": "How similar the pocket is overall",
+        "pocket_divergence": "How different the pocket is (1 - identity)",
+        "mean_physicochemical_distance": "Average property difference per position",
+        "max_physicochemical_distance": "Worst-case single-position difference",
+        "std_physicochemical_distance": "How variable the divergence is",
+        "n_charge_changes": "Positions where electrostatics flip",
+        "n_hydrophobicity_flips": "Positions where polarity reverses",
+        "n_volume_changes": "Positions with large size changes",
+        "fraction_charge_changes": "Fraction of pocket with charge flips",
+        "fraction_hydro_flips": "Fraction with polarity reversals",
+        "fraction_volume_changes": "Fraction with size changes",
+        "total_hydrophobicity_delta": "Cumulative polarity difference",
+        "total_charge_delta": "Cumulative charge difference",
+        "total_volume_delta": "Cumulative size difference",
+        "pocket_size": "Number of pocket residues analyzed",
+    }
+
+    for name, imp in ranked:
+        interp = interpretations.get(name, "")
+        bar = "█" * int(imp * 50)
+        print(f"  {name:<40} {imp:<12.3f} {bar} {interp}")
+
+    print(f"\n  Top driver: {ranked[0][0]} ({ranked[0][1]:.3f})")
+    if ranked[0][1] > 0.15:
+        print(f"  → This feature alone explains {ranked[0][1]*100:.0f}% of the selectivity signal")
 
 
 if __name__ == "__main__":
