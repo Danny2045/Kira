@@ -1,10 +1,10 @@
-"""Kira Engine CLI — unified entry point for causal drug discovery.
+"""Kira CLI — entry point for computational selectivity and structure-analysis utilities.
 
 Commands:
-    kira query     — Look up target information and known compounds
+    kira query     — Look up target essentiality and human orthologue metadata
     kira evaluate  — Score predictions against a ground-truth evaluation set
-    kira selectivity — Analyze selectivity between parasite target and human orthologue
-    kira validate  — Physics validation of protein structures (from physics-auditor)
+    kira selectivity — Compare centroid-defined pockets between parasite and human structures
+    kira validate  — Run approximate structure checks on protein structures
     kira info      — Print structural information about a PDB file
 """
 
@@ -22,9 +22,10 @@ from rich.table import Table
 app = typer.Typer(
     name="kira",
     help=(
-        "Kira Engine — Open Causal Discovery for Humanitarian Biology.\n\n"
-        "A unified scientific engine for drug repurposing, physics validation, "
-        "and selectivity analysis targeting neglected tropical diseases."
+        "Kira Engine — Computational Selectivity Analysis for Humanitarian Biology.\n\n"
+        "A CLI for target lookup, retrospective evaluation, approximate "
+        "structure checks, and selectivity hypothesis generation targeting "
+        "neglected tropical diseases."
     ),
     no_args_is_help=True,
 )
@@ -197,7 +198,7 @@ def evaluate(
 
 
 # ---------------------------------------------------------------------------
-# selectivity: physics-based selectivity analysis
+# selectivity: residue-level selectivity attribution from centroid-defined pockets
 # ---------------------------------------------------------------------------
 
 @app.command()
@@ -210,11 +211,11 @@ def selectivity(
     cutoff: float = typer.Option(5.0, "--cutoff", help="Binding site cutoff distance (Angstroms)"),
     format: str = typer.Option("table", "--format", "-f", help="Output format: table, json"),
 ) -> None:
-    """Analyze selectivity between a parasite target and its human orthologue.
+    """Analyze residue-level selectivity differences between two structures.
 
-    Extracts binding pockets, decomposes per-residue LJ energy, and builds
-    a selectivity attribution map showing which residue differences drive
-    the binding energy differential.
+    Extracts centroid-defined pockets, decomposes per-residue LJ terms, and
+    builds a residue-level attribution map showing which residue differences
+    are associated with the residue-energy differential.
     """
     import numpy as np
 
@@ -323,7 +324,7 @@ def selectivity(
 
 
 # ---------------------------------------------------------------------------
-# validate: physics validation of protein structures (from physics-auditor)
+# validate: approximate structure checks for protein structures
 # ---------------------------------------------------------------------------
 
 @app.command()
@@ -334,7 +335,7 @@ def validate(
     verbose: bool = typer.Option(False, "--verbose", "-v", help="Show per-residue details"),
     json_output: bool = typer.Option(False, "--json", help="Print JSON to stdout"),
 ) -> None:
-    """Validate one or more protein structures with physics checks."""
+    """Run approximate structure checks on one or more protein structures."""
     import jax.numpy as jnp
 
     from kira.physics.checks.clashes import check_clashes
@@ -478,7 +479,7 @@ def info(
 # ---------------------------------------------------------------------------
 
 def _print_validation_report(report: dict, rec_color: str) -> None:
-    """Print a formatted validation report."""
+    """Print a formatted structure-check summary."""
     name = Path(report["file"]).stem
     meta = report["metadata"]
     checks = report["checks"]
@@ -490,7 +491,7 @@ def _print_validation_report(report: dict, rec_color: str) -> None:
         f"[bold]{name}[/bold]  |  "
         f"Score: [bold]{score:.3f}[/bold]  |  "
         f"Recommendation: [{rec_color}][bold]{rec.upper()}[/bold][/{rec_color}]",
-        title="Kira Physics Validation",
+        title="Kira Structure Checks",
         border_style="blue",
     ))
 

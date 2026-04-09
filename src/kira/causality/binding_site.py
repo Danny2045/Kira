@@ -1,8 +1,9 @@
 """Binding site extraction and comparison.
 
-Given a protein structure and a ligand, extracts binding pocket residues.
-Given two homologous proteins, aligns their pockets and computes
-local divergence metrics that explain selectivity.
+Given a protein structure and ligand coordinates or a representative
+centroid, extracts nearby pocket residues. Given two homologous proteins,
+aligns their pockets and computes local divergence metrics associated with
+selectivity.
 
 This is the module that catches what ESM-2 global embeddings miss:
 99.97% cosine similarity can coexist with 30x selectivity because
@@ -71,14 +72,14 @@ def extract_binding_site(
     cutoff: float = 5.0,
     protein_only: bool = True,
 ) -> BindingSite:
-    """Extract binding pocket residues within cutoff distance of ligand atoms.
+    """Extract binding pocket residues within cutoff distance of ligand coordinates.
 
     Parameters
     ----------
     structure : Structure
         Full protein structure.
     ligand_coords : np.ndarray
-        (L, 3) coordinates of ligand heavy atoms.
+        (L, 3) coordinates of ligand atoms or a representative centroid.
     cutoff : float
         Distance cutoff in Angstroms. Residues with any atom within
         this distance of any ligand atom are included.
@@ -147,8 +148,7 @@ def extract_binding_site(
 class PocketComparison:
     """Result of comparing two binding pockets.
 
-    This is the mechanistic explanation of selectivity:
-    which positions differ and how that affects binding.
+    Summarizes which aligned pocket positions differ between two structures.
     """
 
     n_aligned_positions: int

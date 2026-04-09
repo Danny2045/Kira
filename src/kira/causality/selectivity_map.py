@@ -1,15 +1,12 @@
 """Selectivity attribution maps.
 
-For a compound docked into both a target and its human ortholog,
-compute per-residue selectivity attribution: which specific residue
-differences contribute most to the binding energy difference.
+For two homologous pockets and their per-residue LJ decompositions,
+compute residue-level selectivity attribution: which specific residue
+differences are associated with the residue-energy differential.
 
-This is the capstone module: it combines binding-site extraction,
-per-residue energy decomposition, and pocket comparison to produce
-a mechanistic explanation of selectivity. The output answers:
-"This compound is 30x selective for the parasite target because
-positions 47, 92, and 115 differ (PHE->TYR, ASP->GLU, ILE->VAL)
-and contribute a net -8.3 kcal/mol energy advantage."
+This module combines binding-site extraction, per-residue energy
+decomposition, and pocket comparison to produce a mechanistic
+hypothesis for selectivity.
 """
 
 from __future__ import annotations
@@ -65,7 +62,7 @@ class ResidueAttribution:
 
 @dataclass
 class SelectivityMap:
-    """Complete selectivity attribution between two homologous binding sites.
+    """Complete residue-level selectivity attribution between two homologous pockets.
 
     Attributes
     ----------
@@ -79,7 +76,7 @@ class SelectivityMap:
     pocket_comparison : PocketComparison
         Residue-level pocket alignment and identity comparison.
     attributions : list[ResidueAttribution]
-        Per-position selectivity attributions, sorted by |delta_energy|.
+        Per-position residue-level attributions, sorted by |delta_energy|.
     n_positions : int
         Total number of aligned positions.
     n_divergent : int
@@ -122,7 +119,7 @@ class SelectivityMap:
         return self.attributions[:n]
 
     def summary(self) -> str:
-        """One-paragraph mechanistic summary of selectivity."""
+        """One-paragraph heuristic summary of selectivity attribution."""
         if not self.attributions:
             return "No aligned positions available for selectivity analysis."
 
@@ -151,11 +148,11 @@ def build_selectivity_map(
     alignment: list[tuple[int, int]] | None = None,
     neutrality_threshold: float = 1.0,
 ) -> SelectivityMap:
-    """Build a selectivity attribution map between two homologous pockets.
+    """Build a residue-level selectivity attribution map between two homologous pockets.
 
     Combines pocket comparison (which residues differ) with energy
-    decomposition (how much each residue contributes) to attribute
-    selectivity to specific residue-level differences.
+    decomposition (how much each residue contributes) to highlight
+    residue-level differences associated with the residue-energy differential.
 
     Parameters
     ----------
@@ -237,12 +234,12 @@ def build_selectivity_map(
 
 
 def compute_selectivity_score(sel_map: SelectivityMap) -> float:
-    """Compute a scalar selectivity confidence score from a SelectivityMap.
+    """Compute a scalar heuristic selectivity score from a SelectivityMap.
 
-    Higher scores indicate stronger, more interpretable selectivity.
+    Higher scores indicate stronger, more interpretable residue-level signal.
     The score considers both the magnitude of energy differences and
     the fraction attributable to divergent residues (which are more
-    mechanistically interpretable).
+    heuristically interpretable).
 
     Parameters
     ----------
@@ -252,7 +249,7 @@ def compute_selectivity_score(sel_map: SelectivityMap) -> float:
     Returns
     -------
     float
-        Score in [0, 1]. Higher = stronger, more interpretable selectivity.
+        Score in [0, 1]. Higher = stronger, more interpretable heuristic signal.
     """
     if sel_map.n_positions == 0:
         return 0.0

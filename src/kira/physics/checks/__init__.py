@@ -1,1 +1,1 @@
-"""Physics validation checks — steric clashes and composite scoring."""
+"""Structure-check routines, including steric clashes and related scoring helpers."""
