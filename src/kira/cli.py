@@ -41,15 +41,12 @@ def query(
     target: str = typer.Option(None, "--target", "-t", help="Target gene/protein name (e.g. SmDHODH)"),
     format: str = typer.Option("table", "--format", "-f", help="Output format: table, json"),
 ) -> None:
-    """Look up target essentiality, orthologues, and known compounds."""
+    """Look up target essentiality and human orthologue metadata."""
     from kira.targets import ORTHOLOGUE_MAP, TARGET_ESSENTIALITY
 
     results: list[dict] = []
 
-    for tgt, info in TARGET_ESSENTIALITY.items():
-        # Filter by disease
-        if disease.lower() not in tgt.lower() and disease.lower() not in info.get("disease", "").lower():
-            continue
+    for tgt, essentiality in TARGET_ESSENTIALITY.items():
         # Filter by target name if provided
         if target and target.lower() not in tgt.lower():
             continue
@@ -57,10 +54,9 @@ def query(
         ortho = ORTHOLOGUE_MAP.get(tgt, {})
         results.append({
             "target": tgt,
-            "disease": info.get("disease", "unknown"),
-            "essentiality": info.get("essentiality", "unknown"),
-            "human_orthologue": ortho.get("human", "none"),
-            "identity_pct": ortho.get("identity", "N/A"),
+            "essentiality": essentiality,
+            "human_orthologue": ortho.get("human_name", "none"),
+            "human_id": ortho.get("human_id", "N/A"),
         })
 
     if format == "json":
@@ -71,17 +67,17 @@ def query(
         console.print(f"[yellow]No targets found for disease='{disease}', target='{target}'[/yellow]")
         return
 
-    table = Table(title=f"Targets: {disease}")
+    title = f"Targets: {disease}" if disease else "Targets"
+    table = Table(title=title)
     table.add_column("Target", style="cyan")
-    table.add_column("Disease", style="white")
     table.add_column("Essentiality", style="green")
     table.add_column("Human Orthologue", style="yellow")
-    table.add_column("Identity %", style="white")
+    table.add_column("Human ChEMBL ID", style="white")
 
     for r in results:
         table.add_row(
-            r["target"], r["disease"], str(r["essentiality"]),
-            r["human_orthologue"], str(r["identity_pct"]),
+            r["target"], str(r["essentiality"]),
+            r["human_orthologue"], str(r["human_id"]),
         )
 
     console.print(table)
