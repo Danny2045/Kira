@@ -1,14 +1,22 @@
-# Kira Engine — Open Causal Discovery for Neglected Tropical Diseases
+# Kira Engine — Computational Selectivity Analysis for Neglected Tropical Diseases
 
-A unified computational engine for drug selectivity analysis, physics validation, and mechanistic explanation across neglected tropical diseases.
+A computational repository for retrospective selectivity analysis, approximate structure checks, and residue-level mechanistic hypothesis generation across neglected tropical diseases.
 
 [![CI](https://github.com/Danny2045/Kira/actions/workflows/ci.yml/badge.svg)](https://github.com/Danny2045/Kira/actions/workflows/ci.yml)
 
+## Current Scientific Scope
+
+- Benchmarks target-pair pocket descriptors against historical selectivity labels across neglected tropical disease target pairs.
+- Generates residue-level mechanistic hypotheses from curated pockets and approximate residue-energy heuristics.
+- Performs approximate structure checks using currently implemented steric, Lennard-Jones, and backbone-dihedral routines.
+- Preserves archived translational and docking analyses as auditable scientific evidence.
+- Does not currently provide compound-conditioned selectivity prediction, explicit protein-ligand binding energetics, a full active docking engine, or an eight-check active validation workflow.
+
 ## Core Finding
 
-**Binding-site divergence predicts cross-disease drug selectivity where protein language models fail.**
+**Binding-site divergence features show a modest cross-disease transfer signal where global protein similarity is often uninformative.**
 
-ESM-2 global embeddings achieve 0.99 cosine similarity between parasite and human orthologs but fail at cross-disease selectivity prediction (LODO AUROC 0.38–0.55). Per-residue pocket divergence features — physicochemical property differences at binding-site positions — improve cross-disease transfer by 21% (mean LODO 0.519 vs 0.429).
+ESM-2 global embeddings can place parasite and human orthologs extremely close in representation space while remaining weakly informative for this small leave-one-disease-out benchmark. In the current proof-of-concept setting, curated pocket divergence features outperform the ESM-2 baseline on mean LODO AUROC (0.519 vs 0.429). These features are target-pair-level descriptors rather than compound-conditioned predictors, so the result should be interpreted as benchmark association rather than production selectivity prediction.
 
 | Metric | ESM-2 (Script 19) | Pocket Features | Delta |
 |--------|:-:|:-:|:-:|
@@ -22,11 +30,11 @@ ESM-2 global embeddings achieve 0.99 cosine similarity between parasite and huma
 
 Kira Engine is three things in one package:
 
-**1. Drug selectivity platform** — Systematic selectivity analysis across three neglected tropical diseases (schistosomiasis, trypanosomiasis, leishmaniasis). 237 compounds, 6 target pairs, 311 selectivity comparisons. Identifies which compounds prefer the parasite target over the human ortholog.
+**1. Retrospective selectivity analysis** — Systematic analysis of historical parasite-versus-human selectivity evidence across three neglected tropical diseases (schistosomiasis, trypanosomiasis, leishmaniasis). 237 compounds, 6 target pairs, 311 selectivity comparisons. Summarizes observed parasite-versus-human selectivity patterns.
 
-**2. Physics validation engine** — Validates AI-generated protein structures (from Boltz-2, AlphaFold 3, Chai-1, etc.) with 8 physics checks: steric clashes, bond geometry, Ramachandran, peptide planarity, chirality, rotamers, Lennard-Jones energy, disulfide geometry. Produces a Trust Report with accept/relax/discard recommendation.
+**2. Approximate structure-checking toolkit** — Runs the currently implemented structure checks on protein models and experimental structures. The active validator reports steric clashes, Lennard-Jones summaries, and backbone-dihedral counts. These outputs are heuristic structure-quality summaries, not full physical validation.
 
-**3. Mechanistic explanation layer** — Explains WHY selectivity exists at the residue level. Extracts binding pockets, computes per-position physicochemical divergence (hydrophobicity, charge, volume), and attributes selectivity to specific pocket differences.
+**3. Mechanistic hypothesis layer** — Proposes residue-level rationales for selectivity. Extracts centroid-defined or curated pockets, computes per-position physicochemical divergence (hydrophobicity, charge, volume), and highlights residue differences associated with the heuristic score.
 
 ## Quick Start
 
@@ -35,10 +43,10 @@ Kira Engine is three things in one package:
 conda activate bio-builder  # or any Python 3.11+ environment
 pip install -e ".[dev]"
 
-# Validate a protein structure
+# Run approximate structure checks on a protein structure
 kira validate structure.pdb
 
-# Run the selectivity experiment
+# Run the target-pair pocket-feature benchmark
 python -m kira.experiments.run_selectivity_v3
 
 # Run tests
@@ -70,9 +78,9 @@ pytest tests/ -v
 
 ### The ESM-2 blind spot
 
-SmDHODH and HsDHODH have ESM-2 cosine similarity of **0.9897** — nearly identical by global representation. Yet compounds achieve **30.8x selectivity** between them. Global protein embeddings miss binding-site-level divergence. The few residues that differ at the ubiquinone binding site (Ser53→Leu59 hydrophobicity flip, Val358→Pro364 flexibility change) drive the selectivity window that ESM-2 cannot see.
+SmDHODH and HsDHODH have ESM-2 cosine similarity of **0.9897** — nearly identical by global representation. Yet compounds achieve **30.8x selectivity** between them. Global protein embeddings can miss pocket-level divergence. The few residues that differ at the ubiquinone site (Ser53→Leu59 hydrophobicity flip, Val358→Pro364 flexibility change) may contribute to a selectivity window and illustrate the kind of local divergence the benchmark is designed to capture.
 
-## Feature Importance: What Drives Selectivity
+## Feature Importance: Signals Associated With Selectivity
 
 | Feature | Importance | Interpretation |
 |---------|:-:|---|
@@ -84,30 +92,31 @@ SmDHODH and HsDHODH have ESM-2 cosine similarity of **0.9897** — nearly identi
 ## CLI Commands
 
 ```bash
-kira validate structure.pdb      # Physics validation with Trust Report
-kira info structure.pdb          # Structure summary
-kira query --target SmTGR        # Target essentiality lookup
-kira evaluate --predictions r.csv --ground-truth g.csv  # Benchmark scoring
-kira selectivity --parasite SmDHODH --human HsDHODH     # Selectivity analysis
+kira validate structure.pdb
+kira info structure.pdb
+kira evaluate --predictions predictions.csv --ground-truth ground_truth.csv
+kira selectivity --parasite parasite.pdb --human human.pdb --ligand-x 0.0 --ligand-y 0.0 --ligand-z 0.0
 ```
+
+Note: the active selectivity CLI uses parasite and human PDB files plus a ligand centroid, not target names or an explicit docked ligand.
 
 ## Project Structure
 
 ```
 src/kira/
-├── physics/              # Physics validation engine (JAX-accelerated)
+├── physics/              # Approximate structure-checking utilities
 │   ├── core/             # PDB parser, topology, geometry, LJ energy kernels
-│   ├── checks/           # 8 physics checks + composite scorer
+│   ├── checks/           # Active steric clash logic and validation scaffolding
 │   └── config.py         # All thresholds (YAML-overridable)
-├── causality/            # Mechanistic explanation layer
+├── causality/            # Mechanistic hypothesis modules
 │   ├── binding_site.py   # Pocket extraction + comparison
 │   ├── divergence.py     # Local vs global divergence profiling
-│   ├── energy_decomp.py  # Per-residue energy decomposition
-│   └── selectivity_map.py # Selectivity attribution
+│   ├── energy_decomp.py  # Residue-energy heuristic decomposition
+│   └── selectivity_map.py # Residue-level heuristic attribution
 ├── experiments/          # Scientific experiments
-│   ├── run_selectivity_v3.py     # Main selectivity experiment
+│   ├── run_selectivity_v3.py     # Target-pair selectivity benchmark
 │   ├── selectivity_features.py   # Pocket divergence feature extraction
-│   └── validate_physics.py       # Real PDB validation
+│   └── validate_physics.py       # Plausibility benchmark on selected PDB structures
 ├── scoring.py            # Compound ranking functions
 ├── targets.py            # Target essentiality + ortholog map
 ├── chemistry.py          # ADMET calculations
@@ -124,7 +133,9 @@ data/                     # Selectivity CSVs, docking structures, models
 2. **Physics engine uses element-level LJ parameters**, not full atom-type assignment. This is a ~30% approximation for some atom pairs.
 3. **Pocket sequences are from literature analysis**, not automated structural alignment. Some target pairs have approximate pocket definitions.
 4. **237 compounds across 6 target pairs.** The dataset is small by ML standards. Results should be interpreted as proof-of-concept, not production models.
-5. **No experimental validation.** All results are computational. The selectivity claims need biochemical confirmation.
+5. **Active benchmark features are target-pair-level, not compound-conditioned.** Current benchmark results do not establish a true compound-specific selectivity predictor.
+6. **Residue-level attribution is not explicit protein-ligand binding energetics.** The active attribution path uses curated pockets plus protein-only residue-energy heuristics.
+7. **No experimental validation.** All results are computational. The selectivity claims need biochemical confirmation.
 
 ## License
 
@@ -135,7 +146,7 @@ MIT — see [LICENSE](LICENSE).
 ```bibtex
 @software{ngabonziza2026kira,
   author = {Ngabonziza, Daniel},
-  title = {Kira Engine: Open Causal Discovery for Neglected Tropical Diseases},
+  title = {Kira Engine: Computational Selectivity Analysis for Neglected Tropical Diseases},
   year = {2026},
   url = {https://github.com/Danny2045/Kira}
 }
