@@ -1,0 +1,48 @@
+{
+  "rows_all": 310,
+  "rows_primary_candidate": 237,
+  "rows_primary_trainable": 235,
+  "mapped_rows_all": 310,
+  "labeled_rows_all": 237,
+  "resolved_rows_all": 310,
+  "resolved_rows_primary_candidate": 237,
+  "rows_by_status": {
+    "resolved_candidate": 237,
+    "missing_ratio": 73
+  },
+  "rows_by_structure_status": {
+    "resolved": 310
+  },
+  "rows_by_disease_all": {
+    "Leishmaniasis": 116,
+    "Trypanosomiasis": 104,
+    "Schistosomiasis": 90
+  },
+  "rows_by_pair_all": {
+    "TbPDEB1": 70,
+    "LmDHFR": 69,
+    "LmPTR1": 45,
+    "SmTGR": 43,
+    "TbCathB": 36,
+    "SmHDAC8": 34,
+    "SmDHODH": 13
+  },
+  "rows_by_pair_primary": {
+    "TbPDEB1": 70,
+    "LmDHFR": 69,
+    "LmPTR1": 45,
+    "TbCathB": 36,
+    "SmDHODH": 10,
+    "SmHDAC8": 7
+  },
+  "rows_by_pair_trainable": {
+    "LmDHFR": 69,
+    "TbPDEB1": 68,
+    "LmPTR1": 45,
+    "TbCathB": 36,
+    "SmDHODH": 10,
+    "SmHDAC8": 7
+  },
+  "duplicate_compound_pair_rows_all": 2,
+  "duplicate_compound_pair_rows_primary": 2
+}
