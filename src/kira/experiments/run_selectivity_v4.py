@@ -32,6 +32,19 @@ ABLATIONS: dict[str, list[str]] = {
     "A0_pair_only": ["pair_delta"],
     "A1_compound_only": ["compound_fp", "compound_desc"],
     "A2_compound_plus_pair": ["compound_fp", "compound_desc", "pair_delta"],
+    "A2b_pair_plus_side": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta",
+        "parasite_side",
+        "human_side",
+    ],
+    "A2c_pair_plus_compat": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta",
+        "compat_diff",
+    ],
     "A3_full_v4": [
         "compound_fp",
         "compound_desc",
