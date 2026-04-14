@@ -1,0 +1,127 @@
+{
+  "n_rows_trainable": 235,
+  "n_feature_names_full": 379,
+  "n_splits": 5,
+  "n_bits": 256,
+  "block_slices": {
+    "compound_fp": [
+      0,
+      256
+    ],
+    "compound_desc": [
+      256,
+      265
+    ],
+    "pair_delta": [
+      265,
+      280
+    ],
+    "parasite_side": [
+      280,
+      289
+    ],
+    "human_side": [
+      289,
+      298
+    ],
+    "compat_diff": [
+      298,
+      379
+    ]
+  },
+  "ablations": [
+    {
+      "ablation": "A0_pair_only",
+      "blocks": [
+        "pair_delta"
+      ],
+      "n_features": 15,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.7943176095350009,
+      "macro_pair_auroc": 0.3664800356650189,
+      "macro_pair_spearman": -0.20572770125810216
+    },
+    {
+      "ablation": "A1_compound_only",
+      "blocks": [
+        "compound_fp",
+        "compound_desc"
+      ],
+      "n_features": 265,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.8354037267080744,
+      "macro_pair_auroc": 0.7048906042194873,
+      "macro_pair_spearman": 0.3432180134187736
+    },
+    {
+      "ablation": "A2_compound_plus_pair",
+      "blocks": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta"
+      ],
+      "n_features": 280,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.8995719321806278,
+      "macro_pair_auroc": 0.7083422499479262,
+      "macro_pair_spearman": 0.3570578972083889
+    },
+    {
+      "ablation": "A2b_pair_plus_side",
+      "blocks": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta",
+        "parasite_side",
+        "human_side"
+      ],
+      "n_features": 298,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.8983968440490179,
+      "macro_pair_auroc": 0.69719201710182,
+      "macro_pair_spearman": 0.3477548420294412
+    },
+    {
+      "ablation": "A2c_pair_plus_compat",
+      "blocks": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta",
+        "compat_diff"
+      ],
+      "n_features": 361,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.8964243746852442,
+      "macro_pair_auroc": 0.6860007380309646,
+      "macro_pair_spearman": 0.34534410487449235
+    },
+    {
+      "ablation": "A3_full_v4",
+      "blocks": [
+        "compound_fp",
+        "compound_desc",
+        "pair_delta",
+        "parasite_side",
+        "human_side",
+        "compat_diff"
+      ],
+      "n_features": 379,
+      "n_rows": 235,
+      "n_groups": 124,
+      "n_positive": 74,
+      "pooled_auroc": 0.8958368306194392,
+      "macro_pair_auroc": 0.6950644873808509,
+      "macro_pair_spearman": 0.36125344890418365
+    }
+  ]
+}
