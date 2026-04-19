@@ -1,0 +1,254 @@
+{
+  "activity_rows_by_assay_type": {
+    "B": 11671,
+    "F": 32
+  },
+  "activity_rows_by_side": {
+    "human": 11094,
+    "parasite": 609
+  },
+  "activity_rows_by_standard_type": {
+    "EC50": 19,
+    "IC50": 11684
+  },
+  "candidate_rows_by_pair": {
+    "LmDHFR": 851,
+    "LmPTR1": 905,
+    "SmDHODH": 2631,
+    "SmHDAC8": 4771,
+    "TbCathB": 1183,
+    "TbPDEB1": 1750
+  },
+  "candidate_rows_by_status": {
+    "exact_matched_ratio": 1227,
+    "interval_ratio": 4,
+    "lower_bound_ratio": 72,
+    "single_side_only": 10594,
+    "unmatched_comparable": 125,
+    "upper_bound_ratio": 69
+  },
+  "generated_at_utc": "2026-04-19T22:37:32.727872+00:00",
+  "n_candidate_rows": 12091,
+  "n_curated_activity_rows": 11703,
+  "n_pair_specs": 6,
+  "pair_summaries": {
+    "LmDHFR": {
+      "candidate_rows": 851,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 75,
+        "lower_bound_ratio": 1,
+        "single_side_only": 775
+      },
+      "human_activity_rows": 802,
+      "human_label": "Dihydrofolate reductase (human)",
+      "human_target_chembl_id": "CHEMBL202",
+      "parasite_activity_rows": 61,
+      "parasite_label": "Bifunctional dihydrofolate reductase-thymidylate synthase",
+      "parasite_target_chembl_id": "CHEMBL4614",
+      "unique_candidate_molecules": 695,
+      "unique_human_molecules": 646,
+      "unique_parasite_molecules": 61
+    },
+    "LmPTR1": {
+      "candidate_rows": 905,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 18,
+        "single_side_only": 887
+      },
+      "human_activity_rows": 802,
+      "human_label": "Dihydrofolate reductase (human)",
+      "human_target_chembl_id": "CHEMBL202",
+      "parasite_activity_rows": 96,
+      "parasite_label": "Pteridine reductase 1",
+      "parasite_target_chembl_id": "CHEMBL6194",
+      "unique_candidate_molecules": 739,
+      "unique_human_molecules": 646,
+      "unique_parasite_molecules": 94
+    },
+    "SmDHODH": {
+      "candidate_rows": 2631,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 91,
+        "lower_bound_ratio": 3,
+        "single_side_only": 2533,
+        "unmatched_comparable": 4
+      },
+      "human_activity_rows": 2560,
+      "human_label": "Dihydroorotate dehydrogenase (human)",
+      "human_target_chembl_id": "CHEMBL1966",
+      "parasite_activity_rows": 31,
+      "parasite_label": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+      "parasite_target_chembl_id": "CHEMBL4523950",
+      "unique_candidate_molecules": 2015,
+      "unique_human_molecules": 1991,
+      "unique_parasite_molecules": 28
+    },
+    "SmHDAC8": {
+      "candidate_rows": 4771,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 1005,
+        "interval_ratio": 4,
+        "lower_bound_ratio": 37,
+        "single_side_only": 3600,
+        "unmatched_comparable": 101,
+        "upper_bound_ratio": 24
+      },
+      "human_activity_rows": 4090,
+      "human_label": "Histone deacetylase 8 (human)",
+      "human_target_chembl_id": "CHEMBL3192",
+      "parasite_activity_rows": 257,
+      "parasite_label": "Histone deacetylase 8",
+      "parasite_target_chembl_id": "CHEMBL3797017",
+      "unique_candidate_molecules": 3358,
+      "unique_human_molecules": 3324,
+      "unique_parasite_molecules": 214
+    },
+    "TbCathB": {
+      "candidate_rows": 1183,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 6,
+        "lower_bound_ratio": 31,
+        "single_side_only": 1127,
+        "unmatched_comparable": 19
+      },
+      "human_activity_rows": 1151,
+      "human_label": "Cathepsin B (human)",
+      "human_target_chembl_id": "CHEMBL4072",
+      "parasite_activity_rows": 88,
+      "parasite_label": "Cathepsin B-like cysteine protease",
+      "parasite_target_chembl_id": "CHEMBL5832",
+      "unique_candidate_molecules": 1105,
+      "unique_human_molecules": 1073,
+      "unique_parasite_molecules": 88
+    },
+    "TbPDEB1": {
+      "candidate_rows": 1750,
+      "candidate_status_counts": {
+        "exact_matched_ratio": 32,
+        "single_side_only": 1672,
+        "unmatched_comparable": 1,
+        "upper_bound_ratio": 45
+      },
+      "human_activity_rows": 1689,
+      "human_label": "Phosphodiesterase 4B (human)",
+      "human_target_chembl_id": "CHEMBL275",
+      "parasite_activity_rows": 76,
+      "parasite_label": "Class 1 phosphodiesterase PDEB1",
+      "parasite_target_chembl_id": "CHEMBL2010636",
+      "unique_candidate_molecules": 1509,
+      "unique_human_molecules": 1453,
+      "unique_parasite_molecules": 73
+    }
+  },
+  "policy": {
+    "allowed_assay_types": [
+      "B",
+      "F"
+    ],
+    "allowed_relations": [
+      "=",
+      "<",
+      "<=",
+      ">",
+      ">="
+    ],
+    "allowed_standard_types": [
+      "IC50",
+      "KI",
+      "KD",
+      "EC50",
+      "AC50"
+    ],
+    "exclude_flagged_data_validity": true,
+    "exclude_variants": true,
+    "max_retries": 3,
+    "min_confidence_score": 9,
+    "page_limit": 1000,
+    "request_timeout_seconds": 25,
+    "require_direct_relationship": true,
+    "require_single_protein_target": true,
+    "retry_backoff_seconds": 1.0,
+    "set_chunk_size": 10,
+    "standard_units": "nM"
+  },
+  "scientific_scope": "Curated parasite-vs-human comparator expansion from ChEMBL with assay-aware provenance; candidate rows are not final trainable labels.",
+  "target_metadata": {
+    "CHEMBL1966": {
+      "accession": "Q02127",
+      "organism": "Homo sapiens",
+      "pref_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+      "target_chembl_id": "CHEMBL1966",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL2010636": {
+      "accession": "Q8WQX9",
+      "organism": "Trypanosoma brucei",
+      "pref_name": "Class 1 phosphodiesterase PDEB1",
+      "target_chembl_id": "CHEMBL2010636",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL202": {
+      "accession": "P00374",
+      "organism": "Homo sapiens",
+      "pref_name": "Dihydrofolate reductase",
+      "target_chembl_id": "CHEMBL202",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL275": {
+      "accession": "Q07343",
+      "organism": "Homo sapiens",
+      "pref_name": "3',5'-cyclic-AMP phosphodiesterase 4B",
+      "target_chembl_id": "CHEMBL275",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL3192": {
+      "accession": "Q9BY41",
+      "organism": "Homo sapiens",
+      "pref_name": "Histone deacetylase 8",
+      "target_chembl_id": "CHEMBL3192",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL3797017": {
+      "accession": "A5H660",
+      "organism": "Schistosoma mansoni",
+      "pref_name": "Histone deacetylase 8",
+      "target_chembl_id": "CHEMBL3797017",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL4072": {
+      "accession": "P07858",
+      "organism": "Homo sapiens",
+      "pref_name": "Cathepsin B",
+      "target_chembl_id": "CHEMBL4072",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL4523950": {
+      "accession": "G4VFD7",
+      "organism": "Schistosoma mansoni",
+      "pref_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+      "target_chembl_id": "CHEMBL4523950",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL4614": {
+      "accession": "P07382",
+      "organism": "Leishmania major",
+      "pref_name": "Bifunctional dihydrofolate reductase-thymidylate synthase",
+      "target_chembl_id": "CHEMBL4614",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL5832": {
+      "accession": "Q6R7Z5",
+      "organism": "Trypanosoma brucei",
+      "pref_name": "Cathepsin B-like cysteine protease",
+      "target_chembl_id": "CHEMBL5832",
+      "target_type": "SINGLE PROTEIN"
+    },
+    "CHEMBL6194": {
+      "accession": "Q01782",
+      "organism": "Leishmania major",
+      "pref_name": "Pteridine reductase 1",
+      "target_chembl_id": "CHEMBL6194",
+      "target_type": "SINGLE PROTEIN"
+    }
+  }
+}
