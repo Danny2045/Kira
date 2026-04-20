@@ -16,7 +16,7 @@ Pocket positions should be updated as better structural data becomes available.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 
 @dataclass
