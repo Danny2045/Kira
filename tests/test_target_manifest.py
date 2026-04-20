@@ -2,8 +2,9 @@
 
 import sys
 import unittest
-import pytest
 from pathlib import Path
+
+import pytest
 
 SRC_DIR = Path(__file__).resolve().parents[1] / "src"
 if str(SRC_DIR) not in sys.path:
@@ -19,6 +20,7 @@ from kira.data.target_manifest import (  # noqa: E402
     resolve_mapping_rule,
     run_target_manifest_pipeline,
 )
+
 
 @pytest.mark.skipif(
     not (Path(__file__).resolve().parents[1] / "data" / "processed" / "schisto_parasite_targets.csv").exists(),
