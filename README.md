@@ -1,153 +1,191 @@
-# Kira Engine — Computational Selectivity Analysis for Neglected Tropical Diseases
+# Kira Engine
 
-A computational repository for retrospective selectivity analysis, approximate structure checks, and residue-level mechanistic hypothesis generation across neglected tropical diseases.
+**Computational selectivity analysis for parasite-vs-human target pairs under sparse medicinal-chemistry data.**
 
-[![CI](https://github.com/Danny2045/Kira/actions/workflows/ci.yml/badge.svg)](https://github.com/Danny2045/Kira/actions/workflows/ci.yml)
+Kira is a research repository for retrospective translational analysis, scaffold-aware selectivity benchmarking, assay-aware data curation, and residue-level mechanistic hypothesis generation. The current scientific focus is narrow by design: parasite-vs-human selectivity under sparse public assay data, not a universal drug-discovery engine.
 
-## Current Scientific Scope
+## Current scientific scope
 
-- Benchmarks target-pair pocket descriptors against historical selectivity labels across neglected tropical disease target pairs.
-- Generates residue-level mechanistic hypotheses from curated pockets and approximate residue-energy heuristics.
-- Performs approximate structure checks using currently implemented steric, Lennard-Jones, and backbone-dihedral routines.
-- Preserves archived translational and docking analyses as auditable scientific evidence.
-- Does not currently provide compound-conditioned selectivity prediction, explicit protein-ligand binding energetics, a full active docking engine, or an eight-check active validation workflow.
+Kira currently supports:
 
-## Core Finding
+- curated parasite-vs-human comparator target pairs
+- retrospective selectivity analysis from public assay evidence
+- compound-conditioned v4 benchmarking
+- scaffold-aware leakage control using `target_pair_id::murcko_scaffold`
+- assay-aware v5 expansion from ChEMBL
+- exact-core aggregation with replicate handling and conflict detection
 
-**Binding-site divergence features show a modest cross-disease transfer signal where global protein similarity is often uninformative.**
+Kira does **not** currently provide:
 
-ESM-2 global embeddings can place parasite and human orthologs extremely close in representation space while remaining weakly informative for this small leave-one-disease-out benchmark. In the current proof-of-concept setting, curated pocket divergence features outperform the ESM-2 baseline on mean LODO AUROC (0.519 vs 0.429). These features are target-pair-level descriptors rather than compound-conditioned predictors, so the result should be interpreted as benchmark association rather than production selectivity prediction.
+- a production selectivity predictor for arbitrary new compounds
+- wet-lab validation
+- a full protein-ligand binding physics engine
+- a universal multiscale biology simulator
 
-| Metric | ESM-2 (Script 19) | Pocket Features | Delta |
-|--------|:-:|:-:|:-:|
-| 5-fold CV AUROC | 0.895 | 0.824 | -0.071 |
-| **LODO Schistosomiasis** | 0.382 | **0.606** | **+0.224** |
-| **LODO Leishmaniasis** | 0.547 | **0.637** | **+0.090** |
-| LODO Trypanosomiasis | 0.359 | 0.314 | -0.045 |
-| **Mean LODO** | **0.429** | **0.519** | **+0.090** |
+## Key results so far
 
-## What This Does
+### v4: compound-conditioned scaffold-aware benchmark
 
-Kira Engine is three things in one package:
+v4 repaired the core v3 limitation by making the benchmark genuinely compound-conditioned.
 
-**1. Retrospective selectivity analysis** — Systematic analysis of historical parasite-versus-human selectivity evidence across three neglected tropical diseases (schistosomiasis, trypanosomiasis, leishmaniasis). 237 compounds, 6 target pairs, 311 selectivity comparisons. Summarizes observed parasite-versus-human selectivity patterns.
+| Quantity | Value |
+|---|---:|
+| Total mapped rows | 310 |
+| Primary labeled candidate rows | 237 |
+| Primary trainable rows | 235 |
+| Full v4 feature width | 379 |
+| Cross-validation | 5-fold StratifiedGroupKFold |
+| Grouping | `target_pair_id::murcko_scaffold` |
 
-**2. Approximate structure-checking toolkit** — Runs the currently implemented structure checks on protein models and experimental structures. The active validator reports steric clashes, Lennard-Jones summaries, and backbone-dihedral counts. These outputs are heuristic structure-quality summaries, not full physical validation.
+v4 ablation summary:
 
-**3. Mechanistic hypothesis layer** — Proposes residue-level rationales for selectivity. Extracts centroid-defined or curated pockets, computes per-position physicochemical divergence (hydrophobicity, charge, volume), and highlights residue differences associated with the heuristic score.
+| Ablation | Pooled AUROC | Macro pair AUROC | Macro pair Spearman | Interpretation |
+|---|---:|---:|---:|---|
+| A0_pair_only | 0.794 | 0.366 | -0.206 | Pair-only fails on the main within-pair metric. |
+| A1_compound_only | 0.835 | 0.705 | 0.343 | Compound chemistry carries most signal. |
+| A2_compound_plus_pair | 0.900 | 0.708 | 0.357 | Best classifier by macro pair AUROC. |
+| A2b_pair_plus_side | 0.898 | 0.697 | 0.348 | Side summaries do not improve classification. |
+| A2c_pair_plus_compat | 0.896 | 0.686 | 0.345 | Compatibility block is benchmarkable but not yet beneficial. |
+| A3_full_v4 | 0.896 | 0.695 | 0.361 | Best ranking signal only, not best classifier. |
 
-## Quick Start
+**Honest v4 claim:** compound chemotype explains most of the current predictive signal. The coarse pocket-compatibility features are scientifically motivated and benchmarkable, but they have not yet shown clear within-pair classification gain over compound + pair.
 
-```bash
-# Install
-conda activate bio-builder  # or any Python 3.11+ environment
-pip install -e ".[dev]"
+### v5: assay-aware expansion and exact core
 
-# Run approximate structure checks on a protein structure
-kira validate structure.pdb
+v5 expands the data substrate before adding a more complex model.
 
-# Run the target-pair pocket-feature benchmark
-python -m kira.experiments.run_selectivity_v3
+| Quantity | Value |
+|---|---:|
+| Curated ChEMBL activity rows | 11,703 |
+| Candidate evidence rows | 12,091 |
+| Exact matched-ratio candidate rows | 1,227 |
+| Exact-core rows after replicate collapse | 114 |
+| Trainable exact-core rows | 110 |
+| Conflicting exact-core rows | 4 |
 
-# Run tests
-pytest tests/ -v
-```
+Trainable v5 exact-core class balance:
 
-## Key Selectivity Results (Three-Disease Platform)
+| Pair | Trainable rows | Positive | Negative | Unique scaffolds |
+|---|---:|---:|---:|---:|
+| LmDHFR | 11 | 9 | 2 | 10 |
+| LmPTR1 | 1 | 0 | 1 | 1 |
+| SmDHODH | 3 | 0 | 3 | 3 |
+| SmHDAC8 | 73 | 1 | 72 | 37 |
+| TbCathB | 6 | 1 | 5 | 4 |
+| TbPDEB1 | 16 | 0 | 16 | 15 |
 
-### Selectivity landscape: 311 comparisons across 3 diseases
+**Honest v5 claim:** v5 successfully expands and cleans the assay-aware evidence substrate, but the strict exact core is too class-degenerate for a strong six-pair classifier benchmark. v5 does **not** yet prove a new compound-dominance shift. That requires the upcoming B0/B1/B2 benchmark on an exact or tiered core.
 
-| Target | Disease | Compounds | Non-Selective | Median Ratio | Best Ratio |
-|--------|---------|:-:|:-:|:-:|:-:|
-| PTR1 | Leishmaniasis | 45 | 24.4% | 68.2x | >100x |
-| SmDHODH | Schistosomiasis | 18 | 38.9% | 4.7x | 30.8x |
-| DHFR-TS | Leishmaniasis | 69 | 58.0% | 3.6x | 16.1x |
-| PDEB1 | Trypanosomiasis | 68 | 89.7% | 1.6x | 7.0x |
-| SmHDAC8 | Schistosomiasis | 73 | 90.4% | 1.0x | 11.0x |
-| Cathepsin B | Trypanosomiasis | 36 | 94.4% | 0.8x | 4.1x |
-| SmTGR | Schistosomiasis | 43 | 88.0% | ~1x | ~1.3x |
+## Installation
 
-### Top selective compounds
-
-| Compound | Target | Parasite IC50 (nM) | Selectivity | QED |
-|----------|--------|:-:|:-:|:-:|
-| CHEMBL155771 | SmDHODH | 23 | 30.8x | 0.89 |
-| Atovaquone | SmDHODH | ~140 | 6.0x | — |
-| CHEMBL4474026 | SmDHODH | 227 | 20.3x | 0.88 |
-| CHEMBL4855490 | SmHDAC8 | 100 | 11.0x | 0.44 |
-
-### The ESM-2 blind spot
-
-SmDHODH and HsDHODH have ESM-2 cosine similarity of **0.9897** — nearly identical by global representation. Yet compounds achieve **30.8x selectivity** between them. Global protein embeddings can miss pocket-level divergence. The few residues that differ at the ubiquinone site (Ser53→Leu59 hydrophobicity flip, Val358→Pro364 flexibility change) may contribute to a selectivity window and illustrate the kind of local divergence the benchmark is designed to capture.
-
-## Feature Importance: Signals Associated With Selectivity
-
-| Feature | Importance | Interpretation |
-|---------|:-:|---|
-| pocket_divergence | 28% | How different the binding pocket is |
-| std_physicochemical_distance | 20% | Whether divergence is concentrated at specific positions |
-| n_volume_changes | 12% | Positions with large sidechain size changes |
-| mean_physicochemical_distance | 9% | Average property difference across pocket |
-
-## CLI Commands
+### Option A: conda/mamba
 
 ```bash
-kira validate structure.pdb
-kira info structure.pdb
-kira evaluate --predictions predictions.csv --ground-truth ground_truth.csv
-kira selectivity --parasite parasite.pdb --human human.pdb --ligand-x 0.0 --ligand-y 0.0 --ligand-z 0.0
+mamba env create -f environment.yml
+mamba activate kira
+python -m pip install -e ".[structural,dev]"
 ```
 
-Note: the active selectivity CLI uses parasite and human PDB files plus a ligand centroid, not target names or an explicit docked ligand.
+### Option B: Docker
 
-## Project Structure
-
-```
-src/kira/
-├── physics/              # Approximate structure-checking utilities
-│   ├── core/             # PDB parser, topology, geometry, LJ energy kernels
-│   ├── checks/           # Active steric clash logic and validation scaffolding
-│   └── config.py         # All thresholds (YAML-overridable)
-├── causality/            # Mechanistic hypothesis modules
-│   ├── binding_site.py   # Pocket extraction + comparison
-│   ├── divergence.py     # Local vs global divergence profiling
-│   ├── energy_decomp.py  # Residue-energy heuristic decomposition
-│   └── selectivity_map.py # Residue-level heuristic attribution
-├── experiments/          # Scientific experiments
-│   ├── run_selectivity_v3.py     # Target-pair selectivity benchmark
-│   ├── selectivity_features.py   # Pocket divergence feature extraction
-│   └── validate_physics.py       # Plausibility benchmark on selected PDB structures
-├── scoring.py            # Compound ranking functions
-├── targets.py            # Target essentiality + ortholog map
-├── chemistry.py          # ADMET calculations
-├── drugs.py              # Drug identifiers
-└── cli.py                # Unified CLI (5 commands)
-
-tests/                    # 194 tests
-data/                     # Selectivity CSVs, docking structures, models
+```bash
+docker build -t kira-engine .
+docker run --rm -it -v "$PWD":/app kira-engine
 ```
 
-## Limitations
+### Option C: existing Python environment
 
-1. **Selectivity ratios are from cross-lab IC50 comparisons.** Different labs, assay conditions, and years. Systematic error is not quantified.
-2. **Physics engine uses element-level LJ parameters**, not full atom-type assignment. This is a ~30% approximation for some atom pairs.
-3. **Pocket sequences are from literature analysis**, not automated structural alignment. Some target pairs have approximate pocket definitions.
-4. **237 compounds across 6 target pairs.** The dataset is small by ML standards. Results should be interpreted as proof-of-concept, not production models.
-5. **Active benchmark features are target-pair-level, not compound-conditioned.** Current benchmark results do not establish a true compound-specific selectivity predictor.
-6. **Residue-level attribution is not explicit protein-ligand binding energetics.** The active attribution path uses curated pockets plus protein-only residue-energy heuristics.
-7. **No experimental validation.** All results are computational. The selectivity claims need biochemical confirmation.
-
-## License
-
-MIT — see [LICENSE](LICENSE).
-
-## Citation
-
-```bibtex
-@software{ngabonziza2026kira,
-  author = {Ngabonziza, Daniel},
-  title = {Kira Engine: Computational Selectivity Analysis for Neglected Tropical Diseases},
-  year = {2026},
-  url = {https://github.com/Danny2045/Kira}
-}
+```bash
+python -m pip install -e ".[structural,dev]"
 ```
+
+RDKit is required for v4/v5 structure resolution and feature generation.
+
+## Reproduce v4
+
+```bash
+pytest -q tests/test_selectivity_v4_data.py tests/test_selectivity_v4_features.py
+
+python -m kira.experiments.selectivity_v4_data
+python -m kira.experiments.run_selectivity_v4
+```
+
+Expected committed v4 state:
+
+- `data/processed/selectivity_v4_summary.json`
+- `results/selectivity_v4/summary.json`
+- 235 trainable rows
+- 379 full features
+- A2 compound + pair is the best classifier by macro pair AUROC
+
+## Reproduce v5 expansion
+
+```bash
+pytest -q tests/test_selectivity_v5_expand_data.py tests/test_selectivity_v5_exact_core.py
+
+python -m kira.experiments.selectivity_v5_expand_data \
+  --pair-config data/reference/selectivity_v5_target_pairs.csv \
+  --output-csv data/processed/selectivity_v5_candidate_rows.csv \
+  --output-summary-json data/processed/selectivity_v5_expansion_summary.json \
+  --set-chunk-size 10 \
+  --timeout-seconds 25
+
+python -m kira.experiments.selectivity_v5_exact_core \
+  --candidate-csv data/processed/selectivity_v5_candidate_rows.csv \
+  --output-csv data/processed/selectivity_v5_exact_core_rows.csv \
+  --output-summary-json data/processed/selectivity_v5_exact_core_summary.json
+```
+
+## Notebooks
+
+The notebooks in `notebooks/` are meant as readable walkthroughs:
+
+- `00_v0_to_v5_evolution.ipynb` — conceptual and result evolution
+- `01_reproduce_v4_benchmark.ipynb` — v4 data and ablation reproduction
+- `02_v5_expansion_exact_core.ipynb` — v5 expansion and exact-core aggregation
+
+## Repository layout
+
+```text
+src/kira/experiments/
+  selectivity_v4_data.py
+  selectivity_v4_features.py
+  run_selectivity_v4.py
+  selectivity_v5_expand_data.py
+  selectivity_v5_exact_core.py
+
+data/reference/
+  selectivity_v5_target_pairs.csv
+
+data/processed/
+  selectivity_v4_summary.json
+  selectivity_v5_expansion_summary.json
+  selectivity_v5_exact_core_summary.json
+  selectivity_v5_exact_core_rows.csv
+  selectivity_v5_candidate_rows.csv
+
+results/selectivity_v4/
+  summary.json
+  per_pair_metrics.csv
+
+notebooks/
+  00_v0_to_v5_evolution.ipynb
+  01_reproduce_v4_benchmark.ipynb
+  02_v5_expansion_exact_core.ipynb
+```
+
+## Scientific claim discipline
+
+Use:
+
+> Kira v4 is a scaffold-aware, compound-conditioned selectivity benchmark. Its first result shows that compound chemotype currently explains most predictive signal. Kira v5 adds assay-aware data expansion and exact-core aggregation; the strict exact core is cleaner but class-degenerate, so the next benchmark must test a tiered evidence core before making stronger modeling claims.
+
+Do not use:
+
+> Kira is a universal causal drug-discovery engine.
+
+Do not use:
+
+> v5 proves compound dominance.
+
+The v4 benchmark supports compound dominance on the current v4 substrate. The v5 exact core supports a data-quality conclusion, not yet a modeling conclusion.
