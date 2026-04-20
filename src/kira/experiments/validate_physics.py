@@ -20,10 +20,7 @@ WHAT IT TESTS:
 
 from __future__ import annotations
 
-import os
-import sys
 import time
-import tempfile
 from pathlib import Path
 
 import numpy as np
@@ -111,11 +108,12 @@ def validate_structure(pdb_path: Path, expected: dict) -> dict:
         Validation results.
     """
     import jax.numpy as jnp
-    from kira.physics.core.parser import parse_pdb
-    from kira.physics.core.topology import infer_bonds_from_topology, build_bonded_mask
-    from kira.physics.core.geometry import compute_distance_matrix, extract_backbone_dihedrals
-    from kira.physics.core.energy import run_lj_analysis
+
     from kira.physics.checks.clashes import check_clashes
+    from kira.physics.core.energy import run_lj_analysis
+    from kira.physics.core.geometry import compute_distance_matrix, extract_backbone_dihedrals
+    from kira.physics.core.parser import parse_pdb
+    from kira.physics.core.topology import build_bonded_mask, infer_bonds_from_topology
 
     results = {"pdb_id": pdb_path.stem.upper(), "name": expected["name"]}
 
@@ -235,7 +233,7 @@ def print_validation_results(all_results: list[dict]) -> None:
         else:
             n_fail += 1
 
-        print(f"    Checks:")
+        print("    Checks:")
         for name, passed in checks:
             symbol = "✓" if passed else "❌"
             print(f"      {symbol} {name}")
@@ -245,7 +243,7 @@ def print_validation_results(all_results: list[dict]) -> None:
     if n_fail > 0:
         print(f"  {n_fail} structure(s) had failures — investigate before trusting physics results")
     else:
-        print(f"  Physics engine validated on real protein structures ✓")
+        print("  Physics engine validated on real protein structures ✓")
 
 
 def main():

@@ -1,14 +1,16 @@
 """Tests for the canonical parasite target manifest pipeline."""
 
-from pathlib import Path
 import sys
 import unittest
+from pathlib import Path
+
+import pytest
 
 SRC_DIR = Path(__file__).resolve().parents[1] / "src"
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
 
-from kira.data.target_manifest import (
+from kira.data.target_manifest import (  # noqa: E402
     STATUS_RESOLVED,
     STATUS_UNIQUE,
     VALIDATION_ERROR,
@@ -20,6 +22,10 @@ from kira.data.target_manifest import (
 )
 
 
+@pytest.mark.skipif(
+    not (Path(__file__).resolve().parents[1] / "data" / "processed" / "schisto_parasite_targets.csv").exists(),
+    reason="Requires processed data files (data/processed/*.csv) that are not tracked in git. Run the pipeline locally to regenerate.",
+)
 class TargetManifestPipelineTest(unittest.TestCase):
     """Verify the manifest pipeline because cross-disease mappings need regression coverage."""
 

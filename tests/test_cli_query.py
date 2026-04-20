@@ -8,7 +8,6 @@ from typer.testing import CliRunner
 
 from kira.cli import app
 
-
 runner = CliRunner()
 
 

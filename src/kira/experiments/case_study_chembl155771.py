@@ -21,16 +21,11 @@ HOW TO RUN:
 
 from __future__ import annotations
 
-import numpy as np
-
-from kira.experiments import get_target_pair
-from kira.experiments.selectivity_features import compute_pocket_features, _get_props
 from kira.causality.divergence import (
-    AA_PROPERTIES,
-    PositionDivergence,
     _physicochemical_distance,
 )
-
+from kira.experiments import get_target_pair
+from kira.experiments.selectivity_features import _get_props, compute_pocket_features
 
 # Compound data from Kira's selectivity analysis
 COMPOUND = {
@@ -183,9 +178,9 @@ def main():
     print(f"\n  ESM-2 cosine similarity: {ESM2_DATA['cosine_similarity']}")
     print(f"  ESM-2 embedding distance: {ESM2_DATA['embedding_distance']}")
     print(f"  3-mer Jaccard overlap: {ESM2_DATA['kmer3_jaccard']}")
-    print(f"\n  VERDICT: By global metrics, SmDHODH and HsDHODH are nearly")
-    print(f"  identical (cosine = 0.99). ESM-2 CANNOT explain the 30.8x")
-    print(f"  selectivity — the signal is not in the global representation.")
+    print("\n  VERDICT: By global metrics, SmDHODH and HsDHODH are nearly")
+    print("  identical (cosine = 0.99). ESM-2 CANNOT explain the 30.8x")
+    print("  selectivity — the signal is not in the global representation.")
 
     # --- Step 2: Binding-site divergence ---
     print(f"\n{'='*70}")
@@ -209,11 +204,11 @@ def main():
     print(f"  Hydrophobicity flips: {pf.n_hydrophobicity_flips}")
     print(f"  Volume changes: {pf.n_volume_changes}")
 
-    print(f"\n  CONTRAST:")
-    print(f"    Global (ESM-2): 98.97% similar → predicts NO selectivity")
+    print("\n  CONTRAST:")
+    print("    Global (ESM-2): 98.97% similar → predicts NO selectivity")
     print(f"    Local (pocket): {pf.pocket_identity:.1%} identical → predicts selectivity window")
     print(f"    Gap: {(0.9897 - pf.pocket_identity)*100:.1f} percentage points")
-    print(f"    This gap is WHERE the selectivity lives.")
+    print("    This gap is WHERE the selectivity lives.")
 
     # --- Step 3: Per-position attribution ---
     print(f"\n{'='*70}")

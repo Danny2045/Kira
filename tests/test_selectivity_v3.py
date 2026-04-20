@@ -3,10 +3,10 @@
 import numpy as np
 import pytest
 
-from kira.experiments import TARGET_PAIRS, get_target_pair, get_pairs_for_disease
+from kira.experiments import TARGET_PAIRS, get_pairs_for_disease, get_target_pair
 from kira.experiments.selectivity_features import (
-    compute_pocket_features,
     PocketFeatures,
+    compute_pocket_features,
 )
 
 
