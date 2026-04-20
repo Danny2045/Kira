@@ -9,7 +9,6 @@ from kira.causality.divergence import AA_PROPERTIES, DEFAULT_PROPERTIES
 from kira.experiments import TARGET_PAIRS
 from kira.experiments.selectivity_features import PocketFeatures, compute_pocket_features
 
-
 ONE_TO_THREE = {
     "A": "ALA",
     "R": "ARG",

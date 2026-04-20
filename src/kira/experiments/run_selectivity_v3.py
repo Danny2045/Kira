@@ -26,20 +26,17 @@ WHAT IT OUTPUTS:
 
 from __future__ import annotations
 
-import os
-import sys
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.model_selection import StratifiedKFold, cross_val_score
+from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.metrics import roc_auc_score
+from sklearn.model_selection import StratifiedKFold, cross_val_score
 from sklearn.preprocessing import StandardScaler
 
-from kira.experiments import TARGET_PAIRS, TargetPair
-from kira.experiments.selectivity_features import compute_pocket_features, PocketFeatures
-
+from kira.experiments import TARGET_PAIRS
+from kira.experiments.selectivity_features import PocketFeatures, compute_pocket_features
 
 # ---------------------------------------------------------------------------
 # Script 19 baseline numbers (from Kira's published results)

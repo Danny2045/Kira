@@ -21,7 +21,6 @@ from kira.experiments.selectivity_v4_features import (
     select_feature_blocks,
 )
 
-
 DEFAULT_TRAINABLE_PATH = Path("data/processed/selectivity_v4_rows_primary_trainable.csv")
 DEFAULT_RESULTS_DIR = Path("results/selectivity_v4")
 DEFAULT_N_BITS = 256
