@@ -2,6 +2,7 @@
 
 import sys
 import unittest
+import pytest
 from pathlib import Path
 
 SRC_DIR = Path(__file__).resolve().parents[1] / "src"
@@ -19,7 +20,10 @@ from kira.data.target_manifest import (  # noqa: E402
     run_target_manifest_pipeline,
 )
 
-
+@pytest.mark.skipif(
+    not (Path(__file__).resolve().parents[1] / "data" / "processed" / "schisto_parasite_targets.csv").exists(),
+    reason="Requires processed data files (data/processed/*.csv) that are not tracked in git. Run the pipeline locally to regenerate.",
+)
 class TargetManifestPipelineTest(unittest.TestCase):
     """Verify the manifest pipeline because cross-disease mappings need regression coverage."""
 
