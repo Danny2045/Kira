@@ -1,0 +1,32 @@
+[project]
+name = "kira"
+version = "0.2.0"
+description = "Computational selectivity analysis for parasite-vs-human target pairs"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64"]
+
+[dependencies]
+python = ">=3.10,<3.13"
+numpy = ">=1.24"
+pandas = ">=2.0"
+requests = ">=2.28"
+tqdm = ">=4.64"
+networkx = ">=3.0"
+scikit-learn = ">=1.2"
+pyyaml = ">=6.0"
+rdkit = ">=2023.03"
+pytest = ">=7.0"
+ruff = ">=0.4"
+jupyterlab = "*"
+notebook = "*"
+pip = "*"
+
+[pypi-dependencies]
+chembl-webresource-client = ">=0.10"
+kira-engine = { path = ".", editable = true }
+
+[tasks]
+test-v4 = "pytest -q tests/test_selectivity_v4_data.py tests/test_selectivity_v4_features.py"
+run-v4 = "python -m kira.experiments.selectivity_v4_data && python -m kira.experiments.run_selectivity_v4"
+test-v5 = "pytest -q tests/test_selectivity_v5_expand_data.py tests/test_selectivity_v5_exact_core.py"
+run-v5-exact = "python -m kira.experiments.selectivity_v5_exact_core --candidate-csv data/processed/selectivity_v5_candidate_rows.csv --output-csv data/processed/selectivity_v5_exact_core_rows.csv --output-summary-json data/processed/selectivity_v5_exact_core_summary.json"
