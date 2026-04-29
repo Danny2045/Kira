@@ -1,0 +1,105 @@
+{
+  "allowed_standard_types": [
+    "IC50"
+  ],
+  "conflicting_exact_core_rows": 4,
+  "exact_core_rows": 114,
+  "generated_at_utc": "2026-04-19T23:03:58.468479+00:00",
+  "input_candidate_rows": 12091,
+  "label_status_counts": {
+    "exact_core_conflicting": 4,
+    "exact_core_consistent": 110
+  },
+  "pair_summaries": {
+    "LmDHFR": {
+      "conflicting_exact_core_rows": 1,
+      "exact_candidate_rows": 75,
+      "exact_core_rows": 12,
+      "trainable_exact_core_rows": 11,
+      "trainable_negative_rows": 2,
+      "trainable_positive_rows": 9,
+      "trainable_unique_scaffolds": 10
+    },
+    "LmPTR1": {
+      "conflicting_exact_core_rows": 0,
+      "exact_candidate_rows": 18,
+      "exact_core_rows": 1,
+      "trainable_exact_core_rows": 1,
+      "trainable_negative_rows": 1,
+      "trainable_positive_rows": 0,
+      "trainable_unique_scaffolds": 1
+    },
+    "SmDHODH": {
+      "conflicting_exact_core_rows": 1,
+      "exact_candidate_rows": 91,
+      "exact_core_rows": 4,
+      "trainable_exact_core_rows": 3,
+      "trainable_negative_rows": 3,
+      "trainable_positive_rows": 0,
+      "trainable_unique_scaffolds": 3
+    },
+    "SmHDAC8": {
+      "conflicting_exact_core_rows": 2,
+      "exact_candidate_rows": 1005,
+      "exact_core_rows": 75,
+      "trainable_exact_core_rows": 73,
+      "trainable_negative_rows": 72,
+      "trainable_positive_rows": 1,
+      "trainable_unique_scaffolds": 37
+    },
+    "TbCathB": {
+      "conflicting_exact_core_rows": 0,
+      "exact_candidate_rows": 6,
+      "exact_core_rows": 6,
+      "trainable_exact_core_rows": 6,
+      "trainable_negative_rows": 5,
+      "trainable_positive_rows": 1,
+      "trainable_unique_scaffolds": 4
+    },
+    "TbPDEB1": {
+      "conflicting_exact_core_rows": 0,
+      "exact_candidate_rows": 32,
+      "exact_core_rows": 16,
+      "trainable_exact_core_rows": 16,
+      "trainable_negative_rows": 16,
+      "trainable_positive_rows": 0,
+      "trainable_unique_scaffolds": 15
+    }
+  },
+  "scientific_scope": "Benchmark-ready exact-ratio v5 core collapsed to one row per target-pair/compound key; conflicting compound-pair labels are flagged and excluded from the trainable exact core.",
+  "selectivity_threshold_human_div_parasite": 10.0,
+  "strict_exact_candidate_rows_after_filter": 1227,
+  "trainable_exact_core_rows": 110,
+  "trainable_negative_rows_by_pair": {
+    "LmDHFR": 2,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 72,
+    "TbCathB": 5,
+    "TbPDEB1": 16
+  },
+  "trainable_positive_rows_by_pair": {
+    "LmDHFR": 9,
+    "LmPTR1": 0,
+    "SmDHODH": 0,
+    "SmHDAC8": 1,
+    "TbCathB": 1,
+    "TbPDEB1": 0
+  },
+  "trainable_rows_by_pair": {
+    "LmDHFR": 11,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 73,
+    "TbCathB": 6,
+    "TbPDEB1": 16
+  },
+  "trainable_unique_scaffolds_by_pair": {
+    "LmDHFR": 10,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 37,
+    "TbCathB": 4,
+    "TbPDEB1": 15
+  }
+}

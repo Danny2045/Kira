@@ -1,0 +1,7 @@
+pair_id,parasite_label,human_label,parasite_target,parasite_target_namespace,human_target,human_target_namespace,notes
+SmDHODH,"Dihydroorotate dehydrogenase (quinone), mitochondrial",Dihydroorotate dehydrogenase (human),CHEMBL4523950,chembl_id,CHEMBL1966,chembl_id,Corrected v5 ChEMBL target config; SmDHODH and human DHODH
+SmHDAC8,Histone deacetylase 8,Histone deacetylase 8 (human),CHEMBL3797017,chembl_id,CHEMBL3192,chembl_id,Corrected v5 ChEMBL target config; SmHDAC8 and human HDAC8
+TbCathB,Cathepsin B-like cysteine protease,Cathepsin B (human),Q6R7Z5,accession,CHEMBL4072,chembl_id,Corrected v5 config; parasite side resolved by UniProt accession because prior CHEMBL612545 was Unchecked
+TbPDEB1,Class 1 phosphodiesterase PDEB1,Phosphodiesterase 4B (human),CHEMBL2010636,chembl_id,CHEMBL275,chembl_id,Corrected v5 config; prior CHEMBL613698 did not resolve and prior human CHEMBL1952 was thymidylate synthase
+LmPTR1,Pteridine reductase 1,Dihydrofolate reductase (human),Q01782,accession,CHEMBL202,chembl_id,Corrected v5 config; parasite PTR1 resolved by UniProt accession because prior CHEMBL1855 was human GnRH receptor
+LmDHFR,Bifunctional dihydrofolate reductase-thymidylate synthase,Dihydrofolate reductase (human),CHEMBL4614,chembl_id,CHEMBL202,chembl_id,Corrected v5 config; prior CHEMBL2413 was human CCR1
