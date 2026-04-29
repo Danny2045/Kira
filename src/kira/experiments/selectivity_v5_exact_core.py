@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 """Build a benchmark-ready exact-ratio core from v5 candidate expansion rows.
 
 This module is intentionally conservative. The v5 expansion table is an evidence
@@ -8,11 +6,13 @@ activity evidence into one row per target-pair/compound key, preserving replicat
 counts and flagging contradictory labels instead of hiding them.
 """
 
-from collections import Counter
-from datetime import UTC, datetime
+from __future__ import annotations
+
 import argparse
 import json
 import math
+from collections import Counter
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Iterable, Sequence
 

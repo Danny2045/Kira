@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 """Assay-aware v5 selectivity data expansion for curated parasite-vs-human pairs.
 
 This module is intentionally narrow and conservative.
@@ -19,14 +17,16 @@ Operational stance
 - Output is a candidate table plus a summary JSON, not a final training table.
 """
 
-from collections import Counter, defaultdict
-from dataclasses import asdict, dataclass, field
-from datetime import UTC, datetime
+from __future__ import annotations
+
 import argparse
 import csv
 import json
 import math
 import sys
+from collections import Counter, defaultdict
+from dataclasses import asdict, dataclass
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any, Iterable, Iterator, Sequence
 from urllib.parse import parse_qs, urlparse
