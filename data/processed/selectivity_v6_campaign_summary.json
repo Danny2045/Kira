@@ -1,0 +1,169 @@
+{
+  "campaign_mode": "benchmark_repair",
+  "eligible_pairs_with_tickets": [
+    "LmDHFR",
+    "LmPTR1",
+    "SmDHODH",
+    "SmHDAC8",
+    "TbCathB",
+    "TbPDEB1"
+  ],
+  "generated_at_utc": "2026-04-29T05:06:12.791570+00:00",
+  "generated_ticket_count": 100,
+  "input_candidate_rows": 12091,
+  "max_tickets_per_pair": 25,
+  "min_tickets_per_pair": 5,
+  "pairs_with_both_classes": [
+    "LmDHFR",
+    "SmHDAC8",
+    "TbCathB"
+  ],
+  "scientific_scope": "Kira v6 lab-campaign design ranks missing or weak parasite-vs-human paired selectivity measurements that would improve the evidence substrate. It is an experiment-prioritization layer, not wet-lab validation, not a predictive model, and not a new benchmark claim; v4 remains the current modeling claim.",
+  "selectivity_threshold_human_div_parasite": 10.0,
+  "target_imbalance_basis": {
+    "LmDHFR": {
+      "class_status": "both_classes_present",
+      "imbalance_ratio": 4.5,
+      "trainable_negative_rows": 2,
+      "trainable_positive_rows": 9,
+      "trainable_tiered_rows": 11
+    },
+    "LmPTR1": {
+      "class_status": "class_degenerate_zero_positive",
+      "imbalance_ratio": null,
+      "trainable_negative_rows": 1,
+      "trainable_positive_rows": 0,
+      "trainable_tiered_rows": 1
+    },
+    "SmDHODH": {
+      "class_status": "class_degenerate_zero_positive",
+      "imbalance_ratio": null,
+      "trainable_negative_rows": 3,
+      "trainable_positive_rows": 0,
+      "trainable_tiered_rows": 3
+    },
+    "SmHDAC8": {
+      "class_status": "both_classes_extreme_imbalance",
+      "imbalance_ratio": 86.0,
+      "trainable_negative_rows": 86,
+      "trainable_positive_rows": 1,
+      "trainable_tiered_rows": 87
+    },
+    "TbCathB": {
+      "class_status": "both_classes_present",
+      "imbalance_ratio": 1.4,
+      "trainable_negative_rows": 5,
+      "trainable_positive_rows": 7,
+      "trainable_tiered_rows": 12
+    },
+    "TbPDEB1": {
+      "class_status": "class_degenerate_zero_positive",
+      "imbalance_ratio": null,
+      "trainable_negative_rows": 17,
+      "trainable_positive_rows": 0,
+      "trainable_tiered_rows": 17
+    }
+  },
+  "tickets_by_missing_side": {
+    "human": 1,
+    "parasite": 99
+  },
+  "tickets_by_pair": {
+    "LmDHFR": 5,
+    "LmPTR1": 25,
+    "SmDHODH": 25,
+    "SmHDAC8": 15,
+    "TbCathB": 5,
+    "TbPDEB1": 25
+  },
+  "tickets_missing_known_activity_id": 100,
+  "tickets_with_known_activity_id": 0,
+  "tickets_with_known_assay_id": 100,
+  "tiered_core_rows": 135,
+  "top_10_priority_reasons": [
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign",
+    "single-side row can become an exact matched ratio; pair is class-degenerate in the trainable tiered core; pair has zero trainable positives; pair has very few trainable tiered-core rows; missing assay could help repair benchmark imbalance; compound is not represented in the trainable tiered core for this pair; compound has canonical SMILES; scaffold is not represented in the trainable tiered core for this pair; known side has very strong potency; first ticket for this pair/scaffold in the ranked campaign"
+  ],
+  "top_10_ticket_ids": [
+    "V6-0001",
+    "V6-0002",
+    "V6-0003",
+    "V6-0004",
+    "V6-0005",
+    "V6-0006",
+    "V6-0007",
+    "V6-0008",
+    "V6-0009",
+    "V6-0010"
+  ],
+  "top_priority_pairs": [
+    {
+      "max_priority_score": 131.0,
+      "mean_priority_score": 131.0,
+      "pair_id": "LmPTR1",
+      "ticket_count": 25
+    },
+    {
+      "max_priority_score": 131.0,
+      "mean_priority_score": 131.0,
+      "pair_id": "SmDHODH",
+      "ticket_count": 25
+    },
+    {
+      "max_priority_score": 125.0,
+      "mean_priority_score": 125.0,
+      "pair_id": "TbPDEB1",
+      "ticket_count": 25
+    },
+    {
+      "max_priority_score": 110.0,
+      "mean_priority_score": 110.0,
+      "pair_id": "SmHDAC8",
+      "ticket_count": 15
+    },
+    {
+      "max_priority_score": 82.0,
+      "mean_priority_score": 82.0,
+      "pair_id": "LmDHFR",
+      "ticket_count": 5
+    },
+    {
+      "max_priority_score": 82.0,
+      "mean_priority_score": 82.0,
+      "pair_id": "TbCathB",
+      "ticket_count": 5
+    }
+  ],
+  "trainable_negative_rows_by_pair": {
+    "LmDHFR": 2,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 86,
+    "TbCathB": 5,
+    "TbPDEB1": 17
+  },
+  "trainable_positive_rows_by_pair": {
+    "LmDHFR": 9,
+    "LmPTR1": 0,
+    "SmDHODH": 0,
+    "SmHDAC8": 1,
+    "TbCathB": 7,
+    "TbPDEB1": 0
+  },
+  "trainable_tiered_rows_by_pair": {
+    "LmDHFR": 11,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 87,
+    "TbCathB": 12,
+    "TbPDEB1": 17
+  }
+}
