@@ -1,0 +1,62 @@
+{
+  "candidate_rows_by_evidence_status": {
+    "exact_matched_ratio": 1227,
+    "interval_ratio": 4,
+    "lower_bound_ratio": 72,
+    "single_side_only": 10594,
+    "unmatched_comparable": 125,
+    "upper_bound_ratio": 69
+  },
+  "conflicting_tiered_core_rows": 4,
+  "decidable_candidate_rows": 1308,
+  "decidable_rows_by_evidence_status": {
+    "exact_matched_ratio": 1227,
+    "interval_ratio": 4,
+    "lower_bound_ratio": 8,
+    "upper_bound_ratio": 69
+  },
+  "generated_at_utc": "2026-04-29T03:23:19.803767+00:00",
+  "input_candidate_rows": 12091,
+  "pairs_with_both_classes": [
+    "LmDHFR",
+    "SmHDAC8",
+    "TbCathB"
+  ],
+  "scientific_scope": "Kira v5 tiered-core aggregation is a tiered evidence substrate after the strict exact core. It is not a final modeling claim or a new benchmark model; v4 remains the current modeling claim.",
+  "selectivity_threshold_human_div_parasite": 10.0,
+  "tiered_core_rows": 135,
+  "trainable_negative_rows_by_pair": {
+    "LmDHFR": 2,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 86,
+    "TbCathB": 5,
+    "TbPDEB1": 17
+  },
+  "trainable_positive_rows_by_pair": {
+    "LmDHFR": 9,
+    "LmPTR1": 0,
+    "SmDHODH": 0,
+    "SmHDAC8": 1,
+    "TbCathB": 7,
+    "TbPDEB1": 0
+  },
+  "trainable_rows_by_pair": {
+    "LmDHFR": 11,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 87,
+    "TbCathB": 12,
+    "TbPDEB1": 17
+  },
+  "trainable_tiered_core_rows": 131,
+  "trainable_unique_scaffolds_by_pair": {
+    "LmDHFR": 10,
+    "LmPTR1": 1,
+    "SmDHODH": 3,
+    "SmHDAC8": 42,
+    "TbCathB": 5,
+    "TbPDEB1": 16
+  },
+  "unresolved_candidate_rows": 10783
+}
