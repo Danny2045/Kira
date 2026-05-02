@@ -51,6 +51,7 @@ kira = "kira.cli:main"
 where = ["src"]
 
 [tool.ruff]
+extend-exclude = ["archived", "notebooks"]
 target-version = "py310"
 line-length = 100
 
