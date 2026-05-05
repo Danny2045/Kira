@@ -1,0 +1,5 @@
+synthetic_data_notice,record_type,facility_id,reporting_period,organism,specimen_source,antibiotic,ast_method,ast_result,breakpoint_version,qc_status,tested_count,resistant_count,susceptible_count,isolate_id
+SYNTHETIC EXAMPLE - no real patient data,isolate_level,fake-facility-001,2026-04,Escherichia coli,urine,ceftriaxone,disk diffusion,resistant,CLSI M100 2026,pass,,,,synthetic-iso-001
+SYNTHETIC EXAMPLE - no real patient data,isolate_level,fake-facility-001,2026-04,Klebsiella pneumoniae,blood,meropenem,broth microdilution,,CLSI M100 2026,pass,,,,synthetic-iso-002
+SYNTHETIC EXAMPLE - no real patient data,aggregate,fake-facility-002,2026-04,Staphylococcus aureus,wound,oxacillin,disk diffusion,,CLSI M100 2026,pass,14,4,,
+SYNTHETIC EXAMPLE - no real patient data,aggregate,fake-facility-002,2026-04,Pseudomonas aeruginosa,respiratory,piperacillin-tazobactam,disk diffusion,,CLSI M100 2026,pass,9,,,
