@@ -1,5 +1,19 @@
-"""Rwanda AMR contrast scout adapter."""
+"""Rwanda AMR contrast scout and AST completeness audit adapters."""
 
+from kira.amr.audit import (
+    AGGREGATE_REQUIRED_FIELDS,
+    AST_COMPLETENESS_SCOUT_TICKET_ID,
+    ISOLATE_REQUIRED_FIELDS,
+    AmrAuditRecord,
+    AmrCompletenessReport,
+    MissingFieldFinding,
+    audit_ast_completeness,
+    audit_record,
+    benchmark_ready_records,
+    data_repair_tickets,
+    report_to_dict,
+    summarize_ast_completeness,
+)
 from kira.amr.scout import (
     AMR_SCOUT_VERSION,
     AmrScoutSeed,
@@ -14,14 +28,26 @@ from kira.amr.scout import (
 )
 
 __all__ = [
+    "AGGREGATE_REQUIRED_FIELDS",
     "AMR_SCOUT_VERSION",
+    "AST_COMPLETENESS_SCOUT_TICKET_ID",
+    "ISOLATE_REQUIRED_FIELDS",
+    "AmrAuditRecord",
+    "AmrCompletenessReport",
     "AmrScoutSeed",
+    "MissingFieldFinding",
+    "audit_ast_completeness",
+    "audit_record",
     "build_amr_scout",
     "build_contrast_specs",
     "build_evidence_records",
     "build_experiment_tickets",
+    "benchmark_ready_records",
+    "data_repair_tickets",
     "amr_scout_seeds",
+    "report_to_dict",
     "summarize_evidence_statuses",
+    "summarize_ast_completeness",
     "tickets_as_dicts",
     "validate_amr_seed",
 ]
