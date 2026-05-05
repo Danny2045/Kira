@@ -301,44 +301,85 @@ Doudna, or any institution or scientist.
 Next consequence: the project can return to its strongest empirical public-data
 substrate and generate a parasite selectivity benchmark-repair dossier.
 
-## Next Planned PR #13: Parasite Selectivity Benchmark-Repair Report
+## PR #14 — Parasite Selectivity Benchmark-Repair Report
 
-Branch/PR name: `feat/parasite-selectivity-benchmark-repair-report`.
+Branch: `feat/parasite-selectivity-benchmark-repair-report`.
 
-Purpose: return to Kira's strongest empirical public-data substrate and
-generate a benchmark-repair dossier.
+Changed files:
 
-Expected report:
-
+- `src/kira/selectivity/__init__.py`
+- `src/kira/selectivity/benchmark_repair_report.py`
+- `tests/test_selectivity_benchmark_repair_report.py`
 - `docs/PARASITE_SELECTIVITY_BENCHMARK_REPAIR_REPORT.md`
 
-Possible result files:
+Scientific meaning:
 
-- `results/selectivity_benchmark_repair_report.json`
-- `results/selectivity_benchmark_repair_tickets.csv`
+- returns to Kira's strongest empirical public-data substrate
+- connects the v4 modeling claim, v5 evidence substrate, exact/tiered cores,
+  and v6 benchmark-repair tickets
+- produces a deterministic benchmark-repair dossier from committed local
+  artifacts
+- identifies all six v6 target pairs: LmDHFR, LmPTR1, SmDHODH, SmHDAC8,
+  TbCathB, TbPDEB1
+- records v5/v6 counts from local committed result files
+- identifies v5 tiered pairs with both classes: LmDHFR, SmHDAC8, TbCathB
+- records the v6 missing-side distribution: parasite 99, human 1
 
-Goals:
+v5 counts:
 
-- summarize v4/v5/v6 empirical results
-- identify evidence-ready target pairs
-- identify class-degenerate pairs
-- identify missing parasite-side data
-- identify missing human-side data
-- tie v6 tickets to concrete repair priorities
+| Quantity | Count |
+|---|---:|
+| candidate evidence rows | 12,091 |
+| curated activity rows | 11,703 |
+| exact matched-ratio candidate rows | 1,227 |
+| exact-core rows | 114 |
+| trainable exact-core rows | 110 |
+| tiered-core rows | 135 |
+| trainable tiered-core rows | 131 |
 
-Scientific meaning: PR #13 should convert prior selectivity evidence and v6
-repair tickets into a durable, auditable benchmark-repair dossier.
+v6 benchmark-repair tickets:
 
-Validation if known: planned validation should include at minimum:
+| Target pair | Tickets |
+|---|---:|
+| LmDHFR | 5 |
+| LmPTR1 | 25 |
+| SmDHODH | 25 |
+| SmHDAC8 | 15 |
+| TbCathB | 5 |
+| TbPDEB1 | 25 |
+| Total | 100 |
+
+v6 missing-side distribution:
+
+| Missing side | Tickets |
+|---|---:|
+| parasite | 99 |
+| human | 1 |
+
+Validation:
 
 ```bash
+ruff check src/kira/selectivity tests/test_selectivity_benchmark_repair_report.py
+pytest -q tests/test_selectivity_benchmark_repair_report.py
+# 8 passed
+
 ruff check .
+# All checks passed
+
 pytest -q
+# 309 passed, 5 skipped
 ```
 
-Non-claims: PR #13 should make no drug-discovery claim, no wet-lab validation
-claim, and no new model-performance claim unless rerun and supported by
-results.
+Non-claims:
 
-Next consequence: PR #13 should identify the most defensible next repair
-ticket or returned-data target for parasite selectivity.
+- no drug-discovery claim
+- no wet-lab validation claim
+- no clinical claim
+- no new model-performance claim beyond the committed v4 summary
+- no claim that parasite diseases are solved
+- no claim that any v6 ticket has already been executed in a wet lab
+
+Next consequence: use the report to build a collaborator-facing selectivity
+benchmark-repair data-return kit.
+
+Future branch: `feat/selectivity-benchmark-repair-data-return-kit`.
