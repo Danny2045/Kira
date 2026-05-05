@@ -1,0 +1,3 @@
+synthetic_data_notice,record_type,facility_id,reporting_period,organism,specimen_source,antibiotic,ast_method,ast_result,breakpoint_version,qc_status,tested_count,resistant_count,susceptible_count,isolate_id
+SYNTHETIC TEMPLATE ROW - replace before use,isolate_level,,,,,,,,,,,,,
+SYNTHETIC TEMPLATE ROW - replace before use,aggregate,,,,,,,,,,,,,

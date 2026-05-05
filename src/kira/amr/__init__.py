@@ -14,6 +14,18 @@ from kira.amr.audit import (
     report_to_dict,
     summarize_ast_completeness,
 )
+from kira.amr.data_return import (
+    AGGREGATE_CSV_COLUMNS,
+    TEMPLATE_COLUMNS,
+    audit_amr_csv,
+    load_amr_csv,
+    make_data_return_template_rows,
+    make_markdown_report,
+    required_aggregate_columns,
+    required_isolate_columns,
+    write_data_return_template,
+    write_markdown_report,
+)
 from kira.amr.scout import (
     AMR_SCOUT_VERSION,
     AmrScoutSeed,
@@ -29,13 +41,16 @@ from kira.amr.scout import (
 
 __all__ = [
     "AGGREGATE_REQUIRED_FIELDS",
+    "AGGREGATE_CSV_COLUMNS",
     "AMR_SCOUT_VERSION",
     "AST_COMPLETENESS_SCOUT_TICKET_ID",
     "ISOLATE_REQUIRED_FIELDS",
+    "TEMPLATE_COLUMNS",
     "AmrAuditRecord",
     "AmrCompletenessReport",
     "AmrScoutSeed",
     "MissingFieldFinding",
+    "audit_amr_csv",
     "audit_ast_completeness",
     "audit_record",
     "build_amr_scout",
@@ -44,10 +59,17 @@ __all__ = [
     "build_experiment_tickets",
     "benchmark_ready_records",
     "data_repair_tickets",
+    "load_amr_csv",
+    "make_data_return_template_rows",
+    "make_markdown_report",
     "amr_scout_seeds",
     "report_to_dict",
+    "required_aggregate_columns",
+    "required_isolate_columns",
     "summarize_evidence_statuses",
     "summarize_ast_completeness",
     "tickets_as_dicts",
     "validate_amr_seed",
+    "write_data_return_template",
+    "write_markdown_report",
 ]
