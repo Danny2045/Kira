@@ -211,7 +211,7 @@ def run_lj_analysis(
     -------
     dict
         Keys: 'total_energy', 'per_atom_energy', 'per_residue_energy',
-              'energy_matrix', 'n_clashing_pairs' (pairs with E > 10 kcal/mol).
+              'energy_matrix', 'n_hot_pairs' (pairs with E > 10 kcal/mol).
     """
     sigma, epsilon = get_lj_params_arrays(elements)
     sigma_jnp = jnp.array(sigma)

@@ -445,6 +445,9 @@ def parse_pdb(path: str | Path, keep_hydrogens: bool = False, keep_altloc: str =
                 atom = _parse_pdb_line(line, is_hetatm=False)
             elif record == "HETATM":
                 atom = _parse_pdb_line(line, is_hetatm=True)
+            elif record == "ENDMDL":
+                # Stop after first model in NMR ensembles
+                break
             else:
                 continue
 
@@ -497,6 +500,9 @@ def parse_pdb_string(pdb_string: str, name: str = "unknown",
             atom = _parse_pdb_line(line, is_hetatm=False)
         elif record == "HETATM":
             atom = _parse_pdb_line(line, is_hetatm=True)
+        elif record == "ENDMDL":
+            # Stop after first model in NMR ensembles
+            break
         else:
             continue
 

@@ -299,15 +299,6 @@ def evaluate_lodo(
     unique_diseases = sorted(set(diseases))
     results = {}
 
-    clf = GradientBoostingClassifier(
-        n_estimators=100,
-        max_depth=3,
-        random_state=42,
-        min_samples_leaf=5,
-    )
-
-    scaler = StandardScaler()
-
     for held_out in unique_diseases:
         train_mask = diseases != held_out
         test_mask = diseases == held_out
@@ -324,6 +315,15 @@ def evaluate_lodo(
             print(f"  {held_out}: Only one class in training set — skipping")
             results[held_out] = float("nan")
             continue
+
+        # Fresh scaler + classifier per fold (no state leakage between folds)
+        scaler = StandardScaler()
+        clf = GradientBoostingClassifier(
+            n_estimators=100,
+            max_depth=3,
+            random_state=42,
+            min_samples_leaf=5,
+        )
 
         X_train_s = scaler.fit_transform(X_train)
         X_test_s = scaler.transform(X_test)
@@ -397,24 +397,22 @@ def print_results(
         mean_lodo = np.mean(lodo_values)
         mean_baseline = np.mean(list(BASELINE_LODO.values()))
         if mean_lodo > mean_baseline:
-            print(f"  Pocket features IMPROVE cross-disease transfer "
+            print(f"  Pocket features show better LODO than the ESM-2 baseline "
                   f"(mean LODO: {mean_lodo:.3f} vs {mean_baseline:.3f})")
-            print("  → Binding-site divergence captures transferable selectivity signal")
-            print("  → ESM-2 global embeddings miss this signal")
+            print("  NOTE: features are pair-level constants in v3, so this gap")
+            print("  reflects per-pair priors rather than compound-level transfer.")
+            print("  See run_selectivity_v4 for the compound-conditioned benchmark.")
         elif mean_lodo > 0.5:
-            print(f"  Pocket features show SOME cross-disease transfer "
-                  f"(mean LODO: {mean_lodo:.3f})")
-            print("  → Signal exists but may need more pocket position data")
+            print(f"  Pocket features above chance on LODO (mean: {mean_lodo:.3f}).")
+            print("  See run_selectivity_v4 for compound-conditioned evaluation.")
         else:
-            print(f"  Pocket features do NOT improve LODO (mean: {mean_lodo:.3f})")
-            print("  → Check pocket definitions — may need structural verification")
+            print(f"  Pocket features at-or-below chance on LODO (mean: {mean_lodo:.3f}).")
 
     if cv_auroc < BASELINE_CV_AUROC:
         print(f"\n  NOTE: CV AUROC is lower ({cv_auroc:.3f} vs {BASELINE_CV_AUROC:.3f}).")
-        print("  This is EXPECTED — Script 19's high CV comes from compound fingerprints")
-        print("  which overfit to the training distribution. Pocket features alone")
-        print("  capture the TARGET-PAIR signal, not compound-specific patterns.")
-        print("  The real test is LODO, not CV.")
+        print("  v3 features are 15 per-pair descriptors that do not see compounds,")
+        print("  so they cannot match an ESM-2 baseline that overfits compound-target")
+        print("  patterns in CV. The compound-conditioned analysis is in v4.")
 
 
 def main():

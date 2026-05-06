@@ -115,7 +115,6 @@ def extract_binding_site(
     # Get residue objects and atom indices
     rid_list = list(structure.residues.keys())
     residues = []
-    atom_indices = []
     res_names = []
 
     for ridx in pocket_residue_indices:
@@ -125,12 +124,13 @@ def extract_binding_site(
             residues.append(residue)
             res_names.append(residue.res_name)
 
-            # Get atom indices for this residue
-            for j in range(structure.n_atoms):
-                if structure.res_indices[j] == ridx:
-                    atom_indices.append(j)
+    # Vectorized atom-index lookup: O(N) instead of O(N * P)
+    if pocket_residue_indices:
+        atom_mask = np.isin(structure.res_indices, np.array(pocket_residue_indices, dtype=np.int32))
+        atom_indices = np.where(atom_mask)[0].astype(np.int32)
+    else:
+        atom_indices = np.array([], dtype=np.int32)
 
-    atom_indices = np.array(atom_indices, dtype=np.int32) if atom_indices else np.array([], dtype=np.int32)
     coords = structure.coords[atom_indices] if len(atom_indices) > 0 else np.empty((0, 3))
     centroid = np.mean(coords, axis=0) if len(coords) > 0 else np.zeros(3)
 
