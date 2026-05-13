@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "kira-engine"
 version = "0.2.0"
-description = "Open Causal Discovery for Humanitarian Biology — unified drug repurposing, physics validation, and selectivity analysis engine for neglected tropical diseases"
+description = "Kira: Open Selectivity Engine for Neglected Tropical Diseases — computational repository for retrospective translational analysis, pair-level selectivity benchmarking, curated biological comparison, and residue-level mechanistic hypothesis generation"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
