@@ -1,0 +1,222 @@
+{
+  "HsCatB": {
+    "accession": "P07858",
+    "entry_version": 256,
+    "expected": {
+      "length_max": 360,
+      "length_min": 300,
+      "name_keyword": "cathepsin B",
+      "organism_substring": "Homo sapiens"
+    },
+    "key": "HsCatB",
+    "last_sequence_update_date": "2005-06-21",
+    "organism": "Homo sapiens",
+    "reason": "",
+    "recommended_name": "Cathepsin B",
+    "retrieved_at": "2026-05-17T14:46:26.248353+00:00",
+    "sequence": "MWQLWASLCCLLVLANARSRPSFHPLSDELVNYVNKRNTTWQAGHNFYNVDMSYLKRLCGTFLGGPKPPQRVMFTEDLKLPASFDAREQWPQCPTIKEIRDQGSCGSCWAFGAVEAISDRICIHTNAHVSVEVSAEDLLTCCGSMCGDGCNGGYPAEAWNFWTRKGLVSGGLYESHVGCRPYSIPPCEHHVNGSRPPCTGEGDTPKCSKICEPGYSPTYKQDKHYGYNSYSVSNSEKDIMAEIYKNGPVEGAFSVYSDFLLYKSGVYQHVTGEMMGGHAIRILGWGVENGTPYWLVANSWNTDWGDNGFFKILRGQDHCGIESEVVAGIPRTDQYWEKI",
+    "sequence_length": 339,
+    "sequence_version": 3,
+    "status": "PASS"
+  },
+  "HsDHFR": {
+    "accession": "P00374",
+    "entry_version": 242,
+    "expected": {
+      "length_max": 220,
+      "length_min": 180,
+      "name_keyword": "dihydrofolate reductase",
+      "organism_substring": "Homo sapiens"
+    },
+    "key": "HsDHFR",
+    "last_sequence_update_date": "2007-01-23",
+    "organism": "Homo sapiens",
+    "reason": "",
+    "recommended_name": "Dihydrofolate reductase",
+    "retrieved_at": "2026-05-17T14:46:25.046221+00:00",
+    "sequence": "MVGSLNCIVAVSQNMGIGKNGDLPWPPLRNEFRYFQRMTTTSSVEGKQNLVIMGKKTWFSIPEKNRPLKGRINLVLSRELKEPPQGAHFLSRSLDDALKLTEQPELANKVDMVWIVGGSSVYKEAMNHPGHLKLFVTRIMQDFESDTFFPEIDLEKYKLLPEYPGVLSDVQEEKGIKYKFEVYEKND",
+    "sequence_length": 187,
+    "sequence_version": 2,
+    "status": "PASS"
+  },
+  "HsDHODH": {
+    "accession": "Q02127",
+    "entry_version": 232,
+    "expected": {
+      "length_max": 410,
+      "length_min": 380,
+      "name_keyword": "dihydroorotate dehydrogenase",
+      "organism_substring": "Homo sapiens"
+    },
+    "key": "HsDHODH",
+    "last_sequence_update_date": "2004-12-07",
+    "organism": "Homo sapiens",
+    "reason": "",
+    "recommended_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+    "retrieved_at": "2026-05-17T14:46:23.858094+00:00",
+    "sequence": "MAWRHLKKRAQDAVIILGGGGLLFASYLMATGDERFYAEHLMPTLQGLLDPESAHRLAVRFTSLGLLPRARFQDSDMLEVRVLGHKFRNPVGIAAGFDKHGEAVDGLYKMGFGFVEIGSVTPKPQEGNPRPRVFRLPEDQAVINRYGFNSHGLSVVEHRLRARQQKQAKLTEDGLPLGVNLGKNKTSVDAAEDYAEGVRVLGPLADYLVVNVSSPNTAGLRSLQGKAELRRLLTKVLQERDGLRRVHRPAVLVKIAPDLTSQDKEDIASVVKELGIDGLIVTNTTVSRPAGLQGALRSETGGLSGKPLRDLSTQTIREMYALTQGRVPIIGVGGVSSGQDALEKIRAGASLVQLYTALTFWGPPVVGKVKRELEALLKEQGFGGVTDAIGADHRR",
+    "sequence_length": 395,
+    "sequence_version": 3,
+    "status": "PASS"
+  },
+  "HsHDAC8": {
+    "accession": "Q9BY41",
+    "entry_version": 203,
+    "expected": {
+      "length_max": 400,
+      "length_min": 350,
+      "name_keyword": "histone deacetylase",
+      "organism_substring": "Homo sapiens"
+    },
+    "key": "HsHDAC8",
+    "last_sequence_update_date": "2003-04-11",
+    "organism": "Homo sapiens",
+    "reason": "",
+    "recommended_name": "Histone deacetylase 8",
+    "retrieved_at": "2026-05-17T14:46:22.637791+00:00",
+    "sequence": "MEEPEEPADSGQSLVPVYIYSPEYVSMCDSLAKIPKRASMVHSLIEAYALHKQMRIVKPKVASMEEMATFHTDAYLQHLQKVSQEGDDDHPDSIEYGLGYDCPATEGIFDYAAAIGGATITAAQCLIDGMCKVAINWSGGWHHAKKDEASGFCYLNDAVLGILRLRRKFERILYVDLDLHHGDGVEDAFSFTSKVMTVSLHKFSPGFFPGTGDVSDVGLGKGRYYSVNVPIQDGIQDEKYYQICESVLKEVYQAFNPKAVVLQLGADTIAGDPMCSFNMTPVGIGKCLKYILQWQLATLILGGGGYNLANTARCWTYLTGVILGKTLSSEIPDHEFFTAYGPDYVLEITPSCRPDRNEPHRIQQILNYIKGNLKHVV",
+    "sequence_length": 377,
+    "sequence_version": 2,
+    "status": "PASS"
+  },
+  "HsPDE4B": {
+    "accession": "Q07343",
+    "entry_version": 222,
+    "expected": {
+      "length_max": 780,
+      "length_min": 700,
+      "name_keyword": "phosphodiesterase",
+      "organism_substring": "Homo sapiens"
+    },
+    "key": "HsPDE4B",
+    "last_sequence_update_date": "1995-02-01",
+    "organism": "Homo sapiens",
+    "reason": "",
+    "recommended_name": "3',5'-cyclic-AMP phosphodiesterase 4B",
+    "retrieved_at": "2026-05-17T14:46:27.869688+00:00",
+    "sequence": "MKKSRSVMTVMADDNVKDYFECSLSKSYSSSSNTLGIDLWRGRRCCSGNLQLPPLSQRQSERARTPEGDGISRPTTLPLTTLPSIAITTVSQECFDVENGPSPGRSPLDPQASSSAGLVLHATFPGHSQRRESFLYRSDSDYDLSPKAMSRNSSLPSEQHGDDLIVTPFAQVLASLRSVRNNFTILTNLHGTSNKRSPAASQPPVSRVNPQEESYQKLAMETLEELDWCLDQLETIQTYRSVSEMASNKFKRMLNRELTHLSEMSRSGNQVSEYISNTFLDKQNDVEIPSPTQKDREKKKKQQLMTQISGVKKLMHSSSLNNTSISRFGVNTENEDHLAKELEDLNKWGLNIFNVAGYSHNRPLTCIMYAIFQERDLLKTFRISSDTFITYMMTLEDHYHSDVAYHNSLHAADVAQSTHVLLSTPALDAVFTDLEILAAIFAAAIHDVDHPGVSNQFLINTNSELALMYNDESVLENHHLAVGFKLLQEEHCDIFMNLTKKQRQTLRKMVIDMVLATDMSKHMSLLADLKTMVETKKVTSSGVLLLDNYTDRIQVLRNMVHCADLSNPTKSLELYRQWTDRIMEEFFQQGDKERERGMEISPMCDKHTASVEKSQVGFIDYIVHPLWETWADLVQPDAQDILDTLEDNRNWYQSMIPQSPSPPLDEQNRDCQGLMEKFQFELTLDEEDSEGPEKEGEGHSYFSSTKTLCVIDPENRDSLGETDIDIATEDKSPVDT",
+    "sequence_length": 736,
+    "sequence_version": 1,
+    "status": "PASS"
+  },
+  "LmDHFR": {
+    "accession": "P07382",
+    "entry_version": 153,
+    "expected": {
+      "length_max": 540,
+      "length_min": 500,
+      "name_keyword": "dihydrofolate reductase",
+      "organism_substring": "Leishmania major"
+    },
+    "key": "LmDHFR",
+    "last_sequence_update_date": "1988-04-01",
+    "organism": "Leishmania major",
+    "reason": "",
+    "recommended_name": "Bifunctional dihydrofolate reductase-thymidylate synthase",
+    "retrieved_at": "2026-05-17T14:46:18.494333+00:00",
+    "sequence": "MSRAAARFKIPMPETKADFAFPSLRAFSIVVALDMQHGIGDGESIPWRVPEDMTFFKNQTTLLRNKKPPTEKKRNAVVMGRKTWESVPVKFRPLKGRLNIVLSSKATVEELLAPLPEGQRAAAAQDVVVVNGGLAEALRLLARPLYCSSIETAYCVGGAQVYADAMLSPCIEKLQEVYLTRIYATAPACTRFFPFPPENAATAWDLASSQGRRKSEAEGLEFEICKYVPRNHEERQYLELIDRIMKTGIVKEDRTGVGTISLFGAQMRFSLRDNRLPLLTTKRVFWRGVCEELLWFLRGETSAQLLADKDIHIWDGNGSREFLDSRGLTENKEMDLGPVYGFQWRHFGADYKGFEANYDGEGVDQIKLIVETIKTNPNDRRLLVTAWNPCALQKMALPPCHLLAQFYVNTDTSELSCMLYQRSCDMGLGVPFNIASYALLTILIAKATGLRPGELVHTLGDAHVYRNHVDALKAQLERVPHAFPTLIFKEERQYLEDYELTDMEVIDYVPHPAIKMEMAV",
+    "sequence_length": 520,
+    "sequence_version": 1,
+    "status": "PASS"
+  },
+  "LmPTR1": {
+    "accession": "Q01782",
+    "entry_version": 156,
+    "expected": {
+      "length_max": 300,
+      "length_min": 250,
+      "name_keyword": "pteridine reductase",
+      "organism_substring": "Leishmania major"
+    },
+    "key": "LmPTR1",
+    "last_sequence_update_date": "2002-05-27",
+    "organism": "Leishmania major",
+    "reason": "",
+    "recommended_name": "Pteridine reductase 1",
+    "retrieved_at": "2026-05-17T14:46:19.554540+00:00",
+    "sequence": "MTAPTVPVALVTGAAKRLGRSIAEGLHAEGYAVCLHYHRSAAEANALSATLNARRPNSAITVQADLSNVATAPVSGADGSAPVTLFTRCAELVAACYTHWGRCDVLVNNASSFYPTPLLRNDEDGHEPCVGDREAMETATADLFGSNAIAPYFLIKAFAHRFAGTPAKHRGTNYSIINMVDAMTNQPLLGYTIYTMAKGALEGLTRSAALELAPLQIRVNGVGPGLSVLVDDMPPAVWEGHRSKVPLYQRDSSAAEVSDVVIFLCSSKAKYITGTCVKVDGGYSLTRA",
+    "sequence_length": 288,
+    "sequence_version": 2,
+    "status": "PASS"
+  },
+  "SmDHODH": {
+    "accession": "G4VFD7",
+    "entry_version": 81,
+    "expected": {
+      "length_max": 400,
+      "length_min": 300,
+      "name_keyword": "dihydroorotate dehydrogenase",
+      "organism_substring": "Schistosoma mansoni"
+    },
+    "key": "SmDHODH",
+    "last_sequence_update_date": "2011-12-14",
+    "organism": "Schistosoma mansoni",
+    "reason": "",
+    "recommended_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+    "retrieved_at": "2026-05-17T14:46:17.532416+00:00",
+    "sequence": "MSRIRTSLEVLSLGFGLFTAEALYSGNEHFYKDWFLPTARLLVRDGETAHNLSVYLASYGFIPHKQRNSFPQLKCKVFGLEFDHPIGLAAGFDKDGKAFMGLLNAGFSHIEVGTVTPNPQLGNARPRIFRWTEKEAVVNRCGFNSDGHDAVYERLKDRPWEGRGVIGVNLGCNKTSADPTADYVAGVRKFGEVADYLVINVSSPNTPGLRSLQTKEKLRDLLSKVLAARNQLSKKTPILLKISPDENDQNLKDIVEVALDSKTRIDGMIISNTTLTTYEEAVACGAAPIPGNNKQNVVYGGLSGRPLFEKSTDCLRKVSALTKGAIPLIGVGGISCGEDALSKLNAGASLVQLYTSFVYQGPPVAHKVAREINKLKMTS",
+    "sequence_length": 379,
+    "sequence_version": 1,
+    "status": "PASS"
+  },
+  "SmHDAC8": {
+    "accession": "A5H660",
+    "entry_version": 101,
+    "expected": {
+      "length_max": 450,
+      "length_min": 350,
+      "name_keyword": "histone deacetylase",
+      "organism_substring": "Schistosoma mansoni"
+    },
+    "key": "SmHDAC8",
+    "last_sequence_update_date": "2007-06-12",
+    "organism": "Schistosoma mansoni",
+    "reason": "",
+    "recommended_name": "histone deacetylase",
+    "retrieved_at": "2026-05-17T14:46:16.452021+00:00",
+    "sequence": "MSVGIVYGDQYRQLCCSSPKFGDRYALVMDLINAYKLIPELSRVPPLQWDSPSRMYEAVTAFHSTEYVDALKKLQMLHCEEKELTADDELLMDSFSLNYDCPGFPSVFDYSLAAVQGSLAAASALICRHCEVVINWGGGWHHAKRSEASGFCYLNDIVLAIHRLVSSTPPETSPNRQTRVLYVDLDLHHGDGVEEAFWYSPRVVTFSVHHASPGFFPGTGTWNMVDNDKLPIFLNGAGRGRFSAFNLPLEEGINDLDWSNAIGPILDSLNIVIQPSYVVVQCGADCLATDPHRIFRLTNFYPNLNLDSDCDSECSLSGYLYAIKKILSWKVPTLILGGGGYNFPDTARLWTRVTALTIEEVKGKKMTISPEIPEHSYFSRYGPDFELDIDYFPHESHNKTLDSIQKHHRRILEQLRNYADLNKLIYDYDQVYQLYNLTGM",
+    "sequence_length": 440,
+    "sequence_version": 1,
+    "status": "PASS"
+  },
+  "TbCatB": {
+    "accession": "Q6R7Z5",
+    "entry_version": 114,
+    "expected": {
+      "length_max": 360,
+      "length_min": 300,
+      "name_keyword": "cathepsin",
+      "organism_substring": "Trypanosoma brucei"
+    },
+    "key": "TbCatB",
+    "last_sequence_update_date": "2004-07-05",
+    "organism": "Trypanosoma brucei",
+    "reason": "",
+    "recommended_name": "Cathepsin B-like cysteine protease",
+    "retrieved_at": "2026-05-17T14:46:20.602062+00:00",
+    "sequence": "MHLMRACITFCIASTAVVAVNAALVAEDAPVLSKAFVDRVNRLNRGIWKAKYDGVMQNITLREAKRLNGVIKKNNNASILPKRRFTEEEARAPLPSSFDSAEAWPNCPTIPQIADQSACGSCWAVAAASAMSDRFCTMGGVQDVHISAGDLLACCSDCGDGCNGGDPDRAWAYFSSTGLVSDYCQPYPFPHCSHHSKSKNGYPPCSQFNFDTPKCNYTCDDPTIPVVNYRSWTSYALQGEDDYMRELFFRGPFEVAFDVYEDFIAYNSGVYHHVSGQYLGGHAVRLVGWGTSNGVPYWKIANSWNTEWGMDGYFLIRRGSSECGIEDGGSAGIPLAPNTA",
+    "sequence_length": 340,
+    "sequence_version": 1,
+    "status": "PASS"
+  },
+  "TbPDEB1": {
+    "accession": "Q8WQX9",
+    "entry_version": 113,
+    "expected": {
+      "length_max": 950,
+      "length_min": 850,
+      "name_keyword": "phosphodiesterase",
+      "organism_substring": "Trypanosoma brucei"
+    },
+    "key": "TbPDEB1",
+    "last_sequence_update_date": "2002-03-01",
+    "organism": "Trypanosoma brucei",
+    "reason": "",
+    "recommended_name": "Phosphodiesterase",
+    "retrieved_at": "2026-05-17T14:46:21.558863+00:00",
+    "sequence": "MFMNKPFGSKRCEPFHESEHLCEAFAITEAILARYQRGKRSFTSSEKSGLAALIKRIPYDILVEVLDQSGFTPTSNATPPVDYLAMMEHTMTHGASITHALQYLNDLMTKCTGCPGIRTYYHNPNDDVLADPVHDTAALIDETTAVGKSVVTKQYLNIAGAHYIPLIHGDIVVGCVEVPRFSGNLEKLPSFPSLIRAVTCTAHKFIEEARINWNREKAEAMLQMATRLARDNLDETVLASSIMNTVKSLTESARCSLFLVKDDKLEAHFEDGNVVSIPKGTGIVGYVAQTGETVNIVDAYADDRFNREVDKATGYRTKTILCMPVMYEGTIVAVTQLINKLDLTTESGLRLPRVFGKRDEELFQTFSMFAGASLRNCRINDRLLKEKKKSDVILDVVTVLSNTDIRDVDGIVRHALHGAKKLLNADRSTLFLVDKERNELCSRMADSVAGKEIRFPCGQGIAGTVAASGVGENIQDAYQDPRFNREVDKQLGYRTQTILCEPIILNGEILAVVQLVNKLDTSGEVTVFTEDDRDTFRVFSLFAGISINNSHLLEFAVKAGREVMELNEHRATLFNKNVPSRAVKRVTAITKVEREAVLVCELPSFDVTDVEFDLFRARESTDKPLDVAAAIAYRLLLGSGLPQKFGCSDEVLLNFILQCRKKYRNVPYHNFYHVVDVCQTIHTFLYRGNVYEKLTELECFVLLITALVHDLDHMGLNNSFYLKTESPLGILSSASGNTSVLEVHHCNLAVEILSDPESDVFDGLEGAERTLAFRSMIDCVLATDMAKHGSALEAFLASAADQSSDEAAFHRMTMEIILKAGDISNVTKPFDISRQWAMAVTEEFYRQGDMEKERGVEVLPMFDRSKNMELAKGQIGFIDFVAAPFFQKIVDACLQGMQWTVDRIKSNRAQWERVLETRLSTSSGNNSSTR",
+    "sequence_length": 930,
+    "sequence_version": 1,
+    "status": "PASS"
+  }
+}
