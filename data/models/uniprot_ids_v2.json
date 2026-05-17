@@ -1,12 +1,13 @@
 {
-  "SmHDAC8": "O00444",
-  "TbCatB": "Q6R7Z5",
-  "TbPDEB1": "Q8WQX9",
-  "LmPTR1": "Q01782",
-  "LmDHFR": "P07382",
-  "HsHDAC8": "Q9BY41",
+  "HsCatB": "P07858",
+  "HsDHFR": "P00374",
   "HsDHODH": "Q02127",
-  "HsCatB": "P07711",
+  "HsHDAC8": "Q9BY41",
   "HsPDE4B": "Q07343",
-  "HsDHFR": "P00374"
+  "LmDHFR": "P07382",
+  "LmPTR1": "Q01782",
+  "SmDHODH": "G4VFD7",
+  "SmHDAC8": "A5H660",
+  "TbCatB": "Q6R7Z5",
+  "TbPDEB1": "Q8WQX9"
 }
