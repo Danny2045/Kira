@@ -1,0 +1,64 @@
+{
+  "purpose": "Provenance for the regenerated data/models/model_v2_results.json. Records the Script 20 LODO output against the corrected ESM-2 cache produced by scripts/regenerate_esm2_cache_v2.py. Partial closure of audit Finding 2 \u2014 the Schistosomiasis arm is not recomputable in this PR because its input selectivity CSV was never committed to git.",
+  "generated_at_utc": "2026-05-17T18:06:34.831185+00:00",
+  "code_git_sha": "de24547ad93ba052ebef0a241d1d40fb640491dc",
+  "script_run": "archived/scripts/20_selectivity_model_v2.py via scripts/run_lodo_script20.py",
+  "esm2_cache": {
+    "path": "data/models/esm2_embeddings_v2.npz",
+    "sha256": "c4c87cd4abec8d961dc6aa797ad61a9d6f5e5bf2ce9896097b7bd255af604108"
+  },
+  "esm2_cache_provenance": "data/models/esm2_embeddings_v2_provenance.json",
+  "diseases_loaded": [
+    "Trypanosomiasis",
+    "Leishmaniasis"
+  ],
+  "diseases_missing": [
+    "Schistosomiasis"
+  ],
+  "missing_input_files": [
+    "data/processed/kira_selectivity_analysis.csv",
+    "data/processed/schisto_filtered_activities.csv"
+  ],
+  "missing_input_note": "Neither file was ever committed to git. The original LODO numbers in the preprint and in model_v2_results.OLD.json were computed against these files on the curator's working machine in February-April 2026. They are not recoverable from committed data. See Finding 9 in the audit followup PR.",
+  "supersedes": {
+    "previous_values": {
+      "gb_cv_auroc": 0.8327993897787949,
+      "mlp_cv_auroc": 0.8452803203661328,
+      "baseline": 0.6148867313915858,
+      "lodo_Leishmaniasis_auroc": 0.4888072168392916,
+      "lodo_Schistosomiasis_auroc": 0.256468797564688,
+      "lodo_Trypanosomiasis_auroc": 0.45817669172932335,
+      "compound_importance": 1.0,
+      "protein_importance": 0.0
+    },
+    "explanation": "Previous values were computed against an esm2_embeddings_v2.npz cache with two mis-mapped accessions (O00444 keyed as SmHDAC8 = human PLK4; P07711 keyed as HsCatB = human cathepsin L) and with SmDHODH (G4VFD7) missing entirely. Three of six pair-level protein features were therefore zero vectors at LODO time, and Script 20 assigned 0.000 importance to the protein-feature block. PR #17 corrected the UniProt mappings; this PR regenerated the ESM-2 cache against the corrected sequences. The Schistosomiasis arm is not recomputable here because its input selectivity CSV is not in git."
+  },
+  "new_results": {
+    "gb_cv_auroc": 0.8934006211180124,
+    "mlp_cv_auroc": 0.7688250517598343,
+    "baseline": 0.536697247706422,
+    "lodo_Leishmaniasis_auroc": 0.48947544269963245,
+    "lodo_Trypanosomiasis_auroc": 0.48402255639097747,
+    "compound_importance": 0.9297811505220699,
+    "protein_importance": 0.07021884947793014,
+    "lodo_Schistosomiasis_auroc": null,
+    "lodo_Schistosomiasis_explanation": "Not computed. Input file data/processed/kira_selectivity_analysis.csv is missing from disk and was never committed to git history.",
+    "n_samples_total": 218,
+    "n_samples_breakdown": {
+      "Trypanosomiasis": 104,
+      "Leishmaniasis": 114,
+      "Schistosomiasis_skipped": true
+    }
+  },
+  "delta": {
+    "lodo_Schistosomiasis_auroc": "not comparable \u2014 Schistosomiasis not loaded in the new run (missing input CSV)",
+    "lodo_Leishmaniasis_auroc": 0.0006682258603408209,
+    "lodo_Trypanosomiasis_auroc": 0.025845864661654117,
+    "gb_cv_auroc": 0.060601231339217576,
+    "mlp_cv_auroc": -0.07645526860629848,
+    "baseline": -0.07818948368516376,
+    "compound_importance": -0.07021884947793011,
+    "protein_importance": 0.07021884947793014,
+    "narrative": "Leishmaniasis LODO essentially unchanged (delta < 0.001). Trypanosomiasis LODO moved up by 0.026. The most meaningful change is in feature-group importance: the protein-feature block went from exactly 0.000 to 0.070 (7.0%) \u2014 the signal the cache fix is designed to recover. With the old contaminated cache, three of six pair-level protein features were zero vectors, so the gradient-boosted model assigned 0% weight to the protein side. CV AUROC and baseline shifted because Schistosomiasis was not in the training set this time (n=218 vs old n=309)."
+  }
+}
