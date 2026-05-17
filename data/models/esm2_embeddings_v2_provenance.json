@@ -1,0 +1,190 @@
+{
+  "purpose": "Regenerated ESM-2 embeddings cache against corrected UniProt mappings from PR #17. Closes audit Finding 2 (contaminated protein embeddings cache).",
+  "model_id": "esm2_t33_650M_UR50D",
+  "layer": 33,
+  "embedding_dim": 1280,
+  "dtype": "float32",
+  "pooling": "mean and std over residue tokens [1:len(seq)+1], excluding BOS/EOS, of representations[33]",
+  "max_sequence_length": 1022,
+  "fair_esm_version": "2.0.0",
+  "code_git_sha": "de24547ad93ba052ebef0a241d1d40fb640491dc",
+  "generated_at_utc": "2026-05-17T16:36:09.190067+00:00",
+  "input_provenance_file": "data/models/uniprot_mappings_provenance.json",
+  "output_npz_file": "data/models/esm2_embeddings_v2.npz",
+  "supersedes": {
+    "removed_keys": [
+      "O00444",
+      "P07711"
+    ],
+    "removed_keys_explanation": {
+      "O00444": "Human serine/threonine-protein kinase PLK4 \u2014 was incorrectly mapped to SmHDAC8 in the pre-PR-17 cache.",
+      "P07711": "Human cathepsin L \u2014 was incorrectly mapped to HsCatB in the pre-PR-17 cache."
+    },
+    "added_keys": [
+      "A5H660",
+      "G4VFD7",
+      "P07858"
+    ],
+    "added_keys_explanation": {
+      "A5H660": "SmHDAC8 (Schistosoma mansoni histone deacetylase) \u2014 correct mapping per PR #17.",
+      "G4VFD7": "SmDHODH (Schistosoma mansoni dihydroorotate dehydrogenase) \u2014 missing entirely from the pre-PR-17 cache; downstream code silently zeroed its ESM-2 features.",
+      "P07858": "HsCatB (human cathepsin B) \u2014 correct human orthologue per PR #17."
+    }
+  },
+  "proteins": [
+    {
+      "key": "SmHDAC8",
+      "accession": "A5H660",
+      "organism": "Schistosoma mansoni",
+      "recommended_name": "histone deacetylase",
+      "sequence_length": 440,
+      "sequence_length_embedded": 440,
+      "truncated": false,
+      "sequence_sha256": "bc13bdbdde9896a5e07d87ab0f730b59e971ecfa3b1b41ed17b4e8475a6886e2",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "2007-06-12",
+      "embedding_mean_norm": 7.616937637329102,
+      "embedding_std_mean": 0.16177193820476532
+    },
+    {
+      "key": "SmDHODH",
+      "accession": "G4VFD7",
+      "organism": "Schistosoma mansoni",
+      "recommended_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+      "sequence_length": 379,
+      "sequence_length_embedded": 379,
+      "truncated": false,
+      "sequence_sha256": "7e6ad06406778925242a7aa2a38a21533deca292704617307803c7dcbd041b6f",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "2011-12-14",
+      "embedding_mean_norm": 6.854444980621338,
+      "embedding_std_mean": 0.17973247170448303
+    },
+    {
+      "key": "HsDHFR",
+      "accession": "P00374",
+      "organism": "Homo sapiens",
+      "recommended_name": "Dihydrofolate reductase",
+      "sequence_length": 187,
+      "sequence_length_embedded": 187,
+      "truncated": false,
+      "sequence_sha256": "f01679b357e85183133b6e765b5bbb10fb34aac343f1185d3cae27b684632907",
+      "uniprot_sequence_version": 2,
+      "uniprot_last_sequence_update_date": "2007-01-23",
+      "embedding_mean_norm": 5.545767307281494,
+      "embedding_std_mean": 0.2066386193037033
+    },
+    {
+      "key": "LmDHFR",
+      "accession": "P07382",
+      "organism": "Leishmania major",
+      "recommended_name": "Bifunctional dihydrofolate reductase-thymidylate synthase",
+      "sequence_length": 520,
+      "sequence_length_embedded": 520,
+      "truncated": false,
+      "sequence_sha256": "280a4cad50f44a91ca84500d89c99501814d92248b54c8a66d3d1fc5ee0d15b5",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "1988-04-01",
+      "embedding_mean_norm": 7.918070316314697,
+      "embedding_std_mean": 0.15773577988147736
+    },
+    {
+      "key": "HsCatB",
+      "accession": "P07858",
+      "organism": "Homo sapiens",
+      "recommended_name": "Cathepsin B",
+      "sequence_length": 339,
+      "sequence_length_embedded": 339,
+      "truncated": false,
+      "sequence_sha256": "fd1d7c74a3dfed65d3084eebd2e21e15fa9d7137233e72bfca1515bb01aa3c34",
+      "uniprot_sequence_version": 3,
+      "uniprot_last_sequence_update_date": "2005-06-21",
+      "embedding_mean_norm": 6.532149314880371,
+      "embedding_std_mean": 0.18800923228263855
+    },
+    {
+      "key": "LmPTR1",
+      "accession": "Q01782",
+      "organism": "Leishmania major",
+      "recommended_name": "Pteridine reductase 1",
+      "sequence_length": 288,
+      "sequence_length_embedded": 288,
+      "truncated": false,
+      "sequence_sha256": "15625e82717679d49338a6bd2deed7a37bf2639a682d0b02b6476f3424907e8f",
+      "uniprot_sequence_version": 2,
+      "uniprot_last_sequence_update_date": "2002-05-27",
+      "embedding_mean_norm": 6.905453681945801,
+      "embedding_std_mean": 0.17898806929588318
+    },
+    {
+      "key": "HsDHODH",
+      "accession": "Q02127",
+      "organism": "Homo sapiens",
+      "recommended_name": "Dihydroorotate dehydrogenase (quinone), mitochondrial",
+      "sequence_length": 395,
+      "sequence_length_embedded": 395,
+      "truncated": false,
+      "sequence_sha256": "e3d665dad3dbf6901bc5aeccd28ef9d87f5be7797ab459a04aa59f95824cf051",
+      "uniprot_sequence_version": 3,
+      "uniprot_last_sequence_update_date": "2004-12-07",
+      "embedding_mean_norm": 6.786128997802734,
+      "embedding_std_mean": 0.18106111884117126
+    },
+    {
+      "key": "HsPDE4B",
+      "accession": "Q07343",
+      "organism": "Homo sapiens",
+      "recommended_name": "3',5'-cyclic-AMP phosphodiesterase 4B",
+      "sequence_length": 736,
+      "sequence_length_embedded": 736,
+      "truncated": false,
+      "sequence_sha256": "a756ba3824908f2013383dca4223dc585181e067bfe5ccd3cf8fed3c15d9009c",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "1995-02-01",
+      "embedding_mean_norm": 7.928300857543945,
+      "embedding_std_mean": 0.15331804752349854
+    },
+    {
+      "key": "TbCatB",
+      "accession": "Q6R7Z5",
+      "organism": "Trypanosoma brucei",
+      "recommended_name": "Cathepsin B-like cysteine protease",
+      "sequence_length": 340,
+      "sequence_length_embedded": 340,
+      "truncated": false,
+      "sequence_sha256": "602c97d0b96fac6671c32a7086563ae5970c59c141ec1ed9645a50972988b658",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "2004-07-05",
+      "embedding_mean_norm": 7.427292346954346,
+      "embedding_std_mean": 0.16942071914672852
+    },
+    {
+      "key": "TbPDEB1",
+      "accession": "Q8WQX9",
+      "organism": "Trypanosoma brucei",
+      "recommended_name": "Phosphodiesterase",
+      "sequence_length": 930,
+      "sequence_length_embedded": 930,
+      "truncated": false,
+      "sequence_sha256": "c35384a69db25c8fe318417e2f3980e87d26ddab8a87176b272b6735592671cf",
+      "uniprot_sequence_version": 1,
+      "uniprot_last_sequence_update_date": "2002-03-01",
+      "embedding_mean_norm": 6.706746578216553,
+      "embedding_std_mean": 0.18203166127204895
+    },
+    {
+      "key": "HsHDAC8",
+      "accession": "Q9BY41",
+      "organism": "Homo sapiens",
+      "recommended_name": "Histone deacetylase 8",
+      "sequence_length": 377,
+      "sequence_length_embedded": 377,
+      "truncated": false,
+      "sequence_sha256": "4602a348ca21f49c27d1dfd706dbfb54f20ab49a7de362ece550dbb1dd236c87",
+      "uniprot_sequence_version": 2,
+      "uniprot_last_sequence_update_date": "2003-04-11",
+      "embedding_mean_norm": 5.470738410949707,
+      "embedding_std_mean": 0.2034558802843094
+    }
+  ]
+}
