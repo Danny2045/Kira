@@ -1,0 +1,34 @@
+{
+  "model_id": "esm2_t33_650M_UR50D",
+  "model_source": "fair-esm",
+  "repr_layer": 33,
+  "embedding_dim": 1280,
+  "pooling": "mean over token positions [1:len(seq)+1], excluding BOS and EOS",
+  "max_tokens": 1022,
+  "cosine_formula": "dot(p, h) / (norm(p) * norm(h))",
+  "parasite": {
+    "uniprot_id": "G4VFD7",
+    "label": "SmDHODH",
+    "organism": "Schistosoma mansoni",
+    "sequence_length": 379,
+    "sequence_sha256": "7e6ad06406778925242a7aa2a38a21533deca292704617307803c7dcbd041b6f"
+  },
+  "human": {
+    "uniprot_id": "Q02127",
+    "label": "HsDHODH",
+    "organism": "Homo sapiens",
+    "sequence_length": 395,
+    "sequence_sha256": "e3d665dad3dbf6901bc5aeccd28ef9d87f5be7797ab459a04aa59f95824cf051"
+  },
+  "cosine_similarity": 0.989732,
+  "embedding_distance": 0.979757,
+  "kmer3_jaccard": 0.101362,
+  "computed_at_utc": "2026-05-17T15:37:17+00:00",
+  "code_git_sha": "52adbe7917f1af06c6ac05f3befdd0d0d6eb0e33",
+  "supersedes": {
+    "previous_cosine_similarity": 0.9897,
+    "previous_embedding_distance": 6.09,
+    "previous_kmer3_jaccard": 0.0326,
+    "note": "Previous values were computed against UniProt C1L5Z2 mislabeled as SmDHODH. C1L5Z2 is not Schistosoma mansoni dihydroorotate dehydrogenase; the correct SmDHODH accession is G4VFD7 (379 aa, mitochondrial DHODH). See data/models/uniprot_mappings_provenance.json and PR #17 for the verification audit."
+  }
+}

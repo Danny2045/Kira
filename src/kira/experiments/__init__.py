@@ -16,7 +16,20 @@ Pocket positions should be updated as better structural data becomes available.
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
+from pathlib import Path
+
+# ESM-2 cosine for the SmDHODH/HsDHODH pair is loaded from a structured
+# artifact rather than embedded as a literal. Regenerate the artifact with
+# scripts/generate_esm2_dhodh_cosine.py.
+_ESM2_ARTIFACT_PATH = (
+    Path(__file__).resolve().parents[3]
+    / "data" / "models" / "esm2_dhodh_cosine.json"
+)
+_ESM2_DHODH_COSINE: float = json.loads(_ESM2_ARTIFACT_PATH.read_text())[
+    "cosine_similarity"
+]
 
 
 @dataclass
@@ -64,9 +77,11 @@ TARGET_PAIRS: dict[str, TargetPair] = {
         # Key differences: S53→L59 (hydrophobicity flip), V358→P364 (flexibility), G46→M43 (volume)
         parasite_pocket_sequence="GAHSFIRFV",
         human_pocket_sequence="MAHLFVRFP",
-        notes="ESM-2 cosine=0.9897 yet 30.8x selectivity exists. "
-              "Pocket identity 55.6%. Key: Ser53→Leu59 flips pocket polarity. "
-              "Central example of global-local divergence gap.",
+        notes=(
+            f"ESM-2 cosine={_ESM2_DHODH_COSINE:.4f} yet 30.8x selectivity exists. "
+            "Pocket identity 55.6%. Key: Ser53→Leu59 flips pocket polarity. "
+            "Central example of global-local divergence gap."
+        ),
     ),
 
     "SmHDAC8": TargetPair(

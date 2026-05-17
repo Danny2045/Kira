@@ -2,8 +2,12 @@
 
 THE CASE STUDY:
     CHEMBL155771 (2-hydroxy-3-isopentylnaphthalene-1,4-dione) achieves
-    23 nM potency against S. mansoni DHODH with 30.8x selectivity over
-    human DHODH. ESM-2 cosine similarity between the two proteins is 0.9897.
+    23 nM potency against S. mansoni DHODH with ~30.8x selectivity over
+    human DHODH. Global ESM-2 (esm2_t33_650M_UR50D) cosine similarity
+    between the two proteins is near unity; the exact cosine, L2
+    distance, and 3-mer Jaccard are recorded in
+    data/models/esm2_dhodh_cosine.json. Regenerate that artifact with
+    scripts/generate_esm2_dhodh_cosine.py.
 
     This script runs the compound through the FULL causality pipeline:
     1. Load SmDHODH and HsDHODH pocket definitions from crystal structures
@@ -20,6 +24,9 @@ HOW TO RUN:
 """
 
 from __future__ import annotations
+
+import json
+from pathlib import Path
 
 from kira.causality.divergence import (
     _physicochemical_distance,
@@ -40,11 +47,20 @@ COMPOUND = {
     "source": "Calil et al. 2019, Eur. J. Med. Chem.",
 }
 
-# ESM-2 embedding data from Kira Script 21
+# ESM-2 embedding metrics, loaded from the structured artifact produced by
+# scripts/generate_esm2_dhodh_cosine.py against the corrected UniProt
+# sequences (SmDHODH=G4VFD7, HsDHODH=Q02127). Regenerate the artifact
+# rather than editing these values.
+_ESM2_ARTIFACT_PATH = (
+    Path(__file__).resolve().parents[3]
+    / "data" / "models" / "esm2_dhodh_cosine.json"
+)
+_ESM2_ARTIFACT = json.loads(_ESM2_ARTIFACT_PATH.read_text())
+
 ESM2_DATA = {
-    "cosine_similarity": 0.9897,
-    "embedding_distance": 6.09,
-    "kmer3_jaccard": 0.0326,
+    "cosine_similarity": _ESM2_ARTIFACT["cosine_similarity"],
+    "embedding_distance": _ESM2_ARTIFACT["embedding_distance"],
+    "kmer3_jaccard": _ESM2_ARTIFACT["kmer3_jaccard"],
 }
 
 
@@ -179,7 +195,10 @@ def main():
     print(f"  ESM-2 embedding distance: {ESM2_DATA['embedding_distance']}")
     print(f"  3-mer Jaccard overlap: {ESM2_DATA['kmer3_jaccard']}")
     print("\n  VERDICT: By global metrics, SmDHODH and HsDHODH are nearly")
-    print("  identical (cosine = 0.99). ESM-2 CANNOT explain the 30.8x")
+    print(
+        f"  identical (cosine = {ESM2_DATA['cosine_similarity']:.4f}). "
+        "ESM-2 CANNOT explain the 30.8x"
+    )
     print("  selectivity — the signal is not in the global representation.")
 
     # --- Step 2: Binding-site divergence ---
@@ -205,9 +224,15 @@ def main():
     print(f"  Volume changes: {pf.n_volume_changes}")
 
     print("\n  CONTRAST:")
-    print("    Global (ESM-2): 98.97% similar → predicts NO selectivity")
+    print(
+        f"    Global (ESM-2): {ESM2_DATA['cosine_similarity']:.2%} similar "
+        "→ predicts NO selectivity"
+    )
     print(f"    Local (pocket): {pf.pocket_identity:.1%} identical → predicts selectivity window")
-    print(f"    Gap: {(0.9897 - pf.pocket_identity)*100:.1f} percentage points")
+    print(
+        f"    Gap: {(ESM2_DATA['cosine_similarity'] - pf.pocket_identity)*100:.1f}"
+        " percentage points"
+    )
     print("    This gap is WHERE the selectivity lives.")
 
     # --- Step 3: Per-position attribution ---
@@ -268,7 +293,7 @@ def main():
 
     print(f"""
   CHEMBL155771 achieves {c['selectivity_ratio']}x selectivity for SmDHODH over
-  HsDHODH despite 98.97% global protein similarity (ESM-2).
+  HsDHODH despite {ESM2_DATA['cosine_similarity']:.2%} global protein similarity (ESM-2).
 
   The selectivity is explained by {n_drivers} non-conserved positions in the
   {pf.pocket_size}-residue ubiquinone binding pocket ({pf.pocket_divergence:.0%} divergent):
