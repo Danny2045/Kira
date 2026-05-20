@@ -5,7 +5,6 @@ import os
 from pathlib import Path
 
 import pandas as pd
-from chembl_webresource_client.new_client import new_client
 from rdkit import Chem
 from rdkit.Chem.Scaffolds import MurckoScaffold
 
@@ -325,6 +324,8 @@ def _fetch_chembl_record(
         return cache[cid]
 
     try:
+        from chembl_webresource_client.new_client import new_client
+
         rec = new_client.molecule.get(cid)
     except Exception:
         rec = None
