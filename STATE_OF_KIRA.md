@@ -27,11 +27,11 @@ Kira is a Rwanda-rooted, contrast-driven inverse-biology system for retrospectiv
 The repository contains:
 
 - an **active engine** under `src/kira/` (50 Python files, 12 sub-packages including 4 deprecated empty namespaces),
-- a **frozen historical record** under `archived/scripts/` (22 numbered scripts that produced the original preprint analysis between February and April 2026),
+- a **frozen historical record** under `archived/scripts/` (22 numbered scripts that produced the original — since-withdrawn — preprint analysis between February and April 2026),
 - an **active repair toolkit** under `scripts/` (6 files: 5 Python scripts plus a shell wrapper, all added in PRs #17–19 to repair the UniProt mapping cache and rerun affected models),
 - a **test suite** of 314 collected tests under `tests/` (309 pass at the snapshot commit; 5 skip because of Finding 9),
 - a **data tree** under `data/` (120 committed files, ~13.6 MB) split across `eval/`, `models/`, `processed/`, `publication/`, `lab_requests/`, `docking/`, `validation/`, `reference/`, `reports/`, `leishmania/`, `trypanosoma/`,
-- a **governance and documentation tree** under `docs/` (20 files including the Scientific Constitution, Claim Inflation Audit, Disposition Plan, and module-specific design docs),
+- a **governance and documentation tree** under `docs/` (13 files including the Scientific Constitution, Claim Inflation Audit, Disposition Plan, and module-specific design docs; the preprint and six preprint-era narrative documents were withdrawn from main in PR `chore/withdraw-preprint` — git history preserves them),
 - and a **results capture** under `results/` (5 files: case-study output, v3 results, v4 per-pair metrics, summary JSON, and a manual provenance markdown).
 
 The full module-level map is in §5 (Methodology map).
@@ -150,7 +150,7 @@ The repository has **279 committed files** totaling **~14.4 MB** at the snapshot
 | `src/` | 50 | 538,621 |
 | `tests/` | 33 | 154,555 |
 | `archived/` | 26 | 435,150 |
-| `docs/` | 20 | 232,610 |
+| `docs/` | 13 | 107,709 |
 | `scripts/` | 6 | 25,758 |
 | `results/` | 5 | 18,097 |
 | `notebooks/` | 3 | 6,559 |
@@ -278,7 +278,7 @@ These six scripts were added in PRs #17–19 to repair the UniProt mapping cache
 
 ### 5.3 `archived/scripts/` — frozen historical record
 
-Per the Disposition Plan, these 22 numbered scripts are "move to Evidence". They are preserved verbatim as the historical record of how the original preprint analysis was produced. They are **not** part of the active reproduction path and must not be edited.
+Per the Disposition Plan, these 22 numbered scripts are "move to Evidence". They are preserved verbatim as the historical record of how the original — since-withdrawn — preprint analysis was produced. They are **not** part of the active reproduction path and must not be edited.
 
 | Script | One-line purpose | Output artifact (when re-runnable) |
 |---|---|---|
@@ -450,9 +450,9 @@ The corrected SmDHODH/HsDHODH cosine artifact is at `data/models/esm2_dhodh_cosi
 
 Old values still appear in:
 
-- `docs/technical_report.md:108`
-- `docs/kira-ml-analysis.md:19, 138`
 - `results/case_study_chembl155771.txt:20-21`
+
+(Two further occurrences in `docs/technical_report.md` and `docs/kira-ml-analysis.md` were retired when those preprint-era documents were withdrawn from main in PR `chore/withdraw-preprint`.)
 
 Note: `scripts/generate_esm2_dhodh_cosine.py:54-55` stores the old values as `PREVIOUS_*` constants for the `supersedes` block — that is correct and intentional.
 
@@ -477,12 +477,7 @@ The Scientific Constitution at `docs/SCIENTIFIC_CONSTITUTION.md` defines a contr
 
 **Active-doc violations:**
 
-| File:line | Term |
-|---|---|
-| `docs/technical_report.md:18` | `composite trust score` |
-| `docs/technical_report.md:89` | `Eight checks applied` |
-| `docs/technical_report.md:106` | `run through the full pipeline` |
-| `docs/technical_report.md:109` | `predicts selectivity window` |
+None remaining in active docs. (Four previously-listed violations in `docs/technical_report.md` — `composite trust score`, `Eight checks applied`, `run through the full pipeline`, `predicts selectivity window` — were retired when that preprint-era document was withdrawn from main in PR `chore/withdraw-preprint`.)
 
 **Stale on-disk artifact:**
 
@@ -491,7 +486,6 @@ The Scientific Constitution at `docs/SCIENTIFIC_CONSTITUTION.md` defines a contr
 **Allowed mentions (preserved by design):**
 
 - `README.md:3, 15, 29` — all three are explicit Constitutional negations (`It is not a … selectivity predictor`, `Kira does not claim to … implement a complete docking engine …`, `not a validated force field`). These must remain.
-- `docs/kira-ground-to-god.md:411` — "AutoDock Vina — Molecular docking engine" describes the external tool, not Kira. Borderline; consider parenthetical `(external tool)`.
 - `archived/scripts/04_rank_and_evaluate.py:441` and `archived/scripts/19_selectivity_prediction.py:378` — preserved verbatim per Disposition Plan ("move to Evidence"). Do **not** edit.
 
 ### 8.2 Evidence-tier declaration audit
@@ -584,7 +578,7 @@ The audit document at `docs/CLAIM_INFLATION_AUDIT.md:18-20` still lists these ro
 
 **Status:** **Open.**
 
-`src/kira/causality/binding_site.py:199-202` and `selectivity_map.py:182-185` still default to a sequential alignment with the documented caveat *"should come from a proper structural alignment"*. `docs/technical_report.md:145` flags the same limitation for distant homologs (e.g. LmPTR1 vs HsDHFR, which are different enzyme families).
+`src/kira/causality/binding_site.py:199-202` and `selectivity_map.py:182-185` still default to a sequential alignment with the documented caveat *"should come from a proper structural alignment"*. The same limitation applies to distant homologs (e.g. LmPTR1 vs HsDHFR, which are different enzyme families).
 
 **Natural next-PR scope:** Introduce a hand-curated alignment table for each non-trivially-aligned pair, **or** explicitly restrict the pipeline to pairs where sequential alignment is defensible and surface a runtime error for the rest.
 
@@ -678,7 +672,7 @@ These are the things the audit producing this document surfaced that do not have
 
 1. **`origin/fixes/technical-pass-1`** — present on origin only, not in any merge commit on `main`. Is this an abandoned branch, a fix queued for a future PR, or someone else's work? Needs a human check before deciding whether to delete the remote ref.
 2. **Stale local feature branches** — the six post-merge local branches listed in §3.4 and the locally-diverged `feat/selectivity-v5-expand-data`. Should a single dedicated cleanup PR delete them, or is the user comfortable doing it interactively? No deletion happens automatically.
-3. **Schistosomiasis input substrate** — is the right path forward to (a) re-query ChEMBL against the current release and accept that the numbers shift slightly from the preprint, or (b) freeze a snapshot from a specific ChEMBL release and version-tag it? PR #19's provenance language implies (a) but does not commit to it.
+3. **Schistosomiasis input substrate** — is the right path forward to (a) re-query ChEMBL against the current release and version-tag the regenerated snapshot, or (b) freeze a snapshot from a specific ChEMBL release and version-tag it? PR #19's provenance language implies (a) but does not commit to it. (The original preprint, withdrawn from main in PR `chore/withdraw-preprint`, is no longer the reproduction target; the substrate stands on its own provenance.)
 4. **Platform-report canonicalization** — is `kira_platform_definitive.txt` actually superseded by `kira_platform_report.txt` (or vice versa), or are both meant to coexist as Tryp-only and Schisto+Tryp-only snapshots? Naming suggests the former; content suggests the latter.
 5. **TARGET_PAIRS scope** — does SmTGR (which is not in `uniprot_ids_v2.json`) belong in the verified-mapping set, or is it intentionally docking-only? If the former, `verify_uniprot_mappings.py` should be extended to include it.
 6. **Should derived files like `selectivity_v4_rows_primary_trainable.csv` be committed?** They are deterministic outputs of a committed pipeline against committed inputs. Not committing them keeps the repo small; committing them removes "did you remember to run the prep step?" as a footgun. Whichever way: pick one and document it.

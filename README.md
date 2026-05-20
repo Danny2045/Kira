@@ -30,7 +30,7 @@ The active codebase is organized into the following components.
 
 **Mechanistic hypothesis module.** The `src/kira/causality/` package, despite its name, performs mechanistic hypothesis generation rather than causal inference. It computes binding-site extraction from ligand coordinates, per-residue Lennard-Jones decomposition, residue-level selectivity attribution between curated pocket pairs, and ESM-2 protein language model divergence between full sequences and pocket-restricted residues. The outputs are interpretive hypotheses suitable for guiding follow-up experimentation, not validated mechanisms. Evidence tier: 4 (mechanistic hypothesis generation).
 
-**Historical pipeline.** The `archived/scripts/` directory contains the twenty-one numbered scripts that produced the original preprint analysis from February through April 2026. These scripts are preserved as the historical evidence record per the Disposition Plan. They are not part of the active reproduction path. Evidence tier: 2 (retrospective translational analysis), historical.
+**Historical pipeline.** The `archived/scripts/` directory contains the twenty-one numbered scripts that produced the original — since-withdrawn — preprint analysis from February through April 2026. These scripts are preserved as the historical evidence record per the Disposition Plan. They are not part of the active reproduction path. Evidence tier: 2 (retrospective translational analysis), historical.
 
 ## Repository layout
 
@@ -132,7 +132,7 @@ MIT License. See `LICENSE`.
 
 ## Citation
 
-If you use Kira in academic work, please cite the repository directly until peer-reviewed publication is available. The historical preprint at `docs/kira-final-preprint-v2.docx` is preserved as a historical artifact and is being revised; it does not represent the current state of the repository's claims.
+If you use Kira in academic work, please cite the repository directly until peer-reviewed publication is available. An earlier preprint (and its companion narrative documents) was withdrawn from main; it described analyses built on a substrate (v5) and an ESM-2 cache that have since been corrected and superseded, and did not represent the current state of the repository's claims. Git history preserves it. A new manuscript will be written once the system matures.
 
 ## Contact
 
