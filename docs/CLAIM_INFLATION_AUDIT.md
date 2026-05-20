@@ -23,18 +23,7 @@ This document records places where repository language overstates what the curre
 
 ## Docs
 
-| File path | Quoted phrase | Why it is overstated | Honest narrower wording | Severity |
-|---|---|---|---|---|
-| `docs/technical_report.md` | `Physics validation engine ... checks them for physical validity` | The active code performs limited heuristic checks, not a broad physical-validity assessment. | `approximate structure-quality checker` | Medium |
-| `docs/technical_report.md` | `Produces a composite trust score with an accept/relax/discard recommendation` | In the active validator, `composite = clash_result.subscore`; there is no active weighted combination over the documented eight checks. | `produces a clash-based heuristic score and recommendation thresholds` | High |
-| `docs/technical_report.md` | `Mechanistic explanation layer ... addresses the question "why is this compound selective?"` | The active code never loads a ligand structure in the selectivity path and does not compute protein-ligand interaction energy. | `addresses a weaker question: which curated pocket differences and residue-energy heuristics are associated with observed selectivity?` | High |
-| `docs/technical_report.md` | `mean leave-one-disease-out (LODO) AUROC of 0.519 for selectivity prediction` | The benchmark is not clean compound-level prediction; all compounds from a pair share the same pocket vector. | `mean LODO AUROC of 0.519 for a target-pair-feature selectivity benchmark` | High |
-| `docs/technical_report.md` | `Compound-level selectivity data was assembled` | The labels are compound-level, but the active v3 feature matrix is not compound-specific. The wording can mislead about what is actually predicted. | `compound labels were assembled, then paired with target-pair-level pocket features` | Medium |
-| `docs/technical_report.md` | `CHEMBL155771 ... was run through the full pipeline` | `case_study_chembl155771.py` is not a full structure-to-docking-to-attribution pipeline; it uses hard-coded compound metadata and curated pocket sequences. | `CHEMBL155771 was analyzed through a curated case-study script using stored metadata and pocket definitions` | High |
-| `docs/technical_report.md` | `predicts no selectivity` / `predicts selectivity window` | The case study does not run a trained predictor there; it narrates interpretation from cosine similarity and pocket identity. | `is consistent with a no-selectivity intuition` / `suggests a possible selectivity window` | Medium |
-| `docs/kira-technical-breakdown.md` | `Binding energy comparison → computational selectivity estimate` | The active package has no docking module and no binding-energy engine. The historical docking script produces docking scores, not rigorous binding energies. | `docking-score comparison → rough computational selectivity hypothesis` | High |
-| `docs/kira-technical-breakdown.md` | `Docking validated by significant correlation with experimental IC50` | Correlation in one retrospective docking setup is not validation in the broad scientific sense, especially with non-equivalent sites and rigid docking caveats. | `docking setup showed a modest retrospective correlation with experimental IC50 in this case study` | Medium |
-| `docs/kira-technical-breakdown.md` | `the non-selectivity finding is genuine` | The docking result may be suggestive, but the caveats listed in the same paragraph mean `genuine` is too strong. | `the docking result is suggestive but limited by rigid docking and site non-equivalence` | High |
+This section previously enumerated over-statement rows in `docs/technical_report.md` (seven rows) and `docs/kira-technical-breakdown.md` (three rows). Both documents were preprint-era narratives and were withdrawn from main in PR `chore/withdraw-preprint`; the over-statements are no longer present in the repository. Git history preserves the original rows for reference.
 
 ## Docstrings
 

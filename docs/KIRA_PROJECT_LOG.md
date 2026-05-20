@@ -64,7 +64,8 @@ but also where class balance and matched evidence remain too weak for broad
 claims.
 
 Validation if known: v5 result artifacts were documented in
-`docs/V5_RESULTS.md`.
+`docs/V5_RESULTS.md` (withdrawn from main in PR `chore/withdraw-preprint`
+alongside the preprint companion narratives; git history preserves it).
 
 Non-claims: v5 did not prove a new model-performance result. It did not claim
 drug discovery or wet-lab validation.
