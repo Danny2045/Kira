@@ -214,6 +214,13 @@ def make_markdown_report(report: Any, provenance: AmrProvenance | None = None) -
     above it. These additions are the only difference: every numeric audit
     section from ``## Summary`` onward is byte-identical with or without
     provenance.
+
+    For CSV-sourced data, use :func:`make_amr_csv_report` (or
+    :func:`write_amr_csv_report`) instead: it classifies the file's provenance,
+    stamps it into the report, and refuses mixed-provenance files. Calling this
+    function bare (``provenance=None``) produces an UNMARKED report and is only
+    appropriate for already-in-memory, non-CSV records whose provenance you have
+    established by other means.
     """
 
     payload = report_to_dict(report)
@@ -276,7 +283,12 @@ def write_data_return_template(path: str | PathLike[str]) -> Path:
 
 
 def write_markdown_report(report: Any, path: str | PathLike[str]) -> Path:
-    """Write a markdown report for an AMR completeness audit."""
+    """Write a markdown report for an AMR completeness audit.
+
+    For CSV-sourced data use :func:`write_amr_csv_report` instead: this helper
+    renders the bare, UNMARKED report (no provenance block or synthetic banner)
+    and is only appropriate for already-in-memory, non-CSV records.
+    """
 
     output_path = Path(path)
     output_path.write_text(make_markdown_report(report), encoding="utf-8")

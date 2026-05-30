@@ -100,10 +100,10 @@ from kira.amr import (
     audit_amr_csv,
     benchmark_ready_records,
     load_amr_csv,
-    make_markdown_report,
+    make_amr_csv_report,
     report_to_dict,
+    write_amr_csv_report,
     write_data_return_template,
-    write_markdown_report,
 )
 
 write_data_return_template("rwanda_amr_ast_template.csv")
@@ -113,17 +113,31 @@ report = audit_amr_csv("examples/rwanda_amr_ast_example.csv")
 
 ready_records = benchmark_ready_records(records)
 payload = report_to_dict(report)
-markdown = make_markdown_report(report)
-write_markdown_report(report, "rwanda_amr_ast_readiness_report.md")
+
+# For CSV-sourced reports, always use the provenance-aware entry points. They
+# classify the file's synthetic/real status, stamp it (with a synthetic-data
+# banner when applicable) and an input content hash into the report, and refuse
+# mixed-provenance files. Do not render a CSV-derived report with the bare
+# make_markdown_report()/write_markdown_report() helpers — those produce an
+# UNMARKED report and are only for already-in-memory, non-CSV records.
+markdown = make_amr_csv_report("examples/rwanda_amr_ast_example.csv")
+write_amr_csv_report(
+    "examples/rwanda_amr_ast_example.csv", "rwanda_amr_ast_readiness_report.md"
+)
 ```
 
 `load_amr_csv()` accepts a filesystem path or an already-open text stream. It
-uses only Python standard library CSV handling.
+uses only Python standard library CSV handling. `audit_amr_csv()` and
+`make_amr_csv_report()` accept the same inputs and refuse a mixed-provenance or
+inconsistent-notice file with a `ValueError` rather than auditing or reporting it.
 
 ## What the report means
 
-`make_markdown_report(report)` produces a deterministic markdown report with:
+`make_amr_csv_report(path)` produces a deterministic markdown report with:
 
+- A data-provenance block: synthetic/real/empty status, source, row count, and a
+  SHA-256 of the raw CSV bytes (so the same input yields a byte-identical report).
+- A leading `⚠ SYNTHETIC DATA` banner whenever the input classifies as synthetic.
 - Source ticket id.
 - Ticket gate status and check-section statuses.
 - Total, complete, and incomplete record counts.
@@ -133,6 +147,10 @@ uses only Python standard library CSV handling.
 - Incomplete row indices and missing fields.
 - Repair actions grouped by missing field.
 - Non-claims.
+
+The provenance block and banner are derived from the `synthetic_data_notice`
+column (the single source of truth for provenance status). The numeric audit
+sections are byte-identical whether or not provenance is attached.
 
 The benchmark-ready rule is intentionally narrow:
 
