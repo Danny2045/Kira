@@ -8,7 +8,10 @@ rule; all completeness decisions come from :mod:`kira.amr.audit`.
 from __future__ import annotations
 
 import csv
-from collections.abc import Mapping
+import hashlib
+from collections.abc import Mapping, Sequence
+from dataclasses import dataclass
+from io import StringIO
 from os import PathLike
 from pathlib import Path
 from typing import Any, TextIO
@@ -55,6 +58,77 @@ TEMPLATE_COLUMNS = (
     "isolate_id",
 )
 
+SYNTHETIC_NOTICE_COLUMN = "synthetic_data_notice"
+
+DATA_STATUS_SYNTHETIC = "SYNTHETIC"
+DATA_STATUS_REAL = "REAL"
+DATA_STATUS_EMPTY = "EMPTY"
+
+SYNTHETIC_BANNER = "# ⚠ SYNTHETIC DATA — NOT A REAL AMR FINDING — tooling demonstration only"
+_EMPTY_DATA_NOTE = (
+    "> No data audited: the input contained no AMR rows; "
+    "this report implies no real AMR finding."
+)
+
+
+@dataclass(frozen=True, slots=True)
+class AmrProvenance:
+    """Synthetic-vs-real provenance for one AMR input, tied to its exact bytes.
+
+    ``content_sha256`` is the SHA-256 of the raw CSV bytes, so the same input
+    always yields a byte-identical report. No report-generation timestamp is
+    stored: that belongs in a log line or filename, not the reproducible artifact.
+    """
+
+    data_status: str
+    source: str
+    n_rows: int
+    content_sha256: str
+
+
+def classify_data_status(rows: Sequence[Mapping[str, Any]]) -> str:
+    """Classify rows as SYNTHETIC, REAL, or EMPTY from `synthetic_data_notice`.
+
+    This is the single source of truth for provenance status. It looks only at
+    the ``synthetic_data_notice`` column VALUES (never at facility IDs or other
+    fields). Rows are partitioned into populated (notice non-empty after strip)
+    versus empty:
+
+    - all rows populated with one notice value -> ``SYNTHETIC``
+    - all rows empty -> ``REAL``
+    - no rows -> ``EMPTY``
+    - some populated and some empty -> raises ``ValueError`` (mixed-provenance)
+    - all populated but with differing notice values -> raises ``ValueError``
+      (inconsistent synthetic-status column)
+    """
+
+    populated = [row for row in rows if _notice_value(row)]
+    empty = [row for row in rows if not _notice_value(row)]
+
+    if not rows:
+        return DATA_STATUS_EMPTY
+    if populated and empty:
+        raise ValueError(
+            f"mixed-provenance file: {len(populated)} rows marked synthetic, "
+            f"{len(empty)} rows unmarked — separate synthetic and real rows into "
+            "different files before auditing"
+        )
+    if populated:
+        distinct = sorted({_notice_value(row) for row in populated})
+        if len(distinct) > 1:
+            values = ", ".join(repr(value) for value in distinct)
+            raise ValueError(
+                f"inconsistent synthetic_data_notice column: rows carry differing "
+                f"notice values [{values}] — the synthetic-status column must be "
+                "uniform; split differing values into separate files before auditing"
+            )
+        return DATA_STATUS_SYNTHETIC
+    return DATA_STATUS_REAL
+
+
+def _notice_value(row: Mapping[str, Any]) -> str:
+    return str(row.get(SYNTHETIC_NOTICE_COLUMN, "") or "").strip()
+
 
 def required_isolate_columns() -> tuple[str, ...]:
     """Return required CSV columns for isolate-level AST rows."""
@@ -73,23 +147,81 @@ def required_aggregate_columns() -> tuple[str, ...]:
 
 
 def load_amr_csv(path_or_file: PathOrTextStream) -> tuple[dict[str, str], ...]:
-    """Load AMR AST CSV rows from a filesystem path or text stream."""
+    """Load AMR AST CSV rows from a filesystem path or text stream.
 
-    if _is_text_stream(path_or_file):
-        return _read_csv_rows(path_or_file)
+    This low-level reader returns rows only and does not classify provenance.
+    Use :func:`load_amr_csv_with_provenance` (or :func:`audit_amr_csv` /
+    :func:`make_amr_csv_report`) when provenance status and the mixed-file
+    refusal are required.
+    """
 
-    with Path(path_or_file).open("r", encoding="utf-8-sig", newline="") as handle:
-        return _read_csv_rows(handle)
+    _source, text, _raw = _read_source_text(path_or_file)
+    return _parse_csv_rows(text)
+
+
+def load_amr_csv_with_provenance(
+    path_or_file: PathOrTextStream,
+) -> tuple[tuple[dict[str, str], ...], AmrProvenance]:
+    """Load AMR AST CSV rows and their provenance from a path or text stream.
+
+    Reads the input exactly once (so streams are safe) and records the source
+    identifier and a SHA-256 of the raw CSV bytes. Classifies the rows via
+    :func:`classify_data_status`, which raises ``ValueError`` on a
+    mixed-provenance or inconsistent-notice file.
+    """
+
+    source, text, raw = _read_source_text(path_or_file)
+    rows = _parse_csv_rows(text)
+    data_status = classify_data_status(rows)
+    provenance = AmrProvenance(
+        data_status=data_status,
+        source=source,
+        n_rows=len(rows),
+        content_sha256=hashlib.sha256(raw).hexdigest(),
+    )
+    return rows, provenance
 
 
 def audit_amr_csv(path_or_file: PathOrTextStream):
-    """Load an AMR AST CSV and run the existing completeness audit."""
+    """Load an AMR AST CSV and run the existing completeness audit.
 
-    return audit_ast_completeness(load_amr_csv(path_or_file))
+    Routes through :func:`load_amr_csv_with_provenance`, so a mixed-provenance
+    or inconsistent-notice file raises ``ValueError`` rather than being audited.
+    """
+
+    rows, _provenance = load_amr_csv_with_provenance(path_or_file)
+    return audit_ast_completeness(rows)
 
 
-def make_markdown_report(report: Any) -> str:
-    """Render a deterministic benchmark-readiness report in markdown."""
+def make_amr_csv_report(path_or_file: PathOrTextStream) -> str:
+    """Load an AMR AST CSV and render its provenance-stamped markdown report.
+
+    Raises ``ValueError`` on a mixed-provenance or inconsistent-notice file. The
+    report leads with a synthetic-data banner for SYNTHETIC inputs and always
+    carries a Data Provenance block tied to the input by SHA-256.
+    """
+
+    rows, provenance = load_amr_csv_with_provenance(path_or_file)
+    report = audit_ast_completeness(rows)
+    return make_markdown_report(report, provenance)
+
+
+def make_markdown_report(report: Any, provenance: AmrProvenance | None = None) -> str:
+    """Render a deterministic benchmark-readiness report in markdown.
+
+    When ``provenance`` is supplied, a Data Provenance block is inserted below
+    the title and (for SYNTHETIC inputs only) a synthetic-data banner is placed
+    above it. These additions are the only difference: every numeric audit
+    section from ``## Summary`` onward is byte-identical with or without
+    provenance.
+
+    For CSV-sourced data, use :func:`make_amr_csv_report` (or
+    :func:`write_amr_csv_report`) instead: it classifies the file's provenance,
+    stamps it into the report, and refuses mixed-provenance files. Calling this
+    function bare (``provenance=None``) produces an UNMARKED report and is only
+    appropriate for already-in-memory, non-CSV records whose provenance you have
+    established by other means.
+    """
 
     payload = report_to_dict(report)
     lines = [
@@ -116,6 +248,9 @@ def make_markdown_report(report: Any) -> str:
     lines.extend(_incomplete_rows_section(payload))
     lines.extend(_repair_actions_section(report))
     lines.extend(_non_claims_section())
+
+    if provenance is not None:
+        lines = _inject_provenance(lines, provenance)
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -148,15 +283,81 @@ def write_data_return_template(path: str | PathLike[str]) -> Path:
 
 
 def write_markdown_report(report: Any, path: str | PathLike[str]) -> Path:
-    """Write a markdown report for an AMR completeness audit."""
+    """Write a markdown report for an AMR completeness audit.
+
+    For CSV-sourced data use :func:`write_amr_csv_report` instead: this helper
+    renders the bare, UNMARKED report (no provenance block or synthetic banner)
+    and is only appropriate for already-in-memory, non-CSV records.
+    """
 
     output_path = Path(path)
     output_path.write_text(make_markdown_report(report), encoding="utf-8")
     return output_path
 
 
+def write_amr_csv_report(path_or_file: PathOrTextStream, path: str | PathLike[str]) -> Path:
+    """Write a provenance-stamped markdown report rendered from an AMR AST CSV.
+
+    Raises ``ValueError`` on a mixed-provenance or inconsistent-notice input.
+    """
+
+    output_path = Path(path)
+    output_path.write_text(make_amr_csv_report(path_or_file), encoding="utf-8")
+    return output_path
+
+
+def _inject_provenance(body_lines: list[str], provenance: AmrProvenance) -> list[str]:
+    """Splice the banner (SYNTHETIC only) and Data Provenance block into a report.
+
+    The title stays first (after any banner); the provenance block goes between
+    the title and ``## Summary`` so every numeric section below is untouched.
+    """
+
+    title, rest = body_lines[0], body_lines[1:]
+    banner = (
+        [SYNTHETIC_BANNER, ""] if provenance.data_status == DATA_STATUS_SYNTHETIC else []
+    )
+    block = ["", *_provenance_block_lines(provenance)]
+    if provenance.data_status == DATA_STATUS_EMPTY:
+        block.extend(["", _EMPTY_DATA_NOTE])
+    return [*banner, title, *block, *rest]
+
+
+def _provenance_block_lines(provenance: AmrProvenance) -> list[str]:
+    return [
+        "## Data Provenance",
+        "",
+        "| Field | Value |",
+        "|---|---|",
+        f"| Data status | `{provenance.data_status}` |",
+        f"| Source | `{provenance.source}` |",
+        f"| Rows audited | {provenance.n_rows} |",
+        f"| Content sha256 | `{provenance.content_sha256}` |",
+    ]
+
+
 def _is_text_stream(value: PathOrTextStream) -> bool:
     return callable(getattr(value, "read", None))
+
+
+def _read_source_text(path_or_file: PathOrTextStream) -> tuple[str, str, bytes]:
+    """Return ``(source, text, raw_bytes)`` from a path or stream in one read.
+
+    ``raw_bytes`` is what gets hashed for provenance: the file's bytes for a
+    path, or the stream text encoded as UTF-8 for a stream.
+    """
+
+    if _is_text_stream(path_or_file):
+        text = path_or_file.read()
+        return "<stream>", text, text.encode("utf-8")
+
+    path = Path(path_or_file)
+    raw_bytes = path.read_bytes()
+    return str(path), raw_bytes.decode("utf-8-sig"), raw_bytes
+
+
+def _parse_csv_rows(text: str) -> tuple[dict[str, str], ...]:
+    return _read_csv_rows(StringIO(text))
 
 
 def _read_csv_rows(handle: TextIO) -> tuple[dict[str, str], ...]:
@@ -279,13 +480,23 @@ def _non_claims_section() -> list[str]:
 
 __all__ = [
     "AGGREGATE_CSV_COLUMNS",
+    "DATA_STATUS_EMPTY",
+    "DATA_STATUS_REAL",
+    "DATA_STATUS_SYNTHETIC",
+    "SYNTHETIC_BANNER",
+    "SYNTHETIC_NOTICE_COLUMN",
     "TEMPLATE_COLUMNS",
+    "AmrProvenance",
     "audit_amr_csv",
+    "classify_data_status",
     "load_amr_csv",
+    "load_amr_csv_with_provenance",
+    "make_amr_csv_report",
     "make_data_return_template_rows",
     "make_markdown_report",
     "required_aggregate_columns",
     "required_isolate_columns",
+    "write_amr_csv_report",
     "write_data_return_template",
     "write_markdown_report",
 ]

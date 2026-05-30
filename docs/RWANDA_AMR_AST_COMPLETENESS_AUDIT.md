@@ -109,6 +109,24 @@ from kira.amr import (
 actions are grouped by missing field and point back to the AST completeness scout
 ticket.
 
+## Provenance and the mixed-file refusal boundary
+
+Synthetic-vs-real provenance is classified from the `synthetic_data_notice`
+column (the single source of truth). The mixed-provenance / inconsistent-notice
+refusal guarantee — a file with some rows marked synthetic and others unmarked,
+or with differing notice strings, raises `ValueError` instead of being processed
+— holds at the **CSV entry points**: `audit_amr_csv()` and `make_amr_csv_report()`
+(and `write_amr_csv_report()`). Use these whenever the input is a CSV.
+
+`audit_ast_completeness(load_amr_csv(...))` is a deliberate lower-level
+composition: `load_amr_csv()` is a pure CSV reader that returns rows only and
+**intentionally does not classify provenance or refuse mixed files**, and
+`audit_ast_completeness()` consumes already-in-memory records. This primitive
+path is for callers that have established provenance by other means; it does not
+carry the synthetic banner or the mixed-file guarantee. For CSV-sourced reports,
+go through `make_amr_csv_report()` / `write_amr_csv_report()` so the report is
+provenance-stamped and mixed files are refused.
+
 ## Non-claims
 
 This audit is only a data-completeness and benchmark-readiness check.
