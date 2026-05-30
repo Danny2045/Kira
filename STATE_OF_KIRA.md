@@ -217,7 +217,7 @@ This section documents every module under `src/kira/`, every active script under
 | `src/kira/__init__.py` | Empty package marker. | — | — | — |
 | `src/kira/amr/__init__.py` | Re-exports AMR scout, audit, and data-return helpers. | — | — | `tests/test_amr_*.py` |
 | `src/kira/amr/audit.py` | AST completeness audit for Rwanda AMR benchmark-readiness. Pure rule logic. | — | — | `test_amr_audit.py` |
-| `src/kira/amr/data_return.py` | CSV IO + Markdown rendering around the AST audit. | input CSV path | output CSV + Markdown | `test_amr_data_return.py` |
+| `src/kira/amr/data_return.py` | CSV IO + Markdown rendering around the AST audit. Post-snapshot (`c3a6a9d`): added a report-provenance guardrail on the CSV→report path — classifies synthetic/real/empty from `synthetic_data_notice`, stamps the report with the source + a raw-bytes SHA-256, banners SYNTHETIC reports, and refuses mixed/inconsistent files at the CSV entry points. Numeric audit rule unchanged (stays in `audit.py`). See the post-snapshot note below §5.1. | input CSV path | output CSV + Markdown | `test_amr_data_return.py` |
 | `src/kira/amr/scout.py` | Rwanda AMR contrast scout — maps eight seed contrasts into the contrast-core shape. | — | — | `test_amr_scout.py` |
 | `src/kira/causality/__init__.py` | Package marker. Disposition: **move to Hypothesis**. | — | — | — |
 | `src/kira/causality/binding_site.py` | Extracts pocket residues from a structure plus ligand coordinates or a centroid. | (called with a parsed `Structure`) | — | `test_causality.py`, `test_divergence.py` |
@@ -262,6 +262,14 @@ This section documents every module under `src/kira/`, every active script under
 | `src/kira/selectivity/__init__.py` | Re-exports benchmark-repair report helpers. | — | — | — |
 | `src/kira/selectivity/benchmark_repair_report.py` | Reader/renderer over committed v4/v5/v6 artifacts that produces a deterministic Markdown dossier. | `data/lab_requests/*`, `data/processed/selectivity_v{4,5,6}_*.json/csv`, `data/reference/selectivity_v5_target_pairs.csv` | Markdown report (path supplied by caller) | `test_selectivity_benchmark_repair_report.py` |
 | `src/kira/targets.py` | Curated `TARGET_ESSENTIALITY` floats and `ORTHOLOGUE_MAP` dicts. | — | — | `test_targets.py` |
+
+**Post-snapshot note — AMR data-return report-provenance guardrail (merged `c3a6a9d`, after the `f12fe3d` snapshot).** The AMR data-return *kit* (`src/kira/amr/data_return.py`) gained a tooling-integrity guardrail on its CSV→report path. This is a data-quality scaffolding change only: it adds **no scientific capability**, does **not** validate AMR data, and is **not** an AMR finding. Concretely:
+
+- It classifies a loaded file's status as `SYNTHETIC` / `REAL` / `EMPTY` *solely* from the `synthetic_data_notice` column — the single source of truth. It never infers status from facility IDs or any other field.
+- The rendered report is stamped with the input source and a SHA-256 of the raw CSV bytes (no timestamp, so the same input yields a byte-identical report), and a `SYNTHETIC`-classified report leads with an unremovable `⚠ SYNTHETIC DATA — NOT A REAL AMR FINDING` banner. The purpose is narrow: a report built from synthetic example data cannot be mistaken for a real one once it leaves the tool.
+- A file that mixes marked and unmarked rows, or carries inconsistent notice strings, is refused with a `ValueError` — but only at the CSV entry points (`audit_amr_csv`, `make_amr_csv_report`, `write_amr_csv_report`). The lower-level `audit_ast_completeness(load_amr_csv(...))` composition is deliberately left as a pure-reader primitive that does not classify provenance.
+
+The numeric AST-completeness layer (`audit.py`, `report_to_dict`, `AmrCompletenessReport`) was **not touched**, so the audit counts are byte-identical by construction. The two AMR docs (`docs/RWANDA_AMR_AST_DATA_RETURN_KIT.md`, `docs/RWANDA_AMR_AST_COMPLETENESS_AUDIT.md`) were rerouted to the provenance-aware entry points and now document the refusal boundary; 7 tests were added. Only this note and the `data_return.py` row above are refreshed past the snapshot — the §2 dashboard counts and the §3 history still reflect `f12fe3d`.
 
 ### 5.2 `scripts/` — active repair toolkit
 
