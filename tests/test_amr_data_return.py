@@ -1,15 +1,23 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 from io import StringIO
 from pathlib import Path
 
+import pytest
+
 from kira.amr import (
+    DATA_STATUS_REAL,
+    SYNTHETIC_BANNER,
     TEMPLATE_COLUMNS,
     audit_amr_csv,
     audit_ast_completeness,
+    classify_data_status,
     load_amr_csv,
+    load_amr_csv_with_provenance,
+    make_amr_csv_report,
     make_data_return_template_rows,
     make_markdown_report,
     report_to_dict,
@@ -123,3 +131,99 @@ def test_full_report_is_json_serializable_through_report_to_dict() -> None:
     assert json.loads(json.dumps(payload, sort_keys=True)) == payload
     assert payload["total_records"] == EXPECTED_EXAMPLE_RECORDS
     assert "repair_tickets" in payload
+
+
+AMR_CSV_HEADER = (
+    "synthetic_data_notice,record_type,facility_id,reporting_period,organism,"
+    "specimen_source,antibiotic,ast_method,ast_result,breakpoint_version,qc_status,isolate_id"
+)
+
+
+def _isolate_row(notice: str, isolate_id: str) -> str:
+    return (
+        f"{notice},isolate_level,fake-facility-001,2026-04,Escherichia coli,urine,"
+        f"ceftriaxone,disk diffusion,resistant,CLSI M100 2026,pass,{isolate_id}"
+    )
+
+
+def _csv_text(*rows: str) -> str:
+    return "\n".join((AMR_CSV_HEADER, *rows)) + "\n"
+
+
+def test_synthetic_csv_report_has_banner_and_provenance_block_with_unchanged_counts() -> None:
+    report = audit_amr_csv(EXAMPLE_CSV)
+    base = make_markdown_report(report)  # no provenance: numeric body only
+    full = make_amr_csv_report(EXAMPLE_CSV)  # provenance-stamped
+
+    # synthetic banner is the very first line; provenance block follows the title
+    assert full.splitlines()[0] == SYNTHETIC_BANNER
+    assert "## Data Provenance" in full
+    assert "| Data status | `SYNTHETIC` |" in full
+
+    # the no-provenance path carries neither banner nor provenance block
+    assert SYNTHETIC_BANNER not in base
+    assert "## Data Provenance" not in base
+
+    # every numeric section from '## Summary' onward is byte-identical
+    assert base.split("## Summary", 1)[1] == full.split("## Summary", 1)[1]
+
+
+def test_synthetic_csv_report_is_byte_identical_for_same_input() -> None:
+    assert make_amr_csv_report(EXAMPLE_CSV) == make_amr_csv_report(EXAMPLE_CSV)
+
+
+def test_blank_notice_file_classifies_real_with_no_banner() -> None:
+    csv_text = _csv_text(_isolate_row("", "iso-1"), _isolate_row("", "iso-2"))
+
+    assert classify_data_status(load_amr_csv(StringIO(csv_text))) == DATA_STATUS_REAL
+
+    report = make_amr_csv_report(StringIO(csv_text))
+    assert SYNTHETIC_BANNER not in report
+    assert "## Data Provenance" in report
+    assert "| Data status | `REAL` |" in report
+
+
+def test_mixed_provenance_file_is_refused_by_report_and_audit() -> None:
+    csv_text = _csv_text(_isolate_row("SYNTHETIC EXAMPLE", "iso-1"), _isolate_row("", "iso-2"))
+
+    with pytest.raises(
+        ValueError, match="mixed-provenance file: 1 rows marked synthetic, 1 rows unmarked"
+    ):
+        make_amr_csv_report(StringIO(csv_text))
+
+    with pytest.raises(ValueError, match="mixed-provenance file"):
+        audit_amr_csv(StringIO(csv_text))
+
+
+def test_inconsistent_notice_file_is_refused() -> None:
+    csv_text = _csv_text(
+        _isolate_row("SYNTHETIC EXAMPLE A", "iso-1"),
+        _isolate_row("SYNTHETIC EXAMPLE B", "iso-2"),
+    )
+
+    with pytest.raises(ValueError, match="inconsistent synthetic_data_notice column"):
+        make_amr_csv_report(StringIO(csv_text))
+
+
+def test_empty_file_reports_no_data_audited_without_banner() -> None:
+    report = make_amr_csv_report(StringIO(AMR_CSV_HEADER + "\n"))
+
+    assert SYNTHETIC_BANNER not in report
+    assert "| Data status | `EMPTY` |" in report
+    assert "No data audited" in report
+
+
+def test_provenance_block_carries_source_and_stable_content_hash() -> None:
+    _rows_first, prov_first = load_amr_csv_with_provenance(EXAMPLE_CSV)
+    _rows_second, prov_second = load_amr_csv_with_provenance(EXAMPLE_CSV)
+
+    # same input -> identical source and content hash (deterministic provenance)
+    assert prov_first.source == prov_second.source == str(EXAMPLE_CSV)
+    assert prov_first.content_sha256 == prov_second.content_sha256
+    assert prov_first.content_sha256 == hashlib.sha256(EXAMPLE_CSV.read_bytes()).hexdigest()
+    assert prov_first.n_rows == EXPECTED_EXAMPLE_RECORDS
+
+    report = make_amr_csv_report(EXAMPLE_CSV)
+    assert prov_first.source in report
+    assert prov_first.content_sha256 in report
+    assert f"| Rows audited | {prov_first.n_rows} |" in report
